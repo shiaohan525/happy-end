@@ -1,0 +1,1 @@
+import Group from '../img/Group.png'
