@@ -1,0 +1,146 @@
+footer{
+    background-color: $c-secondary-white;
+    padding-top: 80px;
+    @include pad{
+        padding-top: 60px;
+    }
+    @include mini-pad{
+        padding-top: 40px;
+    }
+    @include mobile{
+        padding-top: 20px;
+    }
+}
+
+.container-footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.2rem;
+    position: relative;
+    @include flex($d:column,$j-c:space-between);
+    gap:48px;
+    
+
+    h3{
+        color: $c-primary;
+        font-size: $p2;
+    }
+
+    a{
+        color: $c-gray;
+        &:hover{
+            color:$c-primary;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+    }
+
+    hr{
+        border: 1px solid #DDB593;
+        width: 100%;
+        @include pad{
+            width: 80%;
+        }
+    }
+
+    .menu-content{
+        @include flex($d:column);
+        gap:12px;
+    }
+
+    .footer-logo{
+        img{
+            @include mentor-img(250px);
+        }
+    }
+
+    .footer-share{
+        img{
+            @include mentor-img(50px);
+        }
+    }
+
+    .footer-menu{
+        @include flex($j-c:space-between);
+
+        @include pad{
+            @include basic_grid(2,1fr,40px,10px);
+            justify-items: center;
+        }
+    }
+
+    .text-center{
+        @include flex($d:column,$j-c:space-between,$a-i:center);
+        gap:20px;
+    }
+
+    .footer-subscribe{
+        text-align: center;
+        padding-bottom: 60px;
+        input{
+            padding: 8px 0px 8px 8px;
+            background-color: $c-white;
+            border-radius: 4px;
+        }
+        button{
+            padding: 8px 36px;
+            background-color: $c-primary;
+            border-radius: 4px;
+        }
+
+    }
+
+}
+
+.footer-copy{
+    background-color: #F0E7DE;
+    @include flex($j-c:center,$a-i:center);
+    gap:52px;
+    padding: 20px 0px;
+    .tag{
+        color: $c-black;
+        &:hover{
+            color:$c-primary;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+
+// Back to top btn
+#button {
+    visibility: hidden;
+    z-index: 1000;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    
+    display: inline-block;
+    width: 40px;
+    height: auto;
+    text-align: center;
+    border-radius: 2px;
+
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+
+}
+
+#button:hover {
+    cursor: pointer;
+
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+

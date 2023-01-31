@@ -16,11 +16,12 @@
 //google-font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
 
-
+//font awesome
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 
 
 *{
-    font-family: 'Noto Sans TC', sans-serif, Arial !important;
+    font-family: 'Noto Sans TC', sans-serif, Arial,"Font Awesome 6 Free" !important;
 }
 
 img{

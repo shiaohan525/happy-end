@@ -1,0 +1,321 @@
+header{
+    @include fixed($z-i:5);
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+    box-shadow: 0px 4px 20px rgb(213 217 219 / 50%);
+    background-color: #FFFFFF;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    @extend %border-box;
+    @extend %dis-bl;
+
+    @include pad{
+        //width: fit-content;
+        //left: 71%;
+        // position: absolute;
+        // font-size: 30px;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        // background: #212121;
+        // color: #fff;
+        justify-content: center;
+        align-items: center;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+}
+
+nav{
+    @include flex($a-i:center,$j-c:space-between);
+    gap:36px;
+    width: 100%;
+    padding: 20px 0px;
+    @extend %page-content;
+    @extend %border-box;
+
+    @include mini-pad{
+        gap:20px;
+    }
+
+    .nav-brand{
+        @extend %border-box;
+        @extend %dis-bl;
+        flex: 1;
+        img{
+            width: 160px;
+            height: 100%;
+            @extend %border-box;
+            @extend %dis-in-bl;
+        }
+    }
+
+    .main-menu{
+        @include flex($a-i:center);
+        // @extend %page-content;
+        @extend %border-box;
+        flex: 1;
+
+        @include pad{
+            display: none;
+        }
+        a{
+            font-weight: 300;
+            background-color: #fff;
+            color: #333;
+            display: block;
+            padding: 0 20px;
+            text-decoration: none;
+            line-height: 40px;
+            @extend %border-box;
+
+        }
+        li{
+            white-space: nowrap;
+            @extend %border-box;
+            a{
+                @extend %border-box;
+                color: $c-black;
+                font-weight: 300;
+            }
+            &:hover{
+                @extend %border-box;
+            }
+            &:hover > a {
+                @extend %border-box;
+                color:$c-primary;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+        }
+        .dropdown-menu{
+            @extend %border-box;
+            @include absolute($top:76%);
+            z-index: 99;
+            min-width: 180px;
+            display: none;
+            a{
+                font-weight: 300;
+                padding: 10px 25px;
+            }
+            li:hover{
+                border: none;
+            }
+
+        }
+
+        li:hover > ul { 
+            @extend %border-box;
+            display: block;
+        }
+
+    
+    }
+
+}
+
+.login {
+    justify-content: flex-end !important;
+    flex: 6 !important;
+    a{
+        @include flex($a-i:center);
+        display:flex !important;
+        gap:4px;
+    }
+}
+
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: none;
+    background: $c-secondary-white;
+    padding: 5px;
+    height: 20px;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    color: $c-black;
+}
+
+.searchTerm:focus{
+    color: $c-gray;
+}
+
+.searchButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: $c-secondary-white;
+    text-align: center;
+    color: $c-black;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    font-size: 8px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.search-wrap{
+    width: 30%;
+    @include pad{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+    }
+
+    .login a{
+        display: flex;
+        gap:8px;
+    }
+}
+
+
+
+.mobile-menu{
+    display: none;
+    @include pad{
+        display: block;
+        // width: 100%;
+
+    }
+
+}
+
+.mobile-main-menu{
+    overflow-y: auto;
+    a{
+        background-color: #fff;
+        color: #333;
+        display: block;
+        padding: 0 20px;
+        text-decoration: none;
+        font-size: $m-p2;
+        line-height: 150%;
+        font-weight: 300;
+        letter-spacing: 0.01em;
+        @extend %border-box;
+    }
+    ul {
+        display: none;
+        
+    }
+}
+.is-hide {
+    display: none !important;
+}
+
+#nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+    .bg {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 70px);
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s;
+        background: #000;
+    }
+    &:focus-within .bg {
+        visibility: visible;
+        opacity: .6;
+    }
+    * {
+        visibility: visible;
+    }
+    &:focus-within .button {
+        pointer-events: none;
+    }
+    &:focus-within .icon-bar:nth-of-type(1) {
+        transform: translate3d(0, 8px, 0) rotate(45deg);
+    }
+    &:focus-within .icon-bar:nth-of-type(2) {
+        opacity: 0;
+    }
+    &:focus-within .icon-bar:nth-of-type(3) {
+        transform: translate3d(0, -8px, 0) rotate(-45deg);
+    }
+    &:focus-within #nav-content {
+        transform: none;
+    }
+}
+
+.button {
+    position: fixed;
+    top:0;
+    right:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    -webkit-appearance: none;
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    height: 70px;
+    width: 30px;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-left: 25px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.icon-bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #aaa;
+    transition: .3s;
+}
+
+.icon-bar+.icon-bar {
+    margin-top: 5px;
+}
+
+#nav-content {
+    margin-top: 70px;
+    padding: 20px;
+    width: 50%;
+    max-width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: calc(100% - 70px);
+    background: #FFFF;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transform: translateX(100%);
+    transition: transform .3s;
+    will-change: transform;
+    contain: paint;
+    ul {
+        height: 100%;
+        // display: flex;
+        // flex-direction: column;
+    }
+    li a {
+        padding: 10px 5px;
+        display: flex;
+        text-transform: uppercase;
+        transition: color .1s;
+    }
+    li a:hover {
+        color: $c-primary;
+    }
+}
+
