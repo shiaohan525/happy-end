@@ -1,0 +1,6 @@
+import header from '../img/1111_logo.svg'
+import footer_logo from '../img/footer_logo.png'
+import footer_social01 from '../img/footer_fb.png'
+import footer_social02 from '../img/footer_line.png'
+import footer_social03 from '../img/footer_twitter.png'
+import footer_toTop from '../img/goToTop.svg'
