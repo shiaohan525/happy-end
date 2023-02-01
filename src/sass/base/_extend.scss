@@ -1,6 +1,6 @@
 //===============佔位
 //排版 (flex、grid的在mixin)
-%mar-auto{
+%ma{
     margin: auto;
 }
 
@@ -11,24 +11,24 @@
     box-sizing: border-box;
 }
 
-%dis-bl{
+%db{
     display: block;
 }
 
-%dis-in-bl{
+%dib{
     display: inline-block;
 }
 
-%dis-none{
+%dn{
     display: none;
 }
 
-%border-box{
+%bb{
     box-sizing: border-box;
 }
 
 //定位(absolute在mixin)
-%relative{
+%rel{
     position: relative;
 }
 
@@ -39,7 +39,7 @@
 }
 
 //font
-%text-a-c{
+%tac{
     text-align: center;
 }
 
@@ -47,3 +47,4 @@
 %pointer{
     cursor: pointer;
 }
+

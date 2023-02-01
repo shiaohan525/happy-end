@@ -130,7 +130,7 @@ p, .p1{
 
 
 .br-rwd{
-    @extend %dis-none;
+    @extend %dn;
 
     @include pad{
         display: block;
