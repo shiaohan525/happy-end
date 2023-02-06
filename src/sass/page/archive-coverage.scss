@@ -1,0 +1,38 @@
+.archive-coverage-wrapper{
+    background: $c-secondary-white;
+
+    .archive-coverage-container{
+        @extend %page-content;
+        @extend %tac;
+        padding: 4rem 2rem;
+        margin: 80px auto;
+        max-width: 1420px;
+
+        .search-bar{
+            @include flex($a-i:center,$w:wrap,$j-c:center);
+            gap: 20px;
+
+            input{
+                color: $c-gray;
+                padding: 0.5rem 1rem;
+                border-radius: 8px;
+
+                &::placeholder{
+                    color: $c-gray;
+                }
+            }
+        }
+
+        .archive{
+            text-align-last: left;
+
+            p.total{
+                color: $c-black;
+            }
+
+            .archive-item{
+                
+            }
+        }
+    }
+}
