@@ -114,20 +114,43 @@ p, .p1{
     }
 }
 
+
+// 按鈕樣式
 .btn{
     font-size: $p2;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.01em;
     color:$c-white;
+    background: $c-primary;
 
     @include mini-pad{
         font-size: $m-p2;
         line-height: 105%;
     }
 
+<<<<<<< HEAD
 }
 
+=======
+    &:hover{
+        background: $c-white;
+        color: $c-primary;
+    }
+
+}
+
+// 主標題
+.title{
+    border-bottom: 1px solid $c-secondary-light;
+    padding: 68px 0px;
+    text-align: center;
+    @include flex($d:column);
+    gap:20px;
+}
+
+//職缺區塊標籤
+>>>>>>> 6675c8bbd662ba6ac9550a48c49ca1b56741bcb5
 .job-tag{
     @include flex($w:wrap);
     gap:8px;

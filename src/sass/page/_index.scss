@@ -1,13 +1,49 @@
-.article-section{
-    @include flex;
-    >.article-section{
-        @include flex;
+.article{
+    @extend %page-content;
+    @include flex($d:column);
+    margin: auto;
+    gap:48px;
+    padding: 88px 120px;
+    background: $c-secondary-white;
+
+    .article-item{
+        @include flex($d:column);
+        flex: 1;
+        gap:20px;
     }
-        @include flex;
+
+    .article-section{
+        @include flex($w:wrap);
+        flex: 1;
+        gap:20px;
+        margin: unset;
+        padding: 0px;
+
+        >.article-section{
+            @include basic_grid(2,1fr,40px,40px);
+        }
+
+        >.article-item{
+            @include flex($d:column);
+            flex: 1;
+            gap:12px;
+            img{
+                aspect-ratio: 16/9; 
+            }
+            >.article-content{
+                @include flex($d:column);
+                gap:4px;
+            }
+        }
+
+
     }
     .article-item{
+        flex: 1;
         img{
-            @include mentor-img(600px);
+            // @include mentor-img(600px);
             aspect-ratio: 16/9; 
         }
     }
+}
+
