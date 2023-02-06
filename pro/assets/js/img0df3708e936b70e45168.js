@@ -272,9 +272,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+ // import pgnb2 from '../img/pgnb-style2-arrow.svg'
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=img7492f11c14dc1f385454.js.map
+//# sourceMappingURL=img0df3708e936b70e45168.js.map
