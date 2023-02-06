@@ -129,7 +129,6 @@ p, .p1{
         line-height: 105%;
     }
 
-<<<<<<< HEAD
     &:hover{
         background: $c-white;
         color: $c-primary;
@@ -147,10 +146,6 @@ p, .p1{
 }
 
 //職缺區塊標籤
-=======
-}
-
->>>>>>> 54ed1dabfbce9b6eebfc8e43bf8336e1a5b4d72f
 .job-tag{
     @include flex($w:wrap);
     gap:8px;
