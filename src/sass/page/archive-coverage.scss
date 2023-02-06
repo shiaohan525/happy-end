@@ -1,37 +1,262 @@
-.archive-coverage-wrapper{
+.archive-coverage-wrapper {
     background: $c-secondary-white;
 
-    .archive-coverage-container{
+    .archive-coverage-container {
         @extend %page-content;
         @extend %tac;
-        padding: 4rem 2rem;
-        margin: 80px auto;
+        padding: 9rem 2rem 4rem;
+        margin: 0 auto;
         max-width: 1420px;
 
-        .search-bar{
-            @include flex($a-i:center,$w:wrap,$j-c:center);
+        .search-bar {
+            @include flex($a-i: center, $w: wrap, $j-c: center);
             gap: 20px;
+            margin-bottom: 1.5rem;
 
-            input{
+            input {
                 color: $c-gray;
                 padding: 0.5rem 1rem;
                 border-radius: 8px;
+                height: 47px;
+                flex-basis: 30%;
 
-                &::placeholder{
+                &::placeholder {
                     color: $c-gray;
+                    letter-spacing: 1px;
+                }
+            }
+
+            button {
+                flex-basis: 10%;
+                height: 47px;
+                border-radius: 8px;
+            }
+        }
+
+        .archive {
+            text-align: left;
+
+            p,
+            h4 {
+                margin-bottom: 15px;
+            }
+
+            p.total {
+                color: $c-black;
+            }
+
+            .archive-item {
+                @include flex($a-i: center);
+                background: $c-white;
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+                gap: 20px;
+
+                .col {
+                    &.post-cover {
+                        flex: 0.7;
+
+                        img {
+                            width: 100%;
+                            aspect-ratio: 4 / 3;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &.post-content {
+                        flex: 1;
+                        padding: 2rem 1rem;
+
+                        p {
+                            &.date {
+                                @include flex($a-i: center);
+                                column-gap: 10px;
+                                color: $c-secondary-deep;
+
+                                svg {
+                                    width: 100%;
+                                    max-width: 30px;
+                                }
+                            }
+                        }
+
+                        .link {
+                            @include flex($a-i: center, $j-c: space-between, $w: wrap);
+                            gap: 15px;
+
+                            .category {
+                                ul {
+                                    @include flex($w: wrap);
+                                    gap: 10px;
+
+                                    li {
+                                        @extend %pointer;
+
+                                        a {
+                                            @extend %dib;
+                                            color: $c-primary-deep;
+                                            padding: 0.5rem 1rem;
+                                            transition: all ease .4s;
+                                            border: 1px solid #d9d9d9;
+                                            border-radius: 5px;
+
+                                            &:hover {
+                                                color: $c-white;
+                                                background: $c-primary-deep;
+                                                border-color: $c-primary-deep;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .media-share {
+                                @include flex($a-i: center, $w: wrap);
+                                gap: 10px;
+
+                                .media-item {
+                                    a {
+                                        @extend %dib;
+                                        @extend %bb;
+                                        width: 40px;
+                                        height: 40px;
+                                        padding: 0.5rem;
+                                        border: 1px solid #DDDDDD;
+                                        border-radius: 100px;
+                                        transition: all ease .4s;
+
+                                        &:hover {
+                                            border-color: $c-primary-deep;
+
+                                            svg {
+                                                path {
+                                                    fill: $c-primary-deep;
+                                                }
+                                            }
+                                        }
+
+                                        svg {
+                                            width: 100%;
+                                            height: 100%;
+
+                                            path {
+                                                transition: all ease .4s;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                @include pad {
+                    @include flex($w: wrap);
+
+                    .post-cover,
+                    .post-content {
+                        flex: 1 !important;
+                        flex-basis: 100% !important;
+                    }
                 }
             }
         }
 
-        .archive{
-            text-align-last: left;
+        .pgnb-style2{
+            margin: 2rem 0;
 
-            p.total{
-                color: $c-black;
+            .g-pagination{
+                @include flex($a-i:center,$j-c:center);
+                gap:40px;
+
+                select{
+                    @extend %bb;
+                    @extend %pointer;
+                    width: 100%;
+                    max-width: 140px;
+                    height: 47px;
+                    color: $c-gray;
+                    border-radius: 8px;
+                    padding: 0.5rem;
+                    padding-right: 2rem;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+    
+                    background-image: url('../img/pgnb-style2-arrow-d.svg');
+                    background-repeat: no-repeat;
+                    background-size: 58px 20px;
+                    background-position: calc(100% + 6px) calc(2em - 16px);
+                    border-color: #666;
+                }
+
+                a.tag{
+                    @include flex($a-i:center);
+                    column-gap: 10px;
+                    color: $c-gray;
+                    transition: all ease .4s;
+
+                    &.previous{
+                        flex-direction: row-reverse;
+
+                        svg{
+                            transform: rotateY(180deg);
+                        }
+                    }
+
+                    &:hover{
+                        color: $c-primary-deep;
+
+                        &.next{
+                            svg{
+                                transform: translateX(10px);
+                            }
+                        }
+                        &.previous{
+                            svg{
+                                transform: translateX(-10px) rotateY(180deg);
+                            }
+                        }
+                    }
+
+                    span{
+                        @include flex;
+                    }
+
+                    svg{
+                        transition: all ease .4s;
+                    }
+                }
+
+                @include mobile{
+                    gap: 15px;
+
+                    a.tag{
+                        column-gap: 5px;
+                    }
+                }
+            }
+        }
+
+        @include mobile {
+
+            padding: 9rem 1.5rem 4rem;
+
+            .search-bar {
+                @include flex($w: wrap,$j-c:center);
+
+                input {
+                    flex-basis: 100%;
+                }
+
+                .btn {
+                    flex-basis: 30%;
+                }
             }
 
-            .archive-item{
-                
+            .archive {
+                &>div {
+                    padding: 0 !important;
+                }
             }
         }
     }

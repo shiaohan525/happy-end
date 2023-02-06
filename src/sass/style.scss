@@ -40,6 +40,7 @@ h2, .h2{
     line-height: 110%;
     letter-spacing: 0.01em;
     color: $c-black;
+    margin-bottom: 1.5rem;
     
     @include mini-pad{
         font-size: $m-h2;
@@ -93,12 +94,12 @@ p, .p1{
 .p2{
     font-size: $p2;
     font-weight: 300;
-    line-height: 120%;
+    line-height: 1.7;
     letter-spacing: 0.01em;
     
     @include mini-pad{
         font-size: $m-p2;
-        line-height: 105%;
+        // line-height: 105%;
     }
 }
 
