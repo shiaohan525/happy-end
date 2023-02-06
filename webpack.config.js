@@ -91,6 +91,16 @@ module.exports = {
             location: 'footer',
             template_filename: ['index.html']
         }),
+        new HtmlWebpackPartialsPlugin({
+            path: path.join(__dirname, './src/layout/swiper.html'),
+            location: 'swiper',
+            template_filename: ['index.html']
+        }),
+        new HtmlWebpackPartialsPlugin({
+            path: path.join(__dirname, './src/layout/card-job.html'),
+            location: 'card-job',
+            template_filename: ['index.html']
+        }),
     ],
     // devtool: 'source-map',// 開發完請刪掉pro裡的map檔或是先註解這個工具再建立發布包裝
     devServer:{

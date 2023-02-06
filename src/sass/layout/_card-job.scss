@@ -1,0 +1,56 @@
+card-job{
+    @extend %page-content;
+    @include flex($w:wrap,$j-c:center);
+    gap:30px;
+}
+
+.card-job{
+    min-width: 290px;
+    max-width: 300px;
+    @include flex($d:column);
+
+    >img{
+        @include mentor-img(300px);
+    }
+
+    .card-content{
+        @include flex($d:column);
+        gap:12px;
+        background: $c-secondary-white;
+        padding: 20px;
+        .job-title{
+            @include flex($a-i:center);
+            gap:8px;
+            color: $c-primary;
+            >p{
+                color: $c-primary;
+            }
+        }
+        .job-content{
+            >ul{
+                @include flex($d:column);
+                gap:8px;
+                li{
+                    @include flex($a-i:center);
+                    gap: 8px;
+                }
+            }
+            p{
+                color: $c-black;
+            }
+            img{
+                @include mentor-img(18px);
+            }
+        }
+
+    }
+
+    .card-office{
+        background: $c-primary;
+        padding: 6px 24px;
+        >p{
+            color: $c-white;
+        }
+
+    }
+}

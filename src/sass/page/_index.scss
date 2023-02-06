@@ -1,0 +1,13 @@
+.article-section{
+    @include flex;
+    >.article-section{
+        @include flex;
+    }
+        @include flex;
+    }
+    .article-item{
+        img{
+            @include mentor-img(600px);
+            aspect-ratio: 16/9; 
+        }
+    }

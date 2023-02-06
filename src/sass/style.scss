@@ -9,6 +9,7 @@
 //layout
 @import 'layout/footer';
 @import 'layout/header';
+@import 'layout/card-job';
 
 //page
 @import 'page/index';
@@ -129,11 +130,20 @@ p, .p1{
 
 
 
-.br-rwd{
-    @extend %dis-none;
-
-    @include pad{
-        display: block;
+.job-tag{
+    @include flex($w:wrap);
+    gap:8px;
+    >p{
+        @extend %dis-in-bl;
+        @extend %pointer;
+        color: $c-secondary;
+        padding: 6px 12px;
+        border: 1px solid $c-secondary;
+        border-radius: 8px;
+        &:hover{
+            background: $c-secondary;
+            color: $c-secondary-white;
+        }
     }
 }
 
