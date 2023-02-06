@@ -7,8 +7,8 @@ header{
     box-shadow: 0px 4px 20px rgb(213 217 219 / 50%);
     background-color: #FFFFFF;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    @extend %border-box;
-    @extend %dis-bl;
+    @extend %bb;
+    @extend %db;
 
     @include pad{
         //width: fit-content;
@@ -33,28 +33,28 @@ nav{
     width: 100%;
     padding: 20px 0px;
     @extend %page-content;
-    @extend %border-box;
+    @extend %bb;
 
     @include mini-pad{
         gap:20px;
     }
 
     .nav-brand{
-        @extend %border-box;
-        @extend %dis-bl;
+        @extend %bb;
+        @extend %db;
         flex: 1;
         img{
             width: 160px;
             height: 100%;
-            @extend %border-box;
-            @extend %dis-in-bl;
+            @extend %bb;
+            @extend %dib;
         }
     }
 
     .main-menu{
         @include flex($a-i:center);
         // @extend %page-content;
-        @extend %border-box;
+        @extend %bb;
         flex: 1;
 
         @include pad{
@@ -68,22 +68,22 @@ nav{
             padding: 0 20px;
             text-decoration: none;
             line-height: 40px;
-            @extend %border-box;
+            @extend %bb;
 
         }
         li{
             white-space: nowrap;
-            @extend %border-box;
+            @extend %bb;
             a{
-                @extend %border-box;
+                @extend %bb;
                 color: $c-black;
                 font-weight: 300;
             }
             &:hover{
-                @extend %border-box;
+                @extend %bb;
             }
             &:hover > a {
-                @extend %border-box;
+                @extend %bb;
                 color:$c-primary;
                 -webkit-transition: all 0.3s ease;
                 -moz-transition: all 0.3s ease;
@@ -93,7 +93,7 @@ nav{
             }
         }
         .dropdown-menu{
-            @extend %border-box;
+            @extend %bb;
             @include absolute($top:76%);
             z-index: 99;
             min-width: 180px;
@@ -109,7 +109,7 @@ nav{
         }
 
         li:hover > ul { 
-            @extend %border-box;
+            @extend %bb;
             display: block;
         }
 
@@ -203,7 +203,7 @@ nav{
         line-height: 150%;
         font-weight: 300;
         letter-spacing: 0.01em;
-        @extend %border-box;
+        @extend %bb;
     }
     ul {
         display: none;

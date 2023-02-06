@@ -102,7 +102,7 @@ module.exports = {
             template_filename: ['index.html']
         }),
     ],
-    // devtool: 'source-map',// 開發完請刪掉pro裡的map檔或是先註解這個工具再建立發布包裝
+    devtool: 'source-map',// 開發完請刪掉pro裡的map檔或是先註解這個工具再建立發布包裝
     devServer:{
         host: 'localhost',
         port: 8080,
