@@ -13,6 +13,7 @@ module.exports = {
         img: './src/js/img.js',
         index: './src/js/index.js',
         swiper: './src/js/swiper.js',
+        cardJob: './src/js/card-job.js',
     },
     output: {
         path: path.resolve(__dirname, 'pro'),
@@ -74,7 +75,7 @@ module.exports = {
             template: path.resolve(__dirname, './src/index.html'),
             minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
             filename: 'index.html',
-            chunks: ['main','global','img','index','swiper'],//要多吃別支JS在後面新增就好 ex:['index','about']，先後順序有影響喔
+            chunks: ['main','global','img','index','swiper','cardJob'],//要多吃別支JS在後面新增就好 ex:['index','about']，先後順序有影響喔
         }),
         new HtmlWebpackPlugin({//4-1 文章列表_企業報導/特刊
             template: path.resolve(__dirname, './src/archive-coverage.html'),
@@ -106,6 +107,11 @@ module.exports = {
             path: path.join(__dirname, './src/layout/pgnb-style2.html'),
             location: 'pgnb-second',
             template_filename: ['archive-coverage.html']
+        }),
+        new HtmlWebpackPartialsPlugin({
+            path: path.join(__dirname, './src/layout/category.html'),
+            location: 'category',
+            template_filename: ['index.html']
         }),
     ],
     devtool: 'source-map',// 開發完請刪掉pro裡的map檔或是先註解這個工具再建立發布包裝

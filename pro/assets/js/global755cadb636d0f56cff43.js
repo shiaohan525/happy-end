@@ -10985,8 +10985,4 @@ btn.on('click', function (e) {
 
 /******/ })()
 ;
-<<<<<<< HEAD:pro/assets/js/global3ca7ae8ea47a2cd21295.js
-//# sourceMappingURL=global3ca7ae8ea47a2cd21295.js.map
-=======
-//# sourceMappingURL=global77080b22e6e0aa942069.js.map
->>>>>>> 9794ffc7f866c14c087105691cbcdff763b02aeb:pro/assets/js/global77080b22e6e0aa942069.js
+//# sourceMappingURL=global755cadb636d0f56cff43.js.map

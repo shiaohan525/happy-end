@@ -4,6 +4,12 @@ var __webpack_exports__ = {};
   !*** ./src/js/swiper.js ***!
   \**************************/
 var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 5000
+  },
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar"
@@ -15,4 +21,4 @@ var swiper = new Swiper(".mySwiper", {
 });
 /******/ })()
 ;
-//# sourceMappingURL=swiper77080b22e6e0aa942069.js.map
+//# sourceMappingURL=swiper755cadb636d0f56cff43.js.map

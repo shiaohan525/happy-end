@@ -11,7 +11,4 @@ import articleSection from '../img/article-cover.png'
 import archive_img from '../img/archive-ex-img.png'
 import pgnb2 from '../img/pgnb-style2-arrow.svg'
 import swiperImg from '../img/swiper-img.png'
-<<<<<<< HEAD
-=======
 import categoryImg from '../img/category-img.png'
->>>>>>> 9794ffc7f866c14c087105691cbcdff763b02aeb
