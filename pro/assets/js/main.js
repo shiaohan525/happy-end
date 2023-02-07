@@ -25,8 +25,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-<<<<<<< HEAD:pro/assets/js/main.js
 //# sourceMappingURL=main.js.map
-=======
-//# sourceMappingURL=main026e0ea58f19bf27bfe9.js.map
->>>>>>> 8ef509f035acad094ebc9d171a85cf5a5f7cfe6b:pro/assets/js/main026e0ea58f19bf27bfe9.js

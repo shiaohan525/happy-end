@@ -15,4 +15,4 @@ var swiper = new Swiper(".mySwiper", {
 });
 /******/ })()
 ;
-//# sourceMappingURL=swiper026e0ea58f19bf27bfe9.js.map
+//# sourceMappingURL=swiper.js.map

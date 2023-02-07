@@ -1,0 +1,60 @@
+.application-wrapper{
+    .first-view{
+        @extend %bb;
+        @extend %rel;
+        @include flex;
+        @include bgi($re:no-repeat,$size:cover,$position:center);
+        padding: 8rem 1rem;
+        height: 900px;
+        background-image: url(../img/application-bn.png);
+
+        &::after{
+            @include absolute($top:0,$left:0);
+            content: '';
+            background: rgba(244, 234, 217, 0.45);
+            width: 100%;
+            height: 100%;
+        }
+
+        .container{
+            @extend %ma;
+            @extend %tac;
+            @extend %rel;
+            @include absolute($top:50%,$left:50%);
+            transform: translate(-50%,-20%);
+            width: 100%;
+            max-width: 1420px;
+            z-index: 1;
+
+            h2,h5{
+                text-shadow: 1px 1px 10px #FFFFFF;
+                margin-bottom: 0;
+
+                span.h3{
+                    color: $c-primary;
+                    font-weight: 500;
+                }
+            }
+
+            .btn{
+                @extend %bb;
+                width: 240px;
+                height: 60px;
+                padding: 0.5rem 1rem;
+                margin: 2rem 0;
+                border-radius: 8px;
+                filter: drop-shadow(0px 3.81395px 3.81395px rgba(0, 0, 0, 0.25));
+            }
+        }
+
+        @include mobile{
+            height: 600px;
+        }
+    }
+
+    .application-container{
+        .form{
+            
+        }
+    }
+}

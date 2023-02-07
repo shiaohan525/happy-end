@@ -13,6 +13,7 @@ module.exports = {
         img: './src/js/img.js',
         index: './src/js/index.js',
         swiper: './src/js/swiper.js',
+        app: './src/js/application.js',
     },
     output: {
         path: path.resolve(__dirname, 'pro'),
@@ -76,21 +77,33 @@ module.exports = {
             filename: 'index.html',
             chunks: ['main','global','img','index','swiper'],//要多吃別支JS在後面新增就好 ex:['index','about']，先後順序有影響喔
         }),
-        new HtmlWebpackPlugin({//4-1 文章列表_企業報導/特刊
+        new HtmlWebpackPlugin({//4-1 文章列表_企業報導
             template: path.resolve(__dirname, './src/archive-coverage.html'),
-            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            minify: false,
             filename: 'archive-coverage.html',
-            chunks: ['main','global','img','index'],
+            chunks: ['main','global','img'],
+        }),
+        new HtmlWebpackPlugin({//4-1 文章列表_企業特刊
+            template: path.resolve(__dirname, './src/archive-issue.html'),
+            minify: false,
+            filename: 'archive-issue.html',
+            chunks: ['main','global','img'],
+        }),
+        new HtmlWebpackPlugin({//2-1 報名初始
+            template: path.resolve(__dirname, './src/application.html'),
+            minify: false,
+            filename: 'application.html',
+            chunks: ['main','global','img','app'],
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/header.html'),
             location: 'header',//要放入的html tag位置
-            template_filename: ['index.html','archive-coverage.html']//需引用的頁面記得新增在這裡
+            template_filename: ['index.html','archive-coverage.html','application.html']//需引用的頁面記得新增在這裡
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/footer.html'),
             location: 'footer',
-            template_filename: ['index.html','archive-coverage.html']
+            template_filename: ['index.html','archive-coverage.html','application.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/swiper.html'),

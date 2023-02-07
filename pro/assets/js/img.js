@@ -184,28 +184,31 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-<<<<<<< HEAD:pro/assets/js/img.js
 /***/ "./src/img/pgnb-style2-arrow.svg":
 /*!***************************************!*\
   !*** ./src/img/pgnb-style2-arrow.svg ***!
   \***************************************/
-=======
-/***/ "./src/img/swiper-img.png":
-/*!********************************!*\
-  !*** ./src/img/swiper-img.png ***!
-  \********************************/
->>>>>>> 8ef509f035acad094ebc9d171a85cf5a5f7cfe6b:pro/assets/js/img026e0ea58f19bf27bfe9.js
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-<<<<<<< HEAD:pro/assets/js/img.js
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/pgnb-style2-arrow.svg");
-=======
+
+/***/ }),
+
+/***/ "./src/img/swiper-img.png":
+/*!********************************!*\
+  !*** ./src/img/swiper-img.png ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/swiper-img.png");
->>>>>>> 8ef509f035acad094ebc9d171a85cf5a5f7cfe6b:pro/assets/js/img026e0ea58f19bf27bfe9.js
 
 /***/ })
 
@@ -315,13 +318,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_job_card_icon02_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/job-card-icon02.png */ "./src/img/job-card-icon02.png");
 /* harmony import */ var _img_article_cover_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/article-cover.png */ "./src/img/article-cover.png");
 /* harmony import */ var _img_archive_ex_img_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/archive-ex-img.png */ "./src/img/archive-ex-img.png");
-<<<<<<< HEAD:pro/assets/js/img.js
 /* harmony import */ var _img_pgnb_style2_arrow_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/pgnb-style2-arrow.svg */ "./src/img/pgnb-style2-arrow.svg");
 /* harmony import */ var _img_ad_area_ex_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/ad-area-ex.png */ "./src/img/ad-area-ex.png");
-=======
-/* harmony import */ var _img_swiper_img_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/swiper-img.png */ "./src/img/swiper-img.png");
-/* harmony import */ var _img_category_img_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/category-img.png */ "./src/img/category-img.png");
->>>>>>> 8ef509f035acad094ebc9d171a85cf5a5f7cfe6b:pro/assets/js/img026e0ea58f19bf27bfe9.js
+/* harmony import */ var _img_swiper_img_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../img/swiper-img.png */ "./src/img/swiper-img.png");
+/* harmony import */ var _img_category_img_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../img/category-img.png */ "./src/img/category-img.png");
+
+
 
 
 
@@ -339,8 +341,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-<<<<<<< HEAD:pro/assets/js/img.js
 //# sourceMappingURL=img.js.map
-=======
-//# sourceMappingURL=img026e0ea58f19bf27bfe9.js.map
->>>>>>> 8ef509f035acad094ebc9d171a85cf5a5f7cfe6b:pro/assets/js/img026e0ea58f19bf27bfe9.js
