@@ -75,3 +75,18 @@
     object-fit: cover;
     max-width: $maxw;
 }
+
+// search n subsrible style of the space between column
+@mixin ClassicBtn($gap){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:$gap;
+    @content;
+}
+
+// each column flex-basis (only in flex)
+@mixin f-flexBasis($fb){
+    flex-basis:$fb;
+}
