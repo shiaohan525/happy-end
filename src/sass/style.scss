@@ -179,3 +179,79 @@ input,select{
         outline: none;
     }
 }
+
+// page-number style 2
+.pgnb-style2{
+    margin: 2rem 0;
+
+    .g-pagination{
+        @include flex($a-i:center,$j-c:center);
+        gap:40px;
+
+        select{
+            @extend %bb;
+            @extend %pointer;
+            width: 100%;
+            max-width: 140px;
+            height: 47px;
+            color: $c-gray;
+            border-radius: 8px;
+            padding: 0.5rem;
+            padding-right: 2rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+            background-image: url('../img/pgnb-style2-arrow-d.svg');
+            background-repeat: no-repeat;
+            background-size: 58px 20px;
+            background-position: calc(100% + 6px) calc(2em - 16px);
+            border-color: #666;
+        }
+
+        a.tag{
+            @include flex($a-i:center);
+            column-gap: 10px;
+            color: $c-gray;
+            transition: all ease .4s;
+
+            &.previous{
+                flex-direction: row-reverse;
+
+                svg{
+                    transform: rotateY(180deg);
+                }
+            }
+
+            &:hover{
+                color: $c-primary-deep;
+
+                &.next{
+                    svg{
+                        transform: translateX(10px);
+                    }
+                }
+                &.previous{
+                    svg{
+                        transform: translateX(-10px) rotateY(180deg);
+                    }
+                }
+            }
+
+            span{
+                @include flex;
+            }
+
+            svg{
+                transition: all ease .4s;
+            }
+        }
+
+        @include mobile{
+            gap: 15px;
+
+            a.tag{
+                column-gap: 5px;
+            }
+        }
+    }
+}
