@@ -1,3 +1,15 @@
+.swiper{
+    margin: 76px 0px 0px 0px;
+}
+
+.cardJob{
+    @extend %page-content;
+    @include flex($d:column);
+    margin: auto;
+    gap:48px;
+    padding: 88px 120px;
+}
+
 .article{
     @extend %page-content;
     @include flex($d:column);
@@ -15,7 +27,7 @@
     .article-section{
         @include flex($w:wrap);
         flex: 1;
-        gap:20px;
+        gap:40px;
         margin: unset;
         padding: 0px;
 
