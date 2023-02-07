@@ -9,13 +9,6 @@ import jobCardIcon01 from '../img/job-card-icon01.png'
 import jobCardIcon02 from '../img/job-card-icon02.png'
 import articleSection from '../img/article-cover.png'
 import archive_img from '../img/archive-ex-img.png'
-<<<<<<< HEAD
-<<<<<<< HEAD
-// import pgnb2 from '../img/pgnb-style2-arrow.svg'
-=======
-import swiperImg from '../img/swiper-img.png'
->>>>>>> hsiaohan
-=======
+import pgnb2 from '../img/pgnb-style2-arrow.svg'
 import swiperImg from '../img/swiper-img.png'
 import categoryImg from '../img/category-img.png'
->>>>>>> hsiaohan
