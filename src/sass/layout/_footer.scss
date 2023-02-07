@@ -95,6 +95,10 @@ footer{
     @include flex($j-c:center,$a-i:center);
     gap:52px;
     padding: 20px 0px;
+    @include mini-pad{
+        @include flex($d:column,$j-c:center,$a-i:center);
+        gap:8px;
+    }
     .tag{
         color: $c-black;
         &:hover{

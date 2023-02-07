@@ -8,6 +8,12 @@
     margin: auto;
     gap:48px;
     padding: 88px 120px;
+    @include pad{
+        padding: 66px 80px;
+    }
+    @include mini-pad{
+        padding: 40px 30px;
+    }
 }
 
 .article{
@@ -17,6 +23,12 @@
     gap:48px;
     padding: 88px 120px;
     background: $c-secondary-white;
+    @include pad{
+        padding: 66px 80px;
+    }
+    @include mini-pad{
+        padding: 40px 30px;
+    }
 
     .article-item{
         @include flex($d:column);
@@ -30,6 +42,13 @@
         gap:40px;
         margin: unset;
         padding: 0px;
+
+        @include pad{
+            @include flex($d:column);
+        }
+        @include mini-pad{
+            display: none;
+        }
 
         >.article-section{
             @include basic_grid(2,1fr,40px,40px);
@@ -50,6 +69,34 @@
 
 
     }
+
+    .article-swiper{
+        display: none;
+        @include mini-pad{
+            display: block;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            background-color: transparent;
+            justify-content: center;
+            align-items: center;
+          }
+      
+          .swiper-slide img {
+            padding: 0px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+    }
     .article-item{
         flex: 1;
         img{
@@ -60,13 +107,20 @@
 }
 
 .category{
-    @include flex($d:row-reverse,$a-i:flex-start);
-    gap:120px;
+    @extend %page-content;
+    @include flex($j-c:center);
+    margin: auto;
+    gap:48px;
     padding: 88px 120px;
-    >.title{
-        @include flex($d:column-reverse,$w:nowrap);
-        -webkit-writing-mode: vertical-lr;
-        writing-mode: vertical-lr;
+    @include pad{
+        padding: 66px 80px;
+    }
+    @include mini-pad{
+        padding: 40px 30px;
     }
 }
 
+.swiper-button-next, 
+.swiper-button-prev{
+    color:$c-primary;
+}

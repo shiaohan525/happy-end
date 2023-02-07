@@ -1,0 +1,32 @@
+
+
+.category-section{
+    @include flex($d:row-reverse,$a-i:flex-start);
+    gap:120px;
+    @include pad{
+        @include flex($d:column,$a-i:center);
+        gap:60px;
+    }
+    .title{
+        @include flex($d:column-reverse,$w:nowrap,$a-i:flex-start);
+        text-align: left;
+        border: unset;
+        padding: 0px;
+        -webkit-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
+        @include pad{
+            @include flex($d:column,$w:nowrap,$a-i:center);
+            text-align: center;
+            -webkit-writing-mode: horizontal-tb;
+            writing-mode: horizontal-tb;
+        }
+        >h2{
+            letter-spacing: 0.5rem;
+        }
+        >p{
+            line-height: 150%;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+}

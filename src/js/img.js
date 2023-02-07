@@ -10,6 +10,9 @@ import jobCardIcon02 from '../img/job-card-icon02.png'
 import articleSection from '../img/article-cover.png'
 import archive_img from '../img/archive-ex-img.png'
 import pgnb2 from '../img/pgnb-style2-arrow.svg'
+<<<<<<< HEAD
 import ad from '../img/ad-area-ex.png'
+=======
+>>>>>>> 9be585abfe5fb9c5d8ee6d9821c825a9610b101d
 import swiperImg from '../img/swiper-img.png'
 import categoryImg from '../img/category-img.png'

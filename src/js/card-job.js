@@ -1,14 +1,11 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".cardSwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     loopFillGroupWithBlank: true,
     autoplay: {
         delay: 5000,
     },
-    pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-    },
+
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
