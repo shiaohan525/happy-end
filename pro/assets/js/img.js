@@ -325,4 +325,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=img755cadb636d0f56cff43.js.map
+//# sourceMappingURL=img.js.map

@@ -1,18 +1,14 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
-/*!**************************!*\
-  !*** ./src/js/swiper.js ***!
-  \**************************/
-var swiper = new Swiper(".mySwiper", {
+/*!****************************!*\
+  !*** ./src/js/card-job.js ***!
+  \****************************/
+var swiper = new Swiper(".cardSwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loopFillGroupWithBlank: true,
   autoplay: {
     delay: 5000
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar"
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -21,4 +17,4 @@ var swiper = new Swiper(".mySwiper", {
 });
 /******/ })()
 ;
-//# sourceMappingURL=swiper755cadb636d0f56cff43.js.map
+//# sourceMappingURL=cardJob.js.map

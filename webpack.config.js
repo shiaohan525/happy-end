@@ -17,7 +17,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'pro'),
-        filename: 'assets/js/[name][hash].js',
+        filename: 'assets/js/[name].js',
         assetModuleFilename: 'assets/img/[name][ext][query]',//圖檔輸出在pro的哪裡
         publicPath: 'auto',
     },
@@ -68,13 +68,13 @@ module.exports = {
             jQuery: 'jquery'
         }),
         new MiniCssExtractPlugin({
-            filename: "assets/css/[name][hash].css"
+            filename: "assets/css/[name].css"
         }),
         new CleanWebpackPlugin(),        
         new HtmlWebpackPlugin({//要多一頁html 就new一個HtmlWebpackPlugin 格式照下面填空就好
             template: path.resolve(__dirname, './src/index.html'),
             minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
-            filename: 'index.html',
+            filename: 'index.html', //首頁
             chunks: ['main','global','img','index','swiper','cardJob'],//要多吃別支JS在後面新增就好 ex:['index','about']，先後順序有影響喔
         }),
         new HtmlWebpackPlugin({//4-1 文章列表_企業報導/特刊
@@ -82,6 +82,18 @@ module.exports = {
             minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
             filename: 'archive-coverage.html',
             chunks: ['main','global','img','index'],
+        }),
+        new HtmlWebpackPlugin({//3-1 幸福職涯-嚴選企業
+            template: path.resolve(__dirname, './src/happiness-company.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'happiness-company.html',
+            chunks: ['main','global','img'],
+        }),
+        new HtmlWebpackPlugin({//3-1 幸福職涯-推薦職缺
+            template: path.resolve(__dirname, './src/happiness-job.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'happiness-job.html',
+            chunks: ['main','global','img'],
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/header.html'),
