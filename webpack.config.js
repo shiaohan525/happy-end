@@ -12,6 +12,7 @@ module.exports = {
         global: './src/js/global.js',
         img: './src/js/img.js',
         index: './src/js/index.js',
+        swiper: './src/js/swiper.js',
     },
     output: {
         path: path.resolve(__dirname, 'pro'),
@@ -73,7 +74,7 @@ module.exports = {
             template: path.resolve(__dirname, './src/index.html'),
             minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
             filename: 'index.html',
-            chunks: ['main','global','img','index'],//要多吃別支JS在後面新增就好 ex:['index','about']，先後順序有影響喔
+            chunks: ['main','global','img','index','swiper'],//要多吃別支JS在後面新增就好 ex:['index','about']，先後順序有影響喔
         }),
         new HtmlWebpackPlugin({//4-1 文章列表_企業報導/特刊
             template: path.resolve(__dirname, './src/archive-coverage.html'),

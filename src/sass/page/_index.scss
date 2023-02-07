@@ -1,3 +1,15 @@
+.swiper{
+    margin: 33px 0px 0px 0px;
+}
+
+.cardJob{
+    @extend %page-content;
+    @include flex($d:column);
+    margin: auto;
+    gap:48px;
+    padding: 88px 120px;
+}
+
 .article{
     @extend %page-content;
     @include flex($d:column);
@@ -15,7 +27,7 @@
     .article-section{
         @include flex($w:wrap);
         flex: 1;
-        gap:20px;
+        gap:40px;
         margin: unset;
         padding: 0px;
 
@@ -44,6 +56,17 @@
             // @include mentor-img(600px);
             aspect-ratio: 16/9; 
         }
+    }
+}
+
+.category{
+    @include flex($d:row-reverse,$a-i:flex-start);
+    gap:120px;
+    padding: 88px 120px;
+    >.title{
+        @include flex($d:column-reverse,$w:nowrap);
+        -webkit-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
     }
 }
 
