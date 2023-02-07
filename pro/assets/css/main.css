@@ -69,15 +69,11 @@ table {
   border-spacing: 0;
 }
 
-<<<<<<< HEAD:pro/assets/css/main.css
 .application-wrapper .first-view .container {
   margin: auto;
 }
 
-.archive-tem .ad-area-wrapper .ad-area-container, .archive-tem .archive-tem-c, .article, .cardJob, card-job, nav {
-=======
-.archive-coverage-wrapper .archive-coverage-container, .category, .article, .cardJob, .cardJob-section, nav {
->>>>>>> 9be585abfe5fb9c5d8ee6d9821c825a9610b101d:pro/assets/css/main755cadb636d0f56cff43.css
+.archive-tem .ad-area-wrapper .ad-area-container, .archive-tem .archive-tem-c, .category, .article, .cardJob, .cardJob-section, nav {
   margin: auto;
   padding: 0 30px;
   max-width: 1920px;
@@ -675,13 +671,6 @@ nav .main-menu li:hover > ul {
   color: white;
 }
 
-<<<<<<< HEAD:pro/assets/css/main.css
-.swiper {
-  margin: 33px 0px 0px 0px;
-}
-
-.cardJob {
-=======
 .minipad-swiper {
   display: none;
 }
@@ -712,14 +701,11 @@ nav .main-menu li:hover > ul {
 }
 
 .category-section {
->>>>>>> 9be585abfe5fb9c5d8ee6d9821c825a9610b101d:pro/assets/css/main755cadb636d0f56cff43.css
   display: flex;
   flex-wrap: unset;
   flex-direction: row-reverse;
   justify-content: unset;
   align-content: unset;
-<<<<<<< HEAD:pro/assets/css/main.css
-=======
   align-items: flex-start;
   gap: 120px;
 }
@@ -866,13 +852,10 @@ nav .main-menu li:hover > ul {
   flex-direction: column;
   justify-content: unset;
   align-content: unset;
->>>>>>> 9be585abfe5fb9c5d8ee6d9821c825a9610b101d:pro/assets/css/main755cadb636d0f56cff43.css
   align-items: unset;
   margin: auto;
   gap: 48px;
   padding: 88px 120px;
-<<<<<<< HEAD:pro/assets/css/main.css
-=======
 }
 @media screen and (max-width: 1024px) {
   .cardJob {
@@ -883,7 +866,6 @@ nav .main-menu li:hover > ul {
   .cardJob {
     padding: 40px 30px;
   }
->>>>>>> 9be585abfe5fb9c5d8ee6d9821c825a9610b101d:pro/assets/css/main755cadb636d0f56cff43.css
 }
 
 .article {
@@ -1515,13 +1497,6 @@ input:focus, select:focus {
   }
 }
 
-<<<<<<< HEAD
-<<<<<<<< HEAD:pro/assets/css/main.css
-/*# sourceMappingURL=main.css.map*/
-========
-=======
->>>>>>> 6fe6fb83f08cc0a101f4d59bf8871854d06602ed
-<<<<<<< HEAD:pro/assets/css/main.css
 .classBtn {
   display: flex;
   align-items: center;
@@ -1557,10 +1532,3 @@ input:focus, select:focus {
 }
 
 /*# sourceMappingURL=main.css.map*/
-=======
-/*# sourceMappingURL=main755cadb636d0f56cff43.css.map*/
->>>>>>> 9be585abfe5fb9c5d8ee6d9821c825a9610b101d:pro/assets/css/main755cadb636d0f56cff43.css
-<<<<<<< HEAD
->>>>>>>> 6fe6fb83f08cc0a101f4d59bf8871854d06602ed:pro/assets/css/main755cadb636d0f56cff43.css
-=======
->>>>>>> 6fe6fb83f08cc0a101f4d59bf8871854d06602ed

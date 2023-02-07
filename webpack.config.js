@@ -13,11 +13,8 @@ module.exports = {
         img: './src/js/img.js',
         index: './src/js/index.js',
         swiper: './src/js/swiper.js',
-<<<<<<< HEAD
         app: './src/js/application.js',
-=======
         cardJob: './src/js/card-job.js',
->>>>>>> 9be585abfe5fb9c5d8ee6d9821c825a9610b101d
     },
     output: {
         path: path.resolve(__dirname, 'pro'),
