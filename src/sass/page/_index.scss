@@ -1,5 +1,5 @@
 .swiper{
-    margin: 76px 0px 0px 0px;
+    margin: 33px 0px 0px 0px;
 }
 
 .cardJob{
@@ -56,6 +56,17 @@
             // @include mentor-img(600px);
             aspect-ratio: 16/9; 
         }
+    }
+}
+
+.category{
+    @include flex($d:row-reverse,$a-i:flex-start);
+    gap:120px;
+    padding: 88px 120px;
+    >.title{
+        @include flex($d:column-reverse,$w:nowrap);
+        -webkit-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
     }
 }
 
