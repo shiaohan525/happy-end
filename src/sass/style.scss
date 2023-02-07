@@ -16,6 +16,7 @@
 //page
 @import 'page/index';
 @import 'page/archive-coverage';
+@import 'page/application';
 
 //google-font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
@@ -123,12 +124,14 @@ p, .p1{
 
 // 按鈕樣式
 .btn{
+    @extend %pointer;
     font-size: $p2;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.01em;
     color:$c-white;
     background: $c-primary;
+    transition: all ease .4s;
 
     @include mini-pad{
         font-size: $m-p2;
@@ -184,6 +187,7 @@ input,select{
 
 // page-number style 2
 .pgnb-style2{
+    @extend %db;
     margin: 2rem 0;
 
     .g-pagination{
@@ -255,5 +259,32 @@ input,select{
                 column-gap: 5px;
             }
         }
+    }
+}
+
+// input with red btn style 共用
+.classBtn {
+    @include ClassicBtn(20px);
+    margin-bottom: 1.5rem;
+
+    input {
+        @extend %bb;
+        @include f-flexBasis(30%);
+        color: $c-gray;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        height: 47px;
+
+        &::placeholder {
+            color: $c-gray;
+            letter-spacing: 1px;
+        }
+    }
+
+    button {
+        @include f-flexBasis(10%);
+        height: 47px;
+        flex-basis: 10%;
+        border-radius: 8px;
     }
 }
