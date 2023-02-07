@@ -58,31 +58,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/img/footer_fb.png":
-/*!*******************************!*\
-  !*** ./src/img/footer_fb.png ***!
-  \*******************************/
+/***/ "./src/img/facebook-icon.svg":
+/*!***********************************!*\
+  !*** ./src/img/facebook-icon.svg ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/footer_fb.png");
-
-/***/ }),
-
-/***/ "./src/img/footer_line.png":
-/*!*********************************!*\
-  !*** ./src/img/footer_line.png ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/footer_line.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/facebook-icon.svg");
 
 /***/ }),
 
@@ -97,20 +83,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/footer_logo.png");
-
-/***/ }),
-
-/***/ "./src/img/footer_twitter.png":
-/*!************************************!*\
-  !*** ./src/img/footer_twitter.png ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/footer_twitter.png");
 
 /***/ }),
 
@@ -170,6 +142,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/img/line-icon.svg":
+/*!*******************************!*\
+  !*** ./src/img/line-icon.svg ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/line-icon.svg");
+
+/***/ }),
+
 /***/ "./src/img/pgnb-style2-arrow.svg":
 /*!***************************************!*\
   !*** ./src/img/pgnb-style2-arrow.svg ***!
@@ -195,6 +181,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/swiper-img.png");
+
+/***/ }),
+
+/***/ "./src/img/twitter-icon.svg":
+/*!**********************************!*\
+  !*** ./src/img/twitter-icon.svg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/twitter-icon.svg");
 
 /***/ })
 
@@ -295,9 +295,9 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_1111_logo_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/1111_logo.svg */ "./src/img/1111_logo.svg");
 /* harmony import */ var _img_footer_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/footer_logo.png */ "./src/img/footer_logo.png");
-/* harmony import */ var _img_footer_fb_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/footer_fb.png */ "./src/img/footer_fb.png");
-/* harmony import */ var _img_footer_line_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/footer_line.png */ "./src/img/footer_line.png");
-/* harmony import */ var _img_footer_twitter_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/footer_twitter.png */ "./src/img/footer_twitter.png");
+/* harmony import */ var _img_facebook_icon_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/facebook-icon.svg */ "./src/img/facebook-icon.svg");
+/* harmony import */ var _img_line_icon_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/line-icon.svg */ "./src/img/line-icon.svg");
+/* harmony import */ var _img_twitter_icon_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/twitter-icon.svg */ "./src/img/twitter-icon.svg");
 /* harmony import */ var _img_goToTop_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/goToTop.svg */ "./src/img/goToTop.svg");
 /* harmony import */ var _img_job_card_cov_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/job-card-cov.png */ "./src/img/job-card-cov.png");
 /* harmony import */ var _img_job_card_icon01_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/job-card-icon01.png */ "./src/img/job-card-icon01.png");

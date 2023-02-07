@@ -86,13 +86,13 @@ h5, .h5{
 p, .p1{
     font-size: $p1;
     font-weight: 300;
-    line-height: 120%;
-    letter-spacing: 0.01em;
+    line-height: 140%;
+    letter-spacing: 0em;
     color: $c-gray;
     
     @include mini-pad{
         font-size: $m-p1;
-        line-height: 110%;
+        line-height: 130%;
     }
 }
 
@@ -123,12 +123,18 @@ p, .p1{
 
 // 按鈕樣式
 .btn{
+    @extend %pointer;
+    @extend %dib;
+    width: fit-content;
+    padding: 8px 24px;
     font-size: $p2;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.01em;
     color:$c-white;
     background: $c-primary;
+    border: 1px solid $c-primary;
+    border-radius: 4px;
 
     @include mini-pad{
         font-size: $m-p2;
@@ -138,12 +144,19 @@ p, .p1{
     &:hover{
         background: $c-white;
         color: $c-primary;
+        border: 1px solid $c-primary;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
     }
 
 }
 
 // 主標題
 .title{
+    width: 100%;
     border-bottom: 1px solid $c-secondary-light;
     padding: 68px 0px;
     text-align: center;
@@ -155,11 +168,13 @@ p, .p1{
 .job-tag{
     @include flex($w:wrap);
     gap:8px;
+
     >p{
         @extend %dib;
         @extend %pointer;
+        font-size: $tag;
         color: $c-secondary;
-        padding: 6px 12px;
+        padding: 4px 10px;
         border: 1px solid $c-secondary;
         border-radius: 8px;
         &:hover{
@@ -171,6 +186,14 @@ p, .p1{
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
         }
+    }
+}
+
+//手機版換行
+.br-rwd{
+    display: none;
+    @include mobile{
+        display: block;
     }
 }
 
