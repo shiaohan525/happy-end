@@ -1,12 +1,12 @@
 card-job{
     @extend %page-content;
-    @include flex($w:wrap,$j-c:center);
-    gap:30px;
+    @include basic_grid(4,1fr,40px,40px);
 }
 
 .card-job{
     min-width: 290px;
     max-width: 300px;
+
     @include flex($d:column);
 
     >img{

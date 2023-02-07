@@ -21,6 +21,9 @@
 //font awesome
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 
+// swiper
+@import url("https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css");
+
 
 *{
     font-family: 'Noto Sans TC', sans-serif, Arial,"Font Awesome 6 Free" !important;
@@ -159,6 +162,11 @@ p, .p1{
         &:hover{
             background: $c-secondary;
             color: $c-secondary-white;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
         }
     }
 }
