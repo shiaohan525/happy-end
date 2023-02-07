@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文章列表 - 企業報導</title>
-<script defer src="assets/js/main4a6fb8b3119c34a156e6.js"></script><script defer src="assets/js/global4a6fb8b3119c34a156e6.js"></script><script defer src="assets/js/img4a6fb8b3119c34a156e6.js"></script><script defer src="assets/js/index4a6fb8b3119c34a156e6.js"></script><link href="assets/css/main4a6fb8b3119c34a156e6.css" rel="stylesheet"></head>
+<script defer src="assets/js/main.js"></script><script defer src="assets/js/global.js"></script><script defer src="assets/js/img.js"></script><script defer src="assets/js/index.js"></script><link href="assets/css/main.css" rel="stylesheet"></head>
 
 <body>
     <header><nav>
@@ -123,7 +123,7 @@
     <div class="archive-coverage-wrapper">
         <div class="archive-coverage-container">
             <h2>幸福企業特刊</h2>
-            <div class="search-bar">
+            <div class="search-bar classBtn">
                 <input type="search" placeholder="輸入公司/品牌或職務關鍵字">
                 <button class="search-submit-btn btn">搜尋</button>
             </div>
@@ -490,10 +490,37 @@
                     </div>
                 </div>
             </div>
-            <pgnb-second class="pagination pgnb-style2"></pgnb-second>
+            <pgnb-second class="pagination pgnb-style2"><div class="g-pagination">
+    <!-- 上一頁在有前一頁時才會顯現 -->
+    <a href="" class="previous tag">上一頁
+        <span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.63626 18.6356L9.99988 19.9993L19.9997 9.9994L18.6361 8.63579L8.63626 18.6356Z" fill="#EF6262"/>
+                <path d="M18.6363 11.3631L19.9999 9.99951L10 -0.000352563L8.6364 1.36327L18.6363 11.3631Z" fill="#EF6262"/>
+            </svg>
+        </span>
+    </a>
+    <select name="page">
+        <option value="第一頁">第一頁</option>
+        <option value="第二頁">第二頁</option>
+        <option value="第三頁">第三頁</option>
+    </select>
+    <!-- 若沒有下一頁內容則隱藏 -->
+    <a href="" class="next tag">下一頁
+        <span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.63626 18.6356L9.99988 19.9993L19.9997 9.9994L18.6361 8.63579L8.63626 18.6356Z" fill="#EF6262"/>
+                <path d="M18.6363 11.3631L19.9999 9.99951L10 -0.000352563L8.6364 1.36327L18.6363 11.3631Z" fill="#EF6262"/>
+            </svg>
+        </span>
+    </a>
+</div></pgnb-second>
         </div>
-        <div class="ad-area">
-            
+        <div class="ad-area-wrapper">
+            <div class="ad-area-container">
+                <div class="block"><img src="assets/img/ad-area-ex.png" alt=""></div>
+                <div class="block"><img src="assets/img/ad-area-ex.png" alt=""></div>
+            </div>
         </div>
     </div>
     <footer><div class="container-footer">
@@ -541,11 +568,9 @@
             <a href="#"><img src="assets/img/footer_twitter.png"></a>
         </p>
     </div>
-    <div class="footer-subscribe">
-        <input type="text" class="subscribeTerm" placeholder="E-mail">
-        <button type="submit" class="subscribeButton">
-            <p class="btn">訂閱電子報</p>
-        </button>
+    <div class="footer-subscribe classBtn">
+        <input type="email" placeholder="E-mail">
+        <button class="search-submit-btn btn">訂閱電子報</button>
     </div>
 </div>
 

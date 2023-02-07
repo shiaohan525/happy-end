@@ -15,7 +15,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'pro'),
-        filename: 'assets/js/[name][hash].js',
+        filename: 'assets/js/[name].js',
         assetModuleFilename: 'assets/img/[name][ext][query]',//圖檔輸出在pro的哪裡
         publicPath: 'auto',
     },
@@ -66,7 +66,7 @@ module.exports = {
             jQuery: 'jquery'
         }),
         new MiniCssExtractPlugin({
-            filename: "assets/css/[name][hash].css"
+            filename: "assets/css/[name].css"
         }),
         new CleanWebpackPlugin(),        
         new HtmlWebpackPlugin({//要多一頁html 就new一個HtmlWebpackPlugin 格式照下面填空就好

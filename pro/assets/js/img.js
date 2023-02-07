@@ -16,6 +16,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/img/ad-area-ex.png":
+/*!********************************!*\
+  !*** ./src/img/ad-area-ex.png ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/ad-area-ex.png");
+
+/***/ }),
+
 /***/ "./src/img/archive-ex-img.png":
 /*!************************************!*\
   !*** ./src/img/archive-ex-img.png ***!
@@ -154,6 +168,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/job-card-icon02.png");
 
+/***/ }),
+
+/***/ "./src/img/pgnb-style2-arrow.svg":
+/*!***************************************!*\
+  !*** ./src/img/pgnb-style2-arrow.svg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/pgnb-style2-arrow.svg");
+
 /***/ })
 
 /******/ 	});
@@ -262,6 +290,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_job_card_icon02_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/job-card-icon02.png */ "./src/img/job-card-icon02.png");
 /* harmony import */ var _img_article_cover_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/article-cover.png */ "./src/img/article-cover.png");
 /* harmony import */ var _img_archive_ex_img_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/archive-ex-img.png */ "./src/img/archive-ex-img.png");
+/* harmony import */ var _img_pgnb_style2_arrow_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/pgnb-style2-arrow.svg */ "./src/img/pgnb-style2-arrow.svg");
+/* harmony import */ var _img_ad_area_ex_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/ad-area-ex.png */ "./src/img/ad-area-ex.png");
 
 
 
@@ -272,9 +302,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import pgnb2 from '../img/pgnb-style2-arrow.svg'
+
+
+
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=img3ca7ae8ea47a2cd21295.js.map
+//# sourceMappingURL=img.js.map

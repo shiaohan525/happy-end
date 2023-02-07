@@ -10985,4 +10985,4 @@ btn.on('click', function (e) {
 
 /******/ })()
 ;
-//# sourceMappingURL=global3ca7ae8ea47a2cd21295.js.map
+//# sourceMappingURL=global.js.map
