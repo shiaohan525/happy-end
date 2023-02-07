@@ -80,7 +80,7 @@ nav .nav-brand, header {
   display: inline-block;
 }
 
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination select, .archive-coverage-wrapper .archive-coverage-container .archive .archive-item .col.post-content .link .media-share .media-item a, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
+.pgnb-style2 .g-pagination select, .archive-coverage-wrapper .archive-coverage-container .archive .archive-item .col.post-content .link .media-share .media-item a, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
   box-sizing: border-box;
 }
 
@@ -88,7 +88,7 @@ nav .nav-brand, header {
   text-align: center;
 }
 
-.job-tag > p, .archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination select, .archive-coverage-wrapper .archive-coverage-container .archive .archive-item .col.post-content .link .category ul li {
+.pgnb-style2 .g-pagination select, .job-tag > p, .archive-coverage-wrapper .archive-coverage-container .archive .archive-item .col.post-content .link .category ul li {
   cursor: pointer;
 }
 
@@ -877,81 +877,6 @@ card-job {
     flex-basis: 100% !important;
   }
 }
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 {
-  margin: 2rem 0;
-}
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination {
-  display: flex;
-  flex-wrap: unset;
-  flex-direction: unset;
-  justify-content: center;
-  align-content: unset;
-  align-items: center;
-  gap: 40px;
-}
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination select {
-  width: 100%;
-  max-width: 140px;
-  height: 47px;
-  color: #505050;
-  border-radius: 8px;
-  padding: 0.5rem;
-  padding-right: 2rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url(../../assets/img/pgnb-style2-arrow-d.svg);
-  background-repeat: no-repeat;
-  background-size: 58px 20px;
-  background-position: calc(100% + 6px) calc(2em - 16px);
-  border-color: #666;
-}
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination a.tag {
-  display: flex;
-  flex-wrap: unset;
-  flex-direction: unset;
-  justify-content: unset;
-  align-content: unset;
-  align-items: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  color: #505050;
-  transition: all ease 0.4s;
-}
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination a.tag.previous {
-  flex-direction: row-reverse;
-}
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination a.tag.previous svg {
-  transform: rotateY(180deg);
-}
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination a.tag:hover {
-  color: #DD4B4B;
-}
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination a.tag:hover.next svg {
-  transform: translateX(10px);
-}
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination a.tag:hover.previous svg {
-  transform: translateX(-10px) rotateY(180deg);
-}
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination a.tag span {
-  display: flex;
-  flex-wrap: unset;
-  flex-direction: unset;
-  justify-content: unset;
-  align-content: unset;
-  align-items: unset;
-}
-.archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination a.tag svg {
-  transition: all ease 0.4s;
-}
-@media screen and (max-width: 480px) {
-  .archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination {
-    gap: 15px;
-  }
-  .archive-coverage-wrapper .archive-coverage-container .pgnb-style2 .g-pagination a.tag {
-    -moz-column-gap: 5px;
-         column-gap: 5px;
-  }
-}
 @media screen and (max-width: 480px) {
   .archive-coverage-wrapper .archive-coverage-container {
     padding: 9rem 1.5rem 4rem;
@@ -1135,4 +1060,80 @@ input:focus, select:focus {
   outline: none;
 }
 
-/*# sourceMappingURL=main0df3708e936b70e45168.css.map*/
+.pgnb-style2 {
+  margin: 2rem 0;
+}
+.pgnb-style2 .g-pagination {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: center;
+  align-content: unset;
+  align-items: center;
+  gap: 40px;
+}
+.pgnb-style2 .g-pagination select {
+  width: 100%;
+  max-width: 140px;
+  height: 47px;
+  color: #505050;
+  border-radius: 8px;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../../assets/img/pgnb-style2-arrow-d.svg);
+  background-repeat: no-repeat;
+  background-size: 58px 20px;
+  background-position: calc(100% + 6px) calc(2em - 16px);
+  border-color: #666;
+}
+.pgnb-style2 .g-pagination a.tag {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  color: #505050;
+  transition: all ease 0.4s;
+}
+.pgnb-style2 .g-pagination a.tag.previous {
+  flex-direction: row-reverse;
+}
+.pgnb-style2 .g-pagination a.tag.previous svg {
+  transform: rotateY(180deg);
+}
+.pgnb-style2 .g-pagination a.tag:hover {
+  color: #DD4B4B;
+}
+.pgnb-style2 .g-pagination a.tag:hover.next svg {
+  transform: translateX(10px);
+}
+.pgnb-style2 .g-pagination a.tag:hover.previous svg {
+  transform: translateX(-10px) rotateY(180deg);
+}
+.pgnb-style2 .g-pagination a.tag span {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: unset;
+}
+.pgnb-style2 .g-pagination a.tag svg {
+  transition: all ease 0.4s;
+}
+@media screen and (max-width: 480px) {
+  .pgnb-style2 .g-pagination {
+    gap: 15px;
+  }
+  .pgnb-style2 .g-pagination a.tag {
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+}
+
+/*# sourceMappingURL=main3ca7ae8ea47a2cd21295.css.map*/
