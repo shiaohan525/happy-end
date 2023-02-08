@@ -1,78 +1,262 @@
-.application-wrapper{
-    .first-view{
+.application-wrapper {
+    .first-view {
         @extend %bb;
         @extend %rel;
         @include flex;
-        @include bgi($re:no-repeat,$size:cover,$position:center);
+        @include bgi($re: no-repeat, $size: cover, $position: center);
         padding: 8rem 1rem;
         height: 900px;
         background-image: url(../img/application-bn.png);
 
-        &::after{
-            @include absolute($top:0,$left:0);
+        &::after {
+            @include absolute($top: 0, $left: 0);
             content: '';
             background: rgba(244, 234, 217, 0.45);
             width: 100%;
             height: 100%;
         }
 
-        .container{
+        .container {
             @extend %ma;
             @extend %tac;
             @extend %rel;
-            @include absolute($top:50%,$left:50%);
-            transform: translate(-50%,-20%);
+            @include absolute($top: 50%, $left: 50%, $z-i: 1);
+            transform: translate(-50%, -20%);
             width: 100%;
             max-width: 1420px;
-            z-index: 1;
 
-            h2,h5{
+            h2,
+            h5 {
                 text-shadow: 1px 1px 10px #FFFFFF;
                 margin-bottom: 0;
 
-                span.h3{
+                span.h3 {
                     color: $c-primary;
                     font-weight: 500;
                 }
             }
 
-            .btn{
-                
+            .btn {
+
                 width: 240px;
                 height: 60px;
                 padding: 0.5rem 1rem;
                 margin: 2rem 0;
-                
                 filter: drop-shadow(0px 3.81395px 3.81395px rgba(0, 0, 0, 0.25));
             }
         }
 
-        @include mobile{
+        @include mobile {
             height: 600px;
         }
     }
 
-    .application-container{
+    .application-container {
 
-        .btn{
+        .btn {
             width: 160px;
             height: 50px;
             padding: 0.5rem 1rem;
             margin: 2rem 0;
         }
 
-        p.h2{
-            margin-bottom: 0;
+        .form {
+            @extend %ma;
+            @extend %dn;
+            max-width: 950px;
+            padding: 8rem 2rem;
+
+            p.h2 {
+                @extend %tac;
+            }
+
+            ul {
+                display: grid;
+                gap: 20px;
+
+                li {
+                    @include flex($a-i: center);
+                    gap: 20px;
+
+                    select,
+                    input,
+                    textarea {
+                        @extend %bb;
+                        height: 47px;
+                        border: 1px solid #F0E7DE !important;
+                        color: $c-gray;
+                        font-size: $tag;
+                        border-radius: 5px;
+                        padding: 0.5rem;
+                        flex: 1;
+
+                        &::placeholder {
+                            color: #9A9A9A;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    textarea {
+                        @extend %rel;
+                        line-height: 26px;
+
+                        &::placeholder {
+                            @include absolute($right: 10px, $bottom: 10px);
+                        }
+                    }
+
+                    // title
+                    >label {
+                        @include f-flexBasis(140px);
+                        color: $c-secondary-deep;
+                        font-weight: 400;
+                    }
+
+                    // 下拉
+                    select {
+                        @extend %bb;
+                        @extend %pointer;
+                        flex: 1;
+                        padding-right: 2rem;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+
+                        background-image: url('../img/select-dropdown.svg');
+                        background-repeat: no-repeat;
+                        background-size: 65px 16px;
+                        background-position: calc(100% + 6px) calc(2em - 16px);
+                    }
+
+                    .g-condition,
+                    .g-file {
+                        @include f-flexBasis(100%);
+                        flex: 1;
+                    }
+
+                    .g-condition {
+                        @include flex($w: wrap, $j-c: space-between);
+                        gap: 10px;
+
+                        .condition {
+                            @include flex($a-i: center);
+                            gap: 10px;
+
+                            span:not(.p2) {
+                                flex: 0 0 20px;
+                            }
+
+                            &.other {
+                                span.p2 {
+                                    flex: 0 0 40px;
+                                }
+
+                                input[type=text] {
+                                    height: 35px;
+                                }
+                            }
+
+                            @include mobile{
+                                flex-basis: 100%;
+                            }
+                        }
+                    }
+
+                    // checkbox
+                    input[type=checkbox] {
+                        @extend %dn;
+
+                        &+span {
+                            @extend %dib;
+                            width: 20px;
+                            height: 20px;
+                            background: $c-white;
+                            border: 2px solid $c-secondary-deep;
+                            border-radius: 100px;
+                        }
+
+                        &:checked+span {
+                            @extend %dib;
+                            @extend %rel;
+                            width: 20px;
+                            height: 20px;
+                            background: $c-white;
+                            border-radius: 100px;
+
+                            &::before {
+                                @include absolute($top: 3.5px, $left: 3.5px);
+                                content: '';
+                                background: $c-secondary-deep;
+                                border-radius: 100px;
+                                width: 13px;
+                                height: 13px;
+                            }
+                        }
+                    }
+
+                    // upload file
+                    .g-file {
+                        @include flex($a-i: center,$w:wrap);
+                        gap: 20px;
+
+                        img {
+                            max-width: 40px;
+                        }
+
+                        // input-file
+                        .inputfile+label {
+                            @extend %pointer;
+                            @include flex($a-i: center);
+                            width: unset;
+                            height: 40px;
+                            font-weight: 400;
+                            color: $c-white;
+                            background-color: $c-primary;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 0.5rem 1rem;
+                            margin: 0;
+                        }
+                    }
+
+                    @include mobile{
+                        flex-wrap:wrap;
+
+                        >label{
+                            flex-basis: 100%;
+                        }
+
+                        select,input{
+                            flex-basis: 100%;
+                        }
+                    }
+                }
+            }
+
+            form {
+                margin: 3rem auto;
+            }
+
+            &>.row {
+                @include flex($j-c: center);
+                gap: 20px;
+
+                .cancel{
+                    background: $c-white;
+                    color: $c-primary;
+
+                    &:hover{
+                        background: $c-primary;
+                        color: $c-white;
+                    }
+                }
+            }
         }
 
-        .form{
-
-        }
-
-        .brand-category{
+        // 品牌分類
+        .brand-category {
             background: $c-secondary-white;
 
-            .section-title{
+            .section-title {
                 @extend %page-content;
                 @extend %tac;
                 max-width: 960px;
@@ -80,130 +264,133 @@
             }
         }
 
-        .info{
+        .info {
             background: $c-secondary-white;
 
-            .container{
+            .container {
                 @extend %page-content;
                 max-width: 1200px;
                 padding: 3rem;
 
-                .section-title{
-                    @include flex($a-i:center,$j-c:space-between);
+                .section-title {
+                    @include flex($a-i: center, $j-c: space-between);
                     margin-bottom: 1rem;
+
+                    .h2 {
+                        margin-bottom: 0;
+                    }
                 }
 
-                .bottom{
+                .bottom {
                     @include flex;
                     gap: 90px;
 
-                    .col-1{
-                        flex:0.3;
-                    }
-                    .col-2{
-                        flex:0.7;
+                    .col-1 {
+                        flex: 0.3;
                     }
 
-                    .row{
+                    .col-2 {
+                        flex: 0.7;
+                    }
+
+                    .row {
                         margin-bottom: 2.5rem;
 
-                        h5,p{
+                        h5,
+                        p {
                             margin-bottom: 1rem;
 
-                            &:not(p){
+                            &:not(p) {
                                 color: $c-secondary-deep;
                             }
                         }
-    
-                        p.p1{
+
+                        p.p1 {
                             color: $c-black;
                             font-weight: 500;
                             letter-spacing: 1px;
                             text-align: justify;
-    
-                            .red{
+
+                            .red {
                                 color: $c-primary;
                                 font-weight: 500;
                             }
-    
-                            .fw-300{
+
+                            .fw-300 {
                                 font-weight: 300;
                             }
-
-                            
                         }
 
-                        b{
+                        b {
                             font-weight: 500;
                         }
 
-                        ol{
+                        ol {
                             list-style: auto;
                             padding-left: 2rem;
                             color: $c-black;
-                            
-                            li{
+
+                            li {
                                 letter-spacing: 1px;
                                 margin-bottom: 1rem;
                                 text-align: justify;
 
-                                &::marker{
+                                &::marker {
                                     padding-left: 1rem;
                                 }
                             }
                         }
                     }
 
-                    @include pad{
-                        flex-wrap:wrap;
+                    @include pad {
+                        flex-wrap: wrap;
                         gap: 30px;
 
-                        .col{
-                            flex:unset;
-                            flex-basis: 100%
+                        .col {
+                            @include f-flexBasis(100%);
+                            flex: unset;
                         }
                     }
                 }
             }
         }
 
-        .brand-list{
-            .container{
+        .brand-list {
+            .container {
                 @extend %tac;
                 @extend %page-content;
                 max-width: 1420px;
                 padding: 8rem 2rem;
 
-                .section-title{
+                .section-title {
                     padding-bottom: 3rem;
                     border-bottom: 1px solid #DDD0C5;
                 }
 
-                .bottom{
+                .bottom {
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                     gap: 30px;
                     padding-top: 3rem;
 
-                    .brand-cover{
-
+                    .brand-cover {
                         aspect-ratio: 4 / 3;
 
-                        img{
+                        img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
                         }
                     }
 
-                    .brand-info{
+                    .brand-info {
                         @extend %rel;
                         text-align: left;
                         background: $c-secondary-white;
                         padding: 2.5rem 1.5rem;
 
-                        .brand-logo{
-                            @include absolute($top:-40px,$left:24px);
+                        .brand-logo {
+                            @include absolute($top: -40px, $left: 24px);
                             width: 100%;
                             max-width: 50px;
                             padding: 0.5rem;
@@ -211,7 +398,7 @@
                             border-radius: 5px;
                         }
 
-                        p.b-category{
+                        p.b-category {
                             color: $c-primary-deep;
                             margin-bottom: 1rem;
                         }

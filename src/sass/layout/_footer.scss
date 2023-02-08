@@ -95,6 +95,7 @@ footer{
         input{
             @include f-flexBasis(50%);
         }
+<<<<<<< HEAD
 
         button{
             @include f-flexBasis(30%);
@@ -110,6 +111,11 @@ footer{
             @include f-flexBasis(30%);
         }
 
+=======
+        button{
+            @include f-flexBasis(30%);
+        }
+>>>>>>> 81f62de10cebee4df9d01230842cb97b2ba08fa2
     }
 
 }
