@@ -1,0 +1,139 @@
+// card-job{
+//     @extend %page-content;
+//     padding: 0px;
+//     @include basic_grid(4,1fr,20px,20px);
+//     @include pad{
+//         @include basic_grid(2,1fr,20px,20px);
+//     }
+//     // @include mini-pad{
+//     //     @include basic_grid(1,1fr,20px,20px);
+//     // }
+// }
+
+.companyTag-section{
+    @extend %page-content;
+    padding: 0px;
+    @include basic_grid(3,1fr,40px,40px);
+    @include pad{
+        @include basic_grid(2,1fr,20px,20px);
+    }
+    @include mini-pad{
+        display: none;
+    }
+
+    .card-jobTag{
+        // min-width: 180px;
+        // max-width: 300px;
+    
+        @include flex($d:column);
+        @extend %pointer;
+    
+        >img{
+            // @include mentor-img(300px);
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-section{
+            @include flex($d:column,$a-i:center);
+            gap:20px;
+            background: $c-white;
+            padding: 20px;
+            .card-content{
+                @include flex($d:column);
+                gap:12px;
+                background: $c-white;
+                padding: 0px;
+                .job-title{
+                    @include flex($a-i:center);
+                    gap:8px;
+                    color: $c-primary;
+                    >p{
+                        color: $c-primary;
+                    }
+                }
+                .job-content{
+                    >ul{
+                        @include flex($d:column);
+                        gap:8px;
+                        li{
+                            @include flex($a-i:center);
+                            gap: 8px;
+                        }
+                    }
+                    p{
+                        color: $c-black;
+                        text-align: left;
+                    }
+                    img{
+                        @include mentor-img(18px);
+                    }
+                    .p2{
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        display: -webkit-box;
+                    }
+                }
+
+                .job-tag{
+                    >.tag{
+                        background: $c-secondary-white;
+                        border: none;
+                        &:hover{
+                            background: $c-secondary;
+                            border: none;
+                            color: $c-secondary-white;
+                        }
+                    }
+                }
+        
+            }
+        }
+    
+
+    
+    }
+}
+
+
+
+.minipad-swiper{
+    display: none;
+    @include mini-pad{
+        display: block;
+        max-width: 500px;   
+    }
+
+    @include mobile{
+        display: block;
+        max-width: 300px;   
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        padding: 0px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card-job{
+        @include mobile{
+            width: 200px;
+        }
+    }
+}

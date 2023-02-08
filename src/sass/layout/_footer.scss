@@ -15,7 +15,6 @@ footer{
 .container-footer {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1.2rem;
     position: relative;
     @include flex($d:column,$j-c:space-between);
     gap:48px;
@@ -60,9 +59,10 @@ footer{
     .footer-share{
         @include flex;
         gap:8px;
-        img{
-            @include mentor-img(50px);
-            // max-height: 50px;
+        // @include mentor-img(100px);
+        svg{
+            // width: 50px;
+            // height: 50px;
             fill:$c-secondary;
         }
         &:hover{
@@ -95,24 +95,21 @@ footer{
         input{
             @include f-flexBasis(50%);
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         button{
             @include f-flexBasis(30%);
         }
-=======
+
         // button{
         //     padding: 8px 36px;
         //     background-color: $c-primary;
         //     border-radius: 4px;
         // }
 
->>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
-=======
         button{
             @include f-flexBasis(30%);
         }
->>>>>>> 44b5c4ec3283323ca13d4e04ca3fbe6fd2d8da51
+
     }
 
 }

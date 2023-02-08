@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	// The require scope
@@ -28,4 +26,3 @@ __webpack_require__.r(__webpack_exports__);
 /******/ })()
 ;
 //# sourceMappingURL=main.js.map
->>>>>>> yian

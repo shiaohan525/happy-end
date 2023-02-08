@@ -2,13 +2,14 @@
 
 .category-section{
     @include flex($d:row-reverse,$a-i:flex-start);
-    gap:120px;
+    gap:80px;
     @include pad{
         @include flex($d:column,$a-i:center);
         gap:60px;
     }
-    .title{
+    >.title{
         @include flex($d:column-reverse,$w:nowrap,$a-i:flex-start);
+        width: auto;
         text-align: left;
         border: unset;
         padding: 0px;
@@ -26,6 +27,49 @@
         >p{
             line-height: 150%;
             letter-spacing: 0.2rem;
+        }
+    }
+
+    .category-content{
+        max-width: 800px;
+        >ul{
+            @include basic_grid(3,1fr,60px,80px);
+
+            @include mini-pad{
+                @include basic_grid(2,1fr,40px,80px);
+            }
+
+            .category-item{
+
+                &:nth-child(3n+2){
+                    transform: translateY(100px);
+                    @include mini-pad{
+                        transform: none;
+                    }
+                }
+
+                @include mini-pad{
+                    &:nth-child(even){
+                    transform: translateY(80px);
+                    }
+                    &:last-child{
+                        transform: translateY(0px);
+                    }
+                }
+
+                &:empty{
+                    display: block;
+                    width: 125px;
+                    height: 100%;
+
+                    @include mini-pad{
+                        width: auto;
+                        height: auto;
+                        display: none;
+                    }
+
+                }
+            }
         }
     }
 

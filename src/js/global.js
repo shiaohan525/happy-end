@@ -33,3 +33,9 @@ btn.on('click', function(e) {
 e.preventDefault();
 $('html, body').animate({scrollTop:0}, '300');
 });
+
+
+// We create a closed shadow root, that is not accessible
+let element = document.createElement("div");
+element.attachShadow({ mode: "closed" });
+element.shadowRoot // null as the shadow root is closed
