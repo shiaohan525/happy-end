@@ -4,7 +4,7 @@
 
 .cardJob{
     @extend %page-content;
-    @include flex($d:column);
+    @include flex($d:column,$a-i:center);
     margin: auto;
     gap:48px;
     padding: 88px 120px;
@@ -18,7 +18,7 @@
 
 .article{
     @extend %page-content;
-    @include flex($d:column);
+    @include flex($d:column,$a-i:center);
     margin: auto;
     gap:48px;
     padding: 88px 120px;
@@ -32,6 +32,7 @@
 
     .article-item{
         @include flex($d:column);
+        @extend %pointer;
         flex: 1;
         gap:20px;
     }
@@ -64,6 +65,9 @@
             >.article-content{
                 @include flex($d:column);
                 gap:4px;
+                .p2{
+                    color: $c-secondary-deep;
+                }
             }
         }
 
