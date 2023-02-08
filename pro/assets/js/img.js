@@ -58,6 +58,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/img/brand-ex.png":
+/*!******************************!*\
+  !*** ./src/img/brand-ex.png ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/brand-ex.png");
+
+/***/ }),
+
 /***/ "./src/img/category-img.png":
 /*!**********************************!*\
   !*** ./src/img/category-img.png ***!
@@ -142,17 +156,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/img/job-card-cov.png":
-/*!**********************************!*\
-  !*** ./src/img/job-card-cov.png ***!
-  \**********************************/
+/***/ "./src/img/job-card-cover.png":
+/*!************************************!*\
+  !*** ./src/img/job-card-cover.png ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/job-card-cov.png");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/job-card-cover.png");
 
 /***/ }),
 
@@ -313,21 +327,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_footer_line_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/footer_line.png */ "./src/img/footer_line.png");
 /* harmony import */ var _img_footer_twitter_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/footer_twitter.png */ "./src/img/footer_twitter.png");
 /* harmony import */ var _img_goToTop_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/goToTop.svg */ "./src/img/goToTop.svg");
-/* harmony import */ var _img_job_card_cov_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/job-card-cov.png */ "./src/img/job-card-cov.png");
+/* harmony import */ var _img_job_card_cover_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/job-card-cover.png */ "./src/img/job-card-cover.png");
 /* harmony import */ var _img_job_card_icon01_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/job-card-icon01.png */ "./src/img/job-card-icon01.png");
 /* harmony import */ var _img_job_card_icon02_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/job-card-icon02.png */ "./src/img/job-card-icon02.png");
 /* harmony import */ var _img_article_cover_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/article-cover.png */ "./src/img/article-cover.png");
 /* harmony import */ var _img_archive_ex_img_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/archive-ex-img.png */ "./src/img/archive-ex-img.png");
 /* harmony import */ var _img_pgnb_style2_arrow_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/pgnb-style2-arrow.svg */ "./src/img/pgnb-style2-arrow.svg");
-<<<<<<< HEAD:pro/assets/js/img.js
 /* harmony import */ var _img_ad_area_ex_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/ad-area-ex.png */ "./src/img/ad-area-ex.png");
 /* harmony import */ var _img_swiper_img_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../img/swiper-img.png */ "./src/img/swiper-img.png");
 /* harmony import */ var _img_category_img_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../img/category-img.png */ "./src/img/category-img.png");
+/* harmony import */ var _img_brand_ex_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../img/brand-ex.png */ "./src/img/brand-ex.png");
 
-=======
-/* harmony import */ var _img_swiper_img_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/swiper-img.png */ "./src/img/swiper-img.png");
-/* harmony import */ var _img_category_img_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../img/category-img.png */ "./src/img/category-img.png");
->>>>>>> 9be585abfe5fb9c5d8ee6d9821c825a9610b101d:pro/assets/js/img755cadb636d0f56cff43.js
+
 
 
 
@@ -346,18 +357,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-<<<<<<< HEAD
-=======
-<<<<<<<< HEAD:pro/assets/js/img.js
 //# sourceMappingURL=img.js.map
-========
->>>>>>> e3282d9b06722d95bf034c5c849da1aba33b2889
-<<<<<<< HEAD:pro/assets/js/img.js
-//# sourceMappingURL=img.js.map
-=======
-//# sourceMappingURL=img755cadb636d0f56cff43.js.map
->>>>>>> 9be585abfe5fb9c5d8ee6d9821c825a9610b101d:pro/assets/js/img755cadb636d0f56cff43.js
-<<<<<<< HEAD
-=======
->>>>>>>> e3282d9b06722d95bf034c5c849da1aba33b2889:pro/assets/js/img755cadb636d0f56cff43.js
->>>>>>> e3282d9b06722d95bf034c5c849da1aba33b2889

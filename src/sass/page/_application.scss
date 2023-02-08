@@ -37,12 +37,12 @@
             }
 
             .btn{
-                @extend %bb;
+                
                 width: 240px;
                 height: 60px;
                 padding: 0.5rem 1rem;
                 margin: 2rem 0;
-                border-radius: 8px;
+                
                 filter: drop-shadow(0px 3.81395px 3.81395px rgba(0, 0, 0, 0.25));
             }
         }
@@ -53,8 +53,171 @@
     }
 
     .application-container{
+
+        .btn{
+            width: 160px;
+            height: 50px;
+            padding: 0.5rem 1rem;
+            margin: 2rem 0;
+        }
+
+        p.h2{
+            margin-bottom: 0;
+        }
+
         .form{
-            
+
+        }
+
+        .brand-category{
+            background: $c-secondary-white;
+
+            .section-title{
+                @extend %page-content;
+                @extend %tac;
+                max-width: 960px;
+                padding: 8rem 2rem;
+            }
+        }
+
+        .info{
+            background: $c-secondary-white;
+
+            .container{
+                @extend %page-content;
+                max-width: 1200px;
+                padding: 3rem;
+
+                .section-title{
+                    @include flex($a-i:center,$j-c:space-between);
+                    margin-bottom: 1rem;
+                }
+
+                .bottom{
+                    @include flex;
+                    gap: 90px;
+
+                    .col-1{
+                        flex:0.3;
+                    }
+                    .col-2{
+                        flex:0.7;
+                    }
+
+                    .row{
+                        margin-bottom: 2.5rem;
+
+                        h5,p{
+                            margin-bottom: 1rem;
+
+                            &:not(p){
+                                color: $c-secondary-deep;
+                            }
+                        }
+    
+                        p.p1{
+                            color: $c-black;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            text-align: justify;
+    
+                            .red{
+                                color: $c-primary;
+                                font-weight: 500;
+                            }
+    
+                            .fw-300{
+                                font-weight: 300;
+                            }
+
+                            
+                        }
+
+                        b{
+                            font-weight: 500;
+                        }
+
+                        ol{
+                            list-style: auto;
+                            padding-left: 2rem;
+                            color: $c-black;
+                            
+                            li{
+                                letter-spacing: 1px;
+                                margin-bottom: 1rem;
+                                text-align: justify;
+
+                                &::marker{
+                                    padding-left: 1rem;
+                                }
+                            }
+                        }
+                    }
+
+                    @include pad{
+                        flex-wrap:wrap;
+                        gap: 30px;
+
+                        .col{
+                            flex:unset;
+                            flex-basis: 100%
+                        }
+                    }
+                }
+            }
+        }
+
+        .brand-list{
+            .container{
+                @extend %tac;
+                @extend %page-content;
+                max-width: 1420px;
+                padding: 8rem 2rem;
+
+                .section-title{
+                    padding-bottom: 3rem;
+                    border-bottom: 1px solid #DDD0C5;
+                }
+
+                .bottom{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 30px;
+                    padding-top: 3rem;
+
+                    .brand-cover{
+
+                        aspect-ratio: 4 / 3;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .brand-info{
+                        @extend %rel;
+                        text-align: left;
+                        background: $c-secondary-white;
+                        padding: 2.5rem 1.5rem;
+
+                        .brand-logo{
+                            @include absolute($top:-40px,$left:24px);
+                            width: 100%;
+                            max-width: 50px;
+                            padding: 0.5rem;
+                            background: $c-white;
+                            border-radius: 5px;
+                        }
+
+                        p.b-category{
+                            color: $c-primary-deep;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
