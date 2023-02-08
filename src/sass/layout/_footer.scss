@@ -95,18 +95,9 @@ footer{
         input{
             @include f-flexBasis(50%);
         }
-<<<<<<< HEAD
         button{
             @include f-flexBasis(30%);
         }
-=======
-        // button{
-        //     padding: 8px 36px;
-        //     background-color: $c-primary;
-        //     border-radius: 4px;
-        // }
-
->>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
     }
 
 }

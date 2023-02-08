@@ -120,7 +120,7 @@
             <div class="container">
                 <h2>幸福企業票選募集中</h2>
                 <h5>即日起至 <span class="h3">3月31日</span> 止</h5>
-                <button class="btn">品牌報名</button>
+                <button class="btn" id="btn-apply">品牌報名</button>
             </div>
         </div>
         <div class="application-container">
@@ -149,57 +149,76 @@
                             <input type="text">
                         </li>
                         <li>
-                            <label class="p1">品牌福利制度簡介</label>
+                            <label class="p1">品牌福利<br>制度簡介</label>
                             <textarea placeholder="限制字數200字以內"></textarea>
                         </li>
                         <li>
-                            <label class="p1 require">女性職場優質福利(複選)</label>
-                            <label class="condition">
-                                <input type="checkbox">
-                                <span class="tag">彈性工時</span>
-                            </label>
-                            <label class="condition">
-                                <input type="checkbox">
-                                <span class="tag">有薪家庭照護假</span>
-                            </label>
-                            <label class="condition">
-                                <input type="checkbox">
-                                <span class="tag">生育補助</span>
-                            </label>
-                            <label class="condition">
-                                <input type="checkbox">
-                                <span class="tag">生育補助</span>
-                            </label>
-                            <label class="condition">
-                                <input type="checkbox">
-                                <span class="tag">延長產假育嬰假</span>
-                            </label>
-                            <label class="condition">
-                                <input type="checkbox">
-                                <span class="tag">設置孕婦停車位</span>
-                            </label>
-                            <label class="condition">
-                                <input type="checkbox">
-                                <span class="tag">提供免費婦科健檢</span>
-                            </label>
-                            <label class="condition">
-                                <input type="checkbox">
-                                <span class="tag">兩性平等之升遷機會</span>
-                            </label>
-                            <label class="condition">
-                                <input type="checkbox">
-                                <span class="tag">無</span>
-                            </label>
-                            <label class="condition other">
-                                <input type="checkbox">
-                                <span class="tag">其他</span>
-                                <input type="text">
-                            </label>
+                            <label class="p1 require">女性職場<br>優質福利(複選)</label>
+                            <div class="g-condition">
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">彈性工時</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">有薪家庭照護假</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">生育補助</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">延長產假育嬰假</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">設置孕婦停車位</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">提供免費婦科健檢</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">兩性平等之升遷機會</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">無</span>
+                                </label>
+                                <label class="condition other">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">其他</span>
+                                    <input type="text">
+                                </label>
+                            </div>
                         </li>
                         <li>
                             <label class="p1 require">Logo圖</label>
-                            <input type="file">
-                            <p class="tag">尺寸：500 x 500 px，檔案1MB以下，提供JPG、PNG圖檔</p>
+                            <div class="g-file">
+                                <img src="assets/img/input-file.svg" alt="">
+                                <input id="file-upload" class="inputfile inputfile1" name='upload_cont_img'
+                                    type="file" style="display:none;">
+                                <label for="file-upload" class="custom-file-upload custom-file-upload1 btn">
+                                    上傳檔案
+                                </label>
+                                <p class="tag">尺寸：500 x 500 px，檔案1MB以下，提供JPG、PNG圖檔</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="g">
+                                
+                            </div>
                         </li>
                         <li>
                             <label class="p1 require">聯絡人</label>
@@ -396,9 +415,9 @@
             <img src="assets/img/footer_logo.png">
         </div>
         <p class="footer-share">
-            <a href="#"><img src="assets/img/footer_fb.png"></a>
-            <a href="#"><img src="assets/img/footer_line.png"></a>
-            <a href="#"><img src="assets/img/footer_twitter.png"></a>
+            <a href="#"><img src="assets/img/facebook-icon.svg"></a>
+            <a href="#"><img src="assets/img/line-icon.svg"></a>
+            <a href="#"><img src="assets/img/twitter-icon.svg"></a>
         </p>
     </div>
     <div class="footer-subscribe classBtn">
@@ -408,7 +427,7 @@
 </div>
 
 <div class="footer-copy">
-    <p class="tag">© 1111人力銀行2023幸福企業 All Rights Reserved.</p>
+    <p>© 1111人力銀行2023幸福企業 All Rights Reserved.</p>
     <a href="" class="tag">隱私權宣告</a>
     <a href="" class="tag">使用條款</a>
 </div>

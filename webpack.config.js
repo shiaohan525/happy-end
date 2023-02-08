@@ -108,15 +108,21 @@ module.exports = {
             filename: 'happiness-job.html',
             chunks: ['main','global','img'],
         }),
+        new HtmlWebpackPlugin({//4-2 文章內頁
+            template: path.resolve(__dirname, './src/single-post.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'single-post.html',
+            chunks: ['main','global','img'],
+        }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/header.html'),
             location: 'header',//要放入的html tag位置
-            template_filename: ['index.html','archive-coverage.html','application.html']//需引用的頁面記得新增在這裡
+            template_filename: ['index.html','archive-coverage.html','.archive-issue.html','application.html','single-post.html']//需引用的頁面記得新增在這裡
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/footer.html'),
             location: 'footer',
-            template_filename: ['index.html','archive-coverage.html','application.html']
+            template_filename: ['index.html','archive-coverage.html','.archive-issue.html','application.html','single-post.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/swiper.html'),

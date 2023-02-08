@@ -69,7 +69,7 @@ table {
   border-spacing: 0;
 }
 
-.application-wrapper .first-view .container {
+.application-wrapper .application-container .form, .application-wrapper .first-view .container {
   margin: auto;
 }
 
@@ -84,31 +84,29 @@ table {
   display: block;
 }
 
-<<<<<<< HEAD
-.job-tag > p, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, nav .nav-brand img {
-=======
-.job-tag > p, .btn, .archive-coverage-wrapper .archive-coverage-container .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-coverage-wrapper .archive-coverage-container .archive .archive-item .col.post-content .link .category ul li a, nav .nav-brand img {
->>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
+.job-tag > p, .application-wrapper .application-container .form ul li input[type=checkbox]:checked + span, .application-wrapper .application-container .form ul li input[type=checkbox] + span, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, nav .nav-brand img {
   display: inline-block;
 }
 
-.classBtn input, .pgnb-style2 .g-pagination select, .btn, .application-wrapper .first-view, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
+.application-wrapper .application-container .form ul li input[type=checkbox], .application-wrapper .application-container .form {
+  display: none;
+}
+
+.classBtn input, .pgnb-style2 .g-pagination select, .btn, .application-wrapper .application-container .form ul li select,
+.application-wrapper .application-container .form ul li input,
+.application-wrapper .application-container .form ul li textarea, .application-wrapper .first-view, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
   box-sizing: border-box;
 }
 
-.application-wrapper .application-container .brand-list .container .bottom .brand-info, .application-wrapper .first-view .container, .application-wrapper .first-view {
+.application-wrapper .application-container .brand-list .container .bottom .brand-info, .application-wrapper .application-container .form ul li input[type=checkbox]:checked + span, .application-wrapper .application-container .form ul li textarea, .application-wrapper .first-view .container, .application-wrapper .first-view {
   position: relative;
 }
 
-.application-wrapper .application-container .brand-list .container, .application-wrapper .application-container .brand-category .section-title, .application-wrapper .first-view .container, .archive-tem .archive-tem-c {
+.application-wrapper .application-container .brand-list .container, .application-wrapper .application-container .brand-category .section-title, .application-wrapper .application-container .form p.h2, .application-wrapper .first-view .container, .archive-tem .archive-tem-c {
   text-align: center;
 }
 
-<<<<<<< HEAD
-.pgnb-style2 .g-pagination select, .job-tag > p, .btn, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li {
-=======
-.pgnb-style2 .g-pagination select, .job-tag > p, .btn, .archive-coverage-wrapper .archive-coverage-container .archive .archive-item .col.post-content .link .category ul li, .article .article-item, .card-job {
->>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
+.pgnb-style2 .g-pagination select, .job-tag > p, .btn, .application-wrapper .application-container .form ul li .g-file .inputfile + label, .application-wrapper .application-container .form ul li select, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .article .article-item, .card-job {
   cursor: pointer;
 }
 
@@ -236,12 +234,9 @@ footer {
 .container-footer .footer-subscribe input {
   flex-basis: 50%;
 }
-<<<<<<< HEAD
 .container-footer .footer-subscribe button {
   flex-basis: 30%;
 }
-=======
->>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
 
 .footer-copy {
   background-color: #F0E7DE;
@@ -1267,17 +1262,18 @@ nav .main-menu li:hover > ul {
   right: unset;
   bottom: unset;
   left: 50%;
-  z-index: 0;
+  z-index: 1;
   transform: translate(-50%, -20%);
   width: 100%;
   max-width: 1420px;
-  z-index: 1;
 }
-.application-wrapper .first-view .container h2, .application-wrapper .first-view .container h5 {
+.application-wrapper .first-view .container h2,
+.application-wrapper .first-view .container h5 {
   text-shadow: 1px 1px 10px #FFFFFF;
   margin-bottom: 0;
 }
-.application-wrapper .first-view .container h2 span.h3, .application-wrapper .first-view .container h5 span.h3 {
+.application-wrapper .first-view .container h2 span.h3,
+.application-wrapper .first-view .container h5 span.h3 {
   color: #EF6261;
   font-weight: 500;
 }
@@ -1299,8 +1295,212 @@ nav .main-menu li:hover > ul {
   padding: 0.5rem 1rem;
   margin: 2rem 0;
 }
-.application-wrapper .application-container p.h2 {
-  margin-bottom: 0;
+.application-wrapper .application-container .form {
+  max-width: 950px;
+  padding: 8rem 2rem;
+}
+.application-wrapper .application-container .form ul {
+  display: grid;
+  gap: 20px;
+}
+.application-wrapper .application-container .form ul li {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: center;
+  gap: 20px;
+}
+.application-wrapper .application-container .form ul li select,
+.application-wrapper .application-container .form ul li input,
+.application-wrapper .application-container .form ul li textarea {
+  height: 47px;
+  border: 1px solid #F0E7DE !important;
+  color: #505050;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  flex: 1;
+}
+.application-wrapper .application-container .form ul li select::-moz-placeholder, .application-wrapper .application-container .form ul li input::-moz-placeholder, .application-wrapper .application-container .form ul li textarea::-moz-placeholder {
+  color: #9A9A9A;
+  letter-spacing: 1px;
+}
+.application-wrapper .application-container .form ul li select:-ms-input-placeholder, .application-wrapper .application-container .form ul li input:-ms-input-placeholder, .application-wrapper .application-container .form ul li textarea:-ms-input-placeholder {
+  color: #9A9A9A;
+  letter-spacing: 1px;
+}
+.application-wrapper .application-container .form ul li select::placeholder,
+.application-wrapper .application-container .form ul li input::placeholder,
+.application-wrapper .application-container .form ul li textarea::placeholder {
+  color: #9A9A9A;
+  letter-spacing: 1px;
+}
+.application-wrapper .application-container .form ul li textarea {
+  line-height: 26px;
+}
+.application-wrapper .application-container .form ul li textarea::-moz-placeholder {
+  position: absolute;
+  top: unset;
+  right: 10px;
+  bottom: 10px;
+  left: unset;
+  z-index: 0;
+}
+.application-wrapper .application-container .form ul li textarea:-ms-input-placeholder {
+  position: absolute;
+  top: unset;
+  right: 10px;
+  bottom: 10px;
+  left: unset;
+  z-index: 0;
+}
+.application-wrapper .application-container .form ul li textarea::placeholder {
+  position: absolute;
+  top: unset;
+  right: 10px;
+  bottom: 10px;
+  left: unset;
+  z-index: 0;
+}
+.application-wrapper .application-container .form ul li > label {
+  flex-basis: 140px;
+  color: #C15E0B;
+  font-weight: 400;
+}
+.application-wrapper .application-container .form ul li select {
+  flex: 1;
+  padding-right: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../../assets/img/select-dropdown.svg);
+  background-repeat: no-repeat;
+  background-size: 65px 16px;
+  background-position: calc(100% + 6px) calc(2em - 16px);
+}
+.application-wrapper .application-container .form ul li .g-condition,
+.application-wrapper .application-container .form ul li .g-file {
+  flex-basis: 100%;
+  flex: 1;
+}
+.application-wrapper .application-container .form ul li .g-condition {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: unset;
+  justify-content: space-between;
+  align-content: unset;
+  align-items: unset;
+  gap: 10px;
+}
+.application-wrapper .application-container .form ul li .g-condition .condition {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: center;
+  gap: 10px;
+}
+.application-wrapper .application-container .form ul li .g-condition .condition span:not(.p2) {
+  flex: 0 0 20px;
+}
+.application-wrapper .application-container .form ul li .g-condition .condition.other span.p2 {
+  flex: 0 0 40px;
+}
+.application-wrapper .application-container .form ul li .g-condition .condition.other input[type=text] {
+  height: 35px;
+}
+@media screen and (max-width: 480px) {
+  .application-wrapper .application-container .form ul li .g-condition .condition {
+    flex-basis: 100%;
+  }
+}
+.application-wrapper .application-container .form ul li input[type=checkbox] + span {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 2px solid #C15E0B;
+  border-radius: 100px;
+}
+.application-wrapper .application-container .form ul li input[type=checkbox]:checked + span {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 100px;
+}
+.application-wrapper .application-container .form ul li input[type=checkbox]:checked + span::before {
+  position: absolute;
+  top: 3.5px;
+  right: unset;
+  bottom: unset;
+  left: 3.5px;
+  z-index: 0;
+  content: "";
+  background: #C15E0B;
+  border-radius: 100px;
+  width: 13px;
+  height: 13px;
+}
+.application-wrapper .application-container .form ul li .g-file {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: center;
+  gap: 20px;
+}
+.application-wrapper .application-container .form ul li .g-file img {
+  max-width: 40px;
+}
+.application-wrapper .application-container .form ul li .g-file .inputfile + label {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: center;
+  width: unset;
+  height: 40px;
+  font-weight: 400;
+  color: white;
+  background-color: #EF6261;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+@media screen and (max-width: 480px) {
+  .application-wrapper .application-container .form ul li {
+    flex-wrap: wrap;
+  }
+  .application-wrapper .application-container .form ul li > label {
+    flex-basis: 100%;
+  }
+  .application-wrapper .application-container .form ul li select, .application-wrapper .application-container .form ul li input {
+    flex-basis: 100%;
+  }
+}
+.application-wrapper .application-container .form form {
+  margin: 3rem auto;
+}
+.application-wrapper .application-container .form > .row {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: center;
+  align-content: unset;
+  align-items: unset;
+  gap: 20px;
+}
+.application-wrapper .application-container .form > .row .cancel {
+  background: white;
+  color: #EF6261;
+}
+.application-wrapper .application-container .form > .row .cancel:hover {
+  background: #EF6261;
+  color: white;
 }
 .application-wrapper .application-container .brand-category {
   background: #F7F1E7;
@@ -1325,6 +1525,9 @@ nav .main-menu li:hover > ul {
   align-items: center;
   margin-bottom: 1rem;
 }
+.application-wrapper .application-container .info .container .section-title .h2 {
+  margin-bottom: 0;
+}
 .application-wrapper .application-container .info .container .bottom {
   display: flex;
   flex-wrap: unset;
@@ -1343,10 +1546,12 @@ nav .main-menu li:hover > ul {
 .application-wrapper .application-container .info .container .bottom .row {
   margin-bottom: 2.5rem;
 }
-.application-wrapper .application-container .info .container .bottom .row h5, .application-wrapper .application-container .info .container .bottom .row p {
+.application-wrapper .application-container .info .container .bottom .row h5,
+.application-wrapper .application-container .info .container .bottom .row p {
   margin-bottom: 1rem;
 }
-.application-wrapper .application-container .info .container .bottom .row h5:not(p), .application-wrapper .application-container .info .container .bottom .row p:not(p) {
+.application-wrapper .application-container .info .container .bottom .row h5:not(p),
+.application-wrapper .application-container .info .container .bottom .row p:not(p) {
   color: #C15E0B;
 }
 .application-wrapper .application-container .info .container .bottom .row p.p1 {
@@ -1384,8 +1589,8 @@ nav .main-menu li:hover > ul {
     gap: 30px;
   }
   .application-wrapper .application-container .info .container .bottom .col {
-    flex: unset;
     flex-basis: 100%;
+    flex: unset;
   }
 }
 .application-wrapper .application-container .brand-list .container {
@@ -1499,22 +1704,13 @@ h5, .h5 {
 p, .p1 {
   font-size: 19px;
   font-weight: 300;
-<<<<<<< HEAD
   line-height: 1.7;
   letter-spacing: 0.01em;
-=======
-  line-height: 140%;
-  letter-spacing: 0em;
->>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
   color: #505050;
 }
 @media screen and (max-width: 768px) {
   p, .p1 {
     font-size: 18px;
-<<<<<<< HEAD
-=======
-    line-height: 130%;
->>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
   }
 }
 
@@ -1544,10 +1740,6 @@ p, .p1 {
 }
 
 .btn {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 8px 24px;
   font-size: 17px;
   font-weight: 700;
   line-height: 120%;
@@ -1555,12 +1747,8 @@ p, .p1 {
   border-radius: 8px;
   color: white;
   background: #EF6261;
-<<<<<<< HEAD
   transition: all ease 0.4s;
-=======
   border: 1px solid #EF6261;
-  border-radius: 4px;
->>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
 }
 @media screen and (max-width: 768px) {
   .btn {
@@ -1571,7 +1759,6 @@ p, .p1 {
 .btn:hover {
   background: white;
   color: #EF6261;
-  border: 1px solid #EF6261;
   transition: all 0.3s ease;
 }
 
@@ -1620,10 +1807,10 @@ p, .p1 {
   }
 }
 
-input, select {
+input, select, textarea {
   border: none;
 }
-input:focus, select:focus {
+input:focus, select:focus, textarea:focus {
   outline: none;
 }
 
