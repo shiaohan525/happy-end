@@ -58,8 +58,20 @@ footer{
     }
 
     .footer-share{
+        @include flex;
+        gap:8px;
         img{
             @include mentor-img(50px);
+            // max-height: 50px;
+            fill:$c-secondary;
+        }
+        &:hover{
+            fill:$c-secondary-deep;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
         }
     }
 
@@ -98,6 +110,9 @@ footer{
     @include mini-pad{
         @include flex($d:column,$j-c:center,$a-i:center);
         gap:8px;
+    }
+    p{
+        font-size: 12px;
     }
     .tag{
         color: $c-black;
