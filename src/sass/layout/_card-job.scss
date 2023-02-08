@@ -27,6 +27,7 @@
     // max-width: 300px;
 
     @include flex($d:column);
+    @extend %pointer;
 
     >img{
         // @include mentor-img(300px);

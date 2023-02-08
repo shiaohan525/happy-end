@@ -18,22 +18,25 @@
         gap:40px;
     }
 
-    >.title{
-        @include flex($d:column-reverse,$w:nowrap,$a-i:flex-start);
+    .swiper-title{
+        @include flex($d:column,$w:nowrap,$a-i:flex-start);
+        gap:12px;
+        height: 100%;
         text-align: left;
         border: unset;
         padding: 60px 80px 0px 0px;
-        -webkit-writing-mode: vertical-lr;
-        writing-mode: vertical-lr;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
 
         p,h2{
-            letter-spacing: 0.4rem;
+            letter-spacing: 0.3rem;
             @include pad{
                 letter-spacing: 0.2rem;
             }
         }
 
         p{
+            line-height: 140%;
             @include pad{
                 line-height: 1.5rem;
             }

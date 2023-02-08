@@ -84,7 +84,11 @@ table {
   display: block;
 }
 
+<<<<<<< HEAD
 .job-tag > p, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, nav .nav-brand img {
+=======
+.job-tag > p, .btn, .archive-coverage-wrapper .archive-coverage-container .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-coverage-wrapper .archive-coverage-container .archive .archive-item .col.post-content .link .category ul li a, nav .nav-brand img {
+>>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
   display: inline-block;
 }
 
@@ -100,7 +104,11 @@ table {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .pgnb-style2 .g-pagination select, .job-tag > p, .btn, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li {
+=======
+.pgnb-style2 .g-pagination select, .job-tag > p, .btn, .archive-coverage-wrapper .archive-coverage-container .archive .archive-item .col.post-content .link .category ul li, .article .article-item, .card-job {
+>>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
   cursor: pointer;
 }
 
@@ -139,7 +147,7 @@ footer {
 }
 .container-footer h3 {
   color: #EF6261;
-  font-size: 18px;
+  font-size: 17px;
 }
 .container-footer a {
   color: #505050;
@@ -172,11 +180,25 @@ footer {
      object-fit: cover;
   max-width: 250px;
 }
+.container-footer .footer-share {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: unset;
+  gap: 8px;
+}
 .container-footer .footer-share img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 50px;
+  fill: #CE8B52;
+}
+.container-footer .footer-share:hover {
+  fill: #C15E0B;
+  transition: all 0.3s ease;
 }
 .container-footer .footer-menu {
   display: flex;
@@ -214,9 +236,12 @@ footer {
 .container-footer .footer-subscribe input {
   flex-basis: 50%;
 }
+<<<<<<< HEAD
 .container-footer .footer-subscribe button {
   flex-basis: 30%;
 }
+=======
+>>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
 
 .footer-copy {
   background-color: #F0E7DE;
@@ -239,6 +264,9 @@ footer {
     align-items: center;
     gap: 8px;
   }
+}
+.footer-copy p {
+  font-size: 12px;
 }
 .footer-copy .tag {
   color: #000000;
@@ -782,41 +810,46 @@ nav .main-menu li:hover > ul {
     gap: 40px;
   }
 }
-.swiper-slide > .title {
+.swiper-slide .swiper-title {
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: unset;
   align-content: unset;
   align-items: flex-start;
+  gap: 12px;
+  height: 100%;
   text-align: left;
   border: unset;
   padding: 60px 80px 0px 0px;
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
 }
-.swiper-slide > .title p, .swiper-slide > .title h2 {
-  letter-spacing: 0.4rem;
+.swiper-slide .swiper-title p, .swiper-slide .swiper-title h2 {
+  letter-spacing: 0.3rem;
 }
 @media screen and (max-width: 1024px) {
-  .swiper-slide > .title p, .swiper-slide > .title h2 {
+  .swiper-slide .swiper-title p, .swiper-slide .swiper-title h2 {
     letter-spacing: 0.2rem;
   }
 }
+.swiper-slide .swiper-title p {
+  line-height: 140%;
+}
 @media screen and (max-width: 1024px) {
-  .swiper-slide > .title p {
+  .swiper-slide .swiper-title p {
     line-height: 1.5rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .swiper-slide > .title p {
+  .swiper-slide .swiper-title p {
     padding: 0px 20px;
     letter-spacing: 0rem;
     line-height: 1.8rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .swiper-slide > .title {
+  .swiper-slide .swiper-title {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -852,7 +885,7 @@ nav .main-menu li:hover > ul {
   flex-direction: column;
   justify-content: unset;
   align-content: unset;
-  align-items: unset;
+  align-items: center;
   margin: auto;
   gap: 48px;
   padding: 88px 120px;
@@ -874,7 +907,7 @@ nav .main-menu li:hover > ul {
   flex-direction: column;
   justify-content: unset;
   align-content: unset;
-  align-items: unset;
+  align-items: center;
   margin: auto;
   gap: 48px;
   padding: 88px 120px;
@@ -954,6 +987,9 @@ nav .main-menu li:hover > ul {
   align-content: unset;
   align-items: unset;
   gap: 4px;
+}
+.article .article-section > .article-item > .article-content .p2 {
+  color: #C15E0B;
 }
 .article .article-swiper {
   display: none;
@@ -1463,18 +1499,27 @@ h5, .h5 {
 p, .p1 {
   font-size: 19px;
   font-weight: 300;
+<<<<<<< HEAD
   line-height: 1.7;
   letter-spacing: 0.01em;
+=======
+  line-height: 140%;
+  letter-spacing: 0em;
+>>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
   color: #505050;
 }
 @media screen and (max-width: 768px) {
   p, .p1 {
     font-size: 18px;
+<<<<<<< HEAD
+=======
+    line-height: 130%;
+>>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
   }
 }
 
 .p2 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.7;
   letter-spacing: 0.01em;
@@ -1499,14 +1544,23 @@ p, .p1 {
 }
 
 .btn {
-  font-size: 18px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 24px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.01em;
   border-radius: 8px;
   color: white;
   background: #EF6261;
+<<<<<<< HEAD
   transition: all ease 0.4s;
+=======
+  border: 1px solid #EF6261;
+  border-radius: 4px;
+>>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
 }
 @media screen and (max-width: 768px) {
   .btn {
@@ -1517,9 +1571,12 @@ p, .p1 {
 .btn:hover {
   background: white;
   color: #EF6261;
+  border: 1px solid #EF6261;
+  transition: all 0.3s ease;
 }
 
 .title {
+  width: 100%;
   border-bottom: 1px solid #DDB593;
   padding: 68px 0px;
   text-align: center;
@@ -1542,8 +1599,9 @@ p, .p1 {
   gap: 8px;
 }
 .job-tag > p {
+  font-size: 16px;
   color: #CE8B52;
-  padding: 6px 12px;
+  padding: 4px 10px;
   border: 1px solid #CE8B52;
   border-radius: 8px;
 }
@@ -1551,6 +1609,15 @@ p, .p1 {
   background: #CE8B52;
   color: #F7F1E7;
   transition: all 0.3s ease;
+}
+
+.br-rwd {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .br-rwd {
+    display: block;
+  }
 }
 
 input, select {
