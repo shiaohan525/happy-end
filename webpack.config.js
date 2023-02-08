@@ -117,20 +117,12 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/header.html'),
             location: 'header',//要放入的html tag位置
-<<<<<<< HEAD
-            template_filename: ['index.html','archive-coverage.html','application.html','happiness-company.html','happiness-job.html']//需引用的頁面記得新增在這裡
-=======
-            template_filename: ['index.html','archive-coverage.html','.archive-issue.html','application.html','single-post.html']//需引用的頁面記得新增在這裡
->>>>>>> 81f62de10cebee4df9d01230842cb97b2ba08fa2
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html']//需引用的頁面記得新增在這裡
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/footer.html'),
             location: 'footer',
-<<<<<<< HEAD
-            template_filename: ['index.html','archive-coverage.html','application.html','happiness-company.html','happiness-job.html']
-=======
-            template_filename: ['index.html','archive-coverage.html','.archive-issue.html','application.html','single-post.html']
->>>>>>> 81f62de10cebee4df9d01230842cb97b2ba08fa2
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/swiper.html'),

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -10946,4 +10944,3 @@ $('#btn-apply').on('click', function () {
 /******/ })()
 ;
 //# sourceMappingURL=app.js.map
->>>>>>> 81f62de10cebee4df9d01230842cb97b2ba08fa2
