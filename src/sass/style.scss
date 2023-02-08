@@ -227,6 +227,7 @@ input,select,textarea{
 .pgnb-style2{
     @extend %db;
     margin: 2rem 0;
+    width: 100%;
 
     .g-pagination{
         @include flex($a-i:center,$j-c:center);
@@ -340,8 +341,12 @@ input,select,textarea{
     }
     a{
         display: inline-block;
-        color: $c-black;
+        color: $c-gray;
         padding: 8px;
+        &:hover{
+            color: $c-secondary;
+            transition: all ease .4s;
+        }
     }
 
 }
@@ -349,4 +354,30 @@ input,select,textarea{
 //form select
 .form-select{
 
+    select{
+        @extend %bb;
+        @extend %pointer;
+        width: 100%;
+        max-width: 140px;
+        height: 47px;
+        color: $c-gray;
+        border-radius: 8px;
+        padding: 0.5rem;
+        padding-right: 2rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        background-image: url('../img/select-dropdown.svg');
+        background-repeat: no-repeat;
+        background-size: 36px 12px;
+        background-position: calc(100% + -1px) calc(2em - 8px);
+        border-color: #666;
+
+        @include mini-pad{
+            max-width: 400px;
+        }
+        @include mobile{
+            max-width: 280px;
+        }
+    }
 }

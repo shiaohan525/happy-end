@@ -73,7 +73,7 @@ table {
   margin: auto;
 }
 
-.happiness-wrapper .ad-area-wrapper .ad-area-container, .happiness-wrapper .happinessJob, .application-wrapper .application-container .brand-list .container, .application-wrapper .application-container .info .container, .application-wrapper .application-container .brand-category .section-title, .archive-tem .ad-area-wrapper .ad-area-container, .archive-tem .archive-tem-c, .index-wrapper .category, .index-wrapper .article, .index-wrapper .cardJob, .companyTag-section, .cardJob-section, nav {
+.happiness-wrapper .ad-area-wrapper .ad-area-container, .happiness-wrapper .happinessJob, .application-wrapper .application-container .brand-list .container, .application-wrapper .application-container .info .container, .application-wrapper .application-container .brand-category .section-title, .archive-tem .ad-area-wrapper .ad-area-container, .archive-tem .archive-tem-c, .index-wrapper .category, .index-wrapper .article, .index-wrapper .cardJob, .jobTag-section, .companyTag-section, .cardJob-section, nav {
   margin: auto;
   padding: 0 30px;
   max-width: 1920px;
@@ -92,9 +92,9 @@ table {
   display: none;
 }
 
-.classBtn input, .pgnb-style2 .g-pagination select, .btn, .application-wrapper .application-container .form ul li select,
+.form-select select, .classBtn input, .pgnb-style2 .g-pagination select, .btn, .application-wrapper .application-container .form ul li select,
 .application-wrapper .application-container .form ul li input,
-.application-wrapper .application-container .form ul li textarea, .application-wrapper .first-view, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
+.application-wrapper .application-container .form ul li textarea, .application-wrapper .first-view, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .jobTag-section .card-jobTag h4, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
   box-sizing: border-box;
 }
 
@@ -106,7 +106,7 @@ table {
   text-align: center;
 }
 
-.pgnb-style2 .g-pagination select, .job-tag > p, .btn, .application-wrapper .application-container .form ul li .g-file .inputfile + label, .application-wrapper .application-container .form ul li select, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .index-wrapper .article .article-item, .companyTag-section .card-jobTag, .card-job {
+.form-select select, .pgnb-style2 .g-pagination select, .job-tag > p, .btn, .happiness-wrapper .happinessJob .company-select .advanced, .application-wrapper .application-container .form ul li .g-file .inputfile + label, .application-wrapper .application-container .form ul li select, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .index-wrapper .article .article-item, .jobTag-section .card-jobTag, .companyTag-section .card-jobTag, .card-job {
   cursor: pointer;
 }
 
@@ -910,6 +910,7 @@ nav .main-menu li:hover > ul {
         writing-mode: horizontal-tb;
     gap: 0px;
     padding: 0px;
+    padding-bottom: 40px;
   }
 }
 
@@ -935,13 +936,16 @@ nav .main-menu li:hover > ul {
   .companyTag-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
   }
 }
 @media screen and (max-width: 768px) {
   .companyTag-section {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
   }
 }
 .companyTag-section .card-jobTag {
@@ -1077,73 +1081,69 @@ nav .main-menu li:hover > ul {
   }
 }
 
-.cardJob-section {
+.jobTag-section {
   padding: 0px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
 }
 @media screen and (max-width: 1024px) {
-  .cardJob-section {
+  .jobTag-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
   }
 }
 @media screen and (max-width: 768px) {
-  .cardJob-section {
-    display: none;
+  .jobTag-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
   }
 }
-
-.card-job {
+.jobTag-section .card-jobTag {
   display: flex;
   flex-wrap: unset;
   flex-direction: column;
   justify-content: unset;
   align-content: unset;
   align-items: unset;
+  gap: 20px;
+  background: white;
+  padding: 28px 28px;
 }
-.card-job > img {
-  width: 100%;
-  height: 100%;
+.jobTag-section .card-jobTag h4 {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #CE8B52;
 }
-.card-job .card-content {
+.jobTag-section .card-jobTag .content-section {
   display: flex;
   flex-wrap: unset;
   flex-direction: column;
-  justify-content: unset;
-  align-content: unset;
-  align-items: unset;
-  gap: 12px;
-  background: #F7F1E7;
-  padding: 20px;
-}
-.card-job .card-content .job-title {
-  display: flex;
-  flex-wrap: unset;
-  flex-direction: unset;
   justify-content: unset;
   align-content: unset;
   align-items: center;
-  gap: 8px;
-  color: #EF6261;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 20px;
+  background: white;
 }
-.card-job .card-content .job-title > p {
-  color: #EF6261;
-}
-.card-job .card-content .job-content > ul {
+.jobTag-section .card-jobTag .content-section .card-content {
   display: flex;
   flex-wrap: unset;
   flex-direction: column;
   justify-content: unset;
   align-content: unset;
   align-items: unset;
-  gap: 8px;
+  gap: 16px;
+  background: white;
+  padding: 0px;
 }
-.card-job .card-content .job-content > ul li {
+.jobTag-section .card-jobTag .content-section .card-content .job-title {
   display: flex;
   flex-wrap: unset;
   flex-direction: unset;
@@ -1152,23 +1152,61 @@ nav .main-menu li:hover > ul {
   align-items: center;
   gap: 8px;
 }
-.card-job .card-content .job-content p {
+.jobTag-section .card-jobTag .content-section .card-content .job-title > img {
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  border-radius: 5px;
+}
+.jobTag-section .card-jobTag .content-section .card-content .job-title > p {
+  color: #505050;
+}
+.jobTag-section .card-jobTag .content-section .card-content .job-content > ul {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: column;
+  justify-content: unset;
+  align-content: unset;
+  align-items: unset;
+  gap: 8px;
+}
+.jobTag-section .card-jobTag .content-section .card-content .job-content > ul li {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: center;
+  gap: 8px;
+}
+.jobTag-section .card-jobTag .content-section .card-content .job-content p {
   color: #000000;
   text-align: left;
 }
-.card-job .card-content .job-content img {
+.jobTag-section .card-jobTag .content-section .card-content .job-content img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 18px;
 }
-.card-job .card-office {
-  background: #EF6261;
-  padding: 6px 20px;
-  text-align: center;
+.jobTag-section .card-jobTag .content-section .card-content .job-content .p2 {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
 }
-.card-job .card-office > p {
-  color: white;
+.jobTag-section .card-jobTag .content-section .card-content .job-tag > .tag {
+  background: #F7F1E7;
+  border: none;
+}
+.jobTag-section .card-jobTag .content-section .card-content .job-tag > .tag:hover {
+  background: #CE8B52;
+  border: none;
+  color: #F7F1E7;
 }
 
 .minipad-swiper {
@@ -1696,7 +1734,7 @@ nav .main-menu li:hover > ul {
   height: 47px;
   border: 1px solid #F0E7DE !important;
   color: #505050;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 5px;
   padding: 0.5rem;
   flex: 1;
@@ -2046,6 +2084,148 @@ nav .main-menu li:hover > ul {
 }
 .happiness-wrapper .happinessJob > .title {
   border-bottom: none;
+  padding: 0px;
+}
+.happiness-wrapper .happinessJob .company-select {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: column;
+  justify-content: unset;
+  align-content: unset;
+  align-items: flex-end;
+  gap: 16px;
+}
+.happiness-wrapper .happinessJob .company-select .advanced {
+  color: #CE8B52;
+  font-size: 14px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.happiness-wrapper .happinessJob .company-select .select-flex {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: space-between;
+  align-content: unset;
+  align-items: unset;
+  width: 400px;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .happiness-wrapper .happinessJob .company-select .select-flex {
+    display: flex;
+    flex-wrap: unset;
+    flex-direction: column;
+    justify-content: unset;
+    align-content: unset;
+    align-items: center;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .happiness-wrapper .happinessJob .company-select .select-flex {
+    width: 260px;
+  }
+}
+.happiness-wrapper .ad-area-wrapper {
+  background: white;
+  padding: 5rem 0;
+}
+.happiness-wrapper .ad-area-wrapper .ad-area-container {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1420px;
+}
+.happiness-wrapper .ad-area-wrapper .ad-area-container .block {
+  flex: 1;
+  flex-basis: 100%;
+}
+.happiness-wrapper .ad-area-wrapper .ad-area-container .block img {
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .happiness-wrapper .ad-area-wrapper .ad-area-container {
+    flex-wrap: wrap;
+  }
+}
+
+.happiness-wrapper .swiper {
+  margin: 33px 0px 0px 0px;
+}
+.happiness-wrapper .happinessJob {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: column;
+  justify-content: unset;
+  align-content: unset;
+  align-items: center;
+  margin: auto;
+  gap: 48px;
+  padding: 88px 120px;
+  background: #F7F1E7;
+}
+@media screen and (max-width: 1024px) {
+  .happiness-wrapper .happinessJob {
+    padding: 66px 80px;
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .happiness-wrapper .happinessJob {
+    padding: 40px 30px;
+    gap: 24px;
+  }
+}
+.happiness-wrapper .happinessJob > .title {
+  border-bottom: none;
+  padding: 0px;
+}
+.happiness-wrapper .happinessJob .company-select {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: column;
+  justify-content: unset;
+  align-content: unset;
+  align-items: flex-end;
+  gap: 16px;
+}
+.happiness-wrapper .happinessJob .company-select .advanced {
+  color: #CE8B52;
+  font-size: 14px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.happiness-wrapper .happinessJob .company-select .select-flex {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: space-between;
+  align-content: unset;
+  align-items: unset;
+  width: 400px;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .happiness-wrapper .happinessJob .company-select .select-flex {
+    display: flex;
+    flex-wrap: unset;
+    flex-direction: column;
+    justify-content: unset;
+    align-content: unset;
+    align-items: center;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .happiness-wrapper .happinessJob .company-select .select-flex {
+    width: 260px;
+  }
 }
 .happiness-wrapper .ad-area-wrapper {
   background: white;
@@ -2163,7 +2343,7 @@ p, .p1 {
 }
 
 .tag {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 120%;
   letter-spacing: 0.01em;
@@ -2239,7 +2419,7 @@ p, .p1 {
   gap: 8px;
 }
 .job-tag > p {
-  font-size: 16px;
+  font-size: 14px;
   color: #CE8B52;
   padding: 4px 10px;
   border: 1px solid #CE8B52;
@@ -2269,6 +2449,7 @@ input:focus, select:focus, textarea:focus {
 
 .pgnb-style2 {
   margin: 2rem 0;
+  width: 100%;
 }
 .pgnb-style2 .g-pagination {
   display: flex;
@@ -2394,8 +2575,39 @@ input:focus, select:focus, textarea:focus {
 }
 .linkTab a {
   display: inline-block;
-  color: #000000;
+  color: #505050;
   padding: 8px;
+}
+.linkTab a:hover {
+  color: #CE8B52;
+  transition: all ease 0.4s;
+}
+
+.form-select select {
+  width: 100%;
+  max-width: 140px;
+  height: 47px;
+  color: #505050;
+  border-radius: 8px;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../../assets/img/select-dropdown.svg);
+  background-repeat: no-repeat;
+  background-size: 36px 12px;
+  background-position: calc(100% - 1px) calc(2em - 8px);
+  border-color: #666;
+}
+@media screen and (max-width: 768px) {
+  .form-select select {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-select select {
+    max-width: 280px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map*/

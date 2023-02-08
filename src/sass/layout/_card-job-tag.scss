@@ -10,74 +10,105 @@
 //     // }
 // }
 
-.cardJob-section{
+.jobTag-section{
     @extend %page-content;
     padding: 0px;
-    @include basic_grid(4,1fr,20px,20px);
+    @include basic_grid(3,1fr,40px,40px);
     @include pad{
-        @include basic_grid(2,1fr,20px,20px);
+        @include basic_grid(2,1fr,32px,32px);
     }
     @include mini-pad{
-        display: none;
-    }
-}
-
-.card-job{
-    // min-width: 180px;
-    // max-width: 300px;
-
-    @include flex($d:column);
-    @extend %pointer;
-
-    >img{
-        // @include mentor-img(300px);
-        width: 100%;
-        height: 100%;
+        @include basic_grid(1,1fr,28px,28px);
     }
 
-    .card-content{
+    .card-jobTag{
+        // min-width: 180px;
+        // max-width: 300px;
         @include flex($d:column);
-        gap:12px;
-        background: $c-secondary-white;
-        padding: 20px;
-        .job-title{
-            @include flex($a-i:center);
-            gap:8px;
-            color: $c-primary;
-            >p{
-                color: $c-primary;
-            }
+        @extend %pointer;
+        gap:20px;
+
+        background: $c-white;
+        padding: 28px 28px;
+
+        h4{
+            @extend %bb;
+            padding-bottom: 16px;
+            border-bottom: 1px solid $c-secondary;
         }
-        .job-content{
-            >ul{
+
+        .content-section{
+            @include flex($d:column,$a-i:center);
+            width: fit-content;
+            gap:20px;
+            background: $c-white;
+            .card-content{
                 @include flex($d:column);
-                gap:8px;
-                li{
+                gap:16px;
+                background: $c-white;
+                padding: 0px;
+                .job-title{
                     @include flex($a-i:center);
-                    gap: 8px;
+                    gap:8px;
+
+                    >img{
+                        width: 50px;
+                        object-fit: cover;
+                        aspect-ratio: 1 / 1;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                        background-color: $c-white;
+                        border-radius: 5px;
+                    }
+                    >p{
+                        color: $c-gray;
+                    }
                 }
-            }
-            p{
-                color: $c-black;
-                text-align: left;
-            }
-            img{
-                @include mentor-img(18px);
+                .job-content{
+                    >ul{
+                        @include flex($d:column);
+                        gap:8px;
+                        li{
+                            @include flex($a-i:center);
+                            gap: 8px;
+                        }
+                    }
+                    p{
+                        color: $c-black;
+                        text-align: left;
+                    }
+                    img{
+                        @include mentor-img(18px);
+                    }
+                    .p2{
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        display: -webkit-box;
+                    }
+                }
+
+                .job-tag{
+                    >.tag{
+                        background: $c-secondary-white;
+                        border: none;
+                        &:hover{
+                            background: $c-secondary;
+                            border: none;
+                            color: $c-secondary-white;
+                        }
+                    }
+                }
+        
             }
         }
+    
 
-    }
-
-    .card-office{
-        background: $c-primary;
-        padding: 6px 20px;
-        text-align: center;
-        >p{
-            color: $c-white;
-        }
-
+    
     }
 }
+
+
 
 .minipad-swiper{
     display: none;
