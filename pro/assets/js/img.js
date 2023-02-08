@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 (()=>{"use strict";var t={};t.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(t){if("object"==typeof window)return window}}(),(()=>{var r;t.g.importScripts&&(r=t.g.location+"");var p=t.g.document;if(!r&&p&&(p.currentScript&&(r=p.currentScript.src),!r)){var e=p.getElementsByTagName("script");e.length&&(r=e[e.length-1].src)}if(!r)throw new Error("Automatic publicPath is not supported in this browser");r=r.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),t.p=r+"../../"})(),t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p})();
 =======
+=======
+>>>>>>> 44b5c4ec3283323ca13d4e04ca3fbe6fd2d8da51
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -339,8 +342,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_ad_area_ex_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/ad-area-ex.png */ "./src/img/ad-area-ex.png");
 /* harmony import */ var _img_swiper_img_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../img/swiper-img.png */ "./src/img/swiper-img.png");
 /* harmony import */ var _img_category_img_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../img/category-img.png */ "./src/img/category-img.png");
+<<<<<<< HEAD
 /* harmony import */ var _img_brand_ex_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../img/brand-ex.png */ "./src/img/brand-ex.png");
 
+=======
+>>>>>>> 44b5c4ec3283323ca13d4e04ca3fbe6fd2d8da51
 
 
 
@@ -360,5 +366,11 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
+<<<<<<< HEAD
 >>>>>>> yian
+=======
+=======
+(()=>{"use strict";var t={};t.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(t){if("object"==typeof window)return window}}(),(()=>{var r;t.g.importScripts&&(r=t.g.location+"");var p=t.g.document;if(!r&&p&&(p.currentScript&&(r=p.currentScript.src),!r)){var e=p.getElementsByTagName("script");e.length&&(r=e[e.length-1].src)}if(!r)throw new Error("Automatic publicPath is not supported in this browser");r=r.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),t.p=r+"../../"})(),t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p,t.p})();
+>>>>>>> 4c1ed89855702c46afcc1a48f57ae434316c6c2e
+>>>>>>> 44b5c4ec3283323ca13d4e04ca3fbe6fd2d8da51
 //# sourceMappingURL=img.js.map

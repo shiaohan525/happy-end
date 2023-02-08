@@ -135,12 +135,15 @@ p, .p1{
 .btn{
     @extend %pointer;
 <<<<<<< HEAD
+<<<<<<< HEAD
     @extend %bb;
 =======
     @extend %dib;
     width: fit-content;
     padding: 8px 24px;
 >>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
+=======
+>>>>>>> 44b5c4ec3283323ca13d4e04ca3fbe6fd2d8da51
     font-size: $p2;
     font-weight: 700;
     line-height: 120%;
@@ -149,11 +152,15 @@ p, .p1{
     color:$c-white;
     background: $c-primary;
 <<<<<<< HEAD
+<<<<<<< HEAD
     transition: all ease .4s;
 =======
     border: 1px solid $c-primary;
     border-radius: 4px;
 >>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
+=======
+    transition: all ease .4s;
+>>>>>>> 44b5c4ec3283323ca13d4e04ca3fbe6fd2d8da51
 
     @include mini-pad{
         font-size: $m-p2;

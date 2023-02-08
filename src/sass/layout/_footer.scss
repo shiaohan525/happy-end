@@ -96,6 +96,7 @@ footer{
             @include f-flexBasis(50%);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         button{
             @include f-flexBasis(30%);
         }
@@ -107,6 +108,11 @@ footer{
         // }
 
 >>>>>>> 7b4c069fe7945e3d0507e4dd8eea965dccefc527
+=======
+        button{
+            @include f-flexBasis(30%);
+        }
+>>>>>>> 44b5c4ec3283323ca13d4e04ca3fbe6fd2d8da51
     }
 
 }
