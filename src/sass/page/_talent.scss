@@ -1,0 +1,80 @@
+.talent-wrapper{
+
+    .talent-banner{
+        margin-top: 79px;
+        @include pad{
+            margin-top: 69px;
+        }
+    }
+    
+    .talentSection{
+        @extend %page-content;
+        @include flex($d:column,$a-i:center);
+        margin: auto;
+        gap:48px;
+        padding: 88px 120px;
+        background: $c-white;
+        @include pad{
+            padding: 66px 80px;
+            gap:32px;
+        }
+        @include mini-pad{
+            padding: 40px 30px;
+            gap:24px;
+        }
+        >.title{
+            border-bottom: none;
+            padding: 0px;
+        }
+        .content-section{
+            background: $c-secondary-white;
+            .job-tag>.tag{
+                border: 1px solid $c-secondary !important;
+                &:hover{
+                    border: 1px solid $c-secondary !important;
+                }
+            }
+        }
+        select{
+            border: 1px solid rgb(206, 206, 206) !important;
+        }
+    }
+
+    .talent-ad{
+        background: $c-white;
+        padding: 5rem 0;
+        
+        .ad-container{
+            @extend %page-content;
+            @include flex($a-i:center,$j-c:center);
+            gap: 30px;
+            margin: 0 auto;
+            max-width: 1420px;
+
+            @include pad{
+                @include flex($d:column,$a-i:center);
+            }
+
+            @include mobile{
+                flex-wrap: wrap;
+            }
+
+            img{
+                @include mentor-img(600px);
+                flex: 3;
+            }
+
+            .ad-content{
+                @include flex($d:column);
+                gap:16px;
+
+                @include mini-pad{
+                    @include flex($d:column,$a-i:center);
+                    text-align: center;
+                }
+
+            }
+        }
+
+    }
+}
