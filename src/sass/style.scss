@@ -19,11 +19,8 @@
 @import 'page/index';
 @import 'page/archive-coverage';
 @import 'page/application';
-<<<<<<< HEAD
-=======
 @import 'page/happiness-company';
 @import 'page/happiness-job';
->>>>>>> b363e5364adc9c4714fbe3f36654f68fc40020a1
 @import 'page/single-post';
 
 //google-font
@@ -134,12 +131,9 @@ p, .p1{
 .btn{
     @extend %pointer;
     @extend %bb;
-<<<<<<< HEAD
-=======
     @extend %dib;
     width: fit-content;
     padding: 8px 24px;
->>>>>>> b363e5364adc9c4714fbe3f36654f68fc40020a1
     font-size: $p2;
     font-weight: 700;
     line-height: 120%;
@@ -149,12 +143,7 @@ p, .p1{
     background: $c-primary;
     transition: all ease .4s;
     border: 1px solid $c-primary;
-<<<<<<< HEAD
-=======
-    border-radius: 4px;
-    transition: all ease .4s;
     white-space: nowrap;
->>>>>>> b363e5364adc9c4714fbe3f36654f68fc40020a1
 
     @include mini-pad{
         font-size: $m-p2;

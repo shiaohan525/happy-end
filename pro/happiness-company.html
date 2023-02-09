@@ -8,7 +8,112 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script defer src="assets/js/main.js"></script><script defer src="assets/js/global.js"></script><script defer src="assets/js/img.js"></script><link href="assets/css/main.css" rel="stylesheet"></head>
 <body>
-    <header></header>
+    <header><nav>
+    <h1 class="nav-brand">
+        <a href="index.html">
+            <img src="assets/img/1111_logo.svg" alt="1111幸福企業">
+        </a>
+    </h1>
+    <ul class="main-menu">
+        <li>
+            <a href="#" class="p2">年度盛事 <span><i class="fa-solid fa-angle-down"></i></span> </a> 
+            <ul class="dropdown-menu">
+                <li><a href="#">品牌報名</a></li>
+                <li><a href="#">網友推薦</a></li>
+                <li><a href="#">品牌票選</a></li>
+                <li><a href="#">票選抽獎</a></li>
+                <li><a href="#">2023得獎名單</a></li>
+                <li><a href="#">2022得獎名單</a></li>
+                <li><a href="#">2021得獎名單</a></li>
+                <li><a href="#">2019得獎名單</a></li>
+            </ul>
+        </li>
+    
+        <li>
+            <a href="#" class="p2">幸福職涯 <span><i class="fa-solid fa-angle-down"></i></span></a> 
+            <ul class="dropdown-menu">
+                <li><a href="happiness-company.html">嚴選企業</a> </li>
+                <li><a href="happiness-job.html">推薦職缺</a> </li>
+            </ul>
+        </li>
+    
+        <li>
+            <a href="#" class="p2">精選NEWS <span><i class="fa-solid fa-angle-down"></i></span></a> 
+            <ul class="dropdown-menu">
+                <li><a href="archive-coverage.html">企業報導</a> </li>
+                <li><a href="archive-issue.html">企業特刊</a> </li>
+            </ul>
+        </li>
+    
+        <li><a href="#" class="p2">人才永續</a> </li>
+    </ul>
+
+    <ul class="login main-menu">
+        <li class="search-wrap">
+            <div class="search">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+                <input type="text" class="searchTerm" placeholder="企業&middot;工作&middot;報導">
+            </div>
+        </li>
+        <li><a href=""><i class="fa-solid fa-circle-user"></i> 登入 / 註冊 </a></li>
+    </ul>
+</nav>
+<div id="nav-container" class="mobile-menu">
+
+    <div class="bg"></div>
+    <div class="button" tabindex="0">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </div>
+    <div id="nav-content" tabindex="0">
+        <ul class="mobile-main-menu">
+            <li>
+                <a href="#">年度盛事&ensp;<span><i class="fa-solid fa-angle-down"></i></span></a>
+                <ul>
+                    <li><a href="#">&emsp;網友推薦</a> </li>
+                    <li><a href="#">&emsp;品牌票選</a> </li>
+                    <li><a href="#">&emsp;票選抽獎</a> </li>
+                    <li><a href="#">&emsp;2023得獎名單</a> </li>
+                    <li><a href="#">&emsp;2022得獎名單</a> </li>
+                    <li><a href="#">&emsp;2021得獎名單</a> </li>
+                    <li><a href="#">&emsp;2019得獎名單</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">幸福職涯&ensp;<span><i class="fa-solid fa-angle-down"></i></span></a>
+                <ul>
+                    <li><a href="happiness-company.html">&emsp;嚴選企業</a> </li>
+                    <li><a href="happiness-job.html">&emsp;推薦職缺</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">精選NEWS&ensp;<span><i class="fa-solid fa-angle-down"></i></span></a>
+                <ul>
+                    <li><a href="archive-coverage.html">&emsp;企業報導</a> </li>
+                    <li><a href="archive-issue.html">&emsp;企業特刊</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">人才永續</a></li>
+            <li class="search-wrap">
+                <div class="search">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <input type="text" class="searchTerm" placeholder="企業&middot;工作&middot;報導">
+                </div>
+                <div class="login">
+                    <a href="">
+                        <i class="fa-solid fa-circle-user"></i> 
+                        <p class="p2">登入 / 註冊</p> 
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div></header>
     <div class="happiness-wrapper">
         <section class="swiper">
             <swiper><!-- 10 Banner -->
@@ -320,9 +425,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-    <footer></footer>
-=======
     <footer><div class="container-footer">
     <p class="gotop">
         <a id="button"><img src="assets/img/goToTop.svg"></a>
@@ -389,6 +491,5 @@
     <a href="" class="tag">使用條款</a>
 </div>
 </footer>
->>>>>>> b363e5364adc9c4714fbe3f36654f68fc40020a1
 </body>
 </html>

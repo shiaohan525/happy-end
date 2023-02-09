@@ -13,9 +13,6 @@ import pgnb2 from '../img/pgnb-style2-arrow.svg'
 import swiperImg from '../img/swiper-img.png'
 import categoryImg from '../img/category-img.png'
 import logo_ex from '../img/brand-ex.png'
-<<<<<<< HEAD
-import file_icon from '../img/input-file.svg'
-=======
 import categoryItem01 from '../img/category-item01.png'
 import categoryItem02 from '../img/category-item02.png'
 import categoryItem03 from '../img/category-item03.png'
@@ -28,4 +25,3 @@ import categoryItem09 from '../img/category-item09.png'
 import categoryItem10 from '../img/category-item10.png'
 import categoryItem11 from '../img/category-item11.png'
 import ad from '../img/ad-ex.png'
->>>>>>> b363e5364adc9c4714fbe3f36654f68fc40020a1
