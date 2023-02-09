@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>幸福企業票選募集中</title>
-<script defer src="assets/js/main.js"></script><script defer src="assets/js/global.js"></script><script defer src="assets/js/img.js"></script><script defer src="assets/js/app.js"></script><link href="assets/css/main.css" rel="stylesheet"></head>
-
+    <title>1111幸福企業</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script defer src="assets/js/main.js"></script><script defer src="assets/js/global.js"></script><script defer src="assets/js/img.js"></script><link href="assets/css/main.css" rel="stylesheet"></head>
 <body>
     <header><nav>
     <h1 class="nav-brand">
@@ -115,265 +114,260 @@
         </ul>
     </div>
 </div></header>
-    <div class="application-wrapper">
-        <div class="first-view">
-            <div class="container">
-                <h2>幸福企業票選募集中</h2>
-                <h5>即日起至 <span class="h3">3月31日</span> 止</h5>
-                <button class="btn" id="btn-apply">品牌報名</button>
+    <div class="talent-wrapper">
+        <section class="talent-banner">
+            <img src="assets/img/talent-banner.png" alt="">
+        </section>
+        <section class="talentSection">
+            <div class="title">
+                <h2>響應企業</h2>
             </div>
-        </div>
-        <div class="application-container">
-            <div class="row form">
-                <p class="h2">品牌報名</p>
-                <form method="post">
+            <card-company-tag><!-- 08 公司tag區塊 -->
+
+<div class="companyTag-section">
+    <div class="card-jobTag">
+        <img src="assets/img/job-card-cover.png" alt="">
+        <div class="content-section">
+            <div class="card-content">
+                <div class="job-title">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>隆通工程有限公司</p>
+                </div>
+                <div class="job-content">
                     <ul>
                         <li>
-                            <label class="p1 require">報名類別</label>
-                            <select name="category">
-                                <option disabled selected>請選擇</option>
-                                <option value="類別一">類別一</option>
-                                <option value="類別二">類別二</option>
-                            </select>
+                            <img src="assets/img/job-card-icon01.png" alt="">
+                            <p>台北市南港區</p>
                         </li>
                         <li>
-                            <label class="p1 require">報名品牌名稱</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label class="p1 require">企業抬頭</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label class="p1 require">統一編號</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label class="p1">品牌福利<br>制度簡介</label>
-                            <textarea placeholder="限制字數200字以內"></textarea>
-                        </li>
-                        <li>
-                            <label class="p1 require">女性職場<br>優質福利(複選)</label>
-                            <div class="g-condition">
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">彈性工時</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">有薪家庭照護假</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">生育補助</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">延長產假育嬰假</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">設置孕婦停車位</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">提供免費婦科健檢</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">兩性平等之升遷機會</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">無</span>
-                                </label>
-                                <label class="condition other">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">其他</span>
-                                    <input type="text">
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <label class="p1 require">Logo圖</label>
-                            <div class="g-file">
-                                <img src="assets/img/input-file.svg" alt="">
-                                <input id="file-upload" class="inputfile inputfile1" name='upload_cont_img'
-                                    type="file" style="display:none;">
-                                <label for="file-upload" class="custom-file-upload custom-file-upload1 btn">
-                                    上傳檔案
-                                </label>
-                                <p class="tag">尺寸：500 x 500 px，檔案1MB以下，提供JPG、PNG圖檔</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="g">
-                                
-                            </div>
-                        </li>
-                        <li>
-                            <label class="p1 require">聯絡人</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label class="p1 require">聯絡電話</label>
-                            <input type="tel">
-                        </li>
-                        <li>
-                            <label class="p1 require">聯絡信箱</label>
-                            <input type="mail">
+                            <p class="p2">簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述</p>
                         </li>
                     </ul>
-                </form>
-                <div class="row">
-                    <button class="btn submit">確認報名</button>
-                    <button class="btn cancel">取消</button>
+                </div>
+                <!-- 職缺標籤:會自動換行，超過三行即不顯示 -->
+                <div class="job-tag"> 
+                    <p class="tag">友善環境</p>
+                    <p class="tag">幸福企業</p>
+                    <p class="tag">幸福企業讚讚</p>
                 </div>
             </div>
-            <div class="row brand-category">
-                <div class="section-title">
-                    <p class="h2">幸福企業宗旨</p>
-                    <p class="p1">近年來由於少子化，造成台灣人才短缺，日益嚴重，今為吸引年輕人，更願投入各產業，同時也激勵業者提供更好的福利及願景，才能吸引更多優秀人才，1111人力銀行特舉辦本年度最喜愛幸福企業票選活動。</p>
-                </div>
-                <!-- 等小涵首頁的 -->
-            </div>
-            <div class="row info">
-                <div class="container">
-                    <div class="section-title">
-                        <p class="h2">票選說明</p>
-                        <button class="btn">投票獎勵說明</button>
-                    </div>
-                    <div class="bottom">
-                        <div class="col col-1">
-                            <div class="row">
-                                <h5>品牌報名</h5>
-                                <p class="p1">時間：<span class="red">即日起～3/31(五)</span></p>
-                                <p class="p1">方式：<span class="fw-300">線上填表</span></p>
-                                <p class="p1">報名說明：<span class="fw-300">因收到貴企業被推舉或主動報名之資訊，因此溫馨提醒後續排程如下。</span></p>
-                            </div>
-                            <div class="row">
-                                <h5>網路票選</h5>
-                                <p class="p1">時間：<span class="red">3/13(一)～6/13(二)</span></p>
-                                <p class="p1">方式：<span class="fw-300">凡參加票選者，皆有可有資格參加天天抽幸福金活動。<b>(票選期間每週一至週五天天抽出10名500元幸運兒)</b></span></p>
-                                <p class="p1">兌領方式：<span class="fw-300">每日中獎結果詳見活動網頁(中獎者須主動聯絡負責窗口，1111人力銀行不另行通知。) </span></p>
-                            </div>
-                            <div class="row">
-                                <h5>票選結果公告</h5>
-                                <p class="p1">時間：<span class="red">7/20(四)</span></p>
-                            </div>
-                            <div class="row">
-                                <h5>頒獎典禮</h5>
-                                <p class="p1">時間：<span class="red">9/22(五)</span></p>
-                            </div>
-                        </div>
-                        <div class="col col-2">
-                            <div class="row">
-                                <h5>秘密客評選</h5>
-                                <p class="p1">時間：<span class="red">6/19(一)～7/5(三)</span></p>
-                                <p class="p1">1111<span class="fw-300">人力銀行有超過800萬求職會員透過大數據撈取履歷上現職或曾在該企業服務的會員，寄發電子問卷給會員填寫，針對各品牌福利落實程度進行回覆</span></p>
-                                <p class="p1">評選流程暨占比：
-                                    <ol class="p1">
-                                        <li>經廠商自薦或網友推薦了，由主辦單位評選小組針對資訊正確性、福利制度、勞資關係公開資訊進行蒐集與審核。</li>
-                                        <li>審核完成後進入網路票選階段，每人每天針對個別的參與品牌可投乙票，同日不可重複投給同乙家品牌，但同日可投給多家品牌，網路票選占總評比<b>60%</b>。</li>
-                                        <li>秘密客評選佔總評比<b>40%</b>。</li>
-                                        <li>ESG企業永續為加分題，若有相關資料可於報名時簡述或以<b>e-mail</b>方式另行提供給活動小組。</li>
-                                        <li>評選過程將邀集11大類指標性產官學專家，來共同響應活動參任顧問團，強化活動的專業度與公正性。</li>
-                                    </ol>
-                                </p>
-                            </div>
-                            <div class="row">
-                                <h5>活動小組聯繫人</h5>
-                                <p class="p1"> (02)8787-1111轉  8823 呂小姐    8939 謝小姐   8927 高小姐</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row brand-list">
-                <div class="container">
-                    <div class="section-title">
-                        <p class="h2">知名品牌</p>
-                        <p class="p1">出發吧！一切美好的生活，都從對的選擇開始。</p>
-                    </div>
-                    <div class="bottom">
-                        <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
-                            <div class="brand-info">
-                                <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                <p class="p1 b-category">半導體製造</p>
-                                <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
-                            </div>
-                        </div>
-                        <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
-                            <div class="brand-info">
-                                <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                <p class="p1 b-category">半導體製造</p>
-                                <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
-                            </div>
-                        </div>
-                        <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
-                            <div class="brand-info">
-                                <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                <p class="p1 b-category">半導體製造</p>
-                                <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
-                            </div>
-                        </div>
-                        <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
-                            <div class="brand-info">
-                                <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                <p class="p1 b-category">半導體製造</p>
-                                <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
-                            </div>
-                        </div>
-                        <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
-                            <div class="brand-info">
-                                <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                <p class="p1 b-category">半導體製造</p>
-                                <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
-                            </div>
-                        </div>
-                        <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
-                            <div class="brand-info">
-                                <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                <p class="p1 b-category">半導體製造</p>
-                                <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
-                            </div>
-                        </div>
-                        <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
-                            <div class="brand-info">
-                                <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                <p class="p1 b-category">半導體製造</p>
-                                <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
-                            </div>
-                        </div>
-                        <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
-                            <div class="brand-info">
-                                <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                <p class="p1 b-category">半導體製造</p>
-                                <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn">閱讀更多</button>
-                </div>
+            <div class="card-btn">
+                <button class="btn">
+                    共有10筆職缺
+                </button>
             </div>
         </div>
+    </div>
+    <div class="card-jobTag">
+        <img src="assets/img/job-card-cover.png" alt="">
+        <div class="content-section">
+            <div class="card-content">
+                <div class="job-title">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>隆通工程有限公司</p>
+                </div>
+                <div class="job-content">
+                    <ul>
+                        <li>
+                            <img src="assets/img/job-card-icon01.png" alt="">
+                            <p>台北市南港區</p>
+                        </li>
+                        <li>
+                            <p class="p2">簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 職缺標籤:會自動換行，超過三行即不顯示 -->
+                <div class="job-tag"> 
+                    <p class="tag">友善環境</p>
+                    <p class="tag">幸福企業</p>
+                    <p class="tag">幸福企業讚讚</p>
+                </div>
+            </div>
+            <div class="card-btn">
+                <button class="btn">
+                    共有10筆職缺
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-jobTag">
+        <img src="assets/img/job-card-cover.png" alt="">
+        <div class="content-section">
+            <div class="card-content">
+                <div class="job-title">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>隆通工程有限公司</p>
+                </div>
+                <div class="job-content">
+                    <ul>
+                        <li>
+                            <img src="assets/img/job-card-icon01.png" alt="">
+                            <p>台北市南港區</p>
+                        </li>
+                        <li>
+                            <p class="p2">簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 職缺標籤:會自動換行，超過三行即不顯示 -->
+                <div class="job-tag"> 
+                    <p class="tag">友善環境</p>
+                    <p class="tag">幸福企業</p>
+                    <p class="tag">幸福企業讚讚</p>
+                </div>
+            </div>
+            <div class="card-btn">
+                <button class="btn">
+                    共有10筆職缺
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-jobTag">
+        <img src="assets/img/job-card-cover.png" alt="">
+        <div class="content-section">
+            <div class="card-content">
+                <div class="job-title">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>隆通工程有限公司</p>
+                </div>
+                <div class="job-content">
+                    <ul>
+                        <li>
+                            <img src="assets/img/job-card-icon01.png" alt="">
+                            <p>台北市南港區</p>
+                        </li>
+                        <li>
+                            <p class="p2">簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 職缺標籤:會自動換行，超過三行即不顯示 -->
+                <div class="job-tag"> 
+                    <p class="tag">友善環境</p>
+                    <p class="tag">幸福企業</p>
+                    <p class="tag">幸福企業讚讚</p>
+                </div>
+            </div>
+            <div class="card-btn">
+                <button class="btn">
+                    共有10筆職缺
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-jobTag">
+        <img src="assets/img/job-card-cover.png" alt="">
+        <div class="content-section">
+            <div class="card-content">
+                <div class="job-title">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>隆通工程有限公司</p>
+                </div>
+                <div class="job-content">
+                    <ul>
+                        <li>
+                            <img src="assets/img/job-card-icon01.png" alt="">
+                            <p>台北市南港區</p>
+                        </li>
+                        <li>
+                            <p class="p2">簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 職缺標籤:會自動換行，超過三行即不顯示 -->
+                <div class="job-tag"> 
+                    <p class="tag">友善環境</p>
+                    <p class="tag">幸福企業</p>
+                    <p class="tag">幸福企業讚讚</p>
+                </div>
+            </div>
+            <div class="card-btn">
+                <button class="btn">
+                    共有10筆職缺
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-jobTag">
+        <img src="assets/img/job-card-cover.png" alt="">
+        <div class="content-section">
+            <div class="card-content">
+                <div class="job-title">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>隆通工程有限公司</p>
+                </div>
+                <div class="job-content">
+                    <ul>
+                        <li>
+                            <img src="assets/img/job-card-icon01.png" alt="">
+                            <p>台北市南港區</p>
+                        </li>
+                        <li>
+                            <p class="p2">簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述簡述</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 職缺標籤:會自動換行，超過三行即不顯示 -->
+                <div class="job-tag"> 
+                    <p class="tag">友善環境</p>
+                    <p class="tag">幸福企業</p>
+                    <p class="tag">幸福企業讚讚</p>
+                </div>
+            </div>
+            <div class="card-btn">
+                <button class="btn">
+                    共有10筆職缺
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</card-company-tag>
+            <pgnb-second class="pagination pgnb-style2"><div class="g-pagination">
+    <!-- 上一頁在有前一頁時才會顯現 -->
+    <a href="" class="previous tag">上一頁
+        <span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.63626 18.6356L9.99988 19.9993L19.9997 9.9994L18.6361 8.63579L8.63626 18.6356Z" fill="#EF6262"/>
+                <path d="M18.6363 11.3631L19.9999 9.99951L10 -0.000352563L8.6364 1.36327L18.6363 11.3631Z" fill="#EF6262"/>
+            </svg>
+        </span>
+    </a>
+    <select name="page">
+        <option value="第一頁">第一頁</option>
+        <option value="第二頁">第二頁</option>
+        <option value="第三頁">第三頁</option>
+    </select>
+    <!-- 若沒有下一頁內容則隱藏 -->
+    <a href="" class="next tag">下一頁
+        <span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.63626 18.6356L9.99988 19.9993L19.9997 9.9994L18.6361 8.63579L8.63626 18.6356Z" fill="#EF6262"/>
+                <path d="M18.6363 11.3631L19.9999 9.99951L10 -0.000352563L8.6364 1.36327L18.6363 11.3631Z" fill="#EF6262"/>
+            </svg>
+        </span>
+    </a>
+</div></pgnb-second>
+        </section>
+        <section class="talent-ad">
+            <div class="ad-container">
+                <img src="assets/img/talent-ad.png" alt="">
+                <div class="ad-content">
+                    <div class="ad-text">
+                        <h2>人才永續宣言</h2>
+                        <p>沒有永續的人才，就沒有永續的企業與未來<br>
+                            邀請您共同發聲，結合產學的力量，<br>
+                            一同推動台灣人的永續發展。</p>
+                    </div>
+                    <a href="https://web.cheers.com.tw/event/talent/index.html" class="btn">立即響應</a>
+                </div>
+            </div>
+        </section>
     </div>
     <footer><div class="container-footer">
     <p class="gotop">
@@ -442,5 +436,4 @@
 </div>
 </footer>
 </body>
-
 </html>

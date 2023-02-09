@@ -240,6 +240,76 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/img/company-award01.png":
+/*!*************************************!*\
+  !*** ./src/img/company-award01.png ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/company-award01.png");
+
+/***/ }),
+
+/***/ "./src/img/company-award02.png":
+/*!*************************************!*\
+  !*** ./src/img/company-award02.png ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/company-award02.png");
+
+/***/ }),
+
+/***/ "./src/img/company-award03.png":
+/*!*************************************!*\
+  !*** ./src/img/company-award03.png ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/company-award03.png");
+
+/***/ }),
+
+/***/ "./src/img/company-logo.png":
+/*!**********************************!*\
+  !*** ./src/img/company-logo.png ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/company-logo.png");
+
+/***/ }),
+
+/***/ "./src/img/company-target.png":
+/*!************************************!*\
+  !*** ./src/img/company-target.png ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/company-target.png");
+
+/***/ }),
+
 /***/ "./src/img/facebook-icon.svg":
 /*!***********************************!*\
   !*** ./src/img/facebook-icon.svg ***!
@@ -363,6 +433,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/swiper-img.png");
+
+/***/ }),
+
+/***/ "./src/img/talent-ad.png":
+/*!*******************************!*\
+  !*** ./src/img/talent-ad.png ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/talent-ad.png");
+
+/***/ }),
+
+/***/ "./src/img/talent-banner.png":
+/*!***********************************!*\
+  !*** ./src/img/talent-banner.png ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/talent-banner.png");
 
 /***/ }),
 
@@ -502,6 +600,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_category_item10_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../img/category-item10.png */ "./src/img/category-item10.png");
 /* harmony import */ var _img_category_item11_png__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../img/category-item11.png */ "./src/img/category-item11.png");
 /* harmony import */ var _img_ad_ex_png__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../img/ad-ex.png */ "./src/img/ad-ex.png");
+/* harmony import */ var _img_talent_banner_png__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../img/talent-banner.png */ "./src/img/talent-banner.png");
+/* harmony import */ var _img_talent_ad_png__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../img/talent-ad.png */ "./src/img/talent-ad.png");
+/* harmony import */ var _img_company_logo_png__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../img/company-logo.png */ "./src/img/company-logo.png");
+/* harmony import */ var _img_company_target_png__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../img/company-target.png */ "./src/img/company-target.png");
+/* harmony import */ var _img_company_award01_png__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../img/company-award01.png */ "./src/img/company-award01.png");
+/* harmony import */ var _img_company_award02_png__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../img/company-award02.png */ "./src/img/company-award02.png");
+/* harmony import */ var _img_company_award03_png__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../img/company-award03.png */ "./src/img/company-award03.png");
+
+
+
+
+
+
+
 
 
 

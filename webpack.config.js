@@ -114,20 +114,32 @@ module.exports = {
             filename: 'single-post.html',
             chunks: ['main','global','img'],
         }),
+        new HtmlWebpackPlugin({//5-1 人才永續
+            template: path.resolve(__dirname, './src/talent.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'talent.html',
+            chunks: ['main','global','img'],
+        }),
+        new HtmlWebpackPlugin({//5-1 人才永續
+            template: path.resolve(__dirname, './src/company-story.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'company-story.html',
+            chunks: ['main','global','img','swiper'],
+        }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/header.html'),
             location: 'header',//要放入的html tag位置
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html']//需引用的頁面記得新增在這裡
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html']//需引用的頁面記得新增在這裡
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/footer.html'),
             location: 'footer',
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html']
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/swiper.html'),
             location: 'swiper',
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','happiness-company.html','happiness-job.html']
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','happiness-company.html','happiness-job.html','company-story.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/card-job.html'),
@@ -137,7 +149,7 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/pgnb-style2.html'),
             location: 'pgnb-second',
-            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html']
+            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/category.html'),
@@ -147,7 +159,7 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/card-company-tag.html'),
             location: 'card-company-tag',
-            template_filename: ['happiness-company.html']
+            template_filename: ['happiness-company.html','talent.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/card-job-tag.html'),
