@@ -20,6 +20,30 @@
         }
         >.title{
             border-bottom: none;
+            padding: 0px;
+        }
+        .company-select{
+            @include flex($d:column,$a-i:flex-end);
+            gap:16px;
+
+            .advanced{
+                @extend %pointer;
+                color: $c-secondary;
+                font-size: $tag;
+                text-decoration-line: underline;
+            }
+            .select-flex{
+                @include flex($j-c:space-between);
+                width: 400px;
+                gap:20px;
+                @include mini-pad{
+                    @include flex($d:column,$a-i:center);
+                    width: 400px;
+                }
+                @include mobile{
+                    width: 260px;
+                }
+            }
         }
     }
 
