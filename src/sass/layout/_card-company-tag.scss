@@ -42,7 +42,7 @@
             .card-content{
                 @include flex($d:column);
                 gap:12px;
-                background: $c-white;
+                // background: $c-white;
                 padding: 0px;
                 .job-title{
                     @include flex($a-i:center);

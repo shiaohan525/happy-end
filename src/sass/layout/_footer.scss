@@ -38,7 +38,7 @@ footer{
     }
 
     hr{
-        border: 1px solid #DDB593;
+        border: 0.1px solid $c-secondary-light;
         width: 100%;
         @include pad{
             width: 80%;
