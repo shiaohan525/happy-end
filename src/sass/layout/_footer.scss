@@ -15,7 +15,6 @@ footer{
 .container-footer {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1.2rem;
     position: relative;
     @include flex($d:column,$j-c:space-between);
     gap:48px;
@@ -60,9 +59,10 @@ footer{
     .footer-share{
         @include flex;
         gap:8px;
-        img{
-            @include mentor-img(50px);
-            // max-height: 50px;
+        // @include mentor-img(100px);
+        svg{
+            // width: 50px;
+            // height: 50px;
             fill:$c-secondary;
         }
         &:hover{

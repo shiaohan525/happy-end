@@ -1,0 +1,51 @@
+.happiness-wrapper{
+    .swiper{
+        margin: 33px 0px 0px 0px;
+    }
+    
+    .happinessJob{
+        @extend %page-content;
+        @include flex($d:column,$a-i:center);
+        margin: auto;
+        gap:48px;
+        padding: 88px 120px;
+        background: $c-secondary-white;
+        @include pad{
+            padding: 66px 80px;
+            gap:32px;
+        }
+        @include mini-pad{
+            padding: 40px 30px;
+            gap:24px;
+        }
+        >.title{
+            border-bottom: none;
+        }
+    }
+
+    .ad-area-wrapper{
+        background: $c-white;
+        padding: 5rem 0;
+        
+        .ad-area-container{
+            @extend %page-content;
+            @include flex($a-i:center);
+            gap: 30px;
+            margin: 0 auto;
+            max-width: 1420px;
+            .block{
+                flex:1;
+                flex-basis: 100%;
+    
+                img{
+                    width: 100%;
+                }
+            }
+
+            @include mobile{
+                flex-wrap: wrap;
+            }
+        }
+
+    }
+}

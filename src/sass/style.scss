@@ -12,6 +12,8 @@
 @import 'layout/card-job';
 @import 'layout/category';
 @import 'layout/swiper';
+@import 'layout/card-company-tag';
+@import 'layout/card-job-tag';
 
 //page
 @import 'page/index';
@@ -44,14 +46,14 @@ h2, .h2{
     font-family: "adobe-fangsong-std", 'Noto Sans TC', sans-serif !important;
     font-weight: 600;
     font-style: normal;
-    line-height: 110%;
+    line-height: 120%;
     letter-spacing: 0.01em;
     color: $c-black;
     margin-bottom: 1.5rem;
     
     @include mini-pad{
         font-size: $m-h2;
-        line-height: 102%;
+        line-height: 130%;
     }
 }
 h3, .h3{
@@ -162,6 +164,14 @@ p, .p1{
     text-align: center;
     @include flex($d:column);
     gap:20px;
+
+    @include mini-pad{
+        padding: 40px 0px;
+    }
+
+    @include mobile{
+        padding: 20px 0px;
+    }
 }
 
 //職缺區塊標籤
@@ -306,4 +316,29 @@ input,select,textarea{
         height: 47px;
         border-radius: 8px;
     }
+}
+
+//a link tab
+.linkTab{
+    border-bottom: 1px solid $c-secondary-light;
+    width: 100%;
+    @include flex($j-c:center);
+    gap:100px;
+
+    .tabFocus{
+        color:$c-primary;
+        padding: 8px;
+        border-bottom: 4px solid $c-primary;
+    }
+    a{
+        display: inline-block;
+        color: $c-black;
+        padding: 8px;
+    }
+
+}
+
+//form select
+.form-select{
+
 }
