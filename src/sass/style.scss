@@ -145,8 +145,6 @@ p, .p1{
     background: $c-primary;
     transition: all ease .4s;
     border: 1px solid $c-primary;
-    border-radius: 4px;
-    transition: all ease .4s;
     white-space: nowrap;
 
     @include mini-pad{
