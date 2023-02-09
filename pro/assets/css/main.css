@@ -92,7 +92,7 @@ table {
   display: none;
 }
 
-.form-select select, .classBtn input, .pgnb-style2 .g-pagination select, .btn, .application-wrapper .application-container .form ul li select,
+.form-select select, .classBtn input, .pgnb-style2 .g-pagination select, .btn, .company-wrapper .title-swiper .company-title .company-category img, .application-wrapper .application-container .form ul li select,
 .application-wrapper .application-container .form ul li input,
 .application-wrapper .application-container .form ul li textarea, .application-wrapper .first-view, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .jobTag-section .card-jobTag h4, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
   box-sizing: border-box;
@@ -2380,7 +2380,7 @@ nav .main-menu li:hover > ul {
   justify-content: unset;
   align-content: unset;
   align-items: unset;
-  margin: 33px 0px 0px 0px;
+  margin: 70px 0px 0px 0px;
 }
 .company-wrapper .title-swiper .company-title {
   display: flex;
@@ -2390,8 +2390,32 @@ nav .main-menu li:hover > ul {
   align-content: unset;
   align-items: unset;
   flex: 3;
+  padding: 68px 60px;
+  gap: 12px;
+  background: #F7F1E7;
 }
-.company-wrapper .title-swiper .company-category {
+.company-wrapper .title-swiper .company-title .company-category {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: center;
+  gap: 8px;
+}
+.company-wrapper .title-swiper .company-title .company-category img {
+  padding: 4px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 50px;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+  border-radius: 4px;
+}
+.company-wrapper .title-swiper .company-title .company-category .address {
   display: flex;
   flex-wrap: unset;
   flex-direction: unset;
@@ -2399,31 +2423,43 @@ nav .main-menu li:hover > ul {
   align-content: unset;
   align-items: unset;
 }
-.company-wrapper .title-swiper .company-category .address {
+.company-wrapper .title-swiper .company-title hr {
+  border-color: #CE8B52;
+  width: 100%;
+}
+.company-wrapper .title-swiper .company-title .company-img {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: space-between;
+  align-content: unset;
+  align-items: center;
+}
+.company-wrapper .title-swiper .company-title .company-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 120px;
+}
+.company-wrapper .title-swiper .company-title .company-img .img-award {
   display: flex;
   flex-wrap: unset;
   flex-direction: unset;
   justify-content: unset;
   align-content: unset;
   align-items: unset;
+  gap: 12px;
 }
-.company-wrapper .title-swiper .company-img {
-  display: flex;
-  flex-wrap: unset;
-  flex-direction: unset;
-  justify-content: unset;
-  align-content: unset;
-  align-items: unset;
+.company-wrapper .title-swiper .company-title .company-img .img-award img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 65px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.company-wrapper .title-swiper .company-img .img-award {
-  display: flex;
-  flex-wrap: unset;
-  flex-direction: unset;
-  justify-content: unset;
-  align-content: unset;
-  align-items: unset;
-}
-.company-wrapper .title-swiper swiper {
+.company-wrapper .title-swiper .company-swiper {
   width: 200px;
   flex: 5;
 }
