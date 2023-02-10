@@ -1,24 +1,52 @@
 .company-wrapper{
     .title-swiper{
         @include flex;
-        margin: 33px 0px 0px 0px;
+        margin: 70px 0px 0px 0px;
         .company-title{
             @include flex($d:column);
             flex: 3;
-        }
-        .company-category{
-            @include flex;
-            .address{
-                @include flex;
+            padding: 68px 60px;
+            gap: 12px;
+            background: $c-secondary-white;
+            .company-category{
+                @include flex($a-i:center);
+                gap: 8px;
+                img{
+                    @extend %bb;
+                    padding: 4px;
+                    width: 100%;
+                    height: fit-content;
+                    object-fit: cover;
+                    max-width: 50px;
+                    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+                    border-radius: 4px;
+                }
+                .address{
+                    @include flex;
+                }
+            }
+            hr{
+                border-color: $c-secondary;
+                width: 100%;
+            }
+            .company-img{
+                @include flex($j-c:space-between,$a-i:center);
+                
+                img{
+                    @include mentor-img(120px);
+                }
+                .img-award{
+                    @include flex;
+                    gap: 12px;
+                    img{
+                        @include mentor-img(65px);
+                        height: fit-content;
+                    }
+                }
             }
         }
-        .company-img{
-            @include flex;
-            .img-award{
-                @include flex;
-            }
-        }
-        swiper{
+
+        .company-swiper{
             width: 200px;
             flex: 5;
         }
