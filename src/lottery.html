@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸福企業票選募集中</title>
+</head>
+
+<body>
+    <header></header>
+    <div class="lottery-wrapper">
+        <div class="first-view">
+            <div class="container">
+                <h2>幸福企業票選募集中</h2>
+                <h5>即日起至 <span class="h3">3月31日</span> 止</h5>
+                <button class="btn" id="btn-apply">品牌報名</button>
+            </div>
+        </div>
+        <div class="application-container">
+            <div class="row form">
+                <p class="h2">品牌報名</p>
+                <form method="post">
+                    <ul>
+                        <li>
+                            <label class="p1 require">報名類別</label>
+                            <select name="category">
+                                <option disabled selected>請選擇</option>
+                                <option value="類別一">類別一</option>
+                                <option value="類別二">類別二</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label class="p1 require">報名品牌名稱</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label class="p1 require">企業抬頭</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label class="p1 require">統一編號</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label class="p1">品牌福利<br>制度簡介</label>
+                            <textarea placeholder="限制字數200字以內"></textarea>
+                        </li>
+                        <li>
+                            <label class="p1 require">女性職場<br>優質福利(複選)</label>
+                            <div class="g-condition">
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">彈性工時</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">有薪家庭照護假</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">生育補助</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">延長產假育嬰假</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">設置孕婦停車位</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">提供免費婦科健檢</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">兩性平等之升遷機會</span>
+                                </label>
+                                <label class="condition">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">無</span>
+                                </label>
+                                <label class="condition other">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <span class="p2">其他</span>
+                                    <input type="text">
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="p1 require">Logo圖</label>
+                            <div class="g-file">
+                                <img src="assets/img/input-file.svg" alt="">
+                                <input id="file-upload" class="inputfile inputfile1" name='upload_cont_img'
+                                    type="file" style="display:none;">
+                                <label for="file-upload" class="custom-file-upload custom-file-upload1 btn">
+                                    上傳檔案
+                                </label>
+                                <p class="tag">尺寸：500 x 500 px，檔案1MB以下，提供JPG、PNG圖檔</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="g">
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <label class="p1 require">聯絡人</label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label class="p1 require">聯絡電話</label>
+                            <input type="tel">
+                        </li>
+                        <li>
+                            <label class="p1 require">聯絡信箱</label>
+                            <input type="mail">
+                        </li>
+                    </ul>
+                </form>
+                <div class="row">
+                    <button class="btn submit">確認報名</button>
+                    <button class="btn cancel">取消</button>
+                </div>
+            </div>
+            <div class="row brand-category">
+                <div class="section-title">
+                    <p class="h2">2023年投票抽獎得主</p>
+                </div>
+                <div class="filter-lottery">
+                    <div class="calendar">
+                        <p>得獎時間</p>
+                        <input type="date" name="" id="">
+                        <p>~</p>
+                        <input type="date" name="" id="">
+                    </div>
+                    <div class="search">
+                        <p>得獎姓名</p>
+                        <input type="text" placeholder="輸入您的姓名">
+                        <button class="search-submit-btn btn">搜尋</button>
+                    </div>
+                </div>
+                <div class="section-lottery">
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lottery-item">
+                        <div class="item-img">
+                            <img src="assets/img/archive-ex-img.png" alt="">
+                            <p>新北市</p>
+                        </div>
+                        <div class="item-content">
+                            <div class="content-name">
+                                <div class="date">
+                                    <p>2023/01/13</p>
+                                </div>
+                                <div class="name">
+                                    <h5>張○翔</h5>
+                                    <p>0987-＊＊＊-987
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content-lottery">
+                                <p>
+                                    恭賀喜獲<span>10000</span>元
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row info">
+                <div class="container">
+                    <div class="section-title">
+                        <p class="h2">領獎說明</p>
+                    </div>
+                    <ol>
+                        <li class="p1">得獎公告後,請於得獎日2週內至回傳請領資料,若逾期視同放棄領獎資格。(提醒您得獎不另行通知)<br>
+                        系統中上傳請領資料,若預期視同放棄領獎資格,若無收到確認信,請主動來信詢問。</li>
+                        <li class="p1">請提供至少一張本人清晰可辨識的正方形尺寸生活照(使用於得獎名單的生活照)</li>
+                        <li class="p1">機會中獎暨勞務報酬單 <button class="btn"> <img src="assets/img/download-icon.svg" alt=""> 點我下載
+                        </button> </li>
+                        <li class="p1">身分證正反面照片</li>
+                        <li class="p1">存摺封面照片</li>
+                        <li class="p1">活動相關問題可聯繋單位信箱email</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>

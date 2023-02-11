@@ -1,0 +1,494 @@
+.lottery-wrapper {
+    .first-view {
+        @extend %bb;
+        @extend %rel;
+        @include flex;
+        @include bgi($re: no-repeat, $size: cover, $position: center);
+        padding: 8rem 1rem;
+        height: 900px;
+        background-image: url(../img/application-bn.png);
+
+        &::after {
+            @include absolute($top: 0, $left: 0);
+            content: '';
+            background: rgba(244, 234, 217, 0.45);
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            @extend %ma;
+            @extend %tac;
+            @extend %rel;
+            @include absolute($top: 50%, $left: 50%, $z-i: 1);
+            transform: translate(-50%, -20%);
+            width: 100%;
+            max-width: 1420px;
+
+            h2,
+            h5 {
+                text-shadow: 1px 1px 10px #FFFFFF;
+                margin-bottom: 0;
+
+                span.h3 {
+                    color: $c-primary;
+                    font-weight: 500;
+                }
+            }
+
+            .btn {
+
+                width: 240px;
+                height: 60px;
+                padding: 0.5rem 1rem;
+                margin: 2rem 0;
+                filter: drop-shadow(0px 3.81395px 3.81395px rgba(0, 0, 0, 0.25));
+            }
+        }
+
+        @include mobile {
+            height: 600px;
+        }
+    }
+
+    .application-container {
+
+        .btn {
+            width: 160px;
+            height: 50px;
+            padding: 0.5rem 1rem;
+            margin: 2rem 0;
+        }
+
+        .form {
+            @extend %ma;
+            @extend %dn;
+            max-width: 950px;
+            padding: 8rem 2rem;
+
+            p.h2 {
+                @extend %tac;
+            }
+
+            ul {
+                display: grid;
+                gap: 20px;
+
+                li {
+                    @include flex($a-i: center);
+                    gap: 20px;
+
+                    select,
+                    input,
+                    textarea {
+                        @extend %bb;
+                        height: 47px;
+                        border: 1px solid #F0E7DE !important;
+                        color: $c-gray;
+                        font-size: $tag;
+                        border-radius: 5px;
+                        padding: 0.5rem;
+                        flex: 1;
+
+                        &::placeholder {
+                            color: #9A9A9A;
+                            letter-spacing: 1px;
+                        }
+                    }
+
+                    textarea {
+                        @extend %rel;
+                        line-height: 26px;
+
+                        &::placeholder {
+                            @include absolute($right: 10px, $bottom: 10px);
+                        }
+                    }
+
+                    // title
+                    >label {
+                        @include f-flexBasis(140px);
+                        color: $c-secondary-deep;
+                        font-weight: 400;
+                    }
+
+                    // 下拉
+                    select {
+                        @extend %bb;
+                        @extend %pointer;
+                        flex: 1;
+                        padding-right: 2rem;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+
+                        background-image: url('../img/select-dropdown.svg');
+                        background-repeat: no-repeat;
+                        background-size: 65px 16px;
+                        background-position: calc(100% + 6px) calc(2em - 16px);
+                    }
+
+                    .g-condition,
+                    .g-file {
+                        @include f-flexBasis(100%);
+                        flex: 1;
+                    }
+
+                    .g-condition {
+                        @include flex($w: wrap, $j-c: space-between);
+                        gap: 10px;
+
+                        .condition {
+                            @include flex($a-i: center);
+                            gap: 10px;
+
+                            span:not(.p2) {
+                                flex: 0 0 20px;
+                            }
+
+                            &.other {
+                                span.p2 {
+                                    flex: 0 0 40px;
+                                }
+
+                                input[type=text] {
+                                    height: 35px;
+                                }
+                            }
+
+                            @include mobile{
+                                flex-basis: 100%;
+                            }
+                        }
+                    }
+
+                    // checkbox
+                    input[type=checkbox] {
+                        @extend %dn;
+
+                        &+span {
+                            @extend %dib;
+                            width: 20px;
+                            height: 20px;
+                            background: $c-white;
+                            border: 2px solid $c-secondary-deep;
+                            border-radius: 100px;
+                        }
+
+                        &:checked+span {
+                            @extend %dib;
+                            @extend %rel;
+                            width: 20px;
+                            height: 20px;
+                            background: $c-white;
+                            border-radius: 100px;
+
+                            &::before {
+                                @include absolute($top: 3.5px, $left: 3.5px);
+                                content: '';
+                                background: $c-secondary-deep;
+                                border-radius: 100px;
+                                width: 13px;
+                                height: 13px;
+                            }
+                        }
+                    }
+
+                    // upload file
+                    .g-file {
+                        @include flex($a-i: center,$w:wrap);
+                        gap: 20px;
+
+                        img {
+                            max-width: 40px;
+                        }
+
+                        // input-file
+                        .inputfile+label {
+                            @extend %pointer;
+                            @include flex($a-i: center);
+                            width: unset;
+                            height: 40px;
+                            font-weight: 400;
+                            color: $c-white;
+                            background-color: $c-primary;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 0.5rem 1rem;
+                            margin: 0;
+                        }
+                    }
+
+                    @include mobile{
+                        flex-wrap:wrap;
+
+                        >label{
+                            flex-basis: 100%;
+                        }
+
+                        select,input{
+                            flex-basis: 100%;
+                        }
+                    }
+                }
+            }
+
+            form {
+                margin: 3rem auto;
+            }
+
+            &>.row {
+                @include flex($j-c: center);
+                gap: 20px;
+
+                .cancel{
+                    background: $c-white;
+                    color: $c-primary;
+
+                    &:hover{
+                        background: $c-primary;
+                        color: $c-white;
+                    }
+                }
+            }
+        }
+
+        // 品牌分類
+        .brand-category {
+            background: $c-secondary-white;
+
+            .section-title {
+                @extend %page-content;
+                @extend %tac;
+                max-width: 960px;
+                padding: 4rem 2rem;
+                @include mini-pad{
+                    padding: 2rem;
+                }
+            }
+            .filter-lottery{
+                @extend %page-content;
+                @include flex($j-c:space-between);
+                max-width: 1200px;
+                margin-bottom: 20px;
+
+                @include pad{
+                    @include flex($d:column);
+                    box-sizing: border-box;
+                    padding: 28px 20px;
+                    gap: 20px;
+                    background: #F0E7DE;
+                }
+                .calendar{
+                    @include flex($a-i:center);
+                    padding: 6px 16px;
+                    background: #F0E7DE;
+                    gap: 6px;
+                    @include pad{
+                        @include flex($d:column);
+                        input{
+                            width: 100%;
+                            padding: 8px;
+                        }
+                    }
+                    input{
+                        @extend %bb;
+                        color: $c-secondary;
+                    }
+                    p{
+                        color: $c-primary;
+                        white-space: nowrap;
+
+                        @include pad{
+                            &:last-child{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .search{
+                    @include flex($a-i:center,$j-c:flex-end);
+                    @extend %bb;
+                    gap: 12px;
+
+                    @include pad{
+                        @include flex($d:column);
+                        gap: 6px;
+                        width: 100%;
+                        padding: 6px 16px;
+                        input{
+                            width: 100%;
+                            padding: 8px;
+                        }
+                        button{
+                            text-align: center;
+                        }
+                    }
+                    p{
+                        display: none;
+                        text-align: left;
+                        color: $c-primary;
+                        @include pad{
+                            display: block;
+                        }
+                    }
+                    input{
+                        @extend %bb;
+                        height: fit-content;
+                        padding: 4px;
+                        border-radius: 4px;
+                    }
+                    button{
+                        @extend %bb;
+                        width: fit-content;
+                        height: fit-content;
+                        margin: 0;
+                        padding: 4px 24px;
+                    }
+                }
+            }
+            .section-lottery{
+                @extend %page-content;
+                @extend %bb;
+                @include basic_grid(3, 1fr ,28px ,16px);
+                max-width: 1200px;
+                padding: 60px 20px;
+
+                @include pad{
+                    @include basic_grid(2, 1fr ,20px ,12px);
+                    max-width: 800px;
+                }
+
+                @include mini-pad{
+                    @include basic_grid(2, 1fr ,20px ,20px);
+                    max-width: 700px;
+                }
+
+                @include mobile{
+                    @include basic_grid(1, 1fr ,20px ,20px);
+                    max-width: 380px;
+                    padding: 30px 10px;
+                }
+
+                .lottery-item{
+                    @include flex($j-c:center);
+                    @extend %bb;
+                    width: auto;
+                    padding: 32px 24px;
+                    gap: 20px;
+                    background: $c-white;
+                    p{
+                        white-space: nowrap;
+                    }
+                    @include mini-pad{
+                        @include flex($d:column,$j-c:space-between);
+                        padding: 28px 20px;
+                        gap: 12px;
+                    }
+
+                    @include mobile{
+                        @include flex($j-c:center);
+                        padding: 28px 12px;
+                        gap: 8px;
+                    }
+                    
+                    .item-img{
+                        @include flex($d:column,$a-i:center,$j-c:space-around);
+                        img{
+                            @include mentor-img(100px);
+                            background: #000;
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 100px;
+                            @include mini-pad{
+                                width: 80px;
+                                height: 80px;
+                            }
+                        }
+                    }
+                    .item-content{
+                        @include flex($d:column,$a-i:center,$j-c:space-between);
+                        .content-name{
+                            @include flex($d:column,$a-i:center,$j-c:space-between);
+                            gap: 12px;
+                            text-align: center;
+                        }
+                        .content-lottery{
+                            @include flex($a-i:center);
+                            gap: 2px;
+                            p{
+                                color: $c-secondary-deep;
+                                font-size: 14px;
+                                span{
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                }
+                            }
+                            &::after{
+                                content: '';
+                                background: url(../img/content-lottery.svg);
+                                height: 20px;
+                                width: 20px;
+                                transform: rotateY(180deg);
+                            }
+                            &::before{
+                                content: '';
+                                background: url(../img/content-lottery.svg);
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+                    }
+            }
+            }
+        }
+        .info {
+            background: $c-white;
+
+
+            .container {
+                @extend %page-content;
+                @include flex($d:column);
+                gap: 40px;
+                max-width: 1150px;
+                padding: 3rem;
+
+                @include pad{
+                    gap: 20px;
+                }
+
+                .section-title {
+                    @include flex($a-i: center, $j-c: space-between);
+                    margin-bottom: 1rem;
+                    @include mini-pad{
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .h2 {
+                        margin-bottom: 0;
+                    }
+                }
+                >ol{
+                    list-style:auto;
+                    @include flex($d:column);
+                    gap: 8px;
+                    .btn{
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 4px 10px;
+                        width: fit-content;
+                        height: 100%;
+                        margin: 0;
+                        &:hover{
+                            // >img{
+                            //     filter: drop-shadow($c-primary 2000px 0);
+                            // }
+                        }
+                    }
+                    img{
+                        @include mentor-img(20px);
+                    }
+                }
+            }
+        }
+    }
+}
