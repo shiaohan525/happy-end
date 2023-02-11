@@ -10980,13 +10980,38 @@ btn.on('click', function (e) {
   $('html, body').animate({
     scrollTop: 0
   }, '300');
-}); // We create a closed shadow root, that is not accessible
+}); // // We create a closed shadow root, that is not accessible
+// let element = document.createElement("div");
+// element.attachShadow({ mode: "closed" });
+// element.shadowRoot // null as the shadow root is closed
+//horizonal scroll
 
-var element = document.createElement("div");
-element.attachShadow({
-  mode: "closed"
+var slider = document.querySelector('.tabWrapper');
+var isDown = false;
+var startX;
+var scrollLeft;
+slider.addEventListener('mousedown', function (e) {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
 });
-element.shadowRoot; // null as the shadow root is closed
+slider.addEventListener('mouseleave', function () {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', function () {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', function (e) {
+  if (!isDown) return;
+  e.preventDefault();
+  var x = e.pageX - slider.offsetLeft;
+  var walk = (x - startX) * 3; //scroll-fast
+
+  slider.scrollLeft = scrollLeft - walk;
+});
 })();
 
 /******/ })()
