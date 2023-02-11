@@ -338,6 +338,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/img/download-icon.svg":
+/*!***********************************!*\
+  !*** ./src/img/download-icon.svg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/download-icon.svg");
+
+/***/ }),
+
 /***/ "./src/img/facebook-icon.svg":
 /*!***********************************!*\
   !*** ./src/img/facebook-icon.svg ***!
@@ -637,6 +651,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_company_award03_png__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../img/company-award03.png */ "./src/img/company-award03.png");
 /* harmony import */ var _img_company_swiper01_png__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../img/company-swiper01.png */ "./src/img/company-swiper01.png");
 /* harmony import */ var _img_company_story_img01_png__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../img/company-story-img01.png */ "./src/img/company-story-img01.png");
+/* harmony import */ var _img_download_icon_svg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../img/download-icon.svg */ "./src/img/download-icon.svg");
+
 
 
 

@@ -34,5 +34,6 @@ import companyImg03 from '../img/company-award02.png'
 import companyImg04 from '../img/company-award03.png'
 import companySwiper01 from '../img/company-swiper01.png'
 import companyStory01 from '../img/company-story-img01.png'
+import downloadIcon from '../img/download-icon.svg'
 
 

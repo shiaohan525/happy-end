@@ -144,15 +144,21 @@ module.exports = {
             filename: 'company-walfare.html',
             chunks: ['main','global','img','swiper'],
         }),
+        new HtmlWebpackPlugin({//2-4 抽獎得獎頁
+            template: path.resolve(__dirname, './src/lottery.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'lottery.html',
+            chunks: ['main','global','img'],
+        }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/header.html'),
             location: 'header',//要放入的html tag位置
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html']//需引用的頁面記得新增在這裡
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html']//需引用的頁面記得新增在這裡
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/footer.html'),
             location: 'footer',
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html']
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/swiper.html'),
