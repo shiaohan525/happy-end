@@ -24,6 +24,9 @@
 @import 'page/single-post';
 @import 'page/talent';
 @import 'page/company-story';
+@import 'page/company-job';
+@import 'page/company-news';
+@import 'page/company-walfare';
 
 //google-font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
@@ -379,5 +382,41 @@ input,select,textarea{
         @include mobile{
             max-width: 280px;
         }
+    }
+}
+
+
+//quote
+.quote{
+    @extend %bb;
+    width: 100%;
+    padding: 12px 36px;
+    background: $c-secondary-white;
+    position: relative;
+
+    p{
+        font-family: "adobe-fangsong-std", 'Noto Sans TC', sans-serif !important;
+    }
+
+    &:after{
+        content: "";
+        background: url(../img/quote-right.svg);
+        @include bgi($size:contain, $position:center);
+        @include absolute($right:0,$bottom:-40px);
+        display: block;
+        width: 32px;
+        height: 37px;
+        position: absolute;
+    }
+
+    &:before{
+        content: "";
+        background: url(../img/quote-left.svg);
+        @include bgi($size:contain, $position:center);
+        @include absolute($top:-40px,$left:0);
+        display: block;
+        width: 32px;
+        height: 37px;
+        position: absolute;
     }
 }
