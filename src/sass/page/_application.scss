@@ -155,7 +155,7 @@
                                 }
                             }
 
-                            @include mobile{
+                            @include mobile {
                                 flex-basis: 100%;
                             }
                         }
@@ -195,7 +195,7 @@
 
                     // upload file
                     .g-file {
-                        @include flex($a-i: center,$w:wrap);
+                        @include flex($a-i: center, $w: wrap);
                         gap: 20px;
 
                         img {
@@ -218,14 +218,15 @@
                         }
                     }
 
-                    @include mobile{
-                        flex-wrap:wrap;
+                    @include mobile {
+                        flex-wrap: wrap;
 
-                        >label{
+                        >label {
                             flex-basis: 100%;
                         }
 
-                        select,input{
+                        select,
+                        input {
                             flex-basis: 100%;
                         }
                     }
@@ -240,11 +241,11 @@
                 @include flex($j-c: center);
                 gap: 20px;
 
-                .cancel{
+                .cancel {
                     background: $c-white;
                     color: $c-primary;
 
-                    &:hover{
+                    &:hover {
                         background: $c-primary;
                         color: $c-white;
                     }
@@ -403,6 +404,97 @@
                             margin-bottom: 1rem;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+// 關閉按鈕
+.apply-dialog {
+    @extend %dn;
+    @extend %bb;
+    @include fixed($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 666);
+    content: '';
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    &.dialog-application-info{
+        .container{
+            max-width: 650px;
+            padding: 4rem 1.5rem 1.5rem;
+        }
+    }
+
+    .container {
+        @extend %dn;
+        @extend %bb;
+        @extend %rel;
+        @extend %tac;
+        @include absolute($top: 55%, $left: 50%, $z-i: 9992);
+        transform: translate(-50%, -50%);
+        background: #F0E7DE;
+        box-shadow: 0px 0px 11px rgb(0 0 0 / 7%);
+        width: 90%;
+        height: auto;
+        max-width: 420px;
+        border-radius: 0 8px 8px 8px;
+        padding: 4rem 1.5rem 0.5rem;
+
+        &.active {
+            @extend %db;
+        }
+
+        p.h5{
+            @extend %tac;
+            color: $c-secondary-deep;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        p.p1{
+            text-align: left;
+        }
+
+        .deco{
+            @include flex($j-c:space-between);
+            @include fixed($top:0,$left:0);
+            width: 100%;
+        }
+
+        .content{
+            max-height: 400px;
+            overflow-y: scroll;
+        }
+
+        button.btn{
+            margin: 2rem 0;
+        }
+
+        .close-btn {
+            @include absolute($top: 10px,$right:10px);
+            @extend %pointer;
+            @extend %rel;
+            width: 25px;
+            height: 25px;
+            border: 2px solid $c-primary;
+            border-radius: 100px;
+    
+            span {
+                @include absolute($top: 11px,$left:2.5px);
+                @extend %dib;
+                width: 80%;
+                height: 3px;
+                background: $c-primary;
+                border-radius: 5px;
+    
+                &.left {
+                    transform: rotate(45deg);
+                }
+    
+                &.right {
+                    transform: rotate(-45deg);
                 }
             }
         }
