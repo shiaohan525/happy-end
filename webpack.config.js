@@ -120,26 +120,50 @@ module.exports = {
             filename: 'talent.html',
             chunks: ['main','global','img'],
         }),
-        new HtmlWebpackPlugin({//5-1 人才永續
+        new HtmlWebpackPlugin({//3-2-1 公司頁:企業故事
             template: path.resolve(__dirname, './src/company-story.html'),
             minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
             filename: 'company-story.html',
             chunks: ['main','global','img','swiper'],
         }),
+        new HtmlWebpackPlugin({//3-2-2 公司頁:推薦職缺
+            template: path.resolve(__dirname, './src/company-job.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'company-job.html',
+            chunks: ['main','global','img','swiper'],
+        }),
+        new HtmlWebpackPlugin({//3-2-3 公司頁:相關報導
+            template: path.resolve(__dirname, './src/company-news.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'company-news.html',
+            chunks: ['main','global','img','swiper'],
+        }),
+        new HtmlWebpackPlugin({//3-2-4 公司頁:員工福利
+            template: path.resolve(__dirname, './src/company-walfare.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'company-walfare.html',
+            chunks: ['main','global','img','swiper'],
+        }),
+        new HtmlWebpackPlugin({//2-4 抽獎得獎頁
+            template: path.resolve(__dirname, './src/lottery.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'lottery.html',
+            chunks: ['main','global','img'],
+        }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/header.html'),
             location: 'header',//要放入的html tag位置
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html']//需引用的頁面記得新增在這裡
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html']//需引用的頁面記得新增在這裡
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/footer.html'),
             location: 'footer',
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html']
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/swiper.html'),
             location: 'swiper',
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','happiness-company.html','happiness-job.html','company-story.html']
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','happiness-company.html','happiness-job.html','company-story.html','company-job.html','company-news.html','company-walfare.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/card-job.html'),
@@ -149,7 +173,7 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/pgnb-style2.html'),
             location: 'pgnb-second',
-            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html']
+            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/category.html'),

@@ -24,6 +24,10 @@
 @import 'page/single-post';
 @import 'page/talent';
 @import 'page/company-story';
+@import 'page/company-job';
+@import 'page/company-news';
+@import 'page/company-walfare';
+@import 'page/lottery';
 
 //google-font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
@@ -382,6 +386,7 @@ input,select,textarea{
     }
 }
 
+<<<<<<< HEAD
 // 彈窗背景共用
 .dialog-bg {
     @include absolute($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 9991);
@@ -389,4 +394,40 @@ input,select,textarea{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+=======
+
+//quote
+.quote{
+    @extend %bb;
+    width: 100%;
+    padding: 12px 36px;
+    background: $c-secondary-white;
+    position: relative;
+
+    p{
+        font-family: "adobe-fangsong-std", 'Noto Sans TC', sans-serif !important;
+    }
+
+    &:after{
+        content: "";
+        background: url(../img/quote-right.svg);
+        @include bgi($size:contain, $position:center);
+        @include absolute($right:0,$bottom:-40px);
+        display: block;
+        width: 32px;
+        height: 37px;
+        position: absolute;
+    }
+
+    &:before{
+        content: "";
+        background: url(../img/quote-left.svg);
+        @include bgi($size:contain, $position:center);
+        @include absolute($top:-40px,$left:0);
+        display: block;
+        width: 32px;
+        height: 37px;
+        position: absolute;
+    }
+>>>>>>> a316dfe2c2ad70e0ba4d9cffafa53870e911d9f3
 }
