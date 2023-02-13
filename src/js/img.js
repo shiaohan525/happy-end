@@ -28,7 +28,6 @@ import ad from '../img/ad-ex.png'
 import talentBanner from '../img/talent-banner.png'
 import talentAd from '../img/talent-ad.png'
 import companyBrand from '../img/company-logo.png'
-<<<<<<< HEAD
 import companyImg01 from '../img/company-target.png'
 import companyImg02 from '../img/company-award01.png'
 import companyImg03 from '../img/company-award02.png'
@@ -37,7 +36,6 @@ import companySwiper01 from '../img/company-swiper01.png'
 import companyStory01 from '../img/company-story-img01.png'
 import downloadIcon from '../img/download-icon.svg'
 
-=======
 import companyimg01 from '../img/company-target.png'
 import companyimg02 from '../img/company-award01.png'
 import companyimg03 from '../img/company-award02.png'
@@ -52,5 +50,7 @@ import sidebar_ex5 from '../img/sidebar-ex5.png'
 import sidebar_ex6 from '../img/sidebar-ex6.png'
 import btm_prev from '../img/btm-prev-post.png'
 import btm_next from '../img/btm-next-post.png'
->>>>>>> 10a7f38f25f8427cc29c69f843f90df9e266a9ea
 
+import loginIcon01 from '../img/login-user.svg'
+import loginIcon02 from '../img/login-company.svg'
+import loginBrand from '../img/login-brand.svg'

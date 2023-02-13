@@ -10924,96 +10924,53 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 /*!**************************!*\
-  !*** ./src/js/global.js ***!
+  !*** ./src/js/header.js ***!
   \**************************/
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-// Adobe 仿宋體置入
-(function (d) {
-  var config = {
-    kitId: 'fkp8stv',
-    scriptTimeout: 3000,
-    async: true
-  },
-      h = d.documentElement,
-      t = setTimeout(function () {
-    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-  }, config.scriptTimeout),
-      tk = d.createElement("script"),
-      f = false,
-      s = d.getElementsByTagName("script")[0],
-      a;
-  h.className += " wf-loading";
-  tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-  tk.async = true;
+// 登入彈窗
+// popup-bg
+var closeElement = $('.dialog-bg'); // popup-info
 
-  tk.onload = tk.onreadystatechange = function () {
-    a = this.readyState;
-    if (f || a && a != "complete" && a != "loaded") return;
-    f = true;
-    clearTimeout(t);
+var dialog = $('.dialog-login-info'); // popup-all
 
-    try {
-      Typekit.load(config);
-    } catch (e) {}
-  };
+var loginAll = $('.login-dialog'); // 點擊登入視窗
 
-  s.parentNode.insertBefore(tk, s);
-})(document); // mobile-menu
+$('#login-info').on('click', function () {
+  $(dialog).fadeIn(500);
+  $('.login-dialog > .container').toggleClass('active');
+}); // 點擊登入視窗
 
+$('#login-m-info').on('click', function () {
+  $(dialog).fadeIn(500);
+  $('.login-dialog > .container').toggleClass('active');
+}); // 點擊背景關閉彈窗
 
-var mobile_main_menu = $(".mobile-main-menu");
-$('.mobile-main-menu>li>a').on('click', function (event) {
-  event.preventDefault();
-  $(this).siblings('ul').slideToggle(500); // 通過使用滑動效果，在顯示和隱藏狀態之間切換，可設置動畫時間，單位毫秒
-}); //back to top btn
+closeElement.on('click', function () {
+  $(loginAll).fadeOut(500);
+  $('.login-dialog > .container').removeClass('active');
+}); // 叉叉
 
-var btn = $('#button');
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
+$('.close-btn').on('click', function () {
+  $(loginAll).fadeOut(500);
+  $('.login-dialog > .container').removeClass('active');
+}); //切換登入表單
+//點擊連結 原本表單#userLog display:block>none 切換表單#companyLog none>block
+//連結顏色改變 原本連結#user摘掉focus 切換連結#company加上focus class
+
+$('#company').on('click', function () {
+  $('#user').removeClass('focus');
+  $('#company').addClass('focus');
+  $('#userLog').attr("style", "display:none");
+  $('#companyLog').attr("style", "display:flex");
 });
-btn.on('click', function (e) {
-  e.preventDefault();
-  $('html, body').animate({
-    scrollTop: 0
-  }, '300');
-}); // // We create a closed shadow root, that is not accessible
-// let element = document.createElement("div");
-// element.attachShadow({ mode: "closed" });
-// element.shadowRoot // null as the shadow root is closed
-//horizonal scroll
-
-var slider = document.querySelector('.tabWrapper');
-var isDown = false;
-var startX;
-var scrollLeft;
-slider.addEventListener('mousedown', function (e) {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', function () {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', function () {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', function (e) {
-  if (!isDown) return;
-  e.preventDefault();
-  var x = e.pageX - slider.offsetLeft;
-  var walk = (x - startX) * 3; //scroll-fast
-
-  slider.scrollLeft = scrollLeft - walk;
+$('#user').on('click', function () {
+  $('#company').removeClass('focus');
+  $('#user').addClass('focus');
+  $('#companyLog').attr("style", "display:none");
+  $('#userLog').attr("style", "display:flex");
 });
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=global.js.map
+//# sourceMappingURL=header.js.map
