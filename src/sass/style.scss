@@ -149,8 +149,6 @@ p, .p1{
     background: $c-primary;
     transition: all ease .4s;
     border: 1px solid $c-primary;
-    border-radius: 4px;
-    transition: all ease .4s;
     white-space: nowrap;
 
     @include mini-pad{
@@ -388,6 +386,7 @@ input,select,textarea{
     }
 }
 
+<<<<<<< HEAD
 
 //quote
 .quote{
@@ -422,4 +421,13 @@ input,select,textarea{
         height: 37px;
         position: absolute;
     }
+=======
+// 彈窗背景共用
+.dialog-bg {
+    @include absolute($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 9991);
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+>>>>>>> 10a7f38f25f8427cc29c69f843f90df9e266a9ea
 }
