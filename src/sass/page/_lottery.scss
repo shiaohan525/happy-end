@@ -121,7 +121,7 @@
                         -webkit-appearance: none;
                         -moz-appearance: none;
 
-                        background-image: url('../img/select-dropdown.svg');
+                        background-image: url('../img/select-dropdown-icon.svg');
                         background-repeat: no-repeat;
                         background-size: 65px 16px;
                         background-position: calc(100% + 6px) calc(2em - 16px);
@@ -195,7 +195,7 @@
 
                     // upload file
                     .g-file {
-                        @include flex($a-i: center,$w:wrap);
+                        @include flex($a-i: center, $w: wrap,$j-c:flex-start);
                         gap: 20px;
 
                         img {

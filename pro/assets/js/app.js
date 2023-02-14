@@ -10937,9 +10937,8 @@ $(".inputfile").each(function (i) {
 }); // click 品牌報名 展開 表單
 
 $('#btn-apply').on('click', function () {
-  $(this).parent().parent().next().children().slideToggle();
-}); // 先寫出來再看如何簡化
-// popup-bg
+  $(this).parent().parent().next().slideToggle();
+}); // popup-bg
 
 var closeElement = $('.dialog-bg'); // popup-info
 
