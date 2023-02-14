@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (()=>{"use strict";var p={};p.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(p){if("object"==typeof window)return window}}(),(()=>{var t;p.g.importScripts&&(t=p.g.location+"");var r=p.g.document;if(!t&&r&&(r.currentScript&&(t=r.currentScript.src),!t)){var e=r.getElementsByTagName("script");e.length&&(t=e[e.length-1].src)}if(!t)throw new Error("Automatic publicPath is not supported in this browser");t=t.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),p.p=t+"../../"})(),p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p})();
 =======
+=======
+>>>>>>> hsiaohan
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -328,6 +331,34 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/img/company-story-img01.png":
+/*!*****************************************!*\
+  !*** ./src/img/company-story-img01.png ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/company-story-img01.png");
+
+/***/ }),
+
+/***/ "./src/img/company-swiper01.png":
+/*!**************************************!*\
+  !*** ./src/img/company-swiper01.png ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/company-swiper01.png");
+
+/***/ }),
+
 /***/ "./src/img/company-target.png":
 /*!************************************!*\
   !*** ./src/img/company-target.png ***!
@@ -339,6 +370,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/company-target.png");
+
+/***/ }),
+
+/***/ "./src/img/download-icon.svg":
+/*!***********************************!*\
+  !*** ./src/img/download-icon.svg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/download-icon.svg");
 
 /***/ }),
 
@@ -437,6 +482,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/line-icon.svg");
+
+/***/ }),
+
+/***/ "./src/img/login-brand.svg":
+/*!*********************************!*\
+  !*** ./src/img/login-brand.svg ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/login-brand.svg");
+
+/***/ }),
+
+/***/ "./src/img/login-company.svg":
+/*!***********************************!*\
+  !*** ./src/img/login-company.svg ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/login-company.svg");
+
+/***/ }),
+
+/***/ "./src/img/login-user.svg":
+/*!********************************!*\
+  !*** ./src/img/login-user.svg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/login-user.svg");
 
 /***/ }),
 
@@ -751,16 +838,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_company_award01_png__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../img/company-award01.png */ "./src/img/company-award01.png");
 /* harmony import */ var _img_company_award02_png__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../img/company-award02.png */ "./src/img/company-award02.png");
 /* harmony import */ var _img_company_award03_png__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../img/company-award03.png */ "./src/img/company-award03.png");
-/* harmony import */ var _img_single_post_ex1_png__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../img/single-post-ex1.png */ "./src/img/single-post-ex1.png");
-/* harmony import */ var _img_single_post_ex2_png__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../img/single-post-ex2.png */ "./src/img/single-post-ex2.png");
-/* harmony import */ var _img_sidebar_ex1_png__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../img/sidebar-ex1.png */ "./src/img/sidebar-ex1.png");
-/* harmony import */ var _img_sidebar_ex2_png__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../img/sidebar-ex2.png */ "./src/img/sidebar-ex2.png");
-/* harmony import */ var _img_sidebar_ex3_png__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../img/sidebar-ex3.png */ "./src/img/sidebar-ex3.png");
-/* harmony import */ var _img_sidebar_ex4_png__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../img/sidebar-ex4.png */ "./src/img/sidebar-ex4.png");
-/* harmony import */ var _img_sidebar_ex5_png__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../img/sidebar-ex5.png */ "./src/img/sidebar-ex5.png");
-/* harmony import */ var _img_sidebar_ex6_png__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../img/sidebar-ex6.png */ "./src/img/sidebar-ex6.png");
-/* harmony import */ var _img_btm_prev_post_png__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../img/btm-prev-post.png */ "./src/img/btm-prev-post.png");
-/* harmony import */ var _img_btm_next_post_png__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../img/btm-next-post.png */ "./src/img/btm-next-post.png");
+/* harmony import */ var _img_company_swiper01_png__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../img/company-swiper01.png */ "./src/img/company-swiper01.png");
+/* harmony import */ var _img_company_story_img01_png__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../img/company-story-img01.png */ "./src/img/company-story-img01.png");
+/* harmony import */ var _img_download_icon_svg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../img/download-icon.svg */ "./src/img/download-icon.svg");
+/* harmony import */ var _img_single_post_ex1_png__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../img/single-post-ex1.png */ "./src/img/single-post-ex1.png");
+/* harmony import */ var _img_single_post_ex2_png__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../img/single-post-ex2.png */ "./src/img/single-post-ex2.png");
+/* harmony import */ var _img_sidebar_ex1_png__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../img/sidebar-ex1.png */ "./src/img/sidebar-ex1.png");
+/* harmony import */ var _img_sidebar_ex2_png__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../img/sidebar-ex2.png */ "./src/img/sidebar-ex2.png");
+/* harmony import */ var _img_sidebar_ex3_png__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../img/sidebar-ex3.png */ "./src/img/sidebar-ex3.png");
+/* harmony import */ var _img_sidebar_ex4_png__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../img/sidebar-ex4.png */ "./src/img/sidebar-ex4.png");
+/* harmony import */ var _img_sidebar_ex5_png__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../img/sidebar-ex5.png */ "./src/img/sidebar-ex5.png");
+/* harmony import */ var _img_sidebar_ex6_png__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../img/sidebar-ex6.png */ "./src/img/sidebar-ex6.png");
+/* harmony import */ var _img_btm_prev_post_png__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../img/btm-prev-post.png */ "./src/img/btm-prev-post.png");
+/* harmony import */ var _img_btm_next_post_png__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../img/btm-next-post.png */ "./src/img/btm-next-post.png");
+/* harmony import */ var _img_login_user_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../img/login-user.svg */ "./src/img/login-user.svg");
+/* harmony import */ var _img_login_company_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../img/login-company.svg */ "./src/img/login-company.svg");
+/* harmony import */ var _img_login_brand_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../img/login-brand.svg */ "./src/img/login-brand.svg");
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -809,8 +912,11 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
+<<<<<<< HEAD
 >>>>>>> yian
 =======
 (()=>{"use strict";var p={};p.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(p){if("object"==typeof window)return window}}(),(()=>{var t;p.g.importScripts&&(t=p.g.location+"");var r=p.g.document;if(!t&&r&&(r.currentScript&&(t=r.currentScript.src),!t)){var e=r.getElementsByTagName("script");e.length&&(t=e[e.length-1].src)}if(!t)throw new Error("Automatic publicPath is not supported in this browser");t=t.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),p.p=t+"../../"})(),p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p,p.p})();
+>>>>>>> hsiaohan
+=======
 >>>>>>> hsiaohan
 //# sourceMappingURL=img.js.map

@@ -387,6 +387,9 @@ input,select,textarea{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> hsiaohan
 
 //quote
 .quote{
@@ -421,7 +424,12 @@ input,select,textarea{
         height: 37px;
         position: absolute;
     }
+<<<<<<< HEAD
 =======
+=======
+}
+
+>>>>>>> hsiaohan
 // 彈窗背景共用
 .dialog-bg {
     @include absolute($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 9991);
@@ -429,5 +437,8 @@ input,select,textarea{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+<<<<<<< HEAD
 >>>>>>> yian
+=======
+>>>>>>> hsiaohan
 }
