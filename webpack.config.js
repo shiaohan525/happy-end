@@ -15,11 +15,8 @@ module.exports = {
         swiper: './src/js/swiper.js',
         app: './src/js/application.js',
         cardJob: './src/js/card-job.js',
-<<<<<<< HEAD
         header: './src/js/header.js',
-=======
         vote: './src/js/vote.js',
->>>>>>> yian
     },
     output: {
         path: path.resolve(__dirname, 'pro'),
@@ -206,20 +203,12 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/header.html'),
             location: 'header',//要放入的html tag位置
-<<<<<<< HEAD
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','login.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html']//需引用的頁面記得新增在這裡
-=======
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','single-post.html','award-2021-gold.html','award-2021-silver.html','award-2021-bronze.html','vote.html']//需引用的頁面記得新增在這裡
->>>>>>> yian
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','login.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html','single-post.html','award-2021-gold.html','award-2021-silver.html','award-2021-bronze.html','vote.html']//需引用的頁面記得新增在這裡
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/footer.html'),
             location: 'footer',
-<<<<<<< HEAD
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','login.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html']
-=======
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','single-post.html','award-2021-gold.html','award-2021-silver.html','award-2021-bronze.html','vote.html']
->>>>>>> yian
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','login.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html','single-post.html','award-2021-gold.html','award-2021-silver.html','award-2021-bronze.html','vote.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/swiper.html'),
@@ -234,11 +223,7 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/pgnb-style2.html'),
             location: 'pgnb-second',
-<<<<<<< HEAD
-            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html']
-=======
-            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','award-2021-silver.html','award-2021-gold.html','award-2021-bronze.html']
->>>>>>> yian
+            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html','award-2021-silver.html','award-2021-gold.html','award-2021-bronze.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/category.html'),

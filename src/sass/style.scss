@@ -28,15 +28,12 @@
 @import 'page/company-news';
 @import 'page/company-walfare';
 @import 'page/lottery';
-<<<<<<< HEAD
 @import 'page/searchResult-company';
 @import 'page/searchResult-job';
 @import 'page/searchResult-news';
 @import 'page/searchResult-issue';
-=======
 @import 'page/award-2021';
 @import 'page/vote';
->>>>>>> yian
 
 //google-font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
@@ -187,7 +184,7 @@ p,
 }
 
 // 主標題
-.cardJob > .title {
+.cardJob>.title {
     width: 100%;
     border-bottom: 1px solid $c-secondary-light;
     padding: 68px 0px;
@@ -412,6 +409,7 @@ textarea {
         }
     }
 }
+
 // 彈窗共用樣式
 .apply-dialog {
     @extend %dn;
@@ -422,26 +420,25 @@ textarea {
     height: 100%;
     padding: 1rem;
 
-<<<<<<< HEAD
-=======
-    &.dialog-application-info{
-        .container{
+    &.dialog-application-info {
+        .container {
             max-width: 650px;
             padding: 4rem 1.5rem 1.5rem;
         }
     }
 
-    &.voted{
-        ul{
+    &.voted {
+        ul {
             margin: 0.5rem 0 2rem;
             max-height: 173px;
             overflow-y: scroll;
-            
-            li{
+
+            li {
                 text-align: left;
                 padding: 0.2rem 0;
                 border-bottom: 1px dotted #C19E7F;
-                a{
+
+                a {
                     color: $c-black;
                     padding: 0.2rem 0;
                 }
@@ -468,53 +465,53 @@ textarea {
             @extend %db;
         }
 
-        p.h5{
+        p.h5 {
             @extend %tac;
             color: $c-secondary-deep;
             margin-bottom: 1rem;
             font-weight: 500;
         }
 
-        p.p1{
+        p.p1 {
             text-align: left;
         }
 
-        .deco{
-            @include flex($j-c:space-between);
-            @include fixed($top:0,$left:0);
+        .deco {
+            @include flex($j-c: space-between);
+            @include fixed($top: 0, $left: 0);
             width: 100%;
         }
 
-        .content{
+        .content {
             max-height: 400px;
             overflow-y: scroll;
         }
 
-        button.btn{
+        button.btn {
             margin: 2rem 0;
         }
 
         .close-btn {
-            @include absolute($top: 10px,$right:10px);
+            @include absolute($top: 10px, $right: 10px);
             @extend %pointer;
             @extend %rel;
             width: 25px;
             height: 25px;
             border: 2px solid $c-primary;
             border-radius: 100px;
-    
+
             span {
-                @include absolute($top: 11px,$left:2.5px);
+                @include absolute($top: 11px, $left: 2.5px);
                 @extend %dib;
                 width: 80%;
                 height: 3px;
                 background: $c-primary;
                 border-radius: 5px;
-    
+
                 &.left {
                     transform: rotate(45deg);
                 }
-    
+
                 &.right {
                     transform: rotate(-45deg);
                 }
@@ -522,6 +519,7 @@ textarea {
         }
     }
 }
+
 // 彈窗背景共用
 .dialog-bg {
     @include absolute($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 9991);
@@ -530,7 +528,6 @@ textarea {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
->>>>>>> yian
 
 //quote
 .quote {
@@ -565,7 +562,6 @@ textarea {
         height: 37px;
         position: absolute;
     }
-<<<<<<< HEAD
 
 }
 
@@ -577,6 +573,4 @@ textarea {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-=======
->>>>>>> yian
 }
