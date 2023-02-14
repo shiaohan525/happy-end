@@ -10923,74 +10923,27 @@ return jQuery;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!**************************!*\
-  !*** ./src/js/swiper.js ***!
-  \**************************/
+/*!************************!*\
+  !*** ./src/js/vote.js ***!
+  \************************/
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 5000
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar"
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
-var swiper2 = new Swiper(".mySwiper-vote", {
-  slidesPerView: 4,
-  spaceBetween: 0,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      slidesPerGroup: 1
-    },
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-      slidesPerGroup: 1
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      slidesPerGroup: 2
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      slidesPerGroup: 1
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 35,
-      slidesPerGroup: 1
+$('.flip').on('click', function () {
+  $(this).parent().children('.front').siblings().toggleClass('active');
+  $(this).parent().children('.back').siblings().toggleClass('active');
+}); // 投票成功彈窗裡 工作職缺超過10字呈現...
+
+$(function () {
+  var len = 11;
+  $(".JQellipsis").each(function (i) {
+    if ($(this).text().length > len) {
+      $(this).attr("title", $(this).text());
+      var text = $(this).text().substring(0, len - 1) + "...";
+      $(this).text(text);
     }
-  }
-});
-var elements = document.getElementsByClassName('swiper-button-lock');
-$(window).on('load', function () {
-  $(elements).removeClass('swiper-button-lock');
+  });
 });
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=swiper.js.map
+//# sourceMappingURL=vote.js.map

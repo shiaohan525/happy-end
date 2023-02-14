@@ -15,6 +15,7 @@ module.exports = {
         swiper: './src/js/swiper.js',
         app: './src/js/application.js',
         cardJob: './src/js/card-job.js',
+        vote: './src/js/vote.js',
     },
     output: {
         path: path.resolve(__dirname, 'pro'),
@@ -150,20 +151,44 @@ module.exports = {
             filename: 'lottery.html',
             chunks: ['main','global','img'],
         }),
+        new HtmlWebpackPlugin({//2-3 投票頁
+            template: path.resolve(__dirname, './src/vote.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'vote.html',
+            chunks: ['main','global','img','swiper','app','vote'],
+        }),
+        new HtmlWebpackPlugin({//2-5 歷年得獎頁 - 金
+            template: path.resolve(__dirname, './src/award-2021-gold.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'award-2021-gold.html',
+            chunks: ['main','global','img','swiper'],
+        }),
+        new HtmlWebpackPlugin({//2-5 歷年得獎頁 - 銀
+            template: path.resolve(__dirname, './src/award-2021-silver.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'award-2021-silver.html',
+            chunks: ['main','global','img','swiper'],
+        }),
+        new HtmlWebpackPlugin({//2-5 歷年得獎頁 - 特別獎
+            template: path.resolve(__dirname, './src/award-2021-bronze.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'award-2021-bronze.html',
+            chunks: ['main','global','img','swiper'],
+        }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/header.html'),
             location: 'header',//要放入的html tag位置
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html']//需引用的頁面記得新增在這裡
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','single-post.html','award-2021-gold.html','award-2021-silver.html','award-2021-bronze.html','vote.html']//需引用的頁面記得新增在這裡
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/footer.html'),
             location: 'footer',
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html']
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','single-post.html','award-2021-gold.html','award-2021-silver.html','award-2021-bronze.html','vote.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/swiper.html'),
             location: 'swiper',
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','happiness-company.html','happiness-job.html','company-story.html','company-job.html','company-news.html','company-walfare.html']
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','happiness-company.html','happiness-job.html','company-story.html','company-job.html','company-news.html','company-walfare.html','award-2021-gold.html','award-2021-silver.html','award-2021-bronze.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/card-job.html'),
@@ -173,12 +198,12 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/pgnb-style2.html'),
             location: 'pgnb-second',
-            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html']
+            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','award-2021-silver.html','award-2021-gold.html','award-2021-bronze.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/category.html'),
             location: 'category',
-            template_filename: ['index.html']
+            template_filename: ['index.html','application.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/card-company-tag.html'),

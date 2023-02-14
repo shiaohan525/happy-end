@@ -1,0 +1,223 @@
+.award-wrapper {
+    background: $c-secondary-white;
+
+    .award-container {
+
+        .tab-control{
+            @extend %tac;
+            background: $c-white;
+            padding: 6rem 4rem 0;
+            ul{
+                @include flex($a-i:center,$j-c:center);
+                gap: 30px;
+
+                li{
+                    padding: 1rem;
+
+                    &.active{
+                        border-bottom: 5px solid $c-primary;
+                    }
+
+                    p.tag{
+                        font-weight: 500;
+                        letter-spacing: 1.5px;
+                    }
+
+                    img{
+                        max-width: 62px;
+                    }
+
+                    &.gold p{
+                        color: #97661C;
+                    }
+                    &.silver p{
+                        color: #3D4663;
+                    }
+                    &.bronze p{
+                        color: #BD5555;
+                    }
+                }
+            }
+        }
+
+        .filter{
+            @extend %page-content;
+            @extend %tac;
+            padding: 4rem 2rem 1rem;
+            max-width: 1420px;
+
+            >p{
+                margin: 3rem 0;
+            }
+
+            .category{
+                @extend %ma;
+                max-width: 900px;
+
+                ul{
+                    @include flex($a-i:center,$j-c:center,$w:wrap);
+                    gap: 15px;
+                    margin: 3rem 0 0;
+
+                    a{
+                        font-weight: 400;
+                        border-radius: 100px;
+                        background: $c-white;
+                        color: $c-primary;
+                        transition: all ease .4s;
+
+                        &.active,&:hover{
+                            color: $c-white;
+                            background: $c-primary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .award-content{
+            @extend %page-content;
+            @extend %tac;
+            display: grid;
+            gap: 30px;
+            padding: 4rem 2rem;
+            max-width: 1420px;
+
+            .item{
+                @extend %bb;
+                @include flex($a-i:center,$j-c:space-between);
+                padding: 1rem 3rem;
+                background: $c-white;
+                gap: 10px;
+
+                p{
+                    padding: 0 3rem;
+
+                    &:first-child{
+                        padding-left: 0;
+                    }
+
+                    &:nth-child(2){
+                        border-left: 0.5px solid #DDD0C5;
+                    }
+                }
+
+                .btn{
+                    font-weight: 400;
+                    padding: 10px 24px;
+                }
+            }
+        }
+
+        .brand-list {
+            .container {
+                @extend %tac;
+                @extend %page-content;
+                max-width: 1420px;
+                padding: 2rem;
+
+                .section-title {
+                    padding-bottom: 3rem;
+                    border-bottom: 1px solid #DDD0C5;
+                }
+
+                .bottom {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 30px;
+                    padding-top: 3rem;
+
+                    .brand-cover {
+                        aspect-ratio: 4 / 3;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .brand-info {
+                        @extend %tac;
+                        @extend %rel;
+                        background: $c-white;
+                        padding: 1.5rem;
+
+                        p{
+                            text-align: left;
+                            &.b-category {
+                                color: $c-primary-deep;
+                                margin-bottom: 1rem;
+                            }
+                        }
+
+                        .btn{
+                            font-weight: 400;
+                            margin: 1rem 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pgnb-style2{
+            margin: 0;
+        }
+
+        @include pad{
+            .tab-control, .filter, .award-content{
+                padding: 2rem 2rem 0 !important;
+            }
+
+            .item{
+                flex-wrap:wrap !important;
+                padding: 1rem 2rem !important;
+
+                p{
+                    padding: 0 !important;
+                    flex-basis: 100%;
+                    border: none !important;
+                    text-align: left !important;
+                }
+            }
+        }
+
+        &.award-gold-container{
+            .filter{
+                .category{
+                    a{
+                        @extend %rel;
+                        border: none;
+                        color: #AA8769;
+                        transition: all ease .4s;
+
+                        &::before{
+                            @extend %bb;
+                            @include absolute($top:-1px,$left:-3px);
+                            content: '';
+                            background: transparent;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 100px;
+                            border: 1px solid #AA8769;
+                        }
+
+                        &:hover,&.active{
+                            color: $c-primary;
+                            background: $c-white;
+                            &::before{
+                                border-color: $c-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.award-silver-container{
+            .filter{
+                padding: 2rem 2rem 0;
+            }
+        }
+    }
+}
