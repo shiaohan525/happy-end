@@ -77,3 +77,10 @@
     object-fit: cover;
     overflow: hidden;
 }
+
+.swiper-pagination-bullet{
+    width: 50px;
+    height: 4px;
+    border-radius: 0px;
+    background-color: $c-primary;
+}

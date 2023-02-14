@@ -171,10 +171,22 @@
                     @include flex($d:column);
                     gap: 12px;
                 }
+
+
+
                 .group-title{
                     flex:0.3;
                     color: $c-primary;
                 }
+
+                .highlight{
+                    .walfare-item{
+                        li:nth-child(1){
+                            color: $c-secondary;
+                        }
+                    }
+                }
+
                 .item-group{
                     flex: 1;
                     @include basic_grid(4,1fr,40px,32px);
@@ -183,11 +195,6 @@
                         @include basic_grid(2,1fr,40px,32px);
                     }
 
-                    &:nth-child(2){
-                        li:nth-child(1){
-                            color: $c-secondary;
-                        }
-                    }
                     .walfare-item{
                         @include flex($d:column);
                         gap: 8px;

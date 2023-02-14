@@ -83,13 +83,13 @@ module.exports = {
             template: path.resolve(__dirname, './src/archive-coverage.html'),
             minify: false,
             filename: 'archive-coverage.html',
-            chunks: ['main','global','img','header'],
+            chunks: ['main','global','img','header','swiper'],
         }),
         new HtmlWebpackPlugin({//4-1 文章列表_企業特刊
             template: path.resolve(__dirname, './src/archive-issue.html'),
             minify: false,
             filename: 'archive-issue.html',
-            chunks: ['main','global','img','header'],
+            chunks: ['main','global','img','header','swiper'],
         }),
         new HtmlWebpackPlugin({//2-1 報名初始
             template: path.resolve(__dirname, './src/application.html'),
@@ -101,13 +101,13 @@ module.exports = {
             template: path.resolve(__dirname, './src/happiness-company.html'),
             minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
             filename: 'happiness-company.html',
-            chunks: ['main','global','img','header'],
+            chunks: ['main','global','img','header','swiper'],
         }),
         new HtmlWebpackPlugin({//3-1 幸福職涯-推薦職缺
             template: path.resolve(__dirname, './src/happiness-job.html'),
             minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
             filename: 'happiness-job.html',
-            chunks: ['main','global','img','header'],
+            chunks: ['main','global','img','header','swiper'],
         }),
         new HtmlWebpackPlugin({//4-2 文章內頁
             template: path.resolve(__dirname, './src/single-post.html'),
@@ -151,15 +151,39 @@ module.exports = {
             filename: 'lottery.html',
             chunks: ['main','global','img','header'],
         }),
+        new HtmlWebpackPlugin({//1-2-1 搜尋結果頁:嚴選企業
+            template: path.resolve(__dirname, './src/searchResult-company.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'searchResult-company.html',
+            chunks: ['main','global','img','header'],
+        }),
+        new HtmlWebpackPlugin({//1-2-2 搜尋結果頁:推薦職缺
+            template: path.resolve(__dirname, './src/searchResult-job.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'searchResult-job.html',
+            chunks: ['main','global','img','header'],
+        }),
+        new HtmlWebpackPlugin({//1-2-3 搜尋結果頁:企業報導
+            template: path.resolve(__dirname, './src/searchResult-news.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'searchResult-news.html',
+            chunks: ['main','global','img','header'],
+        }),
+        new HtmlWebpackPlugin({//1-2-4 搜尋結果頁:企業特刊
+            template: path.resolve(__dirname, './src/searchResult-issue.html'),
+            minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
+            filename: 'searchResult-issue.html',
+            chunks: ['main','global','img','header'],
+        }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/header.html'),
             location: 'header',//要放入的html tag位置
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','login.html']//需引用的頁面記得新增在這裡
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','login.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html']//需引用的頁面記得新增在這裡
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/footer.html'),
             location: 'footer',
-            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','login.html']
+            template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','login.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/swiper.html'),
@@ -174,7 +198,7 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/pgnb-style2.html'),
             location: 'pgnb-second',
-            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html']
+            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/category.html'),
@@ -184,12 +208,12 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/card-company-tag.html'),
             location: 'card-company-tag',
-            template_filename: ['happiness-company.html','talent.html']
+            template_filename: ['happiness-company.html','talent.html','searchResult-company.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/card-job-tag.html'),
             location: 'card-job-tag',
-            template_filename: ['happiness-job.html']
+            template_filename: ['happiness-job.html','searchResult-job.html']
         }),
     ],
     devtool: 'source-map',// 開發完請刪掉pro裡的map檔或是先註解這個工具再建立發布包裝
