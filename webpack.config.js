@@ -209,10 +209,6 @@ module.exports = {
             path: path.join(__dirname, './src/layout/footer.html'),
             location: 'footer',
             template_filename: ['index.html','archive-coverage.html','archive-issue.html','application.html','happiness-company.html','happiness-job.html','talent.html','company-story.html','company-job.html','company-news.html','company-walfare.html','lottery.html','login.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html','single-post.html','award-2021-gold.html','award-2021-silver.html','award-2021-bronze.html','vote.html']
-<<<<<<< HEAD
-=======
-
->>>>>>> 709bc455fe66d60b255b215a9dff0971ba65014f
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/swiper.html'),

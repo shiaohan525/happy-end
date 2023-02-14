@@ -28,13 +28,9 @@ import ad from '../img/ad-ex.png'
 import talentBanner from '../img/talent-banner.png'
 import talentAd from '../img/talent-ad.png'
 import companyBrand from '../img/company-logo.png'
-<<<<<<< HEAD
-=======
 import companySwiper01 from '../img/company-swiper01.png'
 import companyStory01 from '../img/company-story-img01.png'
 import downloadIcon from '../img/download-icon.svg'
-
->>>>>>> 709bc455fe66d60b255b215a9dff0971ba65014f
 import companyimg01 from '../img/company-target.png'
 import companyimg02 from '../img/company-award01.png'
 import companyimg03 from '../img/company-award02.png'
@@ -49,24 +45,12 @@ import sidebar_ex5 from '../img/sidebar-ex5.png'
 import sidebar_ex6 from '../img/sidebar-ex6.png'
 import btm_prev from '../img/btm-prev-post.png'
 import btm_next from '../img/btm-next-post.png'
-<<<<<<< HEAD
-import companySwiper01 from '../img/company-swiper01.png'
-import companyStory01 from '../img/company-story-img01.png'
-import downloadIcon from '../img/download-icon.svg'
-=======
-
->>>>>>> 709bc455fe66d60b255b215a9dff0971ba65014f
 import post_cover_ex from '../img/post-cover-ex.png'
 import award_1 from '../img/gold.svg'
 import award_2 from '../img/silver.svg'
 import award_3 from '../img/bronze.svg'
 import brand_logo_category from '../img/brand-logo-category.png'
 import input_file_svg from '../img/input-file.svg'
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 709bc455fe66d60b255b215a9dff0971ba65014f
 import loginIcon01 from '../img/login-user.svg'
 import loginIcon02 from '../img/login-company.svg'
 import loginBrand from '../img/login-brand.svg'
