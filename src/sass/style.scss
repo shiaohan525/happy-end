@@ -34,6 +34,8 @@
 @import 'page/searchResult-job';
 @import 'page/searchResult-news';
 @import 'page/searchResult-issue';
+@import 'page/award-2021';
+@import 'page/vote';
 
 //google-font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
@@ -184,7 +186,11 @@ p,
 }
 
 // 主標題
+<<<<<<< HEAD
 .cardJob > .title {
+=======
+.cardJob>.title {
+>>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
     width: 100%;
     border-bottom: 1px solid $c-secondary-light;
     padding: 68px 0px;
@@ -193,6 +199,10 @@ p,
     gap: 20px;
 
     @include mini-pad {
+<<<<<<< HEAD
+=======
+        gap: 0px;
+>>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
         padding: 40px 0px;
     }
 
@@ -474,6 +484,7 @@ textarea {
             text-align: left;
         }
 
+<<<<<<< HEAD
         .deco{
             @include flex($j-c:space-between);
             @include fixed($top:0,$left:0);
@@ -481,35 +492,132 @@ textarea {
         }
 
         .content{
+=======
+// 彈窗共用樣式
+.apply-dialog {
+    @extend %dn;
+    @extend %bb;
+    @include fixed($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 666);
+    content: '';
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    &.dialog-application-info {
+        .container {
+            max-width: 650px;
+            padding: 4rem 1.5rem 1.5rem;
+        }
+    }
+
+    &.voted {
+        ul {
+            margin: 0.5rem 0 2rem;
+            max-height: 173px;
+            overflow-y: scroll;
+
+            li {
+                text-align: left;
+                padding: 0.2rem 0;
+                border-bottom: 1px dotted #C19E7F;
+
+                a {
+                    color: $c-black;
+                    padding: 0.2rem 0;
+                }
+            }
+        }
+    }
+
+    .container {
+        @extend %dn;
+        @extend %bb;
+        @extend %rel;
+        @extend %tac;
+        @include absolute($top: 55%, $left: 50%, $z-i: 9992);
+        transform: translate(-50%, -50%);
+        background: #F0E7DE;
+        box-shadow: 0px 0px 11px rgb(0 0 0 / 7%);
+        width: 90%;
+        height: auto;
+        max-width: 420px;
+        border-radius: 0 8px 8px 8px;
+        padding: 4rem 1.5rem 0.5rem;
+
+        &.active {
+            @extend %db;
+        }
+
+        p.h5 {
+            @extend %tac;
+            color: $c-secondary-deep;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        p.p1 {
+            text-align: left;
+        }
+
+        .deco {
+            @include flex($j-c: space-between);
+            @include fixed($top: 0, $left: 0);
+            width: 100%;
+        }
+
+        .content {
+>>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
             max-height: 400px;
             overflow-y: scroll;
         }
 
+<<<<<<< HEAD
         button.btn{
+=======
+        button.btn {
+>>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
             margin: 2rem 0;
         }
 
         .close-btn {
+<<<<<<< HEAD
             @include absolute($top: 10px,$right:10px);
+=======
+            @include absolute($top: 10px, $right: 10px);
+>>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
             @extend %pointer;
             @extend %rel;
             width: 25px;
             height: 25px;
             border: 2px solid $c-primary;
             border-radius: 100px;
+<<<<<<< HEAD
     
             span {
                 @include absolute($top: 11px,$left:2.5px);
+=======
+
+            span {
+                @include absolute($top: 11px, $left: 2.5px);
+>>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
                 @extend %dib;
                 width: 80%;
                 height: 3px;
                 background: $c-primary;
                 border-radius: 5px;
+<<<<<<< HEAD
     
                 &.left {
                     transform: rotate(45deg);
                 }
     
+=======
+
+                &.left {
+                    transform: rotate(45deg);
+                }
+
+>>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
                 &.right {
                     transform: rotate(-45deg);
                 }
@@ -517,6 +625,10 @@ textarea {
         }
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
 // 彈窗背景共用
 .dialog-bg {
     @include absolute($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 9991);

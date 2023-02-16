@@ -17,6 +17,7 @@ module.exports = {
         cardJob: './src/js/card-job.js',
         vote: './src/js/vote.js',
         header: './src/js/header.js',
+        vote: './src/js/vote.js',
     },
     output: {
         path: path.resolve(__dirname, 'pro'),
@@ -223,7 +224,11 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/pgnb-style2.html'),
             location: 'pgnb-second',
+<<<<<<< HEAD
             template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','award-2021-silver.html','award-2021-gold.html','award-2021-bronze.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html']
+=======
+            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html','award-2021-silver.html','award-2021-gold.html','award-2021-bronze.html']
+>>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/category.html'),
