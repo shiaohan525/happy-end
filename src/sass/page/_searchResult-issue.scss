@@ -1,0 +1,164 @@
+.searchResult-wrapper{
+    
+    .searchResult-issue{
+        @extend %page-content;
+        @include flex($d:column);
+        margin: auto;
+        gap:28px;
+        padding: 88px 120px;
+        background: $c-secondary-white;
+        p{
+            text-align: left;
+            display: inline-block;
+        }
+        .linkTab{
+            padding-top: 32px;
+            white-space: nowrap;
+            @include pad{
+                padding-top: 40px;
+                gap: 40px;
+            }
+            @include mobile{
+                font-size: $tag;
+                gap: 0px;
+            }
+        }
+        .archive {
+            text-align: left;
+
+            p,
+            h4 {
+                margin-bottom: 15px;
+            }
+
+            p.total {
+                color: $c-black;
+            }
+
+            .archive-item {
+                @include flex($a-i: center);
+                background: $c-white;
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+                gap: 20px;
+
+                .col {
+                    &.post-cover {
+                        flex: 0.7;
+
+                        img {
+                            width: 100%;
+                            aspect-ratio: 4 / 3;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &.post-content {
+                        flex: 1;
+                        padding: 2rem 1rem;
+
+                        p {
+                            &.date {
+                                @include flex($a-i: center);
+                                column-gap: 10px;
+                                color: $c-secondary-deep;
+
+                                svg {
+                                    width: 100%;
+                                    max-width: 30px;
+                                }
+                            }
+                        }
+
+                        .link {
+                            @include flex($a-i: center, $j-c: space-between, $w: wrap);
+                            gap: 15px;
+
+                            .category {
+                                ul {
+                                    @include flex($w: wrap);
+                                    gap: 10px;
+
+                                    li {
+                                        @extend %pointer;
+
+                                        a {
+                                            @extend %dib;
+                                            color: $c-primary-deep;
+                                            padding: 0.5rem 1rem;
+                                            transition: all ease .4s;
+                                            border: 1px solid #d9d9d9;
+                                            border-radius: 5px;
+
+                                            &:hover {
+                                                color: $c-white;
+                                                background: $c-primary-deep;
+                                                border-color: $c-primary-deep;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .media-share {
+                                @include flex($a-i: center, $w: wrap);
+                                gap: 10px;
+
+                                .media-item {
+                                    a {
+                                        @extend %dib;
+                                        @extend %bb;
+                                        width: 40px;
+                                        height: 40px;
+                                        padding: 0.5rem;
+                                        border: 1px solid #DDDDDD;
+                                        border-radius: 100px;
+                                        transition: all ease .4s;
+
+                                        &:hover {
+                                            border-color: $c-primary-deep;
+
+                                            svg {
+                                                path {
+                                                    fill: $c-primary-deep;
+                                                }
+                                            }
+                                        }
+
+                                        svg {
+                                            width: 100%;
+                                            height: 100%;
+
+                                            path {
+                                                transition: all ease .4s;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                @include pad {
+                    @include flex($w: wrap);
+
+                    .post-cover,
+                    .post-content {
+                        flex: 1 !important;
+                        flex-basis: 100% !important;
+                    }
+                }
+            }
+        }
+        @include pad{
+            padding: 66px 80px;
+            gap:32px;
+        }
+        @include mini-pad{
+            padding: 40px 30px;
+            gap:24px;
+        }
+    }
+
+}

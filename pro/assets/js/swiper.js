@@ -10935,12 +10935,8 @@ var swiper = new Swiper(".mySwiper", {
     delay: 5000
   },
   pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar"
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    el: ".swiper-pagination" // type: "progressbar",
+
   }
 });
 var swiper2 = new Swiper(".mySwiper-vote", {

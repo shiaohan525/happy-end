@@ -319,3 +319,195 @@ nav{
     }
 }
 
+#login-info{
+    @extend %pointer;
+}
+
+// 關閉按鈕
+.login-dialog {
+    @extend %dn;
+    @extend %bb;
+    @include fixed($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 666);
+    content: '';
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    &.dialog-login-info{
+        .container{
+            max-width: 650px;
+            padding: 4rem 7.5rem 3.5rem;
+            @include flex($d:column);
+            gap: 14px;
+            @include mini-pad{
+                padding: 2rem 1.5rem 3rem;
+            }
+        }
+    }
+
+    .container {
+        @extend %dn;
+        @extend %bb;
+        @extend %rel;
+        @extend %tac;
+        @include absolute($top: 55%, $left: 50%, $z-i: 9992);
+        transform: translate(-50%, -50%);
+        background: #F0E7DE;
+        box-shadow: 0px 0px 11px rgb(0 0 0 / 7%);
+        width: 90%;
+        height: auto;
+        max-width: 420px;
+        border-radius: 0 8px 8px 8px;
+        padding: 4rem 1.5rem 0.5rem;
+
+        &.active {
+            @extend %db;
+        }
+
+        p.h5{
+            @extend %tac;
+            color: $c-secondary-deep;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        p.p1{
+            text-align: left;
+        }
+
+        .deco{
+            @include flex($j-c:space-between);
+            @include fixed($top:0,$left:0);
+            width: 100%;
+        }
+
+        .content{
+            @include flex($d:column,$a-i:center);
+            max-height: 400px;
+            overflow-y: auto;
+            gap: 12px;
+            ul{
+                @include flex($j-c:space-between);
+                width: 100%;
+                li{
+                    @include flex($a-i:center,$j-c:center);
+                    @extend %pointer;
+                    padding: 12px;
+                    gap: 8px;
+                    width: 100%;
+                    border-bottom: 2px solid #d1b5b5;
+                    @include mobile{
+                        @include flex($d:column,$a-i:center);
+                        gap: 2px;
+                        padding: 8px;
+                        svg {
+                            width: 18px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                    p{
+                        color: #d1b5b5;
+                    }
+                    svg {
+                        path {
+                            fill: #d1b5b5;
+                        }
+                    }
+                }
+                .focus{
+                    border-bottom: 3px solid $c-primary;
+                    p{
+                        color: $c-primary;
+                    }
+                    svg {
+                        path {
+                            fill: $c-primary;
+                        }
+                    }
+                }
+            }
+        }
+
+        #companyLog{
+            display: none;
+        }
+
+        .input-main{
+            @include flex($d:column);
+            gap: 12px;
+            width: 100%;
+            .input-icon{ 
+                width: auto;
+                @include flex;
+                padding: 10px;
+                background: #FFFFFF;
+                border: 1px solid #D9D9D9;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                gap: 8px;
+                input{
+                    width: 100%;
+                    @include mini-pad{
+                        font-size: 12px;
+                    }
+                }
+            }
+            
+        }
+
+        .login-text{
+            span{
+                color: $c-primary;
+            }
+            a{
+                @extend %pointer;
+                color: $c-primary;
+                text-decoration: underline;
+                &:hover{
+                    color: $c-primary-deep;
+                }
+            }
+        }
+
+        button{
+            margin: auto;
+        }
+
+        // button{
+        //     background: #FFE500;
+        //     border: 0.82516px solid #004397;
+        //     clip-path: polygon(15% 0, 100% 0, 100% 50%, 86% 100%, 0 100%, 0% 50%);
+        // }
+
+        .close-btn {
+            @include absolute($top: 10px,$right:10px);
+            @extend %pointer;
+            @extend %rel;
+            width: 25px;
+            height: 25px;
+            border: 2px solid $c-primary;
+            border-radius: 100px;
+    
+            span {
+                @include absolute($top: 11px,$left:2.5px);
+                @extend %dib;
+                width: 80%;
+                height: 3px;
+                background: $c-primary;
+                border-radius: 5px;
+    
+                &.left {
+                    transform: rotate(45deg);
+                }
+    
+                &.right {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+
+    }
+}

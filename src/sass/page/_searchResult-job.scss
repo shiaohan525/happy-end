@@ -1,0 +1,36 @@
+.searchResult-wrapper{
+    
+    .searchResult-job{
+        @extend %page-content;
+        @include flex($d:column);
+        margin: auto;
+        gap:28px;
+        padding: 88px 120px;
+        background: $c-secondary-white;
+        p{
+            text-align: left;
+            display: inline-block;
+        }
+        .linkTab{
+            padding-top: 32px;
+            white-space: nowrap;
+            @include pad{
+                padding-top: 40px;
+                gap: 40px;
+            }
+            @include mobile{
+                font-size: $tag;
+                gap: 0px;
+            }
+        }
+        @include pad{
+            padding: 66px 80px;
+            gap:32px;
+        }
+        @include mini-pad{
+            padding: 40px 30px;
+            gap:24px;
+        }
+    }
+
+}
