@@ -40,9 +40,6 @@
         gap:12px;
         background: $c-secondary-white;
         padding: 20px;
-        @include mobile{
-            padding: 15px 10px;
-        }
         .job-title{
             @include flex($a-i:center);
             gap:8px;
@@ -91,9 +88,7 @@
 
     @include mobile{
         display: block;
-        width: auto;
-        max-width: 320px;
-        min-width: 300px; 
+        max-width: 300px;   
     }
     .swiper {
         width: 100%;
@@ -118,71 +113,7 @@
     }
     .card-job{
         @include mobile{
-            max-width: 240px;
-            width: 100%;
+            width: 200px;
         }
     }
-    .swiper-button-next,
-    .swiper-button-prev {
-        top: 55%;
-
-        &::after {
-            width: 34px;
-            height: 53px;
-        }
-
-    }
-
-    .swiper-button-next {
-        right: 0px !important;
-
-        &::after {
-            content: url(../img/arrow-next.svg);
-
-            @include mini-pad {
-                content: url(../img/arrow-next-rwd.svg);
-                width: 20px !important;
-            }
-        }
-    }
-
-    .swiper-button-prev {
-        left: 0px !important;
-
-        &::after {
-            content: url(../img/arrow-prev.svg);
-            width: 20px !important;
-
-            @include mini-pad {
-                content: url(../img/arrow-prev-rwd.svg);
-            }
-        }
-    }
-    @media only screen and (max-width: $mini-pad) {
-
-      .swiper-button-next,
-      .swiper-button-prev {
-          background: transparent;
-          width: 20px !important;
-      }
-
-      .swiper-button-next {
-          right: 10px !important;
-          text-align: right;
-      }
-
-      .swiper-button-prev {
-          left: 10px !important;
-      }
-  }
-}
-
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-    font-size: 27px;
-}
-
-
-.swiper-button-next,.swiper-button-prev{
-    width: auto;
 }

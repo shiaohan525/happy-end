@@ -15,7 +15,7 @@
         padding: 88px 120px;
         background: $c-white;
         @include pad{
-            padding: 3rem 80px;
+            padding: 66px 80px;
             gap:32px;
         }
         @include mini-pad{
@@ -42,11 +42,7 @@
 
     .talent-ad{
         background: $c-white;
-        padding: 0 0 5rem 0;
-
-        @include pad{
-            padding: 0 0 3rem 0;
-        }
+        padding: 5rem 0;
         
         .ad-container{
             @extend %page-content;
@@ -66,16 +62,13 @@
             img{
                 @include mentor-img(600px);
                 flex: 3;
-                @include pad{
-                    max-width: 900px;
-                }
             }
 
             .ad-content{
                 @include flex($d:column);
                 gap:16px;
 
-                @include pad{
+                @include mini-pad{
                     @include flex($d:column,$a-i:center);
                     text-align: center;
                 }

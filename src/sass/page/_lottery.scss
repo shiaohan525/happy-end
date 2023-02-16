@@ -292,8 +292,7 @@
                     }
                     input{
                         @extend %bb;
-                        color: $c-gray;
-                        border-radius: 4px;
+                        color: $c-secondary;
                     }
                     p{
                         color: $c-primary;
@@ -326,6 +325,7 @@
                     }
                     p{
                         display: none;
+                        text-align: left;
                         color: $c-primary;
                         @include pad{
                             display: block;
@@ -333,15 +333,9 @@
                     }
                     input{
                         @extend %bb;
-                        text-align: center;
-                        letter-spacing: 0.2rem;
                         height: fit-content;
-                        padding: 8px;
+                        padding: 4px;
                         border-radius: 4px;
-                        @include pad{
-                            text-align: left;
-                            letter-spacing: 0px;
-                        }
                     }
                     button{
                         @extend %bb;
@@ -398,18 +392,14 @@
                     }
                     
                     .item-img{
-                        @include flex($d:column,$a-i:center,$j-c:space-between);
+                        @include flex($d:column,$a-i:center,$j-c:space-around);
                         img{
                             @include mentor-img(100px);
-                            background: transparent;
+                            background: #000;
                             width: 80px;
                             height: 80px;
                             border-radius: 100px;
                             @include mini-pad{
-                                width: 100px;
-                                height: 100px;
-                            }
-                            @include mobile{
                                 width: 80px;
                                 height: 80px;
                             }
@@ -425,7 +415,6 @@
                         .content-lottery{
                             @include flex($a-i:center);
                             gap: 2px;
-                            padding: 12px 0 0 0 ;
                             p{
                                 color: $c-secondary-deep;
                                 font-size: 14px;
@@ -450,69 +439,6 @@
                         }
                     }
             }
-            }
-            .pagination {
-                @include flex($a-i: center, $j-c: center);
-                padding: 0 0 2rem 0;
-                gap: 15px;
-
-                .pgnb-btn {
-                    @extend %pointer;
-                    @include flex($a-i: center, $j-c: center);
-                    background: $c-primary;
-                    border-radius: 100px;
-                    width: 32.5px;
-                    height: 32.5px;
-
-                    svg {
-                        width: 20px;
-                        height: 14px;
-                    }
-
-                    &.btn-next {
-                        svg {
-                            margin-right: 3px;
-                        }
-                    }
-
-                    &.btn-prev {
-                        svg {
-                            margin-left: 3px;
-                        }
-                    }
-                }
-
-                .pagination-ul {
-                    @include flex($a-i: center, $j-c: center);
-                    gap: 15px;
-
-                    li {
-
-                        a {
-                            @extend %rel;
-                            @extend %tac;
-                            @extend %dib;
-                            width: 30px;
-                            height: 30px;
-                            border: 1.5px solid $c-primary;
-                            border-radius: 100px;
-                            font-weight: 600;
-                            line-height: 1.6;
-                            background: $c-white;
-                            color: $c-primary;
-                            transition: all ease .4s;
-
-                            &.pgnb-current,
-                            &:hover {
-                                // border-width: 5px;
-                                border: 3px solid;
-                                background: transparent;
-                                width: 28px;
-                                height: 28px;
-                            }
-                        }
-                    }
-                }
             }
         }
         .info {
@@ -552,15 +478,10 @@
                         width: fit-content;
                         height: 100%;
                         margin: 0;
-                        svg{
-                            width: 20px;
-                        }
                         &:hover{
-                            svg{
-                                path{
-                                    fill: $c-primary;
-                                }
-                            }
+                            // >img{
+                            //     filter: drop-shadow($c-primary 2000px 0);
+                            // }
                         }
                     }
                     img{
