@@ -32,6 +32,8 @@
 @import 'page/searchResult-job';
 @import 'page/searchResult-news';
 @import 'page/searchResult-issue';
+@import 'page/award-2021';
+@import 'page/vote';
 
 //google-font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
@@ -43,17 +45,18 @@
 @import url("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
 
 
-*{
-    font-family: 'Noto Sans TC', sans-serif, Arial,"Font Awesome 6 Free" !important;
+* {
+    font-family: 'Noto Sans TC', sans-serif, Arial, "Font Awesome 6 Free" !important;
 }
 
-img{
+img {
     width: 100%;
 }
 
 //font style:最後有獨立一個按鈕樣式
 
-h2, .h2{
+h2,
+.h2 {
     font-size: $h2;
     font-family: "adobe-fangsong-std", 'Noto Sans TC', sans-serif !important;
     font-weight: 600;
@@ -62,75 +65,83 @@ h2, .h2{
     letter-spacing: 0.01em;
     color: $c-black;
     margin-bottom: 1.5rem;
-    
-    @include mini-pad{
+
+    @include mini-pad {
         font-size: $m-h2;
         line-height: 130%;
     }
 }
-h3, .h3{
+
+h3,
+.h3 {
     font-size: $h3;
     font-weight: 400;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: $c-black;
-    
-    @include mini-pad{
+
+    @include mini-pad {
         font-size: $m-h3;
     }
 }
-h4, .h4{
+
+h4,
+.h4 {
     font-size: $h4;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0.02em;
-    
-    @include mini-pad{
+
+    @include mini-pad {
         font-size: $m-h4;
     }
 }
-h5, .h5{
+
+h5,
+.h5 {
     font-size: $h5;
     font-weight: 350;
     line-height: 130%;
     letter-spacing: 0.02em;
-    
-    @include mini-pad{
+
+    @include mini-pad {
         font-size: $m-h5;
     }
 }
-p, .p1{
+
+p,
+.p1 {
     font-size: $p1;
     font-weight: 300;
     line-height: 1.7;
     letter-spacing: 0.01em;
     color: $c-gray;
-    
-    @include mini-pad{
+
+    @include mini-pad {
         font-size: $m-p1;
         // line-height: 110%;
     }
 }
 
-.p2{
+.p2 {
     font-size: $p2;
     font-weight: 300;
     line-height: 1.7;
     letter-spacing: 0.01em;
-    
-    @include mini-pad{
+
+    @include mini-pad {
         font-size: $m-p2;
         // line-height: 105%;
     }
 }
 
-.tag{
+.tag {
     font-size: $tag;
     font-weight: 300;
     line-height: 120%;
     letter-spacing: 0.01em;
-    
-    @include mini-pad{
+
+    @include mini-pad {
         font-size: $m-tag;
         line-height: 102%;
     }
@@ -138,7 +149,7 @@ p, .p1{
 
 
 // 按鈕樣式
-.btn{
+.btn {
     @extend %pointer;
     @extend %bb;
     @extend %dib;
@@ -149,18 +160,18 @@ p, .p1{
     line-height: 120%;
     letter-spacing: 0.01em;
     border-radius: 8px;
-    color:$c-white;
+    color: $c-white;
     background: $c-primary;
     transition: all ease .4s;
     border: 1px solid $c-primary;
     white-space: nowrap;
 
-    @include mini-pad{
+    @include mini-pad {
         font-size: $m-p2;
         line-height: 105%;
     }
 
-    &:hover{
+    &:hover {
         background: $c-white;
         color: $c-primary;
         -webkit-transition: all 0.3s ease;
@@ -173,29 +184,30 @@ p, .p1{
 }
 
 // 主標題
-.title{
+.cardJob>.title {
     width: 100%;
     border-bottom: 1px solid $c-secondary-light;
     padding: 68px 0px;
     text-align: center;
-    @include flex($d:column);
-    gap:20px;
+    @include flex($d: column);
+    gap: 20px;
 
-    @include mini-pad{
+    @include mini-pad {
+        gap: 0px;
         padding: 40px 0px;
     }
 
-    @include mobile{
+    @include mobile {
         padding: 20px 0px;
     }
 }
 
 //職缺區塊標籤
-.job-tag{
-    @include flex($w:wrap);
-    gap:8px;
+.job-tag {
+    @include flex($w: wrap);
+    gap: 8px;
 
-    >p{
+    >p {
         @extend %dib;
         @extend %pointer;
         font-size: $tag;
@@ -203,7 +215,8 @@ p, .p1{
         padding: 4px 10px;
         border: 1px solid $c-secondary;
         border-radius: 8px;
-        &:hover{
+
+        &:hover {
             background: $c-secondary;
             color: $c-secondary-white;
             -webkit-transition: all 0.3s ease;
@@ -216,32 +229,36 @@ p, .p1{
 }
 
 //手機版換行
-.br-rwd{
+.br-rwd {
     display: none;
-    @include mobile{
+
+    @include mobile {
         display: block;
     }
 }
 
 // input&select - basic
-input,select,textarea{
+input,
+select,
+textarea {
     border: none;
-    &:focus{
+
+    &:focus {
         outline: none;
     }
 }
 
 // page-number style 2
-.pgnb-style2{
+.pgnb-style2 {
     @extend %db;
     margin: 2rem 0;
     width: 100%;
 
-    .g-pagination{
-        @include flex($a-i:center,$j-c:center);
-        gap:40px;
+    .g-pagination {
+        @include flex($a-i: center, $j-c: center);
+        gap: 40px;
 
-        select{
+        select {
             @extend %bb;
             @extend %pointer;
             width: 100%;
@@ -261,48 +278,49 @@ input,select,textarea{
             border-color: #666;
         }
 
-        a.tag{
-            @include flex($a-i:center);
+        a.tag {
+            @include flex($a-i: center);
             column-gap: 10px;
             color: $c-gray;
             transition: all ease .4s;
 
-            &.previous{
+            &.previous {
                 flex-direction: row-reverse;
 
-                svg{
+                svg {
                     transform: rotateY(180deg);
                 }
             }
 
-            &:hover{
+            &:hover {
                 color: $c-primary-deep;
 
-                &.next{
-                    svg{
+                &.next {
+                    svg {
                         transform: translateX(10px);
                     }
                 }
-                &.previous{
-                    svg{
+
+                &.previous {
+                    svg {
                         transform: translateX(-10px) rotateY(180deg);
                     }
                 }
             }
 
-            span{
+            span {
                 @include flex;
             }
 
-            svg{
+            svg {
                 transition: all ease .4s;
             }
         }
 
-        @include mobile{
+        @include mobile {
             gap: 15px;
 
-            a.tag{
+            a.tag {
                 column-gap: 5px;
             }
         }
@@ -336,22 +354,24 @@ input,select,textarea{
 }
 
 //a link tab
-.linkTab{
+.linkTab {
     border-bottom: 1px solid $c-secondary-light;
     width: 100%;
-    @include flex($j-c:center);
-    gap:100px;
+    @include flex($j-c: center);
+    gap: 100px;
 
-    .tabFocus{
-        color:$c-primary;
+    .tabFocus {
+        color: $c-primary;
         padding: 8px;
         border-bottom: 4px solid $c-primary;
     }
-    a{
+
+    a {
         display: inline-block;
         color: $c-gray;
         padding: 8px;
-        &:hover{
+
+        &:hover {
             color: $c-secondary;
             transition: all ease .4s;
         }
@@ -360,9 +380,9 @@ input,select,textarea{
 }
 
 //form select
-.form-select{
+.form-select {
 
-    select{
+    select {
         @extend %bb;
         @extend %pointer;
         width: 100%;
@@ -375,50 +395,169 @@ input,select,textarea{
         -webkit-appearance: none;
         -moz-appearance: none;
 
-        background-image: url('../img/select-dropdown.svg');
+        background-image: url('../img/select-dropdown-icon.svg');
         background-repeat: no-repeat;
         background-size: 36px 12px;
         background-position: calc(100% + -1px) calc(2em - 8px);
         border-color: #666;
 
-        @include mini-pad{
+        @include mini-pad {
             max-width: 400px;
         }
-        @include mobile{
+
+        @include mobile {
             max-width: 280px;
         }
     }
 }
 
+// 彈窗共用樣式
+.apply-dialog {
+    @extend %dn;
+    @extend %bb;
+    @include fixed($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 666);
+    content: '';
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    &.dialog-application-info {
+        .container {
+            max-width: 650px;
+            padding: 4rem 1.5rem 1.5rem;
+        }
+    }
+
+    &.voted {
+        ul {
+            margin: 0.5rem 0 2rem;
+            max-height: 173px;
+            overflow-y: scroll;
+
+            li {
+                text-align: left;
+                padding: 0.2rem 0;
+                border-bottom: 1px dotted #C19E7F;
+
+                a {
+                    color: $c-black;
+                    padding: 0.2rem 0;
+                }
+            }
+        }
+    }
+
+    .container {
+        @extend %dn;
+        @extend %bb;
+        @extend %rel;
+        @extend %tac;
+        @include absolute($top: 55%, $left: 50%, $z-i: 9992);
+        transform: translate(-50%, -50%);
+        background: #F0E7DE;
+        box-shadow: 0px 0px 11px rgb(0 0 0 / 7%);
+        width: 90%;
+        height: auto;
+        max-width: 420px;
+        border-radius: 0 8px 8px 8px;
+        padding: 4rem 1.5rem 0.5rem;
+
+        &.active {
+            @extend %db;
+        }
+
+        p.h5 {
+            @extend %tac;
+            color: $c-secondary-deep;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        p.p1 {
+            text-align: left;
+        }
+
+        .deco {
+            @include flex($j-c: space-between);
+            @include fixed($top: 0, $left: 0);
+            width: 100%;
+        }
+
+        .content {
+            max-height: 400px;
+            overflow-y: scroll;
+        }
+
+        button.btn {
+            margin: 2rem 0;
+        }
+
+        .close-btn {
+            @include absolute($top: 10px, $right: 10px);
+            @extend %pointer;
+            @extend %rel;
+            width: 25px;
+            height: 25px;
+            border: 2px solid $c-primary;
+            border-radius: 100px;
+
+            span {
+                @include absolute($top: 11px, $left: 2.5px);
+                @extend %dib;
+                width: 80%;
+                height: 3px;
+                background: $c-primary;
+                border-radius: 5px;
+
+                &.left {
+                    transform: rotate(45deg);
+                }
+
+                &.right {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+// 彈窗背景共用
+.dialog-bg {
+    @include absolute($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 9991);
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
 
 //quote
-.quote{
+.quote {
     @extend %bb;
     width: 100%;
     padding: 12px 36px;
     background: $c-secondary-white;
     position: relative;
 
-    p{
+    p {
         font-family: "adobe-fangsong-std", 'Noto Sans TC', sans-serif !important;
     }
 
-    &:after{
+    &:after {
         content: "";
         background: url(../img/quote-right.svg);
-        @include bgi($size:contain, $position:center);
-        @include absolute($right:0,$bottom:-40px);
+        @include bgi($size: contain, $position: center);
+        @include absolute($right: 0, $bottom: -40px);
         display: block;
         width: 32px;
         height: 37px;
         position: absolute;
     }
 
-    &:before{
+    &:before {
         content: "";
         background: url(../img/quote-left.svg);
-        @include bgi($size:contain, $position:center);
-        @include absolute($top:-40px,$left:0);
+        @include bgi($size: contain, $position: center);
+        @include absolute($top: -40px, $left: 0);
         display: block;
         width: 32px;
         height: 37px;
