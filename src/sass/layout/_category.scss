@@ -23,10 +23,16 @@
         }
         >h2{
             letter-spacing: 0.5rem;
+            @include pad{
+                letter-spacing: 0.1rem;
+            }
         }
         >p{
             line-height: 150%;
             letter-spacing: 0.2rem;
+            @include pad{
+                letter-spacing: 0.1rem;
+            }
         }
     }
 
