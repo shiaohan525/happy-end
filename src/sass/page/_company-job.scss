@@ -285,6 +285,9 @@
                         .job-content{
                             @include basic_grid(2,1fr,8px,0px);
                             margin-bottom: 15px;
+                            @include mini-pad{
+                                @include basic_grid(1,1fr,8px,0px);
+                            }
                         }
 
                         p {

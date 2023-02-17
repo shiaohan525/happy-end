@@ -9,11 +9,11 @@
     @include pad{
         max-height: 1000px;
         min-height: 500px;
+        margin-top: 70px;
     }
 
     @include mobile{
         min-height: 500px;
-        margin-top: 70px;
     }
 }
 
