@@ -209,12 +209,11 @@ p,
     @include flex($w: wrap);
     gap: 8px;
 
-    >p {
+    >a {
         @extend %dib;
-        @extend %pointer;
         font-size: $tag;
         color: $c-secondary;
-        padding: 4px 10px;
+        padding: 6px 10px;
         border: 1px solid $c-secondary;
         border-radius: 8px;
 
@@ -362,6 +361,10 @@ textarea {
     @include flex($j-c: center);
     gap: 100px;
 
+    @include mobile{
+        gap: 40px;
+    }
+
     .tabFocus {
         color: $c-primary;
         padding: 8px;
@@ -388,7 +391,7 @@ textarea {
         @extend %bb;
         @extend %pointer;
         width: 100%;
-        max-width: 140px;
+        min-width: 140px;
         height: 47px;
         color: $c-gray;
         border-radius: 8px;
@@ -404,11 +407,11 @@ textarea {
         border-color: #666;
 
         @include mini-pad {
-            max-width: 400px;
+            min-width: none;
         }
 
         @include mobile {
-            max-width: 280px;
+            min-width: none;
         }
     }
 }

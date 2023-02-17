@@ -25,7 +25,6 @@
         // min-width: 180px;
         // max-width: 300px;
         @include flex($d:column);
-        @extend %pointer;
         gap:20px;
 
         background: $c-white;
@@ -35,6 +34,9 @@
             @extend %bb;
             padding-bottom: 16px;
             border-bottom: 1px solid $c-secondary;
+            a{
+                color: $c-gray;
+            }
         }
 
         .content-section{
@@ -42,6 +44,7 @@
             width: fit-content;
             gap:20px;
             background: $c-white;
+
             .card-content{
                 @include flex($d:column);
                 gap:16px;
@@ -50,6 +53,10 @@
                 .job-title{
                     @include flex($a-i:center);
                     gap:8px;
+
+                    a{
+                        color: $c-gray;
+                    }
 
                     >img{
                         width: 50px;
@@ -67,7 +74,7 @@
                     >ul{
                         @include flex($d:column);
                         gap:8px;
-                        li{
+                        a{
                             @include flex($a-i:center);
                             gap: 8px;
                         }

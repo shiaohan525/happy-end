@@ -1,4 +1,7 @@
 .company-wrapper{
+    .swiper{
+        margin: 0px;
+    }
 
     .title-swiper{
         @include flex;

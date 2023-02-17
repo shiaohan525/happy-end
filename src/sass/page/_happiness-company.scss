@@ -57,11 +57,9 @@
                 }
                 .select-flex{
                     @include flex($j-c:space-between);
-                    width: 400px;
                     gap:20px;
                     @include mini-pad{
                         @include flex($d:column,$a-i:center);
-                        width: 400px;
                     }
                     @include mobile{
                         width: 260px;
