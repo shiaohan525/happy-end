@@ -84,7 +84,7 @@ table {
   display: block;
 }
 
-.apply-dialog .container .close-btn span, .job-tag > p, .btn, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .vote-wrapper .form ul li input[type=checkbox]:checked + span, .vote-wrapper .form ul li input[type=checkbox] + span, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li a, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .lottery-wrapper .application-container .form ul li input[type=checkbox]:checked + span, .lottery-wrapper .application-container .form ul li input[type=checkbox] + span, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .companyStory .link .category ul li a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .single-post-wrapper .single-post-container .category ul li a, .application-wrapper .form ul li input[type=checkbox]:checked + span, .application-wrapper .form ul li input[type=checkbox] + span, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, .login-dialog .container .close-btn span, nav .nav-brand img {
+.apply-dialog .container .close-btn span, .job-tag > a, .btn, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .vote-wrapper .form ul li input[type=checkbox]:checked + span, .vote-wrapper .form ul li input[type=checkbox] + span, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li a, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .lottery-wrapper .application-container .form ul li input[type=checkbox]:checked + span, .lottery-wrapper .application-container .form ul li input[type=checkbox] + span, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .companyStory .link .category ul li a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .single-post-wrapper .single-post-container .category ul li a, .application-wrapper .form ul li input[type=checkbox]:checked + span, .application-wrapper .form ul li input[type=checkbox] + span, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, .login-dialog .container .close-btn span, nav .nav-brand img {
   display: inline-block;
 }
 
@@ -110,7 +110,7 @@ table {
   text-align: center;
 }
 
-.apply-dialog .container .close-btn, .form-select select, .pgnb-style2 .g-pagination select, .job-tag > p, .btn, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pgnb-btn, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .vote-wrapper .form ul li .g-file .inputfile + label, .vote-wrapper .form ul li select, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li, .lottery-wrapper .application-container .brand-category .pagination .pgnb-btn, .lottery-wrapper .application-container .form ul li .g-file .inputfile + label, .lottery-wrapper .application-container .form ul li select, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li, .company-wrapper .companyStory .link .category ul li, .single-post-wrapper .single-post-container .bottom .row a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .category ul li, .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .advanced, .application-wrapper .form ul li .g-file .inputfile + label, .application-wrapper .form ul li select, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .index-wrapper .article-wrapper .article .article-item, .jobTag-section .card-jobTag, .companyTag-section .card-jobTag, .card-job, .login-dialog .container .close-btn, .login-dialog .container .login-text a, .login-dialog .container .content ul li, #login-info {
+.apply-dialog .container .close-btn, .form-select select, .pgnb-style2 .g-pagination select, .btn, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pgnb-btn, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .vote-wrapper .form ul li .g-file .inputfile + label, .vote-wrapper .form ul li select, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li, .lottery-wrapper .application-container .brand-category .pagination .pgnb-btn, .lottery-wrapper .application-container .form ul li .g-file .inputfile + label, .lottery-wrapper .application-container .form ul li select, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li, .company-wrapper .companyStory .link .category ul li, .single-post-wrapper .single-post-container .bottom .row a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .category ul li, .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .advanced, .application-wrapper .form ul li .g-file .inputfile + label, .application-wrapper .form ul li select, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .index-wrapper .article-wrapper .article .article-item, .login-dialog .container .close-btn, .login-dialog .container .login-text a, .login-dialog .container .content ul li, #login-info {
   cursor: pointer;
 }
 
@@ -887,7 +887,7 @@ nav .main-menu li:hover > ul {
   align-items: unset;
   gap: 8px;
 }
-.card-job .card-content .job-content > ul li {
+.card-job .card-content .job-content > ul a {
   display: flex;
   flex-wrap: unset;
   flex-direction: unset;
@@ -1005,12 +1005,10 @@ nav .main-menu li:hover > ul {
     left: 10px !important;
   }
 }
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+.minipad-swiper .swiper-button-next:after, .minipad-swiper .swiper-rtl .swiper-button-prev:after, .minipad-swiper .swiper-button-prev:after, .minipad-swiper .swiper-rtl .swiper-button-next:after {
   font-size: 27px;
 }
-
-.swiper-button-next, .swiper-button-prev {
+.minipad-swiper .swiper-button-next, .minipad-swiper .swiper-button-prev {
   width: auto;
 }
 
@@ -1330,7 +1328,7 @@ nav .main-menu li:hover > ul {
   align-items: unset;
   gap: 8px;
 }
-.companyTag-section .card-jobTag .content-section .card-content .job-content > ul li {
+.companyTag-section .card-jobTag .content-section .card-content .job-content > ul a {
   display: flex;
   flex-wrap: unset;
   flex-direction: unset;
@@ -1404,6 +1402,9 @@ nav .main-menu li:hover > ul {
   padding-bottom: 16px;
   border-bottom: 1px solid #CE8B52;
 }
+.jobTag-section .card-jobTag h4 a {
+  color: #505050;
+}
 .jobTag-section .card-jobTag .content-section {
   display: flex;
   flex-wrap: unset;
@@ -1436,6 +1437,9 @@ nav .main-menu li:hover > ul {
   align-items: center;
   gap: 8px;
 }
+.jobTag-section .card-jobTag .content-section .card-content .job-title a {
+  color: #505050;
+}
 .jobTag-section .card-jobTag .content-section .card-content .job-title > img {
   width: 50px;
   -o-object-fit: cover;
@@ -1457,7 +1461,7 @@ nav .main-menu li:hover > ul {
   align-items: unset;
   gap: 8px;
 }
-.jobTag-section .card-jobTag .content-section .card-content .job-content > ul li {
+.jobTag-section .card-jobTag .content-section .card-content .job-content > ul a {
   display: flex;
   flex-wrap: unset;
   flex-direction: unset;
@@ -2466,7 +2470,6 @@ nav .main-menu li:hover > ul {
   justify-content: space-between;
   align-content: unset;
   align-items: unset;
-  width: 400px;
   gap: 20px;
 }
 @media screen and (max-width: 768px) {
@@ -2477,7 +2480,6 @@ nav .main-menu li:hover > ul {
     justify-content: unset;
     align-content: unset;
     align-items: center;
-    width: 400px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2556,6 +2558,12 @@ nav .main-menu li:hover > ul {
   align-items: flex-end;
   gap: 16px;
 }
+@media screen and (max-width: 1024px) {
+  .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select {
+    width: 100%;
+    margin: auto;
+  }
+}
 .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .advanced {
   color: #CE8B52;
   font-size: 14px;
@@ -2569,8 +2577,18 @@ nav .main-menu li:hover > ul {
   justify-content: space-between;
   align-content: unset;
   align-items: unset;
-  width: 400px;
   gap: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .select-flex {
+    display: flex;
+    flex-wrap: unset;
+    flex-direction: unset;
+    justify-content: center;
+    align-content: unset;
+    align-items: unset;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .select-flex {
@@ -2580,12 +2598,6 @@ nav .main-menu li:hover > ul {
     justify-content: unset;
     align-content: unset;
     align-items: center;
-    width: 400px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .select-flex {
-    width: 260px;
   }
 }
 .happiness-wrapper .ad-area-wrapper {
@@ -3042,7 +3054,8 @@ nav .main-menu li:hover > ul {
   flex-direction: column;
   justify-content: unset;
   align-content: unset;
-  align-items: unset;
+  align-items: center;
+  text-align: center;
   gap: 16px;
 }
 @media screen and (max-width: 1024px) {
@@ -3053,10 +3066,12 @@ nav .main-menu li:hover > ul {
     justify-content: unset;
     align-content: unset;
     align-items: center;
-    text-align: center;
   }
 }
 
+.company-wrapper .swiper {
+  margin: 0px;
+}
 .company-wrapper .title-swiper {
   display: flex;
   flex-wrap: unset;
@@ -3356,6 +3371,9 @@ nav .main-menu li:hover > ul {
   transition: all ease 0.4s;
 }
 
+.company-wrapper .swiper {
+  margin: 0px;
+}
 .company-wrapper .title-swiper {
   display: flex;
   flex-wrap: unset;
@@ -3756,6 +3774,9 @@ nav .main-menu li:hover > ul {
   }
 }
 
+.company-wrapper .swiper {
+  margin: 0px;
+}
 .company-wrapper .title-swiper {
   display: flex;
   flex-wrap: unset;
@@ -4110,6 +4131,9 @@ nav .main-menu li:hover > ul {
   }
 }
 
+.company-wrapper .swiper {
+  margin: 0px;
+}
 .company-wrapper .title-swiper {
   display: flex;
   flex-wrap: unset;
@@ -6695,14 +6719,14 @@ p,
   align-items: unset;
   gap: 8px;
 }
-.job-tag > p {
+.job-tag > a {
   font-size: 14px;
   color: #CE8B52;
-  padding: 4px 10px;
+  padding: 6px 10px;
   border: 1px solid #CE8B52;
   border-radius: 8px;
 }
-.job-tag > p:hover {
+.job-tag > a:hover {
   background: #CE8B52;
   color: #F7F1E7;
   transition: all 0.3s ease;
@@ -6849,6 +6873,11 @@ textarea:focus {
   align-items: unset;
   gap: 100px;
 }
+@media screen and (max-width: 480px) {
+  .linkTab {
+    gap: 40px;
+  }
+}
 .linkTab .tabFocus {
   color: #EF6261;
   padding: 8px;
@@ -6866,7 +6895,7 @@ textarea:focus {
 
 .form-select select {
   width: 100%;
-  max-width: 140px;
+  min-width: 140px;
   height: 47px;
   color: #505050;
   border-radius: 8px;
@@ -6882,12 +6911,12 @@ textarea:focus {
 }
 @media screen and (max-width: 768px) {
   .form-select select {
-    max-width: 400px;
+    min-width: none;
   }
 }
 @media screen and (max-width: 480px) {
   .form-select select {
-    max-width: 280px;
+    min-width: none;
   }
 }
 

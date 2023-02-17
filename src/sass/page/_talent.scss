@@ -72,12 +72,13 @@
             }
 
             .ad-content{
-                @include flex($d:column);
+                @include flex($d:column,$a-i:center);
+                text-align: center;
                 gap:16px;
 
                 @include pad{
                     @include flex($d:column,$a-i:center);
-                    text-align: center;
+
                 }
 
             }

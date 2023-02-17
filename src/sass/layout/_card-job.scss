@@ -27,7 +27,6 @@
     // max-width: 300px;
 
     @include flex($d:column);
-    @extend %pointer;
 
     >img{
         // @include mentor-img(300px);
@@ -55,7 +54,7 @@
             >ul{
                 @include flex($d:column);
                 gap:8px;
-                li{
+                a{
                     @include flex($a-i:center);
                     gap: 8px;
                 }
@@ -175,10 +174,7 @@
           left: 10px !important;
       }
   }
-}
-
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
     font-size: 27px;
 }
 
@@ -186,3 +182,6 @@
 .swiper-button-next,.swiper-button-prev{
     width: auto;
 }
+}
+
+
