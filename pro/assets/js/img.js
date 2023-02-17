@@ -951,11 +951,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_login_user_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ../img/login-user.svg */ "./src/img/login-user.svg");
 /* harmony import */ var _img_login_company_svg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ../img/login-company.svg */ "./src/img/login-company.svg");
 /* harmony import */ var _img_login_brand_svg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ../img/login-brand.svg */ "./src/img/login-brand.svg");
-<<<<<<< HEAD
-=======
 /* harmony import */ var _img_lottery_user_svg__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../img/lottery-user.svg */ "./src/img/lottery-user.svg");
 
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
 
 
 

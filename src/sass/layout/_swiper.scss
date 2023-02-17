@@ -80,7 +80,7 @@
     }
 }
 
-.swiper-slide img {
+.swiper-slide img:not(.brand-cover-img,.brand-logo) {
     // padding: 40px 0px;
     display: block;
     width: 100%;

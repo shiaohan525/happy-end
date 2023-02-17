@@ -7,10 +7,24 @@ $(".inputfile").each(function (i) {
   });
 });
 
-// click 品牌報名 展開 表單
-$('#btn-apply').on('click', function () {
-  $(this).parent().parent().next().slideToggle();
-})
+// click 品牌報名 展開 表單 並在input/select增加required
+// 
+let formRequire = $('.form > form input')
+let formBox = $('.form')
+
+$("#btn-apply").on("click", function () {
+  $(this)
+    .parent()
+    .parent()
+    .next()
+    .slideToggle("600", function () {
+      if ($(".form").css("display") === "none") {
+        $(formRequire).prop("required", false);
+      } else {
+        $(formRequire).prop("required", true);
+      }
+    });
+});
 
 // popup-bg
 let closeElement = $('.dialog-bg')

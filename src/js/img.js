@@ -31,13 +31,10 @@ import companyBrand from '../img/company-logo.png'
 import companySwiper01 from '../img/company-swiper01.png'
 import companyStory01 from '../img/company-story-img01.png'
 import downloadIcon from '../img/download-icon.svg'
-<<<<<<< HEAD
-=======
 import companyimg01 from '../img/company-target.png'
 import companyimg02 from '../img/company-award01.png'
 import companyimg03 from '../img/company-award02.png'
 import companyimg04 from '../img/company-award03.png'
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
 import singlepost_ex1 from '../img/single-post-ex1.png'
 import singlepost_ex2 from '../img/single-post-ex2.png'
 import sidebar_ex1 from '../img/sidebar-ex1.png'
@@ -54,11 +51,6 @@ import award_2 from '../img/silver.svg'
 import award_3 from '../img/bronze.svg'
 import brand_logo_category from '../img/brand-logo-category.png'
 import input_file_svg from '../img/input-file.svg'
-<<<<<<< HEAD
-
-
-=======
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
 import loginIcon01 from '../img/login-user.svg'
 import loginIcon02 from '../img/login-company.svg'
 import loginBrand from '../img/login-brand.svg'

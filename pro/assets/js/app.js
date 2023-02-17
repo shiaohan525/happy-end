@@ -10934,10 +10934,19 @@ $(".inputfile").each(function (i) {
     var file = $(this)[0].files[0].name;
     $(this).next(".custom-file-upload").text(file);
   });
-}); // click 品牌報名 展開 表單
+}); // click 品牌報名 展開 表單 並在input/select增加required
+// 
 
-$('#btn-apply').on('click', function () {
-  $(this).parent().parent().next().slideToggle();
+var formRequire = $('.form > form input');
+var formBox = $('.form');
+$("#btn-apply").on("click", function () {
+  $(this).parent().parent().next().slideToggle("600", function () {
+    if ($(".form").css("display") === "none") {
+      $(formRequire).prop("required", false);
+    } else {
+      $(formRequire).prop("required", true);
+    }
+  });
 }); // popup-bg
 
 var closeElement = $('.dialog-bg'); // popup-info

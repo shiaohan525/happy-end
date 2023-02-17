@@ -186,11 +186,7 @@ p,
 }
 
 // 主標題
-<<<<<<< HEAD
 .cardJob > .title {
-=======
-.cardJob>.title {
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
     width: 100%;
     border-bottom: 1px solid $c-secondary-light;
     padding: 68px 0px;
@@ -199,10 +195,7 @@ p,
     gap: 20px;
 
     @include mini-pad {
-<<<<<<< HEAD
-=======
         gap: 0px;
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
         padding: 40px 0px;
     }
 
@@ -484,7 +477,6 @@ textarea {
             text-align: left;
         }
 
-<<<<<<< HEAD
         .deco{
             @include flex($j-c:space-between);
             @include fixed($top:0,$left:0);
@@ -492,132 +484,35 @@ textarea {
         }
 
         .content{
-=======
-// 彈窗共用樣式
-.apply-dialog {
-    @extend %dn;
-    @extend %bb;
-    @include fixed($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 666);
-    content: '';
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-
-    &.dialog-application-info {
-        .container {
-            max-width: 650px;
-            padding: 4rem 1.5rem 1.5rem;
-        }
-    }
-
-    &.voted {
-        ul {
-            margin: 0.5rem 0 2rem;
-            max-height: 173px;
-            overflow-y: scroll;
-
-            li {
-                text-align: left;
-                padding: 0.2rem 0;
-                border-bottom: 1px dotted #C19E7F;
-
-                a {
-                    color: $c-black;
-                    padding: 0.2rem 0;
-                }
-            }
-        }
-    }
-
-    .container {
-        @extend %dn;
-        @extend %bb;
-        @extend %rel;
-        @extend %tac;
-        @include absolute($top: 55%, $left: 50%, $z-i: 9992);
-        transform: translate(-50%, -50%);
-        background: #F0E7DE;
-        box-shadow: 0px 0px 11px rgb(0 0 0 / 7%);
-        width: 90%;
-        height: auto;
-        max-width: 420px;
-        border-radius: 0 8px 8px 8px;
-        padding: 4rem 1.5rem 0.5rem;
-
-        &.active {
-            @extend %db;
-        }
-
-        p.h5 {
-            @extend %tac;
-            color: $c-secondary-deep;
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
-
-        p.p1 {
-            text-align: left;
-        }
-
-        .deco {
-            @include flex($j-c: space-between);
-            @include fixed($top: 0, $left: 0);
-            width: 100%;
-        }
-
-        .content {
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
             max-height: 400px;
             overflow-y: scroll;
         }
 
-<<<<<<< HEAD
         button.btn{
-=======
-        button.btn {
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
             margin: 2rem 0;
         }
 
         .close-btn {
-<<<<<<< HEAD
             @include absolute($top: 10px,$right:10px);
-=======
-            @include absolute($top: 10px, $right: 10px);
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
             @extend %pointer;
             @extend %rel;
             width: 25px;
             height: 25px;
             border: 2px solid $c-primary;
             border-radius: 100px;
-<<<<<<< HEAD
     
             span {
                 @include absolute($top: 11px,$left:2.5px);
-=======
-
-            span {
-                @include absolute($top: 11px, $left: 2.5px);
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
                 @extend %dib;
                 width: 80%;
                 height: 3px;
                 background: $c-primary;
                 border-radius: 5px;
-<<<<<<< HEAD
     
                 &.left {
                     transform: rotate(45deg);
                 }
     
-=======
-
-                &.left {
-                    transform: rotate(45deg);
-                }
-
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
                 &.right {
                     transform: rotate(-45deg);
                 }
@@ -625,10 +520,6 @@ textarea {
         }
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> e7262107176a2600ce22b69e3700d1bf43f3c568
 // 彈窗背景共用
 .dialog-bg {
     @include absolute($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 9991);
@@ -674,7 +565,6 @@ textarea {
 
 }
 
-
 // 彈窗背景共用
 .dialog-bg {
     @include absolute($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 9991);
@@ -682,4 +572,215 @@ textarea {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+}
+
+// required
+.require::after {
+    content: '*';
+    color: $c-secondary-deep;
+    margin-left: 5px;
+}
+
+// btn clicked
+button:focus{
+    outline: none;
+}
+
+// 表單樣式
+.form {
+    @extend %ma;
+    @extend %dn;
+    max-width: 950px;
+    padding: 8rem 2rem;
+
+    @include pad{
+        padding: 4rem 2rem;
+    }
+
+    p.h2 {
+        @extend %tac;
+    }
+
+    ul {
+        display: grid;
+        gap: 20px;
+
+        li {
+            @include flex($a-i: center);
+            gap: 20px;
+
+            select,
+            input,
+            textarea {
+                @extend %bb;
+                height: 47px;
+                border: 1px solid #F0E7DE !important;
+                color: $c-gray;
+                font-size: $tag;
+                border-radius: 5px;
+                padding: 0.5rem;
+                flex: 1;
+
+                &::placeholder {
+                    color: #9A9A9A;
+                    letter-spacing: 1px;
+                }
+            }
+
+            textarea {
+                @extend %rel;
+                line-height: 26px;
+                min-height: 100px;
+
+                &::placeholder {
+                    @include absolute($right: 10px, $bottom: 10px);
+                }
+            }
+
+            // title
+            >label {
+                @include f-flexBasis(140px);
+                color: $c-secondary-deep;
+                font-weight: 400;
+            }
+
+            // 下拉
+            select {
+                @extend %bb;
+                @extend %pointer;
+                flex: 1;
+                padding-right: 2rem;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+
+                background-image: url('../img/select-dropdown-icon.svg');
+                background-repeat: no-repeat;
+                background-size: 65px 16px;
+                background-position: calc(100% + 6px) calc(2em - 16px);
+            }
+
+            .g-condition,
+            .g-file {
+                @include f-flexBasis(100%);
+                flex: 1;
+            }
+
+            .g-condition {
+                @include flex($w: wrap, $j-c: space-between);
+                gap: 10px;
+
+                .condition {
+                    @include flex($a-i: center);
+                    gap: 10px;
+
+                    span:not(.p2) {
+                        flex: 0 0 20px;
+                    }
+
+                    &.other {
+                        span.p2 {
+                            flex: 0 0 40px;
+                        }
+
+                        input[type=text] {
+                            height: 35px;
+                        }
+                    }
+
+                    @include mobile {
+                        flex-basis: 100%;
+                    }
+                }
+            }
+
+            // checkbox
+            input[type=checkbox] {
+                @extend %dn;
+
+                &+span {
+                    @extend %dib;
+                    width: 20px;
+                    height: 20px;
+                    background: $c-white;
+                    border: 2px solid $c-secondary-deep;
+                    border-radius: 100px;
+                }
+
+                &:checked+span {
+                    @extend %dib;
+                    @extend %rel;
+                    width: 20px;
+                    height: 20px;
+                    background: $c-white;
+                    border-radius: 100px;
+
+                    &::before {
+                        @include absolute($top: 3.5px, $left: 3.5px);
+                        content: '';
+                        background: $c-secondary-deep;
+                        border-radius: 100px;
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+            }
+
+            // upload file
+            .g-file {
+                @include flex($a-i: center, $w: wrap,$j-c:flex-start);
+                gap: 20px;
+
+                img {
+                    max-width: 40px;
+                }
+
+                // input-file
+                .inputfile+label {
+                    @extend %pointer;
+                    @include flex($a-i: center);
+                    width: unset;
+                    height: 40px;
+                    font-weight: 400;
+                    color: $c-white;
+                    background-color: $c-primary;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 0.5rem 1rem;
+                    margin: 0;
+                }
+            }
+
+            @include mobile {
+                flex-wrap: wrap;
+
+                >label {
+                    flex-basis: 100%;
+                }
+
+                select,
+                input {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+
+    form {
+        margin: 3rem auto;
+    }
+
+    &>.row {
+        @include flex($j-c: center);
+        gap: 20px;
+
+        .cancel {
+            background: $c-white;
+            color: $c-primary;
+
+            &:hover {
+                background: $c-primary;
+                color: $c-white;
+            }
+        }
+    }
 }
