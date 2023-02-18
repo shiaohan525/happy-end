@@ -84,7 +84,7 @@ table {
   display: block;
 }
 
-.form ul li input[type=checkbox]:checked + span, .form ul li input[type=checkbox] + span, .apply-dialog .container .close-btn span, .job-tag > a, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li a, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .companyStory .link .category ul li a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .single-post-wrapper .single-post-container .category ul li a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, .login-dialog .container .close-btn span, nav .nav-brand img {
+.form ul li input[type=checkbox]:checked + span, .form ul li input[type=checkbox] + span, .apply-dialog .container .close-btn span, .job-tag > a, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content a.h4, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content a.h4, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .companyStory .link .category ul li a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .single-post-wrapper .single-post-container .category ul li a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content a.h4, .login-dialog .container .close-btn span, nav .nav-brand img {
   display: inline-block;
 }
 
@@ -114,7 +114,7 @@ table {
   text-align: center;
 }
 
-.form ul li .g-file .inputfile + label, .form ul li select, .apply-dialog .container .close-btn, .form-select select, .pgnb-style2 .g-pagination select, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pgnb-btn, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .award-wrapper .award-container .filter .category .category-sp select, .lottery-wrapper .application-container .brand-category .pagination .pgnb-btn, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li, .company-wrapper .companyStory .link .category ul li, .single-post-wrapper .single-post-container .bottom .row a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .category ul li, .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .advanced, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .archive-tem .archive-tem-c .archive .archive-item .col.post-content a.h4, .index-wrapper .article-wrapper .article .article-item, .login-dialog .container .close-btn, .login-dialog .container .login-text a, .login-dialog .container .content ul li, #login-info {
+.form ul li .g-file .inputfile + label, .form ul li select, .apply-dialog .container .close-btn, .form-select select, .pgnb-style2 .g-pagination select, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content a.h4, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content a.h4, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pgnb-btn, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .award-wrapper .award-container .filter .category .category-sp select, .lottery-wrapper .application-container .brand-category .pagination .pgnb-btn, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li, .company-wrapper .companyStory .link .category ul li, .single-post-wrapper .single-post-container .bottom .row a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .category ul li, .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .advanced, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .archive-tem .archive-tem-c .archive .archive-item .col.post-content a.h4, .index-wrapper .article-wrapper .article .article-item, .login-dialog .container .close-btn, .login-dialog .container .login-text a, .login-dialog .container .content ul li, #login-info {
   cursor: pointer;
 }
 
@@ -1888,6 +1888,8 @@ nav .main-menu li:hover > ul {
 }
 .archive-tem .archive-tem-c .archive .archive-item .col.post-content a.h4 {
   transition: all ease 0.4s;
+  color: #000000;
+  margin-bottom: 1rem;
 }
 .archive-tem .archive-tem-c .archive .archive-item .col.post-content a.h4:hover {
   color: #DD4B4B;
@@ -1906,6 +1908,9 @@ nav .main-menu li:hover > ul {
 .archive-tem .archive-tem-c .archive .archive-item .col.post-content p.date svg {
   width: 100%;
   max-width: 30px;
+}
+.archive-tem .archive-tem-c .archive .archive-item .col.post-content p.company-title {
+  color: #000000;
 }
 .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link {
   display: flex;
@@ -4965,7 +4970,7 @@ nav .main-menu li:hover > ul {
   margin: 1rem 0;
   background-image: url(../../assets/img/select-dropdown-icon.svg);
   background-repeat: no-repeat;
-  background-size: 58px 20px;
+  background-size: 50px 15px;
   background-position: calc(100% + 6px) calc(2em - 18px);
 }
 .award-wrapper .award-container .filter .category .category-sp .search-submit-btn {
@@ -5311,7 +5316,7 @@ nav .main-menu li:hover > ul {
   font-size: 16px;
   background-image: url(../../assets/img/select-dropdown-icon.svg);
   background-repeat: no-repeat;
-  background-size: 58px 20px;
+  background-size: 50px 15px;
   background-position: calc(100% + 6px) calc(2em - 18px);
 }
 .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp .search-submit-btn {
@@ -5328,6 +5333,7 @@ nav .main-menu li:hover > ul {
 @media screen and (max-width: 1024px) {
   .vote-wrapper .vote-container .brand-vote-category .container .brand {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 10px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -5415,6 +5421,11 @@ nav .main-menu li:hover > ul {
 .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .btn:hover {
   background: white;
   color: #EF6261;
+}
+@media screen and (max-width: 480px) {
+  .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front {
+    padding: 1.5rem !important;
+  }
 }
 .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back {
   position: absolute;
@@ -5761,7 +5772,7 @@ nav .main-menu li:hover > ul {
 }
 @media screen and (max-width: 1024px) {
   .searchResult-wrapper .searchResult-news .linkTab {
-    padding-top: 40px;
+    padding-top: 66px;
     gap: 40px;
   }
 }
@@ -5805,6 +5816,14 @@ nav .main-menu li:hover > ul {
 .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content {
   flex: 1;
   padding: 2rem 1rem;
+}
+.searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content a.h4 {
+  transition: all ease 0.4s;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content a.h4:hover {
+  color: #DD4B4B;
 }
 .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content p.date {
   display: flex;
@@ -5931,7 +5950,7 @@ nav .main-menu li:hover > ul {
 }
 @media screen and (max-width: 1024px) {
   .searchResult-wrapper .searchResult-issue .linkTab {
-    padding-top: 40px;
+    padding-top: 66px;
     gap: 40px;
   }
 }
@@ -5976,6 +5995,14 @@ nav .main-menu li:hover > ul {
   flex: 1;
   padding: 2rem 1rem;
 }
+.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content a.h4 {
+  transition: all ease 0.4s;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content a.h4:hover {
+  color: #DD4B4B;
+}
 .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content p.date {
   display: flex;
   flex-wrap: unset;
@@ -5990,6 +6017,9 @@ nav .main-menu li:hover > ul {
 .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content p.date svg {
   width: 100%;
   max-width: 30px;
+}
+.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content p.company-title {
+  color: #000000;
 }
 .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link {
   display: flex;
@@ -6186,7 +6216,7 @@ nav .main-menu li:hover > ul {
   margin: 1rem 0;
   background-image: url(../../assets/img/select-dropdown-icon.svg);
   background-repeat: no-repeat;
-  background-size: 58px 20px;
+  background-size: 50px 15px;
   background-position: calc(100% + 6px) calc(2em - 18px);
 }
 .award-wrapper .award-container .filter .category .category-sp .search-submit-btn {
@@ -6532,7 +6562,7 @@ nav .main-menu li:hover > ul {
   font-size: 16px;
   background-image: url(../../assets/img/select-dropdown-icon.svg);
   background-repeat: no-repeat;
-  background-size: 58px 20px;
+  background-size: 50px 15px;
   background-position: calc(100% + 6px) calc(2em - 18px);
 }
 .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp .search-submit-btn {
@@ -6549,6 +6579,7 @@ nav .main-menu li:hover > ul {
 @media screen and (max-width: 1024px) {
   .vote-wrapper .vote-container .brand-vote-category .container .brand {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 10px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -6636,6 +6667,11 @@ nav .main-menu li:hover > ul {
 .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .btn:hover {
   background: white;
   color: #EF6261;
+}
+@media screen and (max-width: 480px) {
+  .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front {
+    padding: 1.5rem !important;
+  }
 }
 .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back {
   position: absolute;

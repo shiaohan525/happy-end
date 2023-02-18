@@ -42,8 +42,11 @@
                         padding: 2rem 1rem;
 
                         a.h4{
+                            @extend %dib;
                             @extend %pointer;
                             transition: all ease .4s;
+                            color: $c-black;
+                            margin-bottom: 1rem;
 
                             &:hover{
                                 color: $c-primary-deep;
@@ -60,6 +63,10 @@
                                     width: 100%;
                                     max-width: 30px;
                                 }
+                            }
+
+                            &.company-title{
+                                color: $c-black;
                             }
                         }
 
