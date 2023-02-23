@@ -515,6 +515,16 @@
                                     background: transparent;
                                     width: 32.5px;
                                     height: 32.5px;
+                                    line-height: 1.2;
+                                }
+
+                                @include pad{
+                                    line-height: 1.5;
+
+                                    &.pgnb-current,
+                                    &:hover{
+                                        line-height: 1.4;
+                                    }
                                 }
                             }
                         }

@@ -88,11 +88,7 @@ table {
   display: inline-block;
 }
 
-<<<<<<< HEAD
-.form ul li input[type=checkbox], .apply-dialog .container, .apply-dialog, .vote-wrapper .form ul li input[type=checkbox], .vote-wrapper .form, .lottery-wrapper .application-container .form ul li input[type=checkbox], .lottery-wrapper .application-container .form, .login-dialog .container, .login-dialog {
-=======
-.form ul li input[type=checkbox], .form, .apply-dialog .container, .apply-dialog, .login-dialog .container, .login-dialog {
->>>>>>> yian
+.form ul li input[type=checkbox], .apply-dialog .container, .apply-dialog, .login-dialog .container, .login-dialog {
   display: none;
 }
 
@@ -4885,7 +4881,7 @@ nav .main-menu li:hover > ul {
   gap: 30px;
 }
 .award-wrapper .award-container .tab-control ul li {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .award-wrapper .award-container .tab-control ul li.active {
   border-bottom: 5px solid #EF6261;
@@ -5059,7 +5055,7 @@ nav .main-menu li:hover > ul {
   margin: 0;
 }
 @media screen and (max-width: 1024px) {
-  .award-wrapper .award-container .tab-control, .award-wrapper .award-container .award-content {
+  .award-wrapper .award-container .award-content {
     padding: 2rem !important;
   }
   .award-wrapper .award-container .item {
@@ -5587,6 +5583,15 @@ nav .main-menu li:hover > ul {
   background: transparent;
   width: 32.5px;
   height: 32.5px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 1024px) {
+  .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a {
+    line-height: 1.5;
+  }
+  .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a.pgnb-current, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a:hover {
+    line-height: 1.4;
+  }
 }
 @media screen and (max-width: 480px) {
   .vote-wrapper .vote-container .brand-vote-category .container {
@@ -6131,7 +6136,7 @@ nav .main-menu li:hover > ul {
   gap: 30px;
 }
 .award-wrapper .award-container .tab-control ul li {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .award-wrapper .award-container .tab-control ul li.active {
   border-bottom: 5px solid #EF6261;
@@ -6305,7 +6310,7 @@ nav .main-menu li:hover > ul {
   margin: 0;
 }
 @media screen and (max-width: 1024px) {
-  .award-wrapper .award-container .tab-control, .award-wrapper .award-container .award-content {
+  .award-wrapper .award-container .award-content {
     padding: 2rem !important;
   }
   .award-wrapper .award-container .item {
@@ -6833,6 +6838,15 @@ nav .main-menu li:hover > ul {
   background: transparent;
   width: 32.5px;
   height: 32.5px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 1024px) {
+  .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a {
+    line-height: 1.5;
+  }
+  .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a.pgnb-current, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a:hover {
+    line-height: 1.4;
+  }
 }
 @media screen and (max-width: 480px) {
   .vote-wrapper .vote-container .brand-vote-category .container {
