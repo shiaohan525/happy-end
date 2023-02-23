@@ -69,19 +69,11 @@ table {
   border-spacing: 0;
 }
 
-<<<<<<< HEAD
-.vote-wrapper .vote-container .brand-vote-category .container .category, .vote-wrapper .form, .vote-wrapper .first-view .container, .award-wrapper .award-container .filter .category, .lottery-wrapper .application-container .form, .lottery-wrapper .first-view .container, .single-post-wrapper .single-post-container, .application-wrapper .application-container .brand-category .category, .application-wrapper .form, .application-wrapper .first-view .container {
-  margin: auto;
-}
-
-.vote-wrapper .vote-container .brand-list .container, .vote-wrapper .vote-container .brand-vote-category .container, .vote-wrapper .vote-container .vote-list, .award-wrapper .award-container .brand-list .container, .award-wrapper .award-container .award-content, .award-wrapper .award-container .filter, .searchResult-wrapper .searchResult-issue, .searchResult-wrapper .searchResult-news, .searchResult-wrapper .searchResult-job, .searchResult-wrapper .searchResult-com, .lottery-wrapper .application-container .info .container, .lottery-wrapper .application-container .brand-category .section-lottery, .lottery-wrapper .application-container .brand-category .filter-lottery, .lottery-wrapper .application-container .brand-category .section-title, .company-wrapper .companyNews, .company-wrapper .companyJob, .company-wrapper .companyStory, .company-wrapper .tabWrapper, .talent-wrapper .talent-ad .ad-container, .talent-wrapper .talentSection, .happiness-wrapper .ad-area-wrapper .ad-area-container, .happiness-wrapper .happinessJob, .application-wrapper .application-container .brand-list .container, .application-wrapper .application-container .info .container, .application-wrapper .application-container .happiness-goal .container, .archive-tem .ad-area-wrapper .ad-area-container, .archive-tem .archive-tem-c, .index-wrapper .category, .index-wrapper .article, .index-wrapper .cardJob, .jobTag-section, .companyTag-section, .cardJob-section, nav {
-=======
 .form, .vote-wrapper .vote-container .brand-vote-category .container .category, .vote-wrapper .form, .vote-wrapper .first-view .container, .award-wrapper .award-container .filter .category, .lottery-wrapper .application-container .form, .lottery-wrapper .first-view .container, .single-post-wrapper .single-post-container, .application-wrapper .application-container .brand-category .category, .application-wrapper .first-view .container {
   margin: auto;
 }
 
 .searchResult-wrapper .searchResult-issue, .searchResult-wrapper .searchResult-news, .searchResult-wrapper .searchResult-job, .searchResult-wrapper .searchResult-com, .vote-wrapper .vote-container .brand-list .container, .vote-wrapper .vote-container .brand-vote-category .container, .vote-wrapper .vote-container .vote-list, .award-wrapper .award-container .brand-list .container, .award-wrapper .award-container .award-content, .award-wrapper .award-container .filter, .lottery-wrapper .application-container .info .container, .lottery-wrapper .application-container .brand-category .section-lottery, .lottery-wrapper .application-container .brand-category .filter-lottery, .lottery-wrapper .application-container .brand-category .section-title, .company-wrapper .companyNews, .company-wrapper .companyJob, .company-wrapper .companyStory, .company-wrapper .tabWrapper, .talent-wrapper .talent-ad .ad-container, .talent-wrapper .talentSection, .happiness-wrapper .ad-area-wrapper .ad-area-container, .happiness-wrapper .happinessJob-wrapper .happinessJob, .application-wrapper .application-container .brand-list .container, .application-wrapper .application-container .info .container, .application-wrapper .application-container .happiness-goal .container, .archive-tem .ad-area-wrapper .ad-area-container, .archive-tem .archive-tem-c, .index-wrapper .category, .index-wrapper .article-wrapper .article, .index-wrapper .cardJob, .jobTag-section, .companyTag-section, .cardJob-section, nav {
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
   margin: auto;
   padding: 0 30px;
   max-width: 1920px;
@@ -92,19 +84,11 @@ table {
   display: block;
 }
 
-<<<<<<< HEAD
-.apply-dialog .container .close-btn span, .job-tag > p, .btn, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .vote-wrapper .form ul li input[type=checkbox]:checked + span, .vote-wrapper .form ul li input[type=checkbox] + span, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li a, .lottery-wrapper .application-container .form ul li input[type=checkbox]:checked + span, .lottery-wrapper .application-container .form ul li input[type=checkbox] + span, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .companyStory .link .category ul li a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .single-post-wrapper .single-post-container .category ul li a, .application-wrapper .form ul li input[type=checkbox]:checked + span, .application-wrapper .form ul li input[type=checkbox] + span, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, .login-dialog .container .close-btn span, nav .nav-brand img {
-  display: inline-block;
-}
-
-.apply-dialog .container, .apply-dialog, .vote-wrapper .form ul li input[type=checkbox], .vote-wrapper .form, .lottery-wrapper .application-container .form ul li input[type=checkbox], .lottery-wrapper .application-container .form, .application-wrapper .form ul li input[type=checkbox], .application-wrapper .form, .login-dialog .container, .login-dialog {
-=======
 .form ul li input[type=checkbox]:checked + span, .form ul li input[type=checkbox] + span, .apply-dialog .container .close-btn span, .job-tag > p, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li a, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .vote-wrapper .form ul li input[type=checkbox]:checked + span, .vote-wrapper .form ul li input[type=checkbox] + span, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .lottery-wrapper .application-container .form ul li input[type=checkbox]:checked + span, .lottery-wrapper .application-container .form ul li input[type=checkbox] + span, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .companyStory .link .category ul li a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .single-post-wrapper .single-post-container .category ul li a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, .login-dialog .container .close-btn span, nav .nav-brand img {
   display: inline-block;
 }
 
-.form ul li input[type=checkbox], .form, .apply-dialog .container, .apply-dialog, .vote-wrapper .form ul li input[type=checkbox], .vote-wrapper .form, .lottery-wrapper .application-container .form ul li input[type=checkbox], .lottery-wrapper .application-container .form, .login-dialog .container, .login-dialog {
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
+.form ul li input[type=checkbox], .apply-dialog .container, .apply-dialog, .vote-wrapper .form ul li input[type=checkbox], .vote-wrapper .form, .lottery-wrapper .application-container .form ul li input[type=checkbox], .lottery-wrapper .application-container .form, .login-dialog .container, .login-dialog {
   display: none;
 }
 
@@ -112,25 +96,8 @@ table {
 .form ul li input,
 .form ul li textarea, .quote, .apply-dialog .container, .apply-dialog, .form-select select, .classBtn input, .pgnb-style2 .g-pagination select, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .vote-wrapper .form ul li select,
 .vote-wrapper .form ul li input,
-.vote-wrapper .form ul li textarea, .vote-wrapper .first-view, .award-wrapper .award-container.award-gold-container .filter .category a::before, .award-wrapper .award-container .award-content .item, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .lottery-wrapper .application-container .brand-category .section-lottery .lottery-item, .lottery-wrapper .application-container .brand-category .section-lottery, .lottery-wrapper .application-container .brand-category .filter-lottery .search button, .lottery-wrapper .application-container .brand-category .filter-lottery .search input, .lottery-wrapper .application-container .brand-category .filter-lottery .search, .lottery-wrapper .application-container .brand-category .filter-lottery .calendar input, .lottery-wrapper .application-container .form ul li select,
+.vote-wrapper .form ul li textarea, .vote-wrapper .first-view, .award-wrapper .award-container.award-gold-container .filter .category a::before, .award-wrapper .award-container .award-content .item, .lottery-wrapper .application-container .brand-category .section-lottery .lottery-item, .lottery-wrapper .application-container .brand-category .section-lottery, .lottery-wrapper .application-container .brand-category .filter-lottery .search button, .lottery-wrapper .application-container .brand-category .filter-lottery .search input, .lottery-wrapper .application-container .brand-category .filter-lottery .search, .lottery-wrapper .application-container .brand-category .filter-lottery .calendar input, .lottery-wrapper .application-container .form ul li select,
 .lottery-wrapper .application-container .form ul li input,
-<<<<<<< HEAD
-.lottery-wrapper .application-container .form ul li textarea, .lottery-wrapper .first-view, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-content .post-company img, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .title-swiper .company-title .company-category img, .single-post-wrapper .single-post-container .col.right .row.company-info .row.company-name img, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .application-wrapper .form ul li select,
-.application-wrapper .form ul li input,
-.application-wrapper .form ul li textarea, .application-wrapper .first-view, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .jobTag-section .card-jobTag h4, .login-dialog .container, .login-dialog, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
-  box-sizing: border-box;
-}
-
-.apply-dialog .container .close-btn, .apply-dialog .container, .vote-wrapper .vote-container .brand-info, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item, .vote-wrapper .vote-container .brand-vote-category .container, .vote-wrapper .vote-container .vote-list, .vote-wrapper .form ul li input[type=checkbox]:checked + span, .vote-wrapper .form ul li textarea, .vote-wrapper .first-view .container, .vote-wrapper .first-view, .award-wrapper .award-container.award-gold-container .filter .category a, .award-wrapper .award-container .brand-list .container .bottom .brand-info, .lottery-wrapper .application-container .form ul li input[type=checkbox]:checked + span, .lottery-wrapper .application-container .form ul li textarea, .lottery-wrapper .first-view .container, .lottery-wrapper .first-view, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col:first-child p.view-count, .application-wrapper .application-container .brand-list .container .bottom .brand-info, .application-wrapper .form ul li input[type=checkbox]:checked + span, .application-wrapper .form ul li textarea, .application-wrapper .first-view .container, .application-wrapper .first-view, .login-dialog .container .close-btn, .login-dialog .container {
-  position: relative;
-}
-
-.apply-dialog .container p.h5, .apply-dialog .container, .vote-wrapper .vote-container .brand-list .container, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-jobs, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp, .vote-wrapper .vote-container .brand-vote-category .container h2, .vote-wrapper .form p.h2, .vote-wrapper .first-view .container, .award-wrapper .award-container .brand-list .container .bottom .brand-info, .award-wrapper .award-container .brand-list .container, .award-wrapper .award-container .award-content, .award-wrapper .award-container .filter, .award-wrapper .award-container .tab-control, .lottery-wrapper .application-container .brand-category .section-title, .lottery-wrapper .application-container .form p.h2, .lottery-wrapper .first-view .container, .single-post-wrapper .single-post-container .col.right .row.company-info .row.opening, .single-post-wrapper .single-post-container .col.right .row.company-info .row .job-title, .application-wrapper .application-container .brand-list .container, .application-wrapper .application-container .happiness-goal .container, .application-wrapper .form p.h2, .application-wrapper .first-view .container, .archive-tem .archive-tem-c, .login-dialog .container p.h5, .login-dialog .container {
-  text-align: center;
-}
-
-.apply-dialog .container .close-btn, .form-select select, .pgnb-style2 .g-pagination select, .job-tag > p, .btn, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pgnb-btn, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .vote-wrapper .form ul li .g-file .inputfile + label, .vote-wrapper .form ul li select, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li, .lottery-wrapper .application-container .form ul li .g-file .inputfile + label, .lottery-wrapper .application-container .form ul li select, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li, .company-wrapper .companyStory .link .category ul li, .single-post-wrapper .single-post-container .bottom .row a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .category ul li, .happiness-wrapper .happinessJob .company-select .advanced, .application-wrapper .form ul li .g-file .inputfile + label, .application-wrapper .form ul li select, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .index-wrapper .article .article-item, .jobTag-section .card-jobTag, .companyTag-section .card-jobTag, .card-job, .login-dialog .container .close-btn, .login-dialog .container .login-text a, .login-dialog .container .content ul li, #login-info {
-=======
 .lottery-wrapper .application-container .form ul li textarea, .lottery-wrapper .first-view, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-content .post-company img, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .title-swiper .company-title .company-category img, .single-post-wrapper .single-post-container .col.right .row.company-info .row.company-name img, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .application-wrapper .first-view, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .jobTag-section .card-jobTag h4, .login-dialog .container, .login-dialog, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
   box-sizing: border-box;
 }
@@ -144,7 +111,6 @@ table {
 }
 
 .form ul li .g-file .inputfile + label, .form ul li select, .apply-dialog .container .close-btn, .form-select select, .pgnb-style2 .g-pagination select, .job-tag > p, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pgnb-btn, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .vote-wrapper .form ul li .g-file .inputfile + label, .vote-wrapper .form ul li select, .lottery-wrapper .application-container .brand-category .pagination .pgnb-btn, .lottery-wrapper .application-container .form ul li .g-file .inputfile + label, .lottery-wrapper .application-container .form ul li select, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li, .company-wrapper .companyStory .link .category ul li, .single-post-wrapper .single-post-container .bottom .row a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .category ul li, .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .advanced, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .archive-tem .archive-tem-c .archive .archive-item .col.post-content a.h4, .index-wrapper .article-wrapper .article .article-item, .jobTag-section .card-jobTag, .companyTag-section .card-jobTag, .card-job, .login-dialog .container .close-btn, .login-dialog .container .login-text a, .login-dialog .container .content ul li, #login-info {
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
   cursor: pointer;
 }
 
@@ -5159,114 +5125,6 @@ nav .main-menu li:hover > ul {
     flex-wrap: wrap !important;
     padding: 1rem 2rem !important;
   }
-<<<<<<< HEAD
-}
-@media screen and (max-width: 1024px) {
-  .searchResult-wrapper .searchResult-news {
-    padding: 66px 80px;
-    gap: 32px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .searchResult-wrapper .searchResult-news {
-    padding: 40px 30px;
-    gap: 24px;
-  }
-}
-
-.searchResult-wrapper .searchResult-issue {
-  display: flex;
-  flex-wrap: unset;
-  flex-direction: column;
-  justify-content: unset;
-  align-content: unset;
-  align-items: unset;
-  margin: auto;
-  gap: 28px;
-  padding: 88px 120px;
-  background: #F7F1E7;
-}
-.searchResult-wrapper .searchResult-issue p {
-  text-align: left;
-  display: inline-block;
-}
-.searchResult-wrapper .searchResult-issue .linkTab {
-  padding-top: 32px;
-  white-space: nowrap;
-}
-@media screen and (max-width: 1024px) {
-  .searchResult-wrapper .searchResult-issue .linkTab {
-    padding-top: 40px;
-    gap: 40px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .searchResult-wrapper .searchResult-issue .linkTab {
-    font-size: 14px;
-    gap: 0px;
-  }
-}
-.searchResult-wrapper .searchResult-issue .archive {
-  text-align: left;
-}
-.searchResult-wrapper .searchResult-issue .archive p,
-.searchResult-wrapper .searchResult-issue .archive h4 {
-  margin-bottom: 15px;
-}
-.searchResult-wrapper .searchResult-issue .archive p.total {
-  color: #000000;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item {
-  display: flex;
-  flex-wrap: unset;
-  flex-direction: unset;
-  justify-content: unset;
-  align-content: unset;
-  align-items: center;
-  background: white;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  gap: 20px;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-cover {
-  flex: 0.7;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-cover img {
-  width: 100%;
-  aspect-ratio: 4/3;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content {
-  flex: 1;
-  padding: 2rem 1rem;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content p.date {
-  display: flex;
-  flex-wrap: unset;
-  flex-direction: unset;
-  justify-content: unset;
-  align-content: unset;
-  align-items: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  color: #C15E0B;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content p.date svg {
-  width: 100%;
-  max-width: 30px;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: unset;
-  justify-content: space-between;
-  align-content: unset;
-  align-items: center;
-  gap: 15px;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul {
-=======
   .award-wrapper .award-container .item p {
     padding: 0 !important;
     flex-basis: 100%;
@@ -5305,7 +5163,6 @@ nav .main-menu li:hover > ul {
 }
 
 .vote-wrapper .first-view {
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
   display: flex;
   flex-wrap: unset;
   flex-direction: unset;
@@ -5319,10 +5176,6 @@ nav .main-menu li:hover > ul {
   height: 900px;
   background-image: url(../../assets/img/application-bn.png);
 }
-<<<<<<< HEAD
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li a {
-  color: #DD4B4B;
-=======
 .vote-wrapper .first-view::after {
   position: absolute;
   top: 0;
@@ -5359,19 +5212,10 @@ nav .main-menu li:hover > ul {
 .vote-wrapper .first-view .container .btn {
   width: 240px;
   height: 60px;
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
   padding: 0.5rem 1rem;
   margin: 2rem 0;
   filter: drop-shadow(0px 3.81395px 3.81395px rgba(0, 0, 0, 0.25));
 }
-<<<<<<< HEAD
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li a:hover {
-  color: white;
-  background: #DD4B4B;
-  border-color: #DD4B4B;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share {
-=======
 @media screen and (max-width: 480px) {
   .vote-wrapper .first-view {
     height: 600px;
@@ -5391,7 +5235,6 @@ nav .main-menu li:hover > ul {
   gap: 20px;
 }
 .vote-wrapper .form ul li {
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
   display: flex;
   flex-wrap: unset;
   flex-direction: unset;
@@ -5400,11 +5243,6 @@ nav .main-menu li:hover > ul {
   align-items: center;
   gap: 20px;
 }
-<<<<<<< HEAD
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a {
-  width: 40px;
-  height: 40px;
-=======
 .vote-wrapper .form ul li select,
 .vote-wrapper .form ul li input,
 .vote-wrapper .form ul li textarea {
@@ -5413,75 +5251,9 @@ nav .main-menu li:hover > ul {
   color: #505050;
   font-size: 14px;
   border-radius: 5px;
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
   padding: 0.5rem;
   flex: 1;
 }
-<<<<<<< HEAD
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a:hover {
-  border-color: #DD4B4B;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a:hover svg path {
-  fill: #DD4B4B;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a svg {
-  width: 100%;
-  height: 100%;
-}
-.searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a svg path {
-  transition: all ease 0.4s;
-}
-@media screen and (max-width: 1024px) {
-  .searchResult-wrapper .searchResult-issue .archive .archive-item {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: unset;
-    justify-content: unset;
-    align-content: unset;
-    align-items: unset;
-  }
-  .searchResult-wrapper .searchResult-issue .archive .archive-item .post-cover,
-.searchResult-wrapper .searchResult-issue .archive .archive-item .post-content {
-    flex: 1 !important;
-    flex-basis: 100% !important;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .searchResult-wrapper .searchResult-issue {
-    padding: 66px 80px;
-    gap: 32px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .searchResult-wrapper .searchResult-issue {
-    padding: 40px 30px;
-    gap: 24px;
-  }
-}
-
-.award-wrapper {
-  background: #F7F1E7;
-}
-.award-wrapper .award-container .tab-control {
-  background: white;
-  padding: 6rem 4rem 0;
-}
-.award-wrapper .award-container .tab-control ul {
-  display: flex;
-  flex-wrap: unset;
-  flex-direction: unset;
-  justify-content: center;
-  align-content: unset;
-  align-items: center;
-  gap: 30px;
-}
-.award-wrapper .award-container .tab-control ul li {
-  padding: 1rem;
-}
-.award-wrapper .award-container .tab-control ul li.active {
-  border-bottom: 5px solid #EF6261;
-}
-=======
 .vote-wrapper .form ul li select::-moz-placeholder, .vote-wrapper .form ul li input::-moz-placeholder, .vote-wrapper .form ul li textarea::-moz-placeholder {
   color: #9A9A9A;
   letter-spacing: 1px;
@@ -6592,7 +6364,6 @@ nav .main-menu li:hover > ul {
 .award-wrapper .award-container .tab-control ul li.active {
   border-bottom: 5px solid #EF6261;
 }
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
 .award-wrapper .award-container .tab-control ul li p.tag {
   font-weight: 500;
   letter-spacing: 1.5px;
@@ -7979,8 +7750,6 @@ textarea:focus {
 }
 .apply-dialog .container .close-btn span.right {
   transform: rotate(-45deg);
-<<<<<<< HEAD
-=======
 }
 
 .dialog-bg {
@@ -8038,7 +7807,6 @@ textarea:focus {
   width: 32px;
   height: 37px;
   position: absolute;
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
 }
 
 .dialog-bg {
@@ -8278,21 +8046,5 @@ button:focus {
   background: #EF6261;
   color: white;
 }
-<<<<<<< HEAD
-
-.dialog-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9991;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-=======
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
 
 /*# sourceMappingURL=main.css.map*/

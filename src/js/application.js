@@ -9,7 +9,8 @@ $(".inputfile").each(function (i) {
 
 // click 品牌報名 展開 表單 並在input/select增加required
 // 
-let formRequire = $('.form > form input')
+let formRequire_input = $('.form > form .require-fill')
+// let formRequire_ta = $('.form > form textarea')
 let formBox = $('.form')
 
 $("#btn-apply").on("click", function () {
@@ -19,9 +20,11 @@ $("#btn-apply").on("click", function () {
     .next()
     .slideToggle("600", function () {
       if ($(".form").css("display") === "none") {
-        $(formRequire).prop("required", false);
+        $(formRequire_input).prop("required", false);
+        // $(formRequire_ad).prop("required", false);
       } else {
-        $(formRequire).prop("required", true);
+        $(formRequire_input).prop("required", true);
+        // $(formRequire_ad).prop("required", true);
       }
     });
 });

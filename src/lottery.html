@@ -18,122 +18,117 @@
                 <button class="btn" id="btn-apply">品牌報名</button>
             </div>
         </div>
-        <div class="application-container">
-            <div class="row form">
-                <p class="h2">品牌報名</p>
-                <form method="post">
-                    <ul>
-                        <li>
-                            <label class="p1 require">報名類別</label>
-                            <select name="category">
-                                <option disabled selected>請選擇</option>
-                                <option value="類別一">類別一</option>
-                                <option value="類別二">類別二</option>
-                            </select>
-                        </li>
-                        <li>
-                            <label class="p1 require">報名品牌名稱</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label class="p1 require">企業抬頭</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label class="p1 require">統一編號</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label class="p1">品牌福利<br>制度簡介</label>
-                            <textarea placeholder="限制字數200字以內"></textarea>
-                        </li>
-                        <li>
-                            <label class="p1 require">女性職場<br>優質福利(複選)</label>
-                            <div class="g-condition">
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">彈性工時</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">有薪家庭照護假</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">生育補助</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">延長產假育嬰假</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">設置孕婦停車位</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">提供免費婦科健檢</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">兩性平等之升遷機會</span>
-                                </label>
-                                <label class="condition">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">無</span>
-                                </label>
-                                <label class="condition other">
-                                    <input type="checkbox">
-                                    <span></span>
-                                    <span class="p2">其他</span>
-                                    <input type="text">
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <label class="p1 require">Logo圖</label>
-                            <div class="g-file">
-                                <img src="assets/img/input-file.svg" alt="">
-                                <input id="file-upload" class="inputfile inputfile1" name='upload_cont_img'
-                                    type="file" style="display:none;">
-                                <label for="file-upload" class="custom-file-upload custom-file-upload1 btn">
-                                    上傳檔案
-                                </label>
-                                <p class="tag">尺寸：500 x 500 px，檔案1MB以下，提供JPG、PNG圖檔</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="g">
-                                
-                            </div>
-                        </li>
-                        <li>
-                            <label class="p1 require">聯絡人</label>
-                            <input type="text">
-                        </li>
-                        <li>
-                            <label class="p1 require">聯絡電話</label>
-                            <input type="tel">
-                        </li>
-                        <li>
-                            <label class="p1 require">聯絡信箱</label>
-                            <input type="mail">
-                        </li>
-                    </ul>
-                </form>
-                <div class="row">
-                    <button class="btn submit">確認報名</button>
-                    <button class="btn cancel">取消</button>
-                </div>
+        <div class="form" style="display:none">
+            <p class="h2">品牌報名</p>
+            <form method="post">
+                <ul>
+                    <li>
+                        <label class="p1 require">報名類別</label>
+                        <select name="category" class="require-fill">
+                            <option disabled selected>請選擇</option>
+                            <option value="類別一">類別一</option>
+                            <option value="類別二">類別二</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label class="p1 require">報名品牌名稱</label>
+                        <input type="text" class="require-fill">
+                    </li>
+                    <li>
+                        <label class="p1 require">企業抬頭</label>
+                        <input type="text" class="require-fill">
+                    </li>
+                    <li>
+                        <label class="p1 require">統一編號</label>
+                        <input type="text" class="require-fill">
+                    </li>
+                    <li>
+                        <label class="p1 require">品牌福利<br>制度簡介</label>
+                        <textarea placeholder="限制字數200字以內" class="require-fill"></textarea>
+                    </li>
+                    <li>
+                        <label class="p1">女性職場<br>優質福利(複選)</label>
+                        <div class="g-condition">
+                            <label class="condition">
+                                <input type="checkbox">
+                                <span></span>
+                                <span class="p2">彈性工時</span>
+                            </label>
+                            <label class="condition">
+                                <input type="checkbox">
+                                <span></span>
+                                <span class="p2">有薪家庭照護假</span>
+                            </label>
+                            <label class="condition">
+                                <input type="checkbox">
+                                <span></span>
+                                <span class="p2">生育補助</span>
+                            </label>
+                            <label class="condition">
+                                <input type="checkbox">
+                                <span></span>
+                                <span class="p2">延長產假育嬰假</span>
+                            </label>
+                            <label class="condition">
+                                <input type="checkbox">
+                                <span></span>
+                                <span class="p2">設置孕婦停車位</span>
+                            </label>
+                            <label class="condition">
+                                <input type="checkbox">
+                                <span></span>
+                                <span class="p2">提供免費婦科健檢</span>
+                            </label>
+                            <label class="condition">
+                                <input type="checkbox">
+                                <span></span>
+                                <span class="p2">兩性平等之升遷機會</span>
+                            </label>
+                            <label class="condition">
+                                <input type="checkbox">
+                                <span></span>
+                                <span class="p2">無</span>
+                            </label>
+                            <label class="condition other">
+                                <input type="checkbox">
+                                <span></span>
+                                <span class="p2">其他</span>
+                                <input type="text">
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="p1">Logo圖</label>
+                        <div class="g-file">
+                            <img src="assets/img/input-file.svg" alt="">
+                            <input id="file-upload" class="inputfile inputfile1" name='upload_cont_img'
+                                type="file" style="display:none;">
+                            <label for="file-upload" class="custom-file-upload custom-file-upload1 btn">
+                                上傳檔案
+                            </label>
+                            <p class="tag">尺寸：500 x 500 px，檔案1MB以下，提供JPG、PNG圖檔</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="p1 require">聯絡人</label>
+                        <input type="text" class="require-fill">
+                    </li>
+                    <li>
+                        <label class="p1 require">聯絡電話</label>
+                        <input type="tel" class="require-fill">
+                    </li>
+                    <li>
+                        <label class="p1 require">聯絡信箱</label>
+                        <input type="mail" class="require-fill">
+                    </li>
+                </ul>
+            </form>
+            <div class="row">
+                <button class="btn submit">確認報名</button>
+                <button class="btn cancel">取消</button>
             </div>
+        </div>
+        <div class="application-container">
             <div class="row brand-category">
                 <div class="section-title">
                     <p class="h2">2023年投票抽獎得主</p>

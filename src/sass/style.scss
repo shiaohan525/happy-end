@@ -28,11 +28,8 @@
 @import 'page/company-news';
 @import 'page/company-walfare';
 @import 'page/lottery';
-<<<<<<< HEAD
-=======
 @import 'page/award-2021';
 @import 'page/vote';
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
 @import 'page/searchResult-company';
 @import 'page/searchResult-job';
 @import 'page/searchResult-news';
@@ -426,13 +423,8 @@ textarea {
     height: 100%;
     padding: 1rem;
 
-<<<<<<< HEAD
-    &.dialog-application-info {
-        .container {
-=======
     &.dialog-application-info{
         .container{
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
             max-width: 650px;
             padding: 4rem 1.5rem 1.5rem;
         }
@@ -583,8 +575,6 @@ textarea {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-<<<<<<< HEAD
-=======
 }
 
 // required
@@ -602,7 +592,6 @@ button:focus{
 // 表單樣式
 .form {
     @extend %ma;
-    @extend %dn;
     max-width: 950px;
     padding: 8rem 2rem;
 
@@ -796,5 +785,4 @@ button:focus{
             }
         }
     }
->>>>>>> b77deb3b755151075431632e6c56ef495bee1362
 }
