@@ -27,6 +27,10 @@
             .company-select{
                 @include flex($d:column,$a-i:flex-end);
                 gap:16px;
+                @include pad{
+                    width: 100%;
+                    margin: auto;
+                }
     
                 .advanced{
                     @extend %pointer;
@@ -36,14 +40,14 @@
                 }
                 .select-flex{
                     @include flex($j-c:space-between);
-                    width: 400px;
                     gap:20px;
+
+                    @include pad{
+                        @include flex($j-c:center);
+                        width: 100%;
+                    }
                     @include mini-pad{
                         @include flex($d:column,$a-i:center);
-                        width: 400px;
-                    }
-                    @include mobile{
-                        width: 260px;
                     }
                 }
             }

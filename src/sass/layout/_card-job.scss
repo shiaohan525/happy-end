@@ -27,7 +27,6 @@
     // max-width: 300px;
 
     @include flex($d:column);
-    @extend %pointer;
 
     >img{
         // @include mentor-img(300px);
@@ -55,7 +54,7 @@
             >ul{
                 @include flex($d:column);
                 gap:8px;
-                li{
+                a{
                     @include flex($a-i:center);
                     gap: 8px;
                 }
@@ -84,20 +83,45 @@
 
 .minipad-swiper{
     display: none;
+
     @include mini-pad{
         display: block;
-        max-width: 500px;   
+        padding: 0px 40px;
+        width: 100%;
     }
 
     @include mobile{
-        display: block;
-        width: auto;
-        max-width: 320px;
-        min-width: 300px; 
+        padding: 0px 40px;
+        // width: 100%;
     }
+
+    .card-job{
+        width: 100%;
+        box-sizing: border-box;
+        flex: 1;
+        // width: 400px;
+        // @include mobile{
+            padding: 0px 40px;
+        //     width: 100%;
+        // }
+        img{
+            // @include mentor-img(600px);
+            aspect-ratio: 16/9; 
+        }
+    }
+
+    .job-content{
+        img{
+            aspect-ratio: unset; 
+        }
+    }
+
     .swiper {
         width: 100%;
         height: 100%;
+        max-height: unset !important;
+        min-height: unset !important;
+        margin-top: 20px !important;
     }
 
     .swiper-slide {
@@ -116,12 +140,7 @@
         height: 100%;
         object-fit: cover;
     }
-    .card-job{
-        @include mobile{
-            max-width: 240px;
-            width: 100%;
-        }
-    }
+
     .swiper-button-next,
     .swiper-button-prev {
         top: 55%;
@@ -133,56 +152,48 @@
 
     }
 
-    .swiper-button-next {
-        right: 0px !important;
-
-        &::after {
-            content: url(../img/arrow-next.svg);
-
-            @include mini-pad {
-                content: url(../img/arrow-next-rwd.svg);
-                width: 20px !important;
-            }
-        }
-    }
-
-    .swiper-button-prev {
-        left: 0px !important;
-
-        &::after {
-            content: url(../img/arrow-prev.svg);
-            width: 20px !important;
-
-            @include mini-pad {
-                content: url(../img/arrow-prev-rwd.svg);
-            }
-        }
-    }
-    @media only screen and (max-width: $mini-pad) {
-
-      .swiper-button-next,
-      .swiper-button-prev {
-          background: transparent;
-          width: 20px !important;
-      }
-
       .swiper-button-next {
-          right: 10px !important;
-          text-align: right;
+          right: 0px !important;
+
+          &::after {
+              content: url(../img/arrow-next.svg);
+
+              @include mini-pad {
+                  content: url(../img/arrow-next-rwd.svg);
+                  width: 20px !important;
+              }
+          }
       }
 
       .swiper-button-prev {
-          left: 10px !important;
+          left: 0px !important;
+
+          &::after {
+              content: url(../img/arrow-prev.svg);
+              width: 20px !important;
+
+              @include mini-pad {
+                  content: url(../img/arrow-prev-rwd.svg);
+              }
+          }
       }
-  }
+      @media only screen and (max-width: $mini-pad) {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background: transparent;
+            width: 20px !important;
+        }
+
+        .swiper-button-next {
+            right: 10px !important;
+            text-align: right;
+        }
+
+        .swiper-button-prev {
+            left: 10px !important;
+        }
+    }
 }
 
 
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-    font-size: 27px;
-}
-
-
-.swiper-button-next,.swiper-button-prev{
-    width: auto;
-}

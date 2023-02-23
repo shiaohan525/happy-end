@@ -13,24 +13,34 @@
         text-align: left;
         border: unset;
         padding: 0px;
+        gap: 28px;
+        padding-top: 40px;  
         -webkit-writing-mode: vertical-lr;
         writing-mode: vertical-lr;
         @include pad{
             @include flex($d:column,$w:nowrap,$a-i:center);
+            padding-top: 0px;
+            gap: 0px;
             text-align: center;
             -webkit-writing-mode: horizontal-tb;
             writing-mode: horizontal-tb;
         }
         >h2{
             letter-spacing: 0.5rem;
+            writing-mode: tb;
             @include pad{
+                -webkit-writing-mode: horizontal-tb;
+                writing-mode: horizontal-tb;
                 letter-spacing: 0.1rem;
             }
         }
         >p{
+            writing-mode: tb;
             line-height: 150%;
             letter-spacing: 0.2rem;
             @include pad{
+                -webkit-writing-mode: horizontal-tb;
+                writing-mode: horizontal-tb;
                 letter-spacing: 0.1rem;
             }
         }
@@ -43,6 +53,10 @@
 
             @include mini-pad{
                 @include basic_grid(2,1fr,40px,80px);
+            }
+
+            @include mobile{
+                @include basic_grid(2,1fr,40px,20px);
             }
 
             .category-item{

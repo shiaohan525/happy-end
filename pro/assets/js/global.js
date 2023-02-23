@@ -10980,11 +10980,7 @@ btn.on('click', function (e) {
   $('html, body').animate({
     scrollTop: 0
   }, '300');
-}); // // We create a closed shadow root, that is not accessible
-// let element = document.createElement("div");
-// element.attachShadow({ mode: "closed" });
-// element.shadowRoot // null as the shadow root is closed
-//horizonal scroll
+}); //horizonal scroll
 
 var slider = document.querySelector('.tabWrapper');
 var isDown = false;

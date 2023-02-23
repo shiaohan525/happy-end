@@ -11,6 +11,7 @@
         margin: auto;
         gap:48px;
         padding: 88px 120px;
+
         @include pad{
             padding: 66px 80px;
             gap:32px;
@@ -18,6 +19,28 @@
         @include mini-pad{
             padding: 40px 30px;
             gap:24px;
+        }
+    }
+
+    card-job{
+        @extend %page-content;
+        @include flex($d:column,$a-i:center);
+        width: 100%;
+        margin: auto;
+        gap:48px;
+        // padding: 88px 120px;
+        @include pad{
+            padding: 66px 0px;
+            gap:32px;
+        }
+        @include mini-pad{
+            padding:0px;
+            gap:24px;
+        }
+
+        .card-job{
+            width: 100%;
+            box-sizing: border-box;
         }
     }
     
@@ -131,6 +154,7 @@
                 .swiper {
                     width: 100%;
                     height: 100%;
+                    margin-top: 20px !important;
                 }
             
                 .swiper-slide {
@@ -140,26 +164,26 @@
                     background-color: transparent;
                     justify-content: center;
                     align-items: center;
-                  }
-              
-                  .swiper-slide img {
+                }
+            
+                .swiper-slide img {
                     padding: 0px;
                     display: block;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                  }
+                }
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    top: 55%;
     
-                  .swiper-button-next,
-                  .swiper-button-prev {
-                      top: 55%;
-      
-                      &::after {
-                          width: 34px;
-                          height: 53px;
-                      }
-      
-                  }
+                    &::after {
+                        width: 34px;
+                        height: 53px;
+                    }
+    
+                }
       
                   .swiper-button-next {
                       right: 0px !important;

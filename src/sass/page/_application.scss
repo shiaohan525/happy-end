@@ -93,7 +93,7 @@
             .container {
                 @extend %page-content;
                 max-width: 1200px;
-                padding: 3rem;
+                padding: 4rem 2rem;
 
                 .section-title {
                     @include flex($a-i: center, $j-c: space-between);
@@ -177,7 +177,7 @@
                 }
 
                 @include pad{
-                    padding: 4rem 2rem;
+                    padding: 2rem;
                 }
             }
         }
@@ -232,8 +232,12 @@
                     }
                 }
 
-                @include pad{
-                    padding: 4rem 2rem;
+                @include mobile {
+                    padding: 4rem 2rem ;
+
+                    .bottom {
+                        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    }
                 }
             }
         }

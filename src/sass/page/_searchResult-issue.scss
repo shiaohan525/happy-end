@@ -15,7 +15,7 @@
             padding-top: 32px;
             white-space: nowrap;
             @include pad{
-                padding-top: 40px;
+                padding-top: 66px;
                 gap: 40px;
             }
             @include mobile{
@@ -57,6 +57,18 @@
                         flex: 1;
                         padding: 2rem 1rem;
 
+                        a.h4{
+                            @extend %dib;
+                            @extend %pointer;
+                            transition: all ease .4s;
+                            color: $c-black;
+                            margin-bottom: 1rem;
+
+                            &:hover{
+                                color: $c-primary-deep;
+                            }
+                        }
+
                         p {
                             &.date {
                                 @include flex($a-i: center);
@@ -67,6 +79,10 @@
                                     width: 100%;
                                     max-width: 30px;
                                 }
+                            }
+
+                            &.company-title{
+                                color: $c-black;
                             }
                         }
 
