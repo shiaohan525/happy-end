@@ -22,13 +22,13 @@
             <a href="#" class="p2">年度盛事 <span><i class="fa-solid fa-angle-down"></i></span> </a> 
             <ul class="dropdown-menu">
                 <li><a href="application.html">品牌報名</a></li>
-                <li><a href="https://www.surveycake.com/s/MR2V4">網友推薦</a></li>
-                <li><a href="#">品牌票選</a></li>
+                <li><a href="https://www.surveycake.com/s/MR2V4" target="_blank">網友推薦</a></li>
+                <li><a href="vote.html">品牌票選</a></li>
                 <li><a href="lottery.html">票選抽獎</a></li>
-                <li><a href="#">2023得獎名單</a></li>
-                <li><a href="#">2022得獎名單</a></li>
-                <li><a href="#">2021得獎名單</a></li>
-                <li><a href="#">2019得獎名單</a></li>
+                <li><a href="award-2021-gold.html">2023得獎名單</a></li>
+                <li><a href="award-2021-gold.html">2022得獎名單</a></li>
+                <li><a href="award-2021-gold.html">2021得獎名單</a></li>
+                <li><a href="award-2021-gold.html">2019得獎名單</a></li>
             </ul>
         </li>
     
@@ -76,13 +76,14 @@
             <li>
                 <a href="#">年度盛事&ensp;<span><i class="fa-solid fa-angle-down"></i></span></a>
                 <ul>
-                    <li><a href="#">&emsp;網友推薦</a> </li>
-                    <li><a href="#">&emsp;品牌票選</a> </li>
-                    <li><a href="#">&emsp;票選抽獎</a> </li>
-                    <li><a href="#">&emsp;2023得獎名單</a> </li>
-                    <li><a href="#">&emsp;2022得獎名單</a> </li>
-                    <li><a href="#">&emsp;2021得獎名單</a> </li>
-                    <li><a href="#">&emsp;2019得獎名單</a> </li>
+                    <li><a href="application.html">&emsp;品牌報名</a></li>
+                    <li><a href="https://www.surveycake.com/s/MR2V4" target="_blank">&emsp;網友推薦</a> </li>
+                    <li><a href="vote.html">&emsp;品牌票選</a></li>
+                    <li><a href="lottery.html">&emsp;票選抽獎</a></li>
+                    <li><a href="award-2021-gold.html">&emsp;2023得獎名單</a></li>
+                    <li><a href="award-2021-gold.html">&emsp;2022得獎名單</a></li>
+                    <li><a href="award-2021-gold.html">&emsp;2021得獎名單</a></li>
+                    <li><a href="award-2021-gold.html">&emsp;2019得獎名單</a></li>
                 </ul>
             </li>
             <li>
@@ -230,13 +231,13 @@
                 <button class="btn" id="btn-apply">品牌報名</button>
             </div>
         </div>
-        <div class="row form">
+        <div class="form" style="display:none">
             <p class="h2">品牌報名</p>
             <form method="post">
                 <ul>
                     <li>
                         <label class="p1 require">報名類別</label>
-                        <select name="category">
+                        <select name="category" class="require-fill">
                             <option disabled selected>請選擇</option>
                             <option value="類別一">類別一</option>
                             <option value="類別二">類別二</option>
@@ -244,22 +245,22 @@
                     </li>
                     <li>
                         <label class="p1 require">報名品牌名稱</label>
-                        <input type="text">
+                        <input type="text" class="require-fill">
                     </li>
                     <li>
                         <label class="p1 require">企業抬頭</label>
-                        <input type="text">
+                        <input type="text" class="require-fill">
                     </li>
                     <li>
                         <label class="p1 require">統一編號</label>
-                        <input type="text">
+                        <input type="text" class="require-fill">
                     </li>
                     <li>
-                        <label class="p1">品牌福利<br>制度簡介</label>
-                        <textarea placeholder="限制字數200字以內"></textarea>
+                        <label class="p1 require">品牌福利<br>制度簡介</label>
+                        <textarea placeholder="限制字數200字以內" class="require-fill"></textarea>
                     </li>
                     <li>
-                        <label class="p1 require">女性職場<br>優質福利(複選)</label>
+                        <label class="p1">女性職場<br>優質福利(複選)</label>
                         <div class="g-condition">
                             <label class="condition">
                                 <input type="checkbox">
@@ -310,11 +311,11 @@
                         </div>
                     </li>
                     <li>
-                        <label class="p1 require">Logo圖</label>
+                        <label class="p1">Logo圖</label>
                         <div class="g-file">
                             <img src="assets/img/input-file.svg" alt="">
-                            <input id="file-upload" class="inputfile inputfile1" name='upload_cont_img' type="file"
-                                style="display:none;">
+                            <input id="file-upload" class="inputfile inputfile1" name='upload_cont_img'
+                                type="file" style="display:none;">
                             <label for="file-upload" class="custom-file-upload custom-file-upload1 btn">
                                 上傳檔案
                             </label>
@@ -322,21 +323,16 @@
                         </div>
                     </li>
                     <li>
-                        <div class="g">
-
-                        </div>
-                    </li>
-                    <li>
                         <label class="p1 require">聯絡人</label>
-                        <input type="text">
+                        <input type="text" class="require-fill">
                     </li>
                     <li>
                         <label class="p1 require">聯絡電話</label>
-                        <input type="tel">
+                        <input type="tel" class="require-fill">
                     </li>
                     <li>
                         <label class="p1 require">聯絡信箱</label>
-                        <input type="mail">
+                        <input type="mail" class="require-fill">
                     </li>
                 </ul>
             </form>
@@ -355,80 +351,72 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="brand-item">
-                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                                 <div class="brand-info">
                                     <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                    <p class="p1 b-category">半導體製造</p>
                                     <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-item">
-                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                                 <div class="brand-info">
                                     <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                    <p class="p1 b-category">半導體製造</p>
                                     <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-item">
-                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                                 <div class="brand-info">
                                     <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                    <p class="p1 b-category">半導體製造</p>
                                     <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-item">
-                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                                 <div class="brand-info">
                                     <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                    <p class="p1 b-category">半導體製造</p>
                                     <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-item">
-                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                                 <div class="brand-info">
                                     <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                    <p class="p1 b-category">半導體製造</p>
                                     <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-item">
-                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                                 <div class="brand-info">
                                     <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                    <p class="p1 b-category">半導體製造</p>
                                     <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-item">
-                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                                 <div class="brand-info">
                                     <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                    <p class="p1 b-category">半導體製造</p>
                                     <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-item">
-                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                                <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                                 <div class="brand-info">
                                     <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
-                                    <p class="p1 b-category">半導體製造</p>
                                     <p class="p1 brand-name">日月光半導體製造股份有限公司(中壢廠)</p>
                                 </div>
                             </div>
@@ -1173,7 +1161,7 @@
                     </div>
                     <div class="bottom">
                         <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                             <div class="brand-info">
                                 <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
                                 <p class="p1 b-category">半導體製造</p>
@@ -1181,7 +1169,7 @@
                             </div>
                         </div>
                         <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                             <div class="brand-info">
                                 <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
                                 <p class="p1 b-category">半導體製造</p>
@@ -1189,7 +1177,7 @@
                             </div>
                         </div>
                         <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                             <div class="brand-info">
                                 <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
                                 <p class="p1 b-category">半導體製造</p>
@@ -1197,7 +1185,7 @@
                             </div>
                         </div>
                         <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                             <div class="brand-info">
                                 <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
                                 <p class="p1 b-category">半導體製造</p>
@@ -1205,7 +1193,7 @@
                             </div>
                         </div>
                         <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                             <div class="brand-info">
                                 <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
                                 <p class="p1 b-category">半導體製造</p>
@@ -1213,7 +1201,7 @@
                             </div>
                         </div>
                         <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                             <div class="brand-info">
                                 <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
                                 <p class="p1 b-category">半導體製造</p>
@@ -1221,7 +1209,7 @@
                             </div>
                         </div>
                         <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                             <div class="brand-info">
                                 <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
                                 <p class="p1 b-category">半導體製造</p>
@@ -1229,7 +1217,7 @@
                             </div>
                         </div>
                         <div class="brand-item">
-                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt=""></div>
+                            <div class="brand-cover"><img src="assets/img/job-card-cover.png" alt="" class="brand-cover-img"></div>
                             <div class="brand-info">
                                 <img src="assets/img/brand-ex.png" alt="" class="brand-logo">
                                 <p class="p1 b-category">半導體製造</p>

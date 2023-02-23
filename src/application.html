@@ -18,13 +18,13 @@
                 <button class="btn" id="btn-apply">品牌報名</button>
             </div>
         </div>
-        <div class="form">
+        <div class="form" style="display:none">
             <p class="h2">品牌報名</p>
             <form method="post">
                 <ul>
                     <li>
                         <label class="p1 require">報名類別</label>
-                        <select name="category">
+                        <select name="category" class="require-fill">
                             <option disabled selected>請選擇</option>
                             <option value="類別一">類別一</option>
                             <option value="類別二">類別二</option>
@@ -32,22 +32,22 @@
                     </li>
                     <li>
                         <label class="p1 require">報名品牌名稱</label>
-                        <input type="text">
+                        <input type="text" class="require-fill">
                     </li>
                     <li>
                         <label class="p1 require">企業抬頭</label>
-                        <input type="text">
+                        <input type="text" class="require-fill">
                     </li>
                     <li>
                         <label class="p1 require">統一編號</label>
-                        <input type="text">
+                        <input type="text" class="require-fill">
                     </li>
                     <li>
-                        <label class="p1">品牌福利<br>制度簡介</label>
-                        <textarea placeholder="限制字數200字以內"></textarea>
+                        <label class="p1 require">品牌福利<br>制度簡介</label>
+                        <textarea placeholder="限制字數200字以內" class="require-fill"></textarea>
                     </li>
                     <li>
-                        <label class="p1 require">女性職場<br>優質福利(複選)</label>
+                        <label class="p1">女性職場<br>優質福利(複選)</label>
                         <div class="g-condition">
                             <label class="condition">
                                 <input type="checkbox">
@@ -98,7 +98,7 @@
                         </div>
                     </li>
                     <li>
-                        <label class="p1 require">Logo圖</label>
+                        <label class="p1">Logo圖</label>
                         <div class="g-file">
                             <img src="assets/img/input-file.svg" alt="">
                             <input id="file-upload" class="inputfile inputfile1" name='upload_cont_img'
@@ -110,21 +110,16 @@
                         </div>
                     </li>
                     <li>
-                        <div class="g">
-                            
-                        </div>
-                    </li>
-                    <li>
                         <label class="p1 require">聯絡人</label>
-                        <input type="text">
+                        <input type="text" class="require-fill">
                     </li>
                     <li>
                         <label class="p1 require">聯絡電話</label>
-                        <input type="tel">
+                        <input type="tel" class="require-fill">
                     </li>
                     <li>
                         <label class="p1 require">聯絡信箱</label>
-                        <input type="mail">
+                        <input type="mail" class="require-fill">
                     </li>
                 </ul>
             </form>

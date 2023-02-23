@@ -15,6 +15,7 @@ module.exports = {
         swiper: './src/js/swiper.js',
         app: './src/js/application.js',
         cardJob: './src/js/card-job.js',
+        vote: './src/js/vote.js',
         header: './src/js/header.js',
         vote: './src/js/vote.js',
     },
@@ -150,7 +151,7 @@ module.exports = {
             template: path.resolve(__dirname, './src/lottery.html'),
             minify: false,//HTML壓縮用，true是壓縮、false是不壓縮
             filename: 'lottery.html',
-            chunks: ['main','global','img','header'],
+            chunks: ['main','global','img','header','app'],
         }),
         new HtmlWebpackPlugin({//1-2-1 搜尋結果頁:嚴選企業
             template: path.resolve(__dirname, './src/searchResult-company.html'),
@@ -223,7 +224,7 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/pgnb-style2.html'),
             location: 'pgnb-second',
-            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html','award-2021-silver.html','award-2021-gold.html','award-2021-bronze.html']
+            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','award-2021-silver.html','award-2021-gold.html','award-2021-bronze.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html']
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/category.html'),

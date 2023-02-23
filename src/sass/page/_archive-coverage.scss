@@ -5,7 +5,6 @@
         @extend %page-content;
         @extend %tac;
         padding: 9rem 2rem 4rem;
-        // margin: 0 auto;
         max-width: 1420px;
 
         .archive {
@@ -42,6 +41,18 @@
                         flex: 1;
                         padding: 2rem 1rem;
 
+                        a.h4{
+                            @extend %dib;
+                            @extend %pointer;
+                            transition: all ease .4s;
+                            color: $c-black;
+                            margin-bottom: 1rem;
+
+                            &:hover{
+                                color: $c-primary-deep;
+                            }
+                        }
+
                         p {
                             &.date {
                                 @include flex($a-i: center);
@@ -52,6 +63,10 @@
                                     width: 100%;
                                     max-width: 30px;
                                 }
+                            }
+
+                            &.company-title{
+                                color: $c-black;
                             }
                         }
 
@@ -139,7 +154,7 @@
 
         @include mobile {
 
-            padding: 9rem 1.5rem 4rem;
+            padding: 4rem 1.5rem;
 
             .search-bar {
                 @include flex($w: wrap,$j-c:center);
@@ -164,6 +179,10 @@
     .ad-area-wrapper{
         background: $c-white;
         padding: 5rem 0;
+
+        @include pad{
+            padding: 4rem 0;
+        }
         
         .ad-area-container{
             @extend %page-content;
@@ -171,6 +190,7 @@
             gap: 30px;
             margin: 0 auto;
             max-width: 1420px;
+
             .block{
                 flex:1;
                 flex-basis: 100%;
@@ -180,10 +200,9 @@
                 }
             }
 
-            @include mobile{
+            @include pad{
                 flex-wrap: wrap;
             }
         }
-
     }
 }

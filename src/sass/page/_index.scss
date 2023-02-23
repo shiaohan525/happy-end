@@ -2,6 +2,8 @@
     // .swiper{
     //     margin: 33px 0px 0px 0px;
     // }
+    overflow: hidden;
+
     
     .cardJob{
         @extend %page-content;
@@ -9,6 +11,7 @@
         margin: auto;
         gap:48px;
         padding: 88px 120px;
+
         @include pad{
             padding: 66px 80px;
             gap:32px;
@@ -18,131 +21,239 @@
             gap:24px;
         }
     }
-    
-    .article{
+
+    card-job{
         @extend %page-content;
         @include flex($d:column,$a-i:center);
+        width: 100%;
         margin: auto;
         gap:48px;
-        padding: 88px 120px;
-        background: $c-secondary-white;
+        // padding: 88px 120px;
         @include pad{
-            padding: 66px 80px;
+            padding: 66px 0px;
             gap:32px;
         }
         @include mini-pad{
-            padding: 40px 30px;
+            padding:0px;
             gap:24px;
         }
-    
-        .article-item{
-            @include flex($d:column);
-            @extend %pointer;
-            flex: 1;
-            gap:20px;
+
+        .card-job{
+            width: 100%;
+            box-sizing: border-box;
         }
+    }
     
-        .article-section{
-            @include flex($w:wrap);
-            flex: 1;
-            gap:40px;
-            margin: unset;
-            padding: 0px;
-    
+    .article-wrapper{
+        background: $c-secondary-white;
+        .article{
+            @extend %page-content;
+            @include flex($d:column,$a-i:center);
+            margin: auto;
+            gap:48px;
+            padding: 88px 120px;
+            background: $c-secondary-white;
             @include pad{
-                @include flex($d:column);
+                padding: 66px 80px;
+                gap:32px;
             }
             @include mini-pad{
-                display: none;
+                padding: 40px 30px;
+                gap:24px;
             }
     
-            >.article-section{
-                @include basic_grid(2,1fr,40px,40px);
-            }
-    
-            >.article-item{
-                @include flex($d:column);
-                flex: 1;
-                gap:12px;
-                img{
-                    aspect-ratio: 16/9; 
+            .title {
+                width: 100%;
+                border-bottom: 1px solid $c-secondary-light;
+                padding: 68px 0px;
+                text-align: center;
+                @include flex($d: column);
+                gap: 20px;
+            
+                @include mini-pad {
+                    gap: 0px;
+                    padding: 40px 0px;
                 }
-                >.article-content{
+            
+                @include mobile {
+                    padding: 20px 0px;
+                }
+            }
+        
+            .article-item{
+                @include flex($d:column);
+                @extend %pointer;
+                flex: 1;
+                gap:20px;
+            }
+        
+            .article-section{
+                @include flex($w:wrap);
+                flex: 1;
+                gap:40px;
+                margin: unset;
+                padding: 0px;
+        
+                @include pad{
                     @include flex($d:column);
-                    gap:4px;
-                    .p2{
-                        color: $c-secondary-deep;
+                }
+                @include mini-pad{
+                    display: none;
+                }
+        
+                >.article-section{
+                    @include basic_grid(2,1fr,40px,40px);
+                }
+        
+                >.article-item{
+                    @include flex($d:column);
+                    flex: 1;
+                    gap:12px;
+                    img{
+                        aspect-ratio: 16/9; 
+                    }
+                    >.article-content{
+                        @include flex($d:column);
+                        gap:4px;
+                        .p2{
+                            color: $c-secondary-deep;
+                        }
+                    }
+                }
+        
+        
+            }
+        
+            .article-swiper{
+                display: none;
+    
+                @include mini-pad{
+                    display: block;
+                    padding: 0px 40px;
+                    width: 100%;
+                }
+        
+                @include mobile{
+                    padding: 0px 40px;
+                    // width: 100%;
+                }
+    
+                .article-item{
+                    flex: 1;
+                    // width: 400px;
+                    // @include mobile{
+                        padding: 0px 40px;
+                    //     width: 100%;
+                    // }
+                    img{
+                        // @include mentor-img(600px);
+                        aspect-ratio: 16/9; 
+                    }
+                }
+    
+                .swiper {
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 20px !important;
+                }
+            
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    display: flex;
+                    background-color: transparent;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+                .swiper-slide img {
+                    padding: 0px;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    top: 55%;
+    
+                    &::after {
+                        width: 34px;
+                        height: 53px;
+                    }
+    
+                }
+      
+                  .swiper-button-next {
+                      right: 0px !important;
+      
+                      &::after {
+                          content: url(../img/arrow-next.svg);
+      
+                          @include mini-pad {
+                              content: url(../img/arrow-next-rwd.svg);
+                              width: 20px !important;
+                          }
+                      }
+                  }
+      
+                  .swiper-button-prev {
+                      left: 0px !important;
+      
+                      &::after {
+                          content: url(../img/arrow-prev.svg);
+                          width: 20px !important;
+      
+                          @include mini-pad {
+                              content: url(../img/arrow-prev-rwd.svg);
+                          }
+                      }
+                  }
+                  @media only screen and (max-width: $mini-pad) {
+    
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        background: transparent;
+                        width: 20px !important;
+                    }
+    
+                    .swiper-button-next {
+                        right: 10px !important;
+                        text-align: right;
+                    }
+    
+                    .swiper-button-prev {
+                        left: 10px !important;
                     }
                 }
             }
-    
-    
-        }
-    
-        .article-swiper{
-            display: none;
-            .article-item{
-                flex: 1;
-                width: 400px;
+        
+            .article-content{
                 @include mobile{
-                    width: 200px;
+                    @include flex($d:column);
+                    gap:4px;
                 }
-                img{
-                    // @include mentor-img(600px);
-                    aspect-ratio: 16/9; 
+                >h3{
+                    @include mini-pad{
+                        padding-bottom: 1rem;
+                    }
+                    @include mobile{
+                        font-size: $m-h4;
+                    }
                 }
-            }
-            @include mini-pad{
-                display: block;
-                max-width: 500px;   
-            }
-    
-            @include mobile{
-                display: block;
-                max-width: 300px;   
-            }
-            .swiper {
-                width: 100%;
-                height: 100%;
-              }
-          
-              .swiper-slide {
-                text-align: center;
-                font-size: 18px;
-                display: flex;
-                background-color: transparent;
-                justify-content: center;
-                align-items: center;
-              }
-          
-              .swiper-slide img {
-                padding: 0px;
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              }
-        }
-    
-        .article-content{
-            @include mobile{
-                @include flex($d:column);
-                gap:4px;
-            }
-            >h3{
-                @include mobile{
-                    font-size: $m-h4;
+                >p{
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    display: -webkit-box;
                 }
-            }
-            >p{
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                display: -webkit-box;
             }
         }
     }
+
+
     
     .category{
         @extend %page-content;

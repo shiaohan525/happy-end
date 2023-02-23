@@ -51,203 +51,6 @@
         }
     }
 
-    .form {
-        @extend %ma;
-        @extend %dn;
-        max-width: 950px;
-        padding: 8rem 2rem;
-
-        @include mobile{
-            padding: 4rem 2rem;
-        }
-
-        p.h2 {
-            @extend %tac;
-        }
-
-        ul {
-            display: grid;
-            gap: 20px;
-
-            li {
-                @include flex($a-i: center);
-                gap: 20px;
-
-                select,
-                input,
-                textarea {
-                    @extend %bb;
-                    height: 47px;
-                    border: 1px solid #F0E7DE !important;
-                    color: $c-gray;
-                    font-size: $tag;
-                    border-radius: 5px;
-                    padding: 0.5rem;
-                    flex: 1;
-
-                    &::placeholder {
-                        color: #9A9A9A;
-                        letter-spacing: 1px;
-                    }
-                }
-
-                textarea {
-                    @extend %rel;
-                    line-height: 26px;
-
-                    &::placeholder {
-                        @include absolute($right: 10px, $bottom: 10px);
-                    }
-                }
-
-                // title
-                >label {
-                    @include f-flexBasis(140px);
-                    color: $c-secondary-deep;
-                    font-weight: 400;
-                }
-
-                // 下拉
-                select {
-                    @extend %bb;
-                    @extend %pointer;
-                    flex: 1;
-                    padding-right: 2rem;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-
-                    background-image: url('../img/select-dropdown-icon.svg');
-                    background-repeat: no-repeat;
-                    background-size: 65px 16px;
-                    background-position: calc(100% + 6px) calc(2em - 16px);
-                }
-
-                .g-condition,
-                .g-file {
-                    @include f-flexBasis(100%);
-                    flex: 1;
-                }
-
-                .g-condition {
-                    @include flex($w: wrap, $j-c: space-between);
-                    gap: 10px;
-
-                    .condition {
-                        @include flex($a-i: center);
-                        gap: 10px;
-
-                        span:not(.p2) {
-                            flex: 0 0 20px;
-                        }
-
-                        &.other {
-                            span.p2 {
-                                flex: 0 0 40px;
-                            }
-
-                            input[type=text] {
-                                height: 35px;
-                            }
-                        }
-
-                        @include mobile {
-                            flex-basis: 100%;
-                        }
-                    }
-                }
-
-                // checkbox
-                input[type=checkbox] {
-                    @extend %dn;
-
-                    &+span {
-                        @extend %dib;
-                        width: 20px;
-                        height: 20px;
-                        background: $c-white;
-                        border: 2px solid $c-secondary-deep;
-                        border-radius: 100px;
-                    }
-
-                    &:checked+span {
-                        @extend %dib;
-                        @extend %rel;
-                        width: 20px;
-                        height: 20px;
-                        background: $c-white;
-                        border-radius: 100px;
-
-                        &::before {
-                            @include absolute($top: 3.5px, $left: 3.5px);
-                            content: '';
-                            background: $c-secondary-deep;
-                            border-radius: 100px;
-                            width: 13px;
-                            height: 13px;
-                        }
-                    }
-                }
-
-                // upload file
-                .g-file {
-                    @include flex($a-i: center, $w: wrap,$j-c:flex-start);
-                    gap: 20px;
-
-                    img {
-                        max-width: 40px;
-                    }
-
-                    // input-file
-                    .inputfile+label {
-                        @extend %pointer;
-                        @include flex($a-i: center);
-                        width: unset;
-                        height: 40px;
-                        font-weight: 400;
-                        color: $c-white;
-                        background-color: $c-primary;
-                        border: none;
-                        border-radius: 5px;
-                        padding: 0.5rem 1rem;
-                        margin: 0;
-                    }
-                }
-
-                @include mobile {
-                    flex-wrap: wrap;
-
-                    >label {
-                        flex-basis: 100%;
-                    }
-
-                    select,
-                    input {
-                        flex-basis: 100%;
-                    }
-                }
-            }
-        }
-
-        form {
-            margin: 3rem auto;
-        }
-
-        &>.row {
-            @include flex($j-c: center);
-            gap: 20px;
-
-            .cancel {
-                background: $c-white;
-                color: $c-primary;
-
-                &:hover {
-                    background: $c-primary;
-                    color: $c-white;
-                }
-            }
-        }
-    }
-
     .vote-container {
 
         // 投票swiper
@@ -271,6 +74,10 @@
                 overflow: hidden;
             }
 
+            .brand-name{
+                color: $c-black;
+            }
+
             .mySwiper-vote {
                 max-width: 1420px;
             }
@@ -285,7 +92,8 @@
 
                 &::after {
                     width: 34px;
-                    height: 53px;
+                    height: unset;
+                    font-size: unset !important;
                 }
 
             }
@@ -295,7 +103,7 @@
 
                 &::after {
                     content: url(../img/arrow-next.svg);
-
+                    
                     @include mini-pad {
                         content: url(../img/arrow-next-rwd.svg);
                         width: 20px !important;
@@ -407,11 +215,12 @@
                             -webkit-appearance: none;
                             -moz-appearance: none;
                             margin: 1rem 0;
+                            font-size: 16px;
 
                             background-image: url('../img/select-dropdown-icon.svg');
                             background-repeat: no-repeat;
-                            background-size: 58px 20px;
-                            background-position: calc(100% + 6px) calc(2em - 11px);
+                            background-size: 50px 15px;
+                            background-position: calc(100% + 6px) calc(2em - 18px);
                         }
                         .search-submit-btn {
                             height: 37px;
@@ -429,6 +238,7 @@
 
                     @include pad{
                         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                        padding-top: 10px;
                     }
                     @include mobile {
                         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -448,9 +258,7 @@
 
                         .front,.back{
                             @extend %bb;
-                            // @include absolute;
                             height: 100%;
-                            max-height: 560px;
                             transition: all ease .4s;
                         }
 
@@ -537,6 +345,10 @@
                                 background: $c-white;
                                 color: $c-primary;
                             }
+
+                            @include mobile{
+                                padding: 1.5rem !important;
+                            }
                         }
 
                         .back {
@@ -612,8 +424,8 @@
 
                                 ul{
                                     margin: 0.5rem 0 2rem;
-                                    max-height: 173px;
-                                    overflow-y: scroll;
+                                    // max-height: 173px;
+                                    // overflow-y: scroll;
                                     
                                     li{
                                         padding: 0.2rem 0;
@@ -682,23 +494,37 @@
                                 @extend %rel;
                                 @extend %tac;
                                 @extend %dib;
-                                width: 30px;
-                                height: 30px;
+                                @extend %bb;
+                                width: 32.5px;
+                                height: 32.5px;
+                                padding: 2px;
                                 border: 1.5px solid $c-primary;
                                 border-radius: 100px;
                                 font-weight: 600;
-                                line-height: 1.6;
+                                line-height: 1.3;
                                 background: $c-white;
                                 color: $c-primary;
-                                transition: all ease .4s;
+                                transition: all ease .2s;
 
                                 &.pgnb-current,
                                 &:hover {
+                                    @extend %bb;
+                                    padding: 2px;
                                     // border-width: 5px;
                                     border: 3px solid;
                                     background: transparent;
-                                    width: 28px;
-                                    height: 28px;
+                                    width: 32.5px;
+                                    height: 32.5px;
+                                    line-height: 1.2;
+                                }
+
+                                @include pad{
+                                    line-height: 1.5;
+
+                                    &.pgnb-current,
+                                    &:hover{
+                                        line-height: 1.4;
+                                    }
                                 }
                             }
                         }
@@ -717,7 +543,7 @@
                 @extend %tac;
                 @extend %page-content;
                 max-width: 1420px;
-                padding: 5rem 2rem;
+                padding: 8rem 2rem;
 
                 .section-title {
                     padding-bottom: 3rem;

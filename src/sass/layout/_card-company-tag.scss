@@ -26,8 +26,7 @@
         // max-width: 300px;
     
         @include flex($d:column);
-        @extend %pointer;
-    
+
         >img{
             // @include mentor-img(300px);
             width: 100%;
@@ -56,7 +55,7 @@
                     >ul{
                         @include flex($d:column);
                         gap:8px;
-                        li{
+                        a{
                             @include flex($a-i:center);
                             gap: 8px;
                         }
@@ -99,41 +98,41 @@
 
 
 
-.minipad-swiper{
-    display: none;
-    @include mini-pad{
-        display: block;
-        max-width: 500px;   
-    }
+// .minipad-swiper{
+//     display: none;
+//     @include mini-pad{
+//         display: block;
+//         max-width: 500px;   
+//     }
 
-    @include mobile{
-        display: block;
-        max-width: 300px;   
-    }
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
+//     @include mobile{
+//         display: block;
+//         max-width: 300px;   
+//     }
+//     .swiper {
+//         width: 100%;
+//         height: 100%;
+//     }
 
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        display: flex;
-        background-color: transparent;
-        justify-content: center;
-        align-items: center;
-    }
+//     .swiper-slide {
+//         text-align: center;
+//         font-size: 18px;
+//         display: flex;
+//         background-color: transparent;
+//         justify-content: center;
+//         align-items: center;
+//     }
 
-    .swiper-slide img {
-        padding: 0px;
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .card-job{
-        @include mobile{
-            width: 200px;
-        }
-    }
-}
+//     .swiper-slide img {
+//         padding: 0px;
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//     }
+//     .card-job{
+//         @include mobile{
+//             width: 200px;
+//         }
+//     }
+// }

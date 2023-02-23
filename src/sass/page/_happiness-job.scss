@@ -2,50 +2,59 @@
     .swiper{
         margin: 33px 0px 0px 0px;
     }
-    
-    .happinessJob{
-        @extend %page-content;
-        @include flex($d:column,$a-i:center);
-        margin: auto;
-        gap:48px;
-        padding: 88px 120px;
-        background: $c-secondary-white;
-        @include pad{
-            padding: 66px 80px;
-            gap:32px;
-        }
-        @include mini-pad{
-            padding: 40px 30px;
-            gap:24px;
-        }
-        >.title{
-            border-bottom: none;
-            padding: 0px;
-        }
-        .company-select{
-            @include flex($d:column,$a-i:flex-end);
-            gap:16px;
 
-            .advanced{
-                @extend %pointer;
-                color: $c-secondary;
-                font-size: $tag;
-                text-decoration-line: underline;
+    .happinessJob-wrapper{
+        background: $c-secondary-white;
+        .happinessJob{
+            @extend %page-content;
+            @include flex($d:column,$a-i:center);
+            margin: auto;
+            gap:48px;
+            padding: 88px 120px;
+            background: $c-secondary-white;
+            @include pad{
+                padding: 66px 80px;
+                gap:32px;
             }
-            .select-flex{
-                @include flex($j-c:space-between);
-                width: 400px;
-                gap:20px;
-                @include mini-pad{
-                    @include flex($d:column,$a-i:center);
-                    width: 400px;
+            @include mini-pad{
+                padding: 40px 30px;
+                gap:24px;
+            }
+            >.title{
+                border-bottom: none;
+                padding: 0px;
+            }
+            .company-select{
+                @include flex($d:column,$a-i:flex-end);
+                gap:16px;
+                @include pad{
+                    width: 100%;
+                    margin: auto;
                 }
-                @include mobile{
-                    width: 260px;
+    
+                .advanced{
+                    @extend %pointer;
+                    color: $c-secondary;
+                    font-size: $tag;
+                    text-decoration-line: underline;
+                }
+                .select-flex{
+                    @include flex($j-c:space-between);
+                    gap:20px;
+
+                    @include pad{
+                        @include flex($j-c:center);
+                        width: 100%;
+                    }
+                    @include mini-pad{
+                        @include flex($d:column,$a-i:center);
+                    }
                 }
             }
         }
     }
+    
+
 
     .ad-area-wrapper{
         background: $c-white;
