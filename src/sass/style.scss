@@ -28,6 +28,11 @@
 @import 'page/company-news';
 @import 'page/company-walfare';
 @import 'page/lottery';
+<<<<<<< HEAD
+=======
+@import 'page/award-2021';
+@import 'page/vote';
+>>>>>>> b77deb3b755151075431632e6c56ef495bee1362
 @import 'page/searchResult-company';
 @import 'page/searchResult-job';
 @import 'page/searchResult-news';
@@ -193,6 +198,7 @@ p,
     gap: 20px;
 
     @include mini-pad {
+        gap: 0px;
         padding: 40px 0px;
     }
 
@@ -420,8 +426,13 @@ textarea {
     height: 100%;
     padding: 1rem;
 
+<<<<<<< HEAD
     &.dialog-application-info {
         .container {
+=======
+    &.dialog-application-info{
+        .container{
+>>>>>>> b77deb3b755151075431632e6c56ef495bee1362
             max-width: 650px;
             padding: 4rem 1.5rem 1.5rem;
         }
@@ -565,7 +576,6 @@ textarea {
 
 }
 
-
 // 彈窗背景共用
 .dialog-bg {
     @include absolute($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 9991);
@@ -573,4 +583,218 @@ textarea {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+<<<<<<< HEAD
+=======
+}
+
+// required
+.require::after {
+    content: '*';
+    color: $c-secondary-deep;
+    margin-left: 5px;
+}
+
+// btn clicked
+button:focus{
+    outline: none;
+}
+
+// 表單樣式
+.form {
+    @extend %ma;
+    @extend %dn;
+    max-width: 950px;
+    padding: 8rem 2rem;
+
+    @include pad{
+        padding: 4rem 2rem;
+    }
+
+    p.h2 {
+        @extend %tac;
+    }
+
+    ul {
+        display: grid;
+        gap: 20px;
+
+        li {
+            @include flex($a-i: center);
+            gap: 20px;
+
+            select,
+            input,
+            textarea {
+                @extend %bb;
+                height: 47px;
+                border: 1px solid #F0E7DE !important;
+                color: $c-gray;
+                font-size: $tag;
+                border-radius: 5px;
+                padding: 0.5rem;
+                flex: 1;
+
+                &::placeholder {
+                    color: #9A9A9A;
+                    letter-spacing: 1px;
+                }
+            }
+
+            textarea {
+                @extend %rel;
+                line-height: 26px;
+                min-height: 100px;
+
+                &::placeholder {
+                    @include absolute($right: 10px, $bottom: 10px);
+                }
+            }
+
+            // title
+            >label {
+                @include f-flexBasis(140px);
+                color: $c-secondary-deep;
+                font-weight: 400;
+            }
+
+            // 下拉
+            select {
+                @extend %bb;
+                @extend %pointer;
+                flex: 1;
+                padding-right: 2rem;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+
+                background-image: url('../img/select-dropdown-icon.svg');
+                background-repeat: no-repeat;
+                background-size: 65px 16px;
+                background-position: calc(100% + 6px) calc(2em - 16px);
+            }
+
+            .g-condition,
+            .g-file {
+                @include f-flexBasis(100%);
+                flex: 1;
+            }
+
+            .g-condition {
+                @include flex($w: wrap, $j-c: space-between);
+                gap: 10px;
+
+                .condition {
+                    @include flex($a-i: center);
+                    gap: 10px;
+
+                    span:not(.p2) {
+                        flex: 0 0 20px;
+                    }
+
+                    &.other {
+                        span.p2 {
+                            flex: 0 0 40px;
+                        }
+
+                        input[type=text] {
+                            height: 35px;
+                        }
+                    }
+
+                    @include mobile {
+                        flex-basis: 100%;
+                    }
+                }
+            }
+
+            // checkbox
+            input[type=checkbox] {
+                @extend %dn;
+
+                &+span {
+                    @extend %dib;
+                    width: 20px;
+                    height: 20px;
+                    background: $c-white;
+                    border: 2px solid $c-secondary-deep;
+                    border-radius: 100px;
+                }
+
+                &:checked+span {
+                    @extend %dib;
+                    @extend %rel;
+                    width: 20px;
+                    height: 20px;
+                    background: $c-white;
+                    border-radius: 100px;
+
+                    &::before {
+                        @include absolute($top: 3.5px, $left: 3.5px);
+                        content: '';
+                        background: $c-secondary-deep;
+                        border-radius: 100px;
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+            }
+
+            // upload file
+            .g-file {
+                @include flex($a-i: center, $w: wrap,$j-c:flex-start);
+                gap: 20px;
+
+                img {
+                    max-width: 40px;
+                }
+
+                // input-file
+                .inputfile+label {
+                    @extend %pointer;
+                    @include flex($a-i: center);
+                    width: unset;
+                    height: 40px;
+                    font-weight: 400;
+                    color: $c-white;
+                    background-color: $c-primary;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 0.5rem 1rem;
+                    margin: 0;
+                }
+            }
+
+            @include mobile {
+                flex-wrap: wrap;
+
+                >label {
+                    flex-basis: 100%;
+                }
+
+                select,
+                input {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+
+    form {
+        margin: 3rem auto;
+    }
+
+    &>.row {
+        @include flex($j-c: center);
+        gap: 20px;
+
+        .cancel {
+            background: $c-white;
+            color: $c-primary;
+
+            &:hover {
+                background: $c-primary;
+                color: $c-white;
+            }
+        }
+    }
+>>>>>>> b77deb3b755151075431632e6c56ef495bee1362
 }

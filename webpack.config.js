@@ -15,6 +15,10 @@ module.exports = {
         swiper: './src/js/swiper.js',
         app: './src/js/application.js',
         cardJob: './src/js/card-job.js',
+<<<<<<< HEAD
+=======
+        vote: './src/js/vote.js',
+>>>>>>> b77deb3b755151075431632e6c56ef495bee1362
         header: './src/js/header.js',
         vote: './src/js/vote.js',
     },
@@ -223,7 +227,11 @@ module.exports = {
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/pgnb-style2.html'),
             location: 'pgnb-second',
+<<<<<<< HEAD
             template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html','award-2021-silver.html','award-2021-gold.html','award-2021-bronze.html']
+=======
+            template_filename: ['archive-coverage.html','happiness-company.html','happiness-job.html','talent.html','company-news.html','company-job.html','award-2021-silver.html','award-2021-gold.html','award-2021-bronze.html','searchResult-company.html','searchResult-job.html','searchResult-news.html','searchResult-issue.html']
+>>>>>>> b77deb3b755151075431632e6c56ef495bee1362
         }),
         new HtmlWebpackPartialsPlugin({
             path: path.join(__dirname, './src/layout/category.html'),

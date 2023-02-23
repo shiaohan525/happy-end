@@ -10935,7 +10935,8 @@ var swiper = new Swiper(".mySwiper", {
     delay: 5000
   },
   pagination: {
-    el: ".swiper-pagination" // type: "progressbar",
+    el: ".swiper-pagination",
+    clickable: true // type: "progressbar",
 
   }
 });

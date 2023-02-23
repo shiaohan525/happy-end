@@ -2,50 +2,76 @@
     .swiper{
         margin: 33px 0px 0px 0px;
     }
-    
-    .happinessJob{
-        @extend %page-content;
-        @include flex($d:column,$a-i:center);
-        margin: auto;
-        gap:48px;
-        padding: 88px 120px;
-        background: $c-secondary-white;
-        @include pad{
-            padding: 66px 80px;
-            gap:32px;
-        }
-        @include mini-pad{
-            padding: 40px 30px;
-            gap:24px;
-        }
-        >.title{
-            border-bottom: none;
-            padding: 0px;
-        }
-        .company-select{
-            @include flex($d:column,$a-i:flex-end);
-            gap:16px;
 
-            .advanced{
-                @extend %pointer;
-                color: $c-secondary;
-                font-size: $tag;
-                text-decoration-line: underline;
+    .happinessJob-wrapper{
+        background: $c-secondary-white;
+        .happinessJob{
+            @extend %page-content;
+            @include flex($d:column,$a-i:center);
+            margin: auto;
+            gap:48px;
+            padding: 88px 120px;
+
+            @include pad{
+                padding: 66px 80px;
+                gap:32px;
             }
-            .select-flex{
-                @include flex($j-c:space-between);
-                width: 400px;
-                gap:20px;
-                @include mini-pad{
-                    @include flex($d:column,$a-i:center);
-                    width: 400px;
+            @include mini-pad{
+                padding: 40px 30px;
+                gap:24px;
+            }
+            >.title{
+                border-bottom: none;
+                padding: 0px;
+            }
+            .title {
+                width: 100%;
+                padding: 68px 0px;
+                text-align: center;
+                @include flex($d: column);
+                gap: 20px;
+            
+                @include mini-pad {
+                    gap: 0px;
+                    padding: 40px 0px;
                 }
-                @include mobile{
-                    width: 260px;
+            
+                @include mobile {
+                    padding: 20px 0px;
+                }
+                .classBtn{
+                    input{
+                        @include f-flexBasis(40%);
+                    }
+                }
+            }
+            .company-select{
+                @include flex($d:column,$a-i:flex-end);
+                gap:16px;
+    
+                .advanced{
+                    @extend %pointer;
+                    color: $c-secondary;
+                    font-size: $tag;
+                    text-decoration-line: underline;
+                }
+                .select-flex{
+                    @include flex($j-c:space-between);
+                    width: 400px;
+                    gap:20px;
+                    @include mini-pad{
+                        @include flex($d:column,$a-i:center);
+                        width: 400px;
+                    }
+                    @include mobile{
+                        width: 260px;
+                    }
                 }
             }
         }
     }
+    
+
 
     .ad-area-wrapper{
         background: $c-white;

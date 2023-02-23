@@ -576,6 +576,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/img/lottery-user.svg":
+/*!**********************************!*\
+  !*** ./src/img/lottery-user.svg ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/img/lottery-user.svg");
+
+/***/ }),
+
 /***/ "./src/img/pgnb-style2-arrow.svg":
 /*!***************************************!*\
   !*** ./src/img/pgnb-style2-arrow.svg ***!
@@ -937,6 +951,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_login_user_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ../img/login-user.svg */ "./src/img/login-user.svg");
 /* harmony import */ var _img_login_company_svg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ../img/login-company.svg */ "./src/img/login-company.svg");
 /* harmony import */ var _img_login_brand_svg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ../img/login-brand.svg */ "./src/img/login-brand.svg");
+<<<<<<< HEAD
+=======
+/* harmony import */ var _img_lottery_user_svg__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../img/lottery-user.svg */ "./src/img/lottery-user.svg");
+
+>>>>>>> b77deb3b755151075431632e6c56ef495bee1362
 
 
 
