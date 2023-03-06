@@ -88,7 +88,7 @@ table {
   display: inline-block;
 }
 
-.form ul li input[type=checkbox], .login-dialog .container, .login-dialog {
+.form ul li input[type=checkbox] {
   display: none;
 }
 
@@ -752,6 +752,11 @@ nav .main-menu li:hover > ul {
   align-items: unset;
   gap: 12px;
   width: 100%;
+}
+.login-dialog .container .input-main form {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 .login-dialog .container .input-main .input-icon {
   width: auto;

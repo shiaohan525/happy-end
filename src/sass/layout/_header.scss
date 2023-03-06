@@ -325,7 +325,7 @@ nav{
 
 // 關閉按鈕
 .login-dialog {
-    @extend %dn;
+    // @extend %dn;
     @extend %bb;
     @include fixed($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 666);
     content: '';
@@ -346,7 +346,7 @@ nav{
     }
 
     .container {
-        @extend %dn;
+        // @extend %dn;
         @extend %bb;
         @extend %rel;
         @extend %tac;
@@ -438,6 +438,11 @@ nav{
             @include flex($d:column);
             gap: 12px;
             width: 100%;
+            form{
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+            }
             .input-icon{ 
                 width: auto;
                 @include flex;
