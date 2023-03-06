@@ -418,7 +418,6 @@ textarea {
 
 // 彈窗共用樣式
 .apply-dialog {
-    @extend %dn;
     @extend %bb;
     @include fixed($top: 0, $left: 0, $right: 0, $bottom: 0, $z-i: 666);
     content: '';
@@ -453,7 +452,7 @@ textarea {
     }
 
     .container {
-        @extend %dn;
+        // @extend %dn;
         @extend %bb;
         @extend %rel;
         @extend %tac;
@@ -774,9 +773,10 @@ button:focus{
         margin: 3rem auto;
     }
 
-    &>.row {
+    .row {
         @include flex($j-c: center);
         gap: 20px;
+        margin: 2rem 0;
 
         .cancel {
             background: $c-white;
