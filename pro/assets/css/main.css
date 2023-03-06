@@ -88,7 +88,11 @@ table {
   display: inline-block;
 }
 
+<<<<<<< HEAD
 .form ul li input[type=checkbox], .apply-dialog .container, .apply-dialog {
+=======
+.form ul li input[type=checkbox], .login-dialog .container, .login-dialog {
+>>>>>>> 44814b054afab3eeb87f70c43278f2db2aea08c4
   display: none;
 }
 
@@ -7686,7 +7690,7 @@ button:focus {
 .form form {
   margin: 3rem auto;
 }
-.form > .row {
+.form .row {
   display: flex;
   flex-wrap: unset;
   flex-direction: unset;
@@ -7694,12 +7698,13 @@ button:focus {
   align-content: unset;
   align-items: unset;
   gap: 20px;
+  margin: 2rem 0;
 }
-.form > .row .cancel {
+.form .row .cancel {
   background: white;
   color: #EF6261;
 }
-.form > .row .cancel:hover {
+.form .row .cancel:hover {
   background: #EF6261;
   color: white;
 }
