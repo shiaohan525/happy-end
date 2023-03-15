@@ -552,7 +552,8 @@
 
                 .bottom {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
                     gap: 30px;
                     padding-top: 3rem;
                 }
@@ -561,11 +562,17 @@
                     margin: 2rem 0;
                 }
 
-                @include mobile {
+                @include pad {
                     padding: 4rem 2rem !important;
 
                     .bottom {
-                        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+
+                @include mobile{
+                    .bottom{
+                        grid-template-columns: 1fr;
                     }
                 }
             }
