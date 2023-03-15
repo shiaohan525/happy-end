@@ -156,7 +156,7 @@ p,
     @extend %bb;
     @extend %dib;
     width: fit-content;
-    padding: 8px 24px;
+    padding: 12px 44px;
     font-size: $p2;
     font-weight: 700;
     line-height: 120%;
@@ -215,7 +215,7 @@ p,
         color: $c-secondary;
         padding: 6px 10px;
         border: 1px solid $c-secondary;
-        border-radius: 8px;
+        border-radius: 3px;
 
         &:hover {
             background: $c-secondary;

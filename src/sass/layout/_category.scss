@@ -47,7 +47,16 @@
     }
 
     .category-content{
-        max-width: 800px;
+        // max-width: 800px;
+        min-width: 600px;
+
+        @include mini-pad{
+            min-width: 300px;
+        }
+
+        @include mobile{
+            min-width: 200px;
+        }
         >ul{
             @include basic_grid(3,1fr,60px,80px);
 
@@ -60,12 +69,30 @@
             }
 
             .category-item{
+                max-height: 110px;
+                min-width: 80px;
+
+                @include pad{
+                    max-height: 90px;
+                }
+
+                @include mini-pad{
+                    max-height: 80px;
+                }
+
+                @include mobile{
+                    max-height: 60px;
+                }
 
                 &:nth-child(3n+2){
                     transform: translateY(100px);
                     @include mini-pad{
                         transform: none;
                     }
+                }
+                img{
+                    height: 100%;
+                    width: auto;
                 }
 
                 @include mini-pad{
