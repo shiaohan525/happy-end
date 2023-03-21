@@ -248,6 +248,10 @@
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     display: -webkit-box;
+                    text-align: left;
+                    &:first-child{
+                        color: $c-secondary;
+                    }
                 }
             }
         }
