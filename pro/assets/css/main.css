@@ -2217,7 +2217,7 @@ nav .main-menu li:hover > ul {
   flex: 0.7;
 }
 .application-wrapper .application-container .info .container .bottom .row {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 .application-wrapper .application-container .info .container .bottom .row h5,
 .application-wrapper .application-container .info .container .bottom .row p {
