@@ -387,26 +387,6 @@
                                     -webkit-box-orient: vertical;
                                     overflow: hidden;
                                 }
-
-                                ul {
-                                    @include flex($a-i: center, $j-c: flex-start, $w: wrap);
-                                    gap: 18px 10px;
-
-                                    a {
-                                        font-weight: 400;
-                                        border-radius: 100px;
-                                        background: $c-white;
-                                        color: #C19E7F;
-                                        border: 1px solid;
-                                        padding: 0.2rem 0.5rem;
-                                        transition: all ease .4s;
-
-                                        &:hover {
-                                            color: $c-white;
-                                            background: #C19E7F;
-                                        }
-                                    }
-                                }
                             }
 
                             .brand-jobs {
@@ -435,6 +415,27 @@
                                             padding: 0.2rem 0;
                                         }
                                     }
+                                }
+                            }
+                        }
+
+                        ul.brand-conditions {
+                            @include flex($a-i: center, $j-c: flex-start, $w: wrap);
+                            gap: 18px 10px;
+                            margin: 1.5rem 0;
+
+                            a {
+                                font-weight: 400;
+                                border-radius: 100px;
+                                background: $c-white;
+                                color: #C19E7F;
+                                border: 1px solid;
+                                padding: 0.2rem 0.5rem;
+                                transition: all ease .4s;
+
+                                &:hover {
+                                    color: $c-white;
+                                    background: #C19E7F;
                                 }
                             }
                         }

@@ -276,7 +276,7 @@
                 <div class="company-select">
                     <button class="advanced">進階搜尋</button>
                     <div class="select-flex form-select">
-                        <select name="area">
+                        <!-- <select name="area">
                             <option value="選地區">選地區</option>
                             <option value="選地區">選地區</option>
                             <option value="選地區">選地區</option>
@@ -290,7 +290,10 @@
                             <option value="選福利">選福利</option>
                             <option value="選福利">選福利</option>
                             <option value="選福利">選福利</option>
-                        </select>
+                        </select> -->
+                        <button class="filter-area" id="ft-area">選地區</button>
+                        <button class="filter-industry" id="ft-industry">選產業</button>
+                        <button class="filter-benefits" id="ft-benefits">選福利</button>
                     </div>
                 </div>
                 <card-company-tag><!-- 08 公司tag區塊 -->
@@ -532,11 +535,668 @@
 </div></pgnb-second>
             </div>
         </section>
-
         <div class="ad-area-wrapper">
             <div class="ad-area-container">
                 <img src="assets/img/ad-ex.png" alt="">
                 <img src="assets/img/ad-ex.png" alt="">
+            </div>
+        </div>
+        <div class="dialog-filter" style="display:none">
+            <!-- 地區 -->
+            <div class="area-wrapper filter-wrapper" style="display:none">
+                <div class="dialog-bg"></div>
+                <div class="container">
+                    <div class="row fixed">
+                        <p class="p2 basic">選擇地區</p>
+                        <p class="p2 rwd-back" style="display:none"><span>← </span>回到上層</p>
+                        <p class="close-btn"><img src="assets/img/close-dialog-btn.svg" alt=""></p>
+                    </div>
+                    <form class="row form" method="post">
+                        <div class="row filter">
+                            <div class="col category">
+                                <ul class="north">
+                                    <h5 class="p2">北部</h5>
+                                    <li class="conditions-tab23 active">台北市<span class="count">12</span></li>
+                                    <li class="conditions-tab24">新北市</li>
+                                    <li class="conditions-tab25">基隆市</li>
+                                    <li class="conditions-tab26">桃園市<span class="count">2</span></li>
+                                    <li class="conditions-tab27">新竹縣</li>
+                                    <li class="conditions-tab28">新竹</li>
+                                    <h5 class="p2">中部</h5>
+                                    <li class="conditions-tab29">台中市<span class="count">12</span></li>
+                                    <li class="conditions-tab30">新北市</li>
+                                    <li class="conditions-tab31">基隆市</li>
+                                    <li class="conditions-tab32">桃園市<span class="count">2</span></li>
+                                    <li class="conditions-tab33">新竹縣</li>
+                                    <li class="conditions-tab34">新竹</li>
+                                    <h5 class="p2">南部</h5>
+                                    <li class="conditions-tab29">台中市<span class="count">12</span></li>
+                                    <li class="conditions-tab30">新北市</li>
+                                    <li class="conditions-tab31">基隆市</li>
+                                    <li class="conditions-tab32">桃園市<span class="count">2</span></li>
+                                    <li class="conditions-tab33">新竹縣</li>
+                                    <li class="conditions-tab34">新竹</li>
+                                </ul>
+                            </div>
+                            <div class="col conditions">
+                                <div class="g-conditions active" id="conditions-tab23">
+                                    <div class="g-label row">
+                                        <label>
+                                            <!-- 只有點超出10個時，其他選項會變灰階不能點選，請加上disable 此class -->
+                                            <input type="checkbox" value="文山區">
+                                            <span></span>文山區
+                                        </label>
+                                        <label class="disabled">
+                                            <input type="checkbox" value="萬華區">
+                                            <span></span>萬華區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="中正區">
+                                            <span></span>中正區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="信義區">
+                                            <span></span>信義區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="大同區">
+                                            <span></span>大同區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="士林區">
+                                            <span></span>士林區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="中山區">
+                                            <span></span>中山區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="北投區">
+                                            <span></span>北投區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="松山區">
+                                            <span></span>松山區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="內湖區">
+                                            <span></span>內湖區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="大安區">
+                                            <span></span>大安區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="南港區">
+                                            <span></span>南港區
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab24">
+                                    <div class="g-label row">
+                                        <label>
+                                            <!-- 只有點超出10個時，其他選項會變灰階不能點選，請加上disable 此class -->
+                                            <input type="checkbox" value="文山區">
+                                            <span></span>文山區
+                                        </label>
+                                        <label class="disabled">
+                                            <input type="checkbox" value="萬華區">
+                                            <span></span>萬華區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="中正區">
+                                            <span></span>中正區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="信義區">
+                                            <span></span>信義區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="大同區">
+                                            <span></span>大同區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="士林區">
+                                            <span></span>士林區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="中山區">
+                                            <span></span>中山區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="北投區">
+                                            <span></span>北投區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="松山區">
+                                            <span></span>松山區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="內湖區">
+                                            <span></span>內湖區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="大安區">
+                                            <span></span>大安區
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="南港區">
+                                            <span></span>南港區
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row submit">
+                            <div class="choice-info">
+                                <span class="view expand">看全部
+                                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.9248 4.19377L3.4998 1.76877L1.0748 4.19377C0.831055 4.43752 0.437304 4.43752 0.193554 4.19377C-0.0501957 3.95002 -0.0501956 3.55627 0.193554 3.31252L3.06231 0.443774C3.30606 0.200024 3.6998 0.200024 3.94355 0.443774L6.8123 3.31252C7.05605 3.55627 7.05605 3.95002 6.8123 4.19377C6.56855 4.43127 6.16855 4.43752 5.9248 4.19377Z" fill="#AF8663"/>
+                                    </svg>
+                                </span>
+                                <span class="view collapse" style="display:none">收起來
+                                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.9248 4.19377L3.4998 1.76877L1.0748 4.19377C0.831055 4.43752 0.437304 4.43752 0.193554 4.19377C-0.0501957 3.95002 -0.0501956 3.55627 0.193554 3.31252L3.06231 0.443774C3.30606 0.200024 3.6998 0.200024 3.94355 0.443774L6.8123 3.31252C7.05605 3.55627 7.05605 3.95002 6.8123 4.19377C6.56855 4.43127 6.16855 4.43752 5.9248 4.19377Z" fill="#AF8663"/>
+                                    </svg>
+                                </span>
+                                <div class="conditions-box">
+                                    <div>台北市 松山區 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>台北市 萬華區 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>台北市 北投區 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>台北市 士林區 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>台北市 信義區 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>台北市 松山區 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>台北市 萬華區 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>台北市 北投區 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>台北市 士林區 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>台北市 信義區 <button class="remove-item-btn">remove item</button> </div>
+                                </div>
+                            </div>
+                            <div class="submit-control">
+                                <div class="col">
+                                    <p class="p2">已選擇<span>0</span><span> / </span><span>10</span>項</p>
+                                    <!-- 清除全部如果class + active 字會變紅色，只要使用者有勾選任一條件，下面這個class就要加 active 喔！ -->
+                                    <p class="tag clean">
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.96647 1.12249L8.14397 0.299988L4.88314 3.56082L1.6223 0.299988L0.799805 1.12249L4.06064 4.38332L0.799805 7.64416L1.6223 8.46665L4.88314 5.20582L8.14397 8.46665L8.96647 7.64416L5.70564 4.38332L8.96647 1.12249Z" fill="#B5B5B5"/>
+                                        </svg>清除全部
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <button class="submit-bt p1">確定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 職務 -->
+            <div class="industry-wrapper filter-wrapper" style="display:none">
+                <div class="dialog-bg"></div>
+                <div class="container">
+                    <div class="row fixed">
+                        <p class="p2 basic">選擇職務</p>
+                        <p class="p2 rwd-back" style="display:none"><span>← </span>回到上層</p>
+                        <p class="close-btn"><img src="assets/img/close-dialog-btn.svg" alt=""></p>
+                    </div>
+                    <form class="row form" method="post">
+                        <div class="row filter">
+                            <div class="col category">
+                                <ul>
+                                    <li class="conditions-tab12 active">管理幕僚 / 人資 / 行政<span class="count">12</span></li>
+                                    <li class="conditions-tab13">金融保險 / 財會 / 稽核<span class="count">5</span></li>
+                                    <li class="conditions-tab14">業務 / 貿易 / 客服 / 門市</li>
+                                    <li class="conditions-tab15">電腦系統 / 資訊 / 軟硬體</li>
+                                    <li class="conditions-tab16">電光IC / 電子通訊</li>
+                                    <li class="conditions-tab17">機械模具 / 生產製程</li>
+                                    <li class="conditions-tab18">操作 / 維修 / 技術服務</li>
+                                    <li class="conditions-tab19">採購 / 物流 / 品質檢測</li>
+                                    <li class="conditions-tab20">營建 / 製圖 / 施作</li>
+                                    <li class="conditions-tab21">醫療 / 護理 / 保健</li>
+                                    <li class="conditions-tab22">生物科技 / 化學製藥</li>
+                                </ul>
+                            </div>
+                            <div class="col conditions">
+                                <div class="g-conditions active" id="conditions-tab12">
+                                    <h5 class="p2">金融保險 / 財會 / 稽核</h5>
+                                    <div class="g-label row">
+                                        <label class="choose-all">
+                                            <!-- 只有點「全部」代表金融保險分類的其他選項會變灰階不能點選，請加上disable 此class -->
+                                            <input type="checkbox" value="金融保險 全部">
+                                            <span></span>金融保險 全部
+                                        </label>
+                                        <label class="disabled">
+                                            <input type="checkbox" value="金融研究人員">
+                                            <span></span>金融研究人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="金融研究人員">
+                                            <span></span>金融研究人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="徵信人員">
+                                            <span></span>徵信人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="徵信人員">
+                                            <span></span>徵信人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="銀行辦事人員">
+                                            <span></span>銀行辦事人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="銀行辦事人員">
+                                            <span></span>銀行辦事人員
+                                        </label>
+                                    </div>
+                                    <div class="g-label row">
+                                        <label class="choose-all">
+                                            <!-- 只有點「全部」代表財務會計分類的其他選項會變灰階不能點選，請加上disable 此class -->
+                                            <input type="checkbox" value="財務會計 全部">
+                                            <span></span>財務會計 全部
+                                        </label>
+                                        <label class="disabled">
+                                            <!-- 我用這個做如果不能點時的樣式範例 -->
+                                            <input type="checkbox" value="會計 / 出納 / 記帳人員 / 助理">
+                                            <span></span>會計 / 出納 / 記帳人員 / 助理 (我是示範灰階狀態喔！)
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="會計主管">
+                                            <span></span>會計主管
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="主辦會計">
+                                            <span></span>主辦會計
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="主辦會計">
+                                            <span></span>主辦會計
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="財務人員">
+                                            <span></span>財務人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="財務人員">
+                                            <span></span>財務人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="財務分析人員">
+                                            <span></span>財務分析人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="財務分析人員">
+                                            <span></span>財務分析人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="銀行辦事人員">
+                                            <span></span>銀行辦事人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="財務人員">
+                                            <span></span>財務人員
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab13">
+                                    <h5 class="p2">金融保險 / 財會 / 稽核</h5>
+                                    <div class="g-label row">
+                                        <label class="choose-all">
+                                            <!-- 只有點「全部」代表金融保險分類的其他選項會變灰階不能點選，請加上disable 此class -->
+                                            <input type="checkbox" value="金融保險 全部">
+                                            <span></span>金融保險 全部
+                                        </label>
+                                        <label class="disabled">
+                                            <input type="checkbox" value="金融研究人員">
+                                            <span></span>金融研究人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="金融研究人員">
+                                            <span></span>金融研究人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="徵信人員">
+                                            <span></span>徵信人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="徵信人員">
+                                            <span></span>徵信人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="銀行辦事人員">
+                                            <span></span>銀行辦事人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="銀行辦事人員">
+                                            <span></span>銀行辦事人員
+                                        </label>
+                                    </div>
+                                    <div class="g-label row">
+                                        <label class="choose-all">
+                                            <!-- 只有點「全部」代表財務會計分類的其他選項會變灰階不能點選，請加上disable 此class -->
+                                            <input type="checkbox" value="財務會計 全部">
+                                            <span></span>財務會計 全部
+                                        </label>
+                                        <label class="disabled">
+                                            <!-- 我用這個做如果不能點時的樣式範例 -->
+                                            <input type="checkbox" value="會計 / 出納 / 記帳人員 / 助理">
+                                            <span></span>會計 / 出納 / 記帳人員 / 助理 (我是示範灰階狀態喔！)
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="會計主管">
+                                            <span></span>會計主管
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="主辦會計">
+                                            <span></span>主辦會計
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="主辦會計">
+                                            <span></span>主辦會計
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="財務人員">
+                                            <span></span>財務人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="財務人員">
+                                            <span></span>財務人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="財務分析人員">
+                                            <span></span>財務分析人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="財務分析人員">
+                                            <span></span>財務分析人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="銀行辦事人員">
+                                            <span></span>銀行辦事人員
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="財務人員">
+                                            <span></span>財務人員
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row submit">
+                            <div class="choice-info">
+                                <span class="view expand">看全部
+                                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.9248 4.19377L3.4998 1.76877L1.0748 4.19377C0.831055 4.43752 0.437304 4.43752 0.193554 4.19377C-0.0501957 3.95002 -0.0501956 3.55627 0.193554 3.31252L3.06231 0.443774C3.30606 0.200024 3.6998 0.200024 3.94355 0.443774L6.8123 3.31252C7.05605 3.55627 7.05605 3.95002 6.8123 4.19377C6.56855 4.43127 6.16855 4.43752 5.9248 4.19377Z" fill="#AF8663"/>
+                                    </svg>
+                                </span>
+                                <span class="view collapse" style="display:none">收起來
+                                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.9248 4.19377L3.4998 1.76877L1.0748 4.19377C0.831055 4.43752 0.437304 4.43752 0.193554 4.19377C-0.0501957 3.95002 -0.0501956 3.55627 0.193554 3.31252L3.06231 0.443774C3.30606 0.200024 3.6998 0.200024 3.94355 0.443774L6.8123 3.31252C7.05605 3.55627 7.05605 3.95002 6.8123 4.19377C6.56855 4.43127 6.16855 4.43752 5.9248 4.19377Z" fill="#AF8663"/>
+                                    </svg>
+                                </span>
+                                <div class="conditions-box">
+                                    <div>金融保險 全部 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>會計主管 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>主辦會計 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>財務人員 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>生產技術/製程工程師 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>PLC／自動控制工程師 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>金融保險 全部 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>財務人員 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>生產技術/製程工程師 <button class="remove-item-btn">remove item</button> </div>
+                                    <div>PLC／自動控制工程師 <button class="remove-item-btn">remove item</button> </div>
+                                </div>
+                            </div>
+                            <div class="submit-control">
+                                <div class="col">
+                                    <p class="p2">已選擇<span>0</span><span> / </span><span>6</span>項</p>
+                                    <!-- 清除全部如果class + active 字會變紅色，只要使用者有勾選任一條件，下面這個class就要加 active 喔！ -->
+                                    <p class="tag clean">
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.96647 1.12249L8.14397 0.299988L4.88314 3.56082L1.6223 0.299988L0.799805 1.12249L4.06064 4.38332L0.799805 7.64416L1.6223 8.46665L4.88314 5.20582L8.14397 8.46665L8.96647 7.64416L5.70564 4.38332L8.96647 1.12249Z" fill="#B5B5B5"/>
+                                        </svg>清除全部
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <button class="submit-bt p1">確定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 福利 -->
+            <div class="benefits-wrapper filter-wrapper" style="display:none">
+                <div class="dialog-bg"></div>
+                <div class="container">
+                    <div class="row fixed">
+                        <p class="p2 basic">選擇福利</p>
+                        <p class="p2 rwd-back" style="display:none"><span>← </span>回到上層</p>
+                        <p class="close-btn"><img src="assets/img/close-dialog-btn.svg" alt=""></p>
+                    </div>
+                    <form class="row form" method="post">
+                        <div class="row filter">
+                            <div class="col category">
+                                <ul>
+                                    <li class="conditions-tab1 active">獎金福利<span class="count">12</span></li>
+                                    <li class="conditions-tab2">保險福利<span class="count">5</span></li>
+                                    <li class="conditions-tab3">公司福利</li>
+                                    <li class="conditions-tab4">娛樂福利</li>
+                                    <li class="conditions-tab5">休假福利</li>
+                                    <li class="conditions-tab6">設備福利</li>
+                                    <li class="conditions-tab7">交通福利</li>
+                                    <li class="conditions-tab8">居住福利</li>
+                                    <li class="conditions-tab9">餐飲福利</li>
+                                    <li class="conditions-tab10">自訂福利</li>
+                                </ul>
+                            </div>
+                            <div class="col conditions">
+                                <div class="g-conditions active" id="conditions-tab1">
+                                    <div class="g-label">
+                                        <label>
+                                            <input type="checkbox" value="全勤獎金">
+                                            <span></span>全勤獎金
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="三節獎金">
+                                            <span></span>三節獎金
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="年節獎金">
+                                            <span></span>年節獎金
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="禮品">
+                                            <span></span>禮品
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="分紅入股">
+                                            <span></span>分紅入股
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="激勵獎金">
+                                            <span></span>激勵獎金
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="員工生日禮金">
+                                            <span></span>員工生日禮金
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="生產獎金">
+                                            <span></span>生產獎金
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="員工購置電腦及其他相關設備之低利貸款或補助">
+                                            <span></span>員工購置電腦及其他相關設備之低利貸款或補助
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="績效獎金">
+                                            <span></span>績效獎金
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab2">
+                                    <div class="g-label">
+                                        <label>
+                                            <input type="checkbox" value="全勤獎金2">
+                                            <span></span>全勤獎金2
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="三節獎金2">
+                                            <span></span>三節獎金2
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="年節獎金2">
+                                            <span></span>年節獎金2
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="禮品2">
+                                            <span></span>禮品2
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="分紅入股2">
+                                            <span></span>分紅入股2
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="激勵獎金2">
+                                            <span></span>激勵獎金2
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="員工生日禮金2">
+                                            <span></span>員工生日禮金2
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="生產獎金2">
+                                            <span></span>生產獎金2
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="員工購置電腦及其他相關設備之低利貸款或補助2">
+                                            <span></span>員工購置電腦及其他相關設備之低利貸款或補助2
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="績效獎金2">
+                                            <span></span>績效獎金2
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab3">
+                                    <div class="g-label">
+                                        <label>
+                                            <input type="checkbox" value="全勤獎金3">
+                                            <span></span>全勤獎金3
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="三節獎金3">
+                                            <span></span>三節獎金3
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab4">
+                                    <div class="g-label">
+                                        <label>
+                                            <input type="checkbox" value="全勤獎金4">
+                                            <span></span>全勤獎金4
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="三節獎金4">
+                                            <span></span>三節獎金4
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab5">
+                                    <div class="g-label">
+                                        <label>
+                                            <input type="checkbox" value="全勤獎金5">
+                                            <span></span>全勤獎金5
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="三節獎金5">
+                                            <span></span>三節獎金5
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab6">
+                                    <div class="g-label">
+                                        <label>
+                                            <input type="checkbox" value="全勤獎金6">
+                                            <span></span>全勤獎金6
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="三節獎金6">
+                                            <span></span>三節獎金6
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab7">
+                                    <div class="g-label">
+                                        <label>
+                                            <input type="checkbox" value="全勤獎金7">
+                                            <span></span>全勤獎金7
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="三節獎金7">
+                                            <span></span>三節獎金7
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab8">
+                                    <div class="g-label">
+                                        <label>
+                                            <input type="checkbox" value="全勤獎金8">
+                                            <span></span>全勤獎金8
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="三節獎金8">
+                                            <span></span>三節獎金8
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab9">
+                                    <div class="g-label">
+                                        <label>
+                                            <input type="checkbox" value="全勤獎金9">
+                                            <span></span>全勤獎金9
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="三節獎金9">
+                                            <span></span>三節獎金9
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="g-conditions" id="conditions-tab10">
+                                    <div class="g-label">
+                                        <label>
+                                            <input type="checkbox" value="全勤獎金10">
+                                            <span></span>全勤獎金10
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" value="三節獎金10">
+                                            <span></span>三節獎金10
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row submit">
+                            <div class="submit-control">
+                                <div class="col">
+                                    <p class="p2">已選擇<span>0</span>項</p>
+    
+                                    <!-- 清除全部如果class + active 字會變紅色，只要使用者有勾選任一條件，下面這個class就要加 active 喔！ -->
+                                    <p class="tag clean">
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.96647 1.12249L8.14397 0.299988L4.88314 3.56082L1.6223 0.299988L0.799805 1.12249L4.06064 4.38332L0.799805 7.64416L1.6223 8.46665L4.88314 5.20582L8.14397 8.46665L8.96647 7.64416L5.70564 4.38332L8.96647 1.12249Z" fill="#B5B5B5"/>
+                                        </svg>清除全部
+                                    </p>
+                                </div>
+                                <div class="col">
+                                    <button class="submit-bt p1">確定</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

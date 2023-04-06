@@ -80,25 +80,25 @@ table {
   box-sizing: border-box;
 }
 
-.apply-dialog .container.active, .pgnb-style2, .login-dialog .container.active, nav .nav-brand, header {
+.dialog-filter.active, .apply-dialog .container.active, .pgnb-style2, .login-dialog .container.active, nav .nav-brand, header {
   display: block;
 }
 
-.form ul li input[type=checkbox]:checked + span, .form ul li input[type=checkbox] + span, .apply-dialog .container .close-btn span, .job-tag > a, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content a.h4, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content a.h4, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .companyStory .link .category ul li a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .single-post-wrapper .single-post-container .category ul li a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content a.h4, .login-dialog .container .close-btn span, nav .nav-brand img {
+.dialog-filter .filter-wrapper .container .form .filter .col.category ul li span, .form ul li input[type=checkbox]:checked + span, .form ul li input[type=checkbox] + span, .apply-dialog .container .close-btn span, .job-tag > a, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content a.h4, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content a.h4, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .companyStory .link .category ul li a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .single-post-wrapper .single-post-container .category ul li a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li a, .archive-tem .archive-tem-c .archive .archive-item .col.post-content a.h4, .login-dialog .container .close-btn span, nav .nav-brand img {
   display: inline-block;
 }
 
-.form ul li input[type=checkbox] {
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions, .dialog-filter .filter-wrapper .container .fixed p.rwd, .form ul li input[type=checkbox] {
   display: none;
 }
 
-.form ul li select,
+.dialog-filter .filter-wrapper .container .form .filter .col.category ul li span, .dialog-filter .filter-wrapper .container .fixed, .form ul li select,
 .form ul li input,
-.form ul li textarea, .quote, .apply-dialog .container, .apply-dialog, .form-select select, .classBtn input, .pgnb-style2 .g-pagination select, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a.pgnb-current, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a:hover, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .vote-wrapper .first-view, .award-wrapper .award-container.award-gold-container .filter .category a::before, .award-wrapper .award-container .award-content .item, .award-wrapper .award-container .filter .category .category-sp select, .lottery-wrapper .application-container .brand-category .section-lottery .lottery-item, .lottery-wrapper .application-container .brand-category .section-lottery, .lottery-wrapper .application-container .brand-category .filter-lottery .search button, .lottery-wrapper .application-container .brand-category .filter-lottery .search input, .lottery-wrapper .application-container .brand-category .filter-lottery .search, .lottery-wrapper .application-container .brand-category .filter-lottery .calendar input, .lottery-wrapper .first-view, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-content .post-company img, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .title-swiper .company-title .company-category img, .single-post-wrapper .single-post-container .col.right .row.company-info .row.company-name img, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .application-wrapper .first-view, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .jobTag-section .card-jobTag h4, .login-dialog .container, .login-dialog, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
+.form ul li textarea, .quote, .apply-dialog .container, .apply-dialog, .form-select select, .classBtn input, .pgnb-style2 .g-pagination select, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .media-share .media-item a, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .media-share .media-item a, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a.pgnb-current, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a:hover, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front .media-share .media-item a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .vote-wrapper .first-view, .award-wrapper .award-container.award-gold-container .filter .category a::before, .award-wrapper .award-container .award-content .item, .award-wrapper .award-container .filter .category .category-sp select, .lottery-wrapper .application-container .brand-category .section-lottery .lottery-item, .lottery-wrapper .application-container .brand-category .section-lottery, .lottery-wrapper .application-container .brand-category .filter-lottery .search button, .lottery-wrapper .application-container .brand-category .filter-lottery .search input, .lottery-wrapper .application-container .brand-category .filter-lottery .search, .lottery-wrapper .application-container .brand-category .filter-lottery .calendar input, .lottery-wrapper .first-view, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .media-share .media-item a, .company-wrapper .companyJob .archive .job-item .col.post-content .post-company img, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .media-share .media-item a, .company-wrapper .companyStory .link .media-share .media-item a, .company-wrapper .title-swiper .company-title .company-category img, .single-post-wrapper .single-post-container .col.right .row.company-info .row.company-name img, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col.media-share .media-item a, .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .form-select button, .application-wrapper .first-view, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .media-share .media-item a, .jobTag-section .card-jobTag h4, .login-dialog .container, .login-dialog, .mobile-main-menu a, nav .main-menu li:hover > ul, nav .main-menu .dropdown-menu, nav .main-menu li:hover > a, nav .main-menu li:hover, nav .main-menu li a, nav .main-menu li, nav .main-menu a, nav .main-menu, nav .nav-brand img, nav .nav-brand, nav, header {
   box-sizing: border-box;
 }
 
-.form ul li input[type=checkbox]:checked + span, .form ul li textarea, .apply-dialog .container .close-btn, .apply-dialog .container, .vote-wrapper .vote-container .brand-info, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item, .vote-wrapper .vote-container .brand-vote-category .container, .vote-wrapper .vote-container .vote-list, .vote-wrapper .first-view .container, .vote-wrapper .first-view, .award-wrapper .award-container.award-gold-container .filter .category a, .award-wrapper .award-container .brand-list .container .bottom .brand-info, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .lottery-wrapper .first-view .container, .lottery-wrapper .first-view, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col:first-child p.view-count, .application-wrapper .application-container .brand-list .container .bottom .brand-info, .application-wrapper .first-view .container, .application-wrapper .first-view, .login-dialog .container .close-btn, .login-dialog .container {
+.dialog-filter .filter-wrapper .container .form .submit .choice-info .conditions-box div, .dialog-filter .filter-wrapper .container .form .submit, .dialog-filter .filter-wrapper, .dialog-filter, .form ul li input[type=checkbox]:checked + span, .form ul li textarea, .apply-dialog .container .close-btn, .apply-dialog .container, .vote-wrapper .vote-container .brand-info, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item, .vote-wrapper .vote-container .brand-vote-category .container, .vote-wrapper .vote-container .vote-list, .vote-wrapper .first-view .container, .vote-wrapper .first-view, .award-wrapper .award-container.award-gold-container .filter .category a, .award-wrapper .award-container .brand-list .container .bottom .brand-info, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .lottery-wrapper .first-view .container, .lottery-wrapper .first-view, .single-post-wrapper .single-post-container .col.left .row .article-basic-info .info .col:first-child p.view-count, .application-wrapper .application-container .brand-list .container .bottom .brand-info, .application-wrapper .first-view .container, .application-wrapper .first-view, .login-dialog .container .close-btn, .login-dialog .container {
   position: relative;
 }
 
@@ -110,11 +110,11 @@ table {
   text-align: center;
 }
 
-.form p.h2, .apply-dialog .container p.h5, .apply-dialog .container, .vote-wrapper .vote-container .brand-list .container, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-jobs, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp, .vote-wrapper .vote-container .brand-vote-category .container h2, .vote-wrapper .first-view .container, .award-wrapper .award-container .brand-list .container .bottom .brand-info, .award-wrapper .award-container .brand-list .container, .award-wrapper .award-container .award-content, .award-wrapper .award-container .filter input::placeholder, .award-wrapper .award-container .filter .category .category-sp, .award-wrapper .award-container .filter, .award-wrapper .award-container .tab-control, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .lottery-wrapper .application-container .brand-category .section-title, .lottery-wrapper .first-view .container, .single-post-wrapper .single-post-container .col.right .row.company-info .row.opening, .single-post-wrapper .single-post-container .col.right .row.company-info .row .job-title, .application-wrapper .application-container .brand-list .container, .application-wrapper .application-container .happiness-goal .container, .application-wrapper .first-view .container, .archive-tem .archive-tem-c, .login-dialog .container p.h5, .login-dialog .container {
+.dialog-filter .filter-wrapper .container .form .filter .col.category ul li span, .form p.h2, .apply-dialog .container p.h5, .apply-dialog .container, .vote-wrapper .vote-container .brand-list .container, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pagination-ul li a, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-jobs, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .front, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp, .vote-wrapper .vote-container .brand-vote-category .container h2, .vote-wrapper .first-view .container, .award-wrapper .award-container .brand-list .container .bottom .brand-info, .award-wrapper .award-container .brand-list .container, .award-wrapper .award-container .award-content, .award-wrapper .award-container .filter input::placeholder, .award-wrapper .award-container .filter .category .category-sp, .award-wrapper .award-container .filter, .award-wrapper .award-container .tab-control, .lottery-wrapper .application-container .brand-category .pagination .pagination-ul li a, .lottery-wrapper .application-container .brand-category .section-title, .lottery-wrapper .first-view .container, .single-post-wrapper .single-post-container .col.right .row.company-info .row.opening, .single-post-wrapper .single-post-container .col.right .row.company-info .row .job-title, .application-wrapper .application-container .brand-list .container, .application-wrapper .application-container .happiness-goal .container, .application-wrapper .first-view .container, .archive-tem .archive-tem-c, .login-dialog .container p.h5, .login-dialog .container {
   text-align: center;
 }
 
-.form ul li .g-file .inputfile + label, .form ul li select, .apply-dialog .container .close-btn, .form-select select, .pgnb-style2 .g-pagination select, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content a.h4, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content a.h4, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pgnb-btn, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .award-wrapper .award-container .filter .category .category-sp select, .lottery-wrapper .application-container .brand-category .pagination .pgnb-btn, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li, .company-wrapper .companyStory .link .category ul li, .single-post-wrapper .single-post-container .bottom .row a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .category ul li, .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .advanced, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .archive-tem .archive-tem-c .archive .archive-item .col.post-content a.h4, .index-wrapper .article-wrapper .article .article-item, .login-dialog .container .close-btn, .login-dialog .container .login-text a, .login-dialog .container .content ul li, #login-info {
+.dialog-filter .filter-wrapper .container .close-btn, .dialog-filter .filter-wrapper .container .form .submit .submit-control .col .submit-bt, .dialog-filter .filter-wrapper .container .form .submit .submit-control .col p.clean, .dialog-filter .filter-wrapper .container .form .submit .choice-info .conditions-box div button, .dialog-filter .filter-wrapper .container .form .submit .choice-info span.view, .dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions label, .dialog-filter .filter-wrapper .container .form .filter .col.category ul li, .form ul li .g-file .inputfile + label, .form ul li select, .apply-dialog .container .close-btn, .form-select select, .pgnb-style2 .g-pagination select, .btn, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-issue .archive .archive-item .col.post-content a.h4, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content .link .category ul li, .searchResult-wrapper .searchResult-news .archive .archive-item .col.post-content a.h4, .vote-wrapper .vote-container .brand-vote-category .container .pagination .pgnb-btn, .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip, .vote-wrapper .vote-container .brand-vote-category .container .category .category-sp select, .award-wrapper .award-container .filter .category .category-sp select, .lottery-wrapper .application-container .brand-category .pagination .pgnb-btn, .company-wrapper .companyNews .archive .archive-item .col.post-content .link .category ul li, .company-wrapper .companyJob .archive .job-item .col.post-cover .link .category ul li, .company-wrapper .companyStory .link .category ul li, .single-post-wrapper .single-post-container .bottom .row a, .single-post-wrapper .single-post-container .col.right .row.company-info .row .a-item, .single-post-wrapper .single-post-container .category ul li, .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .form-select button, .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .advanced, .archive-tem .archive-tem-c .archive .archive-item .col.post-content .link .category ul li, .archive-tem .archive-tem-c .archive .archive-item .col.post-content a.h4, .index-wrapper .article-wrapper .article .article-item, .login-dialog .container .close-btn, .login-dialog .container .login-text a, .login-dialog .container .content ul li, #login-info {
   cursor: pointer;
 }
 
@@ -2399,28 +2399,31 @@ nav .main-menu li:hover > ul {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
-.happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .select-flex {
+.happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .form-select {
   display: flex;
-  flex-wrap: unset;
+  flex-wrap: wrap;
   flex-direction: unset;
-  justify-content: space-between;
+  justify-content: unset;
   align-content: unset;
-  align-items: unset;
-  gap: 20px;
+  align-items: center;
+}
+.happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .form-select button {
+  color: #505050;
+  border-radius: 8px;
+  padding: 1rem 3rem 1rem 0.5rem;
+  background: #FFF;
+  width: 140px;
+  text-align: left;
+  font-size: 13px;
+  letter-spacing: 1px;
+  background-image: url(../../assets/img/select-dropdown-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 36px 12px;
+  background-position: calc(100% - 1px) calc(2em - 8px);
 }
 @media screen and (max-width: 768px) {
-  .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .select-flex {
-    display: flex;
-    flex-wrap: unset;
-    flex-direction: column;
-    justify-content: unset;
-    align-content: unset;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 480px) {
-  .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .select-flex {
-    width: 260px;
+  .happiness-wrapper .happinessJob-wrapper .happinessJob .company-select .form-select button {
+    width: 100%;
   }
 }
 .happiness-wrapper .ad-area-wrapper {
@@ -2445,7 +2448,7 @@ nav .main-menu li:hover > ul {
 .happiness-wrapper .ad-area-wrapper .ad-area-container .block img {
   width: 100%;
 }
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 1200px) {
   .happiness-wrapper .ad-area-wrapper .ad-area-container {
     flex-wrap: wrap;
   }
@@ -2558,7 +2561,7 @@ nav .main-menu li:hover > ul {
 .happiness-wrapper .ad-area-wrapper .ad-area-container .block img {
   width: 100%;
 }
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 1200px) {
   .happiness-wrapper .ad-area-wrapper .ad-area-container {
     flex-wrap: wrap;
   }
@@ -5533,28 +5536,6 @@ nav .main-menu li:hover > ul {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-info ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: unset;
-  justify-content: flex-start;
-  align-content: unset;
-  align-items: center;
-  gap: 18px 10px;
-}
-.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-info ul a {
-  font-weight: 400;
-  border-radius: 100px;
-  background: white;
-  color: #C19E7F;
-  border: 1px solid;
-  padding: 0.2rem 0.5rem;
-  transition: all ease 0.4s;
-}
-.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-info ul a:hover {
-  color: white;
-  background: #C19E7F;
-}
 .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-jobs {
   padding: 2rem;
   background: #F1E7D5;
@@ -5575,6 +5556,29 @@ nav .main-menu li:hover > ul {
 .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-jobs ul li a {
   color: #000000;
   padding: 0.2rem 0;
+}
+.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item ul.brand-conditions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: unset;
+  justify-content: flex-start;
+  align-content: unset;
+  align-items: center;
+  gap: 18px 10px;
+  margin: 1.5rem 0;
+}
+.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item ul.brand-conditions a {
+  font-weight: 400;
+  border-radius: 100px;
+  background: white;
+  color: #C19E7F;
+  border: 1px solid;
+  padding: 0.2rem 0.5rem;
+  transition: all ease 0.4s;
+}
+.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item ul.brand-conditions a:hover {
+  color: white;
+  background: #C19E7F;
 }
 .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip {
   position: absolute;
@@ -6803,28 +6807,6 @@ nav .main-menu li:hover > ul {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-info ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: unset;
-  justify-content: flex-start;
-  align-content: unset;
-  align-items: center;
-  gap: 18px 10px;
-}
-.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-info ul a {
-  font-weight: 400;
-  border-radius: 100px;
-  background: white;
-  color: #C19E7F;
-  border: 1px solid;
-  padding: 0.2rem 0.5rem;
-  transition: all ease 0.4s;
-}
-.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-info ul a:hover {
-  color: white;
-  background: #C19E7F;
-}
 .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-jobs {
   padding: 2rem;
   background: #F1E7D5;
@@ -6845,6 +6827,29 @@ nav .main-menu li:hover > ul {
 .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item .back .brand-jobs ul li a {
   color: #000000;
   padding: 0.2rem 0;
+}
+.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item ul.brand-conditions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: unset;
+  justify-content: flex-start;
+  align-content: unset;
+  align-items: center;
+  gap: 18px 10px;
+  margin: 1.5rem 0;
+}
+.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item ul.brand-conditions a {
+  font-weight: 400;
+  border-radius: 100px;
+  background: white;
+  color: #C19E7F;
+  border: 1px solid;
+  padding: 0.2rem 0.5rem;
+  transition: all ease 0.4s;
+}
+.vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item ul.brand-conditions a:hover {
+  color: white;
+  background: #C19E7F;
 }
 .vote-wrapper .vote-container .brand-vote-category .container .brand .brand-item span.flip {
   position: absolute;
@@ -7389,7 +7394,7 @@ textarea:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 666;
+  z-index: 9992;
   content: "";
   width: 100%;
   height: 100%;
@@ -7545,19 +7550,6 @@ textarea:focus {
   width: 32px;
   height: 37px;
   position: absolute;
-}
-
-.dialog-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9991;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .require::after {
@@ -7775,7 +7767,7 @@ button:focus {
   align-content: unset;
   align-items: unset;
   gap: 20px;
-  margin: 2rem 0;
+  margin: 0 0 1rem;
 }
 .form .row .cancel {
   background: white;
@@ -7784,6 +7776,531 @@ button:focus {
 .form .row .cancel:hover {
   background: #EF6261;
   color: white;
+}
+
+.dialog-filter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9992;
+  content: "";
+}
+.dialog-filter .filter-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.dialog-filter .filter-wrapper.active {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: center;
+  align-content: unset;
+  align-items: unset;
+}
+.dialog-filter .filter-wrapper .container {
+  position: absolute;
+  top: 50%;
+  right: unset;
+  bottom: unset;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1000px;
+  z-index: 9992;
+  margin: 2rem auto;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper .container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: unset;
+    margin: 0;
+    width: 100%;
+  }
+}
+.dialog-filter .filter-wrapper .container .fixed {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: space-between;
+  align-content: unset;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #C19E7F;
+  max-width: 1000px;
+  padding: 0.5rem 1rem;
+  border-radius: 10px 10px 0 0;
+  border: 1.5px solid #D8C2AF;
+  border-bottom: none;
+}
+.dialog-filter .filter-wrapper .container .fixed p {
+  color: #FFF;
+  font-weight: 600;
+}
+.dialog-filter .filter-wrapper .container .fixed p.rwd {
+  font-family: "Varta" !important;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper .container .fixed {
+    border-radius: 0;
+  }
+  .dialog-filter .filter-wrapper .container .fixed .basic.active {
+    display: none !important;
+  }
+  .dialog-filter .filter-wrapper .container .fixed .rwd-back {
+    cursor: pointer;
+  }
+  .dialog-filter .filter-wrapper .container .fixed .rwd-back.active {
+    display: block !important;
+  }
+}
+.dialog-filter .filter-wrapper .container .form {
+  gap: 20px;
+  margin: unset;
+  padding: 0;
+  max-width: unset;
+  border: 1.5px solid #D8C2AF;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  background: #FFF;
+}
+.dialog-filter .filter-wrapper .container .form .filter {
+  margin: unset;
+  gap: 0;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper .container .form .filter {
+    height: 100vh;
+    position: relative;
+  }
+}
+.dialog-filter .filter-wrapper .container .form .filter .col {
+  padding: 0.5rem 0;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.category {
+  flex-basis: 30%;
+  border-right: 1px solid #D8C2AF;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper .container .form .filter .col.category {
+    overflow-y: scroll;
+    max-height: unset;
+    flex-basis: 100%;
+    border: none;
+  }
+  .dialog-filter .filter-wrapper .container .form .filter .col.category ul {
+    margin-bottom: 100px;
+    height: 100%;
+    padding-bottom: 110px;
+  }
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.category ul {
+  gap: 5px;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper .container .form .filter .col.category ul {
+    overflow-y: scroll;
+    height: unset;
+  }
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.category ul h5 {
+  padding: 0.8rem 0.5rem;
+  font-weight: 700;
+  color: #C19E7F;
+  padding-left: calc(50% - 100px) !important;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.category ul li {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: left;
+  align-content: unset;
+  align-items: center;
+  padding: 0.8rem 0.5rem;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  transition: all ease 0.4s;
+  background: #fff;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.category ul li:hover, .dialog-filter .filter-wrapper .container .form .filter .col.category ul li.active {
+  background: #F7F3EC;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.category ul li span {
+  background: #C19E7F;
+  border-radius: 100px;
+  width: 100%;
+  max-width: 30px;
+  height: 30px;
+  color: white;
+  line-height: 30px;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions {
+  flex-basis: 70%;
+  height: 100%;
+  background: white;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper .container .form .filter .col.conditions {
+    max-height: unset;
+  }
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions.active {
+  display: block;
+  left: 0;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions.active .g-label {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  padding: 0 0 1rem;
+  border-bottom: 1px dashed #D8C2AF;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions.active .g-label:last-child {
+  border: none;
+  padding-bottom: 90px;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions.active .g-label:last-child {
+    padding-bottom: 150px;
+  }
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions.active .g-label .disabled {
+  color: #B5B5B5;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions.active .g-label .disabled input[type=checkbox] + span {
+  border-color: #DDDDDD;
+  background: #DDDDDD;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions.active .g-label .disabled input[type=checkbox]:checked + span {
+  display: inline-block;
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background: #DDDDDD;
+  margin: 0 10px 0 0;
+  position: relative;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions.active .g-label .disabled input[type=checkbox]:checked + span::before, .dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions.active .g-label .disabled input[type=checkbox]:checked + span::after {
+  display: none;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions h5 {
+  color: #AF8663;
+  padding: 0.8rem 1rem;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions label {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: flex-start;
+  padding: 0.8rem 1rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  transition: all ease 0.4s;
+  background: #fff;
+}
+.dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions label:hover {
+  background: #F7F3EC;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper .container .form .filter .col.conditions {
+    position: absolute;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: 100%;
+    z-index: -1;
+    flex-basis: 100%;
+    width: 100%;
+    transition: all ease 0.4s;
+  }
+  .dialog-filter .filter-wrapper .container .form .filter .col.conditions.transform-rwd {
+    z-index: 100;
+    left: 0;
+  }
+  .dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions {
+    position: absolute;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: 100%;
+    z-index: 0;
+    transition: all ease 0.4s;
+    width: 100%;
+  }
+  .dialog-filter .filter-wrapper .container .form .filter .col.conditions .g-conditions.transform {
+    left: 0;
+  }
+}
+.dialog-filter .filter-wrapper .container .form .submit {
+  margin-bottom: 0;
+}
+.dialog-filter .filter-wrapper .container .form .submit .choice-info {
+  position: absolute;
+  top: unset;
+  right: unset;
+  bottom: unset;
+  left: unset;
+  z-index: 0;
+  width: -webkit-fill-available;
+  bottom: 10px;
+  background: #F7F3EC;
+  height: 84px;
+  padding: 1rem;
+  transition: all ease 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper .container .form .submit .choice-info {
+    height: 140px;
+  }
+  .dialog-filter .filter-wrapper .container .form .submit .choice-info.active {
+    height: 178px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .dialog-filter .filter-wrapper .container .form .submit .choice-info {
+    height: 140px;
+  }
+  .dialog-filter .filter-wrapper .container .form .submit .choice-info.acitve {
+    height: 212px;
+  }
+}
+.dialog-filter .filter-wrapper .container .form .submit .choice-info span.view {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+  right: 40px;
+  bottom: unset;
+  left: unset;
+  z-index: 0;
+  background: #F7F3EC;
+  border-radius: 5px 5px 0 0;
+  padding: 0.5rem 1rem;
+  color: #AF8663;
+  gap: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.dialog-filter .filter-wrapper .container .form .submit .choice-info span.view svg {
+  width: 10px;
+  height: 10px;
+  transition: all ease 0.4s;
+}
+.dialog-filter .filter-wrapper .container .form .submit .choice-info span.view.collapse.active {
+  display: flex !important;
+}
+.dialog-filter .filter-wrapper .container .form .submit .choice-info span.view.collapse.active svg {
+  transform: rotate(180deg);
+}
+.dialog-filter .filter-wrapper .container .form .submit .choice-info .conditions-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: unset;
+  gap: 12px 10px;
+}
+.dialog-filter .filter-wrapper .container .form .submit .choice-info .conditions-box div {
+  padding: 0.2rem 1.5rem 0.2rem 0.5rem;
+  border: 1px solid #C19E7F;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+  background: white;
+}
+.dialog-filter .filter-wrapper .container .form .submit .choice-info .conditions-box div button {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  bottom: unset;
+  left: unset;
+  z-index: 0;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  text-indent: -999px;
+  background-image: url(../../assets/img/remove.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: space-between;
+  align-content: unset;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  border-top: 1px solid #D8C2AF;
+  background: white;
+  z-index: 101;
+  width: -webkit-fill-available;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper .container .form .submit .submit-control {
+    position: fixed;
+    bottom: 0;
+    width: -webkit-fill-available;
+    background: #FFF;
+    border-left: 1.5px solid #D8C2AF;
+    border-right: 1.5px solid #D8C2AF;
+    border-bottom: 1.5px solid #D8C2AF;
+  }
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col:nth-child(1) {
+  display: flex;
+  flex-wrap: unset;
+  flex-direction: unset;
+  justify-content: unset;
+  align-content: unset;
+  align-items: unset;
+  gap: 20px;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col:nth-child(1) p {
+  letter-spacing: 1px;
+  color: #000;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col:nth-child(1) p span {
+  font-weight: 700;
+  color: #C19E7F;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col:nth-child(1) p span:nth-child(1) {
+  margin-left: 5px;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col:nth-child(1) p span:nth-child(3) {
+  margin-right: 5px;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col:nth-child(1) p.clean {
+  color: #B5B5B5;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col p.clean {
+  line-height: 2;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col p.clean svg {
+  width: 12px;
+  height: 12px;
+  margin-right: 7px;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col p.clean.active {
+  color: #EF6261;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col p.clean.active svg path {
+  fill: #EF6261;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col .submit-bt {
+  color: white;
+  background: #EF6261;
+  border: 1px solid #EF6261;
+  font-weight: 500;
+  padding: 0.25rem 1.5rem;
+  border-radius: 100px;
+  transition: all ease 0.4s;
+}
+.dialog-filter .filter-wrapper .container .form .submit .submit-control .col .submit-bt:hover {
+  color: #EF6261;
+  background: white;
+  border: 1px solid #EF6261;
+}
+.dialog-filter .filter-wrapper .container .form input[type=checkbox] {
+  display: none;
+}
+.dialog-filter .filter-wrapper .container .form input[type=checkbox] + span {
+  display: inline-block;
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background: #FFF;
+  margin: 0 10px 0 0;
+  border: 1.5px solid #D8C2AF;
+  border-radius: 2px;
+}
+.dialog-filter .filter-wrapper .container .form input[type=checkbox]:checked + span {
+  display: inline-block;
+  width: 100%;
+  max-width: 20px;
+  height: 20px;
+  background: #C19E7F;
+  margin: 0 10px 0 0;
+  position: relative;
+}
+.dialog-filter .filter-wrapper .container .form input[type=checkbox]:checked + span::before, .dialog-filter .filter-wrapper .container .form input[type=checkbox]:checked + span::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #FFF;
+}
+.dialog-filter .filter-wrapper .container .form input[type=checkbox]:checked + span::before {
+  transform: rotate(308deg);
+  top: 9px;
+  width: 13px;
+  left: 5px;
+}
+.dialog-filter .filter-wrapper .container .form input[type=checkbox]:checked + span::after {
+  transform: rotate(40deg);
+  top: 11.5px;
+  width: 6px;
+  left: 3px;
+}
+.dialog-filter .filter-wrapper.industry-wrapper label:first-child {
+  font-weight: 600;
+}
+.dialog-filter .filter-wrapper.industry-wrapper .choice-info.active {
+  height: 123px !important;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper.industry-wrapper .choice-info.active {
+    height: 250px !important;
+  }
+  .dialog-filter .filter-wrapper.industry-wrapper .category ul {
+    padding-bottom: 100px !important;
+  }
+}
+.dialog-filter .filter-wrapper.industry-wrapper .filter .category li {
+  padding-left: calc(50% - 100px) !important;
+}
+.dialog-filter .filter-wrapper.industry-wrapper .category, .dialog-filter .filter-wrapper.industry-wrapper .conditions {
+  max-height: 550px;
+  overflow-y: scroll;
+}
+.dialog-filter .filter-wrapper.benefits-wrapper .filter .category li {
+  padding-left: calc(50% - 50px) !important;
+}
+.dialog-filter .filter-wrapper.area-wrapper .filter .category li {
+  padding-left: calc(50% - 100px) !important;
+}
+.dialog-filter .filter-wrapper.area-wrapper .choice-info.active {
+  height: 120px !important;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper.area-wrapper ul {
+    padding-bottom: 100px !important;
+  }
+}
+.dialog-filter .filter-wrapper.area-wrapper .category {
+  max-height: 550px;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 768px) {
+  .dialog-filter .filter-wrapper.area-wrapper .submit .choice-info.active {
+    height: 290px !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map*/

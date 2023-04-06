@@ -55,14 +55,28 @@
                     font-size: $tag;
                     text-decoration-line: underline;
                 }
-                .select-flex{
-                    @include flex($j-c:space-between);
-                    gap:20px;
-                    @include mini-pad{
-                        @include flex($d:column,$a-i:center);
-                    }
-                    @include mobile{
-                        width: 260px;
+                .form-select{
+                    @include flex($w:wrap,$a-i:center);
+
+                    button{
+                        @extend %pointer;
+                        @extend %bb;
+                        color: $c-gray;
+                        border-radius: 8px;
+                        padding: 1rem 3rem 1rem 0.5rem;
+                        background: #FFF;
+                        width: 140px;
+                        text-align: left;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                        background-image: url('../img/select-dropdown-icon.svg');
+                        background-repeat: no-repeat;
+                        background-size: 36px 12px;
+                        background-position: calc(100% + -1px) calc(2em - 8px);
+
+                        @include mini-pad{
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -90,7 +104,7 @@
                 }
             }
 
-            @include mobile{
+            @media only screen and (max-width: 1200px){
                 flex-wrap: wrap;
             }
         }

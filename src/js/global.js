@@ -34,6 +34,120 @@ btn.on('click', function (e) {
   $('html, body').animate({ scrollTop: 0 }, '300');
 });
 
+// 地區 產業 福利 篩選 click
+$('.dialog-filter .container .form li').each(function (index, el) {
+  $(el).on('click', function () {
+    var tab = $(this).attr('class');
+    var tabbox = $('#' + tab);
+    var back = $('.dialog-filter .fixed .rwd-back');
+
+    $(this).addClass('active').siblings().removeClass('active');
+    $(tabbox).addClass('active').siblings().removeClass('active');
+
+    if ($(window).width() < 767) {
+      $('.conditions').addClass('transform-rwd').siblings().removeClass('transform-rwd');
+      $(tabbox).addClass('transform').siblings().removeClass('transform');
+      $(back).addClass('active').siblings().removeClass('active');
+    }
+  })
+})
+
+// 手機版點選左側分類後 transform右邊的細分類，最上面會從「選擇ＸＸ」變成回到上層，這邊是控這個的
+$('.dialog-filter .container .form li').on('click', function () {
+  var basic = $('.dialog-filter .fixed .basic');
+  var back = $('.dialog-filter .fixed .rwd-back');
+
+  if($(back).css('display') == 'block'){
+    $(basic).addClass('active')
+  }else{
+    $(basic).removeClass('active')
+  }
+})
+
+// 職務＆地區會有的，查看全部條件跟收合起來
+$('.choice-info > .expand').on('click', function(){
+  var info = $('.choice-info');
+  var collapse = $('.choice-info .collapse');
+
+  $(info).toggleClass('active');
+  $(collapse).toggleClass('active');
+  
+  if($(collapse).css('display') == 'block'){
+    $(this).css('display','none')
+
+  }else{
+    $(this).css('display','block')
+  }
+})
+
+// 點擊 看全部 - 字會換成 收起來
+$('.choice-info > .collapse').on('click', function(){
+  var info = $('.choice-info');
+  var collapse = $('.choice-info .collapse');
+  var expand = $('.choice-info .expand');
+
+  $(info).removeClass('active')
+  $(this).removeClass('active')
+  $(expand).css('display','flex')
+})
+
+// 選地區
+let areabtn = $('#ft-area')
+let area = $('.area-wrapper')
+
+// 選職務
+let industrybtn = $('#ft-industry')
+let industry = $('.industry-wrapper')
+
+// 選福利
+let benefitbtn = $('#ft-benefits')
+let benefits = $('.benefits-wrapper')
+
+// 共用背景＆彈窗＆叉叉按鈕＆回上一層
+let filterbg = $('.dialog-bg')
+let filterbox = $('.dialog-filter')
+
+let closeBtn = $('.dialog-filter .close-btn')
+let basic = $('.dialog-filter .fixed .basic');
+let back = $('.dialog-filter .fixed .rwd-back');
+
+
+benefitbtn.on('click', function () {
+  $(filterbox).fadeIn().toggleClass('active');
+  $(benefits).fadeIn().toggleClass('active');
+})
+
+industrybtn.on('click', function () {
+  $(filterbox).fadeIn().toggleClass('active');
+  $(industry).fadeIn().toggleClass('active');
+})
+
+areabtn.on('click', function () {
+  $(filterbox).fadeIn().toggleClass('active');
+  $(area).fadeIn().toggleClass('active');
+})
+
+closeBtn.on('click', function () {
+  $(filterbox).fadeOut().removeClass('active');
+  $(benefits).fadeOut().removeClass('active');
+  $(industry).fadeOut().removeClass('active');
+  $(area).fadeOut().removeClass('active');
+})
+filterbg.on('click', function () {
+  $(filterbox).fadeOut().removeClass('active');
+  $(benefits).fadeOut().removeClass('active');
+  $(industry).fadeOut().removeClass('active');
+  $(area).fadeOut().removeClass('active');
+})
+back.on('click', function () {
+  $('.conditions').toggleClass('transform-rwd');
+  $('.g-conditions').removeClass('active', 'transform');
+  $(this).removeClass('active');
+  $(basic).removeClass('active');
+})
+
+
+
 //horizonal scroll
 const slider = document.querySelector('.tabWrapper');
 let isDown = false;
