@@ -150,6 +150,11 @@ p,
 }
 
 
+// link disable
+.disable{
+    color: #b2b2b2 !important;
+}
+
 // 按鈕樣式
 .btn {
     @extend %pointer;

@@ -7125,6 +7125,10 @@ p,
   }
 }
 
+.disable {
+  color: #b2b2b2 !important;
+}
+
 .btn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
